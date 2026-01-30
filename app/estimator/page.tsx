@@ -172,13 +172,23 @@ export default function EstimatorPage() {
                     </div>
                   </div>
 
-                  <div className="mt-6 flex gap-2">
-                    <Button variant="outline" className="flex-1">
-                      Save Estimate
-                    </Button>
-                    <Button className="flex-1">
-                      Order Materials
-                    </Button>
+                  <div className="mt-6 space-y-2">
+                    <div className="flex gap-2">
+                      <Button variant="outline" className="flex-1" onClick={saveEstimate}>
+                        Save Estimate
+                      </Button>
+                      <Button variant="outline" className="flex-1" onClick={exportToPDF}>
+                        Export to PDF
+                      </Button>
+                    </div>
+                    <div className="flex gap-2">
+                      <Button className="flex-1" asChild>
+                        <Link href="/stores">Order Materials</Link>
+                      </Button>
+                      <Button variant="destructive" onClick={clearAll}>
+                        Clear All
+                      </Button>
+                    </div>
                   </div>
                 </>
               )}

@@ -132,6 +132,13 @@ export default function DashboardContent({ session, data }: any) {
                   <Calendar className="h-4 w-4" />
                   Orders
                 </Link>
+                <Link
+                  href="/analytics"
+                  className="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <TrendingUp className="h-4 w-4" />
+                  Analytics
+                </Link>
               </>
             )}
           </nav>

@@ -13,7 +13,7 @@ export default function WorkersPage() {
   const [workers, setWorkers] = useState<any[]>([])
   const [loading, setLoading] = useState(true)
   const [filters, setFilters] = useState({
-    skill: '',
+    skill: 'ALL',
     city: '',
     minRate: '',
     maxRate: '',
@@ -24,7 +24,7 @@ export default function WorkersPage() {
     setLoading(true)
     try {
       const params = new URLSearchParams()
-      if (filters.skill) params.append('skill', filters.skill)
+      if (filters.skill && filters.skill !== 'ALL') params.append('skill', filters.skill)
       if (filters.city) params.append('city', filters.city)
       if (filters.minRate) params.append('minRate', filters.minRate)
       if (filters.maxRate) params.append('maxRate', filters.maxRate)
@@ -75,7 +75,7 @@ export default function WorkersPage() {
                     <SelectValue placeholder="Select skill" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="">All Skills</SelectItem>
+                    <SelectItem value="ALL">All Skills</SelectItem>
                     <SelectItem value="MASON">Mason</SelectItem>
                     <SelectItem value="WELDER">Welder</SelectItem>
                     <SelectItem value="CARPENTER">Carpenter</SelectItem>

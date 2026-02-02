@@ -4,7 +4,10 @@
 
 A comprehensive, production-ready full-stack web application connecting homeowners and contractors with skilled construction workers. Built with Next.js 14, TypeScript, PostgreSQL, and cutting-edge web technologies.
 
-**Developed by: Sadeesha Jay** 👨‍💻
+**Developed by: Sadeesha Jayaweera** 👨‍💻  
+📧 Email: sadeesha.jayaweera@gmail.com  
+🔗 LinkedIn: [https://www.linkedin.com/in/sadeesha-jayaweera](https://www.linkedin.com/in/sadeesha-jayaweera)  
+🐙 GitHub: [Sadeesha_Jayaweera](https://github.com/Sadeesha_Jayaweera)
 
 [![Next.js](https://img.shields.io/badge/Next.js-14-black)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue)](https://www.typescriptlang.org/)

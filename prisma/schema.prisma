@@ -73,28 +73,28 @@ enum NotificationType {
 }
 
 model User {
-  id            String    @id @default(cuid())
-  email         String    @unique
+  id            String   @id @default(cuid())
+  email         String   @unique
   password      String
-  role          Role      @default(CUSTOMER)
+  role          Role     @default(CUSTOMER)
   name          String
   phone         String?
   image         String?
-  emailVerified Boolean   @default(false)
-  createdAt     DateTime  @default(now())
-  updatedAt     DateTime  @updatedAt
+  emailVerified Boolean  @default(false)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
 
-  profile           Profile?
-  workerProfile     WorkerProfile?
-  storeProfile      StoreProfile?
-  bookings          Booking[]        @relation("CustomerBookings")
-  workerBookings    Booking[]        @relation("WorkerBookings")
-  projects          Project[]
-  reviews           Review[]         @relation("ReviewAuthor")
-  receivedReviews   Review[]         @relation("ReviewRecipient")
-  transactions      Transaction[]
-  notifications     Notification[]
-  estimates         Estimate[]
+  profile         Profile?
+  workerProfile   WorkerProfile?
+  storeProfile    StoreProfile?
+  bookings        Booking[]      @relation("CustomerBookings")
+  workerBookings  Booking[]      @relation("WorkerBookings")
+  projects        Project[]
+  reviews         Review[]       @relation("ReviewAuthor")
+  receivedReviews Review[]       @relation("ReviewRecipient")
+  transactions    Transaction[]
+  notifications   Notification[]
+  estimates       Estimate[]
 
   @@index([email])
   @@index([role])
@@ -116,31 +116,31 @@ model Profile {
 }
 
 model WorkerProfile {
-  id              String     @id @default(cuid())
-  userId          String     @unique
-  user            User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  id              String    @id @default(cuid())
+  userId          String    @unique
+  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   skill           SkillType
   dailyRate       Float
   hourlyRate      Float?
-  experience      Int        // years of experience
+  experience      Int // years of experience
   bio             String?
-  isVerified      Boolean    @default(false)
-  isAvailable     Boolean    @default(true)
+  isVerified      Boolean   @default(false)
+  isAvailable     Boolean   @default(true)
   address         String?
   city            String?
   state           String?
   zipCode         String?
   latitude        Float?
   longitude       Float?
-  portfolioImages String[]   // Array of image URLs
-  certifications  String[]   // Array of certification URLs
-  rating          Float      @default(0)
-  totalReviews    Int        @default(0)
-  totalJobs       Int        @default(0)
-  totalEarnings   Float      @default(0)
-  walletBalance   Float      @default(0)
-  createdAt       DateTime   @default(now())
-  updatedAt       DateTime   @updatedAt
+  portfolioImages String[] // Array of image URLs
+  certifications  String[] // Array of certification URLs
+  rating          Float     @default(0)
+  totalReviews    Int       @default(0)
+  totalJobs       Int       @default(0)
+  totalEarnings   Float     @default(0)
+  walletBalance   Float     @default(0)
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
 
   @@index([skill])
   @@index([city])
@@ -149,26 +149,26 @@ model WorkerProfile {
 }
 
 model StoreProfile {
-  id          String    @id @default(cuid())
-  userId      String    @unique
-  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
-  storeName   String
-  description String?
-  address     String
-  city        String
-  state       String
-  zipCode     String
-  latitude    Float?
-  longitude   Float?
-  phone       String
-  isVerified  Boolean   @default(false)
-  rating      Float     @default(0)
+  id           String   @id @default(cuid())
+  userId       String   @unique
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  storeName    String
+  description  String?
+  address      String
+  city         String
+  state        String
+  zipCode      String
+  latitude     Float?
+  longitude    Float?
+  phone        String
+  isVerified   Boolean  @default(false)
+  rating       Float    @default(0)
   totalReviews Int      @default(0)
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
 
-  products    Product[]
-  orders      Order[]
+  products Product[]
+  orders   Order[]
 
   @@index([city])
   @@index([isVerified])
@@ -186,8 +186,8 @@ model Booking {
   skill         SkillType
   startDate     DateTime
   endDate       DateTime
-  startTime     String?       // e.g., "09:00"
-  endTime       String?       // e.g., "17:00"
+  startTime     String? // e.g., "09:00"
+  endTime       String? // e.g., "17:00"
   totalHours    Float?
   totalDays     Int?
   ratePerDay    Float?
@@ -227,15 +227,15 @@ model Project {
   endDate     DateTime?
   budget      Float?
   status      String    @default("ACTIVE") // ACTIVE, COMPLETED, CANCELLED
-  progress    Int       @default(0)        // 0-100
+  progress    Int       @default(0) // 0-100
   notes       String?
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
 
-  bookings    Booking[]
-  tasks       Task[]
-  materials   Material[]
-  estimates   Estimate[]
+  bookings  Booking[]
+  tasks     Task[]
+  materials Material[]
+  estimates Estimate[]
 
   @@index([customerId])
   @@index([status])
@@ -257,54 +257,54 @@ model Task {
 }
 
 model Material {
-  id          String   @id @default(cuid())
-  projectId   String
-  project     Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
-  name        String
-  quantity    Float
-  unit        String   // bags, kg, pieces, etc.
-  unitPrice   Float?
-  totalPrice  Float?
-  supplier    String?
-  notes       String?
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  id         String   @id @default(cuid())
+  projectId  String
+  project    Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  name       String
+  quantity   Float
+  unit       String // bags, kg, pieces, etc.
+  unitPrice  Float?
+  totalPrice Float?
+  supplier   String?
+  notes      String?
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
 
   @@index([projectId])
 }
 
 model Estimate {
-  id          String    @id @default(cuid())
+  id          String   @id @default(cuid())
   userId      String
-  user        User      @relation(fields: [userId], references: [id])
+  user        User     @relation(fields: [userId], references: [id])
   projectId   String?
-  project     Project?  @relation(fields: [projectId], references: [id])
+  project     Project? @relation(fields: [projectId], references: [id])
   name        String
   description String?
-  items       Json      // Array of {name, quantity, unit, unitPrice, totalPrice}
+  items       Json // Array of {name, quantity, unit, unitPrice, totalPrice}
   totalCost   Float
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 
   @@index([userId])
 }
 
 model Product {
-  id          String        @id @default(cuid())
+  id          String       @id @default(cuid())
   storeId     String
-  store       StoreProfile  @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  store       StoreProfile @relation(fields: [storeId], references: [id], onDelete: Cascade)
   name        String
   description String?
   category    String
-  unit        String        // bags, kg, pieces, meters, etc.
+  unit        String // bags, kg, pieces, meters, etc.
   price       Float
-  stock       Int           @default(0)
+  stock       Int          @default(0)
   images      String[]
-  isAvailable Boolean       @default(true)
-  createdAt   DateTime      @default(now())
-  updatedAt   DateTime      @updatedAt
+  isAvailable Boolean      @default(true)
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
 
-  orderItems  OrderItem[]
+  orderItems OrderItem[]
 
   @@index([storeId])
   @@index([category])
@@ -312,24 +312,24 @@ model Product {
 }
 
 model Order {
-  id            String      @id @default(cuid())
-  customerId    String
-  storeId       String
-  store         StoreProfile @relation(fields: [storeId], references: [id])
-  orderNumber   String      @unique
-  status        OrderStatus @default(PENDING)
-  totalAmount   Float
-  paymentStatus PaymentStatus @default(PENDING)
-  paymentId     String?
+  id              String        @id @default(cuid())
+  customerId      String
+  storeId         String
+  store           StoreProfile  @relation(fields: [storeId], references: [id])
+  orderNumber     String        @unique
+  status          OrderStatus   @default(PENDING)
+  totalAmount     Float
+  paymentStatus   PaymentStatus @default(PENDING)
+  paymentId       String?
   deliveryAddress String
   deliveryCity    String
   deliveryState   String
   deliveryZip     String
-  notes         String?
-  createdAt     DateTime    @default(now())
-  updatedAt     DateTime    @updatedAt
+  notes           String?
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
 
-  items         OrderItem[]
+  items OrderItem[]
 
   @@index([customerId])
   @@index([storeId])
@@ -338,15 +338,15 @@ model Order {
 }
 
 model OrderItem {
-  id        String   @id @default(cuid())
-  orderId   String
-  order     Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
-  productId String
-  product   Product  @relation(fields: [productId], references: [id])
-  quantity  Float
-  unitPrice Float
+  id         String   @id @default(cuid())
+  orderId    String
+  order      Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  productId  String
+  product    Product  @relation(fields: [productId], references: [id])
+  quantity   Float
+  unitPrice  Float
   totalPrice Float
-  createdAt DateTime @default(now())
+  createdAt  DateTime @default(now())
 
   @@index([orderId])
   @@index([productId])
@@ -358,7 +358,7 @@ model Review {
   author      User     @relation("ReviewAuthor", fields: [authorId], references: [id])
   recipientId String
   recipient   User     @relation("ReviewRecipient", fields: [recipientId], references: [id])
-  rating      Int      // 1-5
+  rating      Int // 1-5
   comment     String?
   bookingId   String?
   orderId     String?
@@ -370,18 +370,18 @@ model Review {
 }
 
 model Transaction {
-  id            String          @id @default(cuid())
-  userId        String
-  user          User            @relation(fields: [userId], references: [id])
-  type          TransactionType
-  amount        Float
-  status        PaymentStatus   @default(PENDING)
-  description   String?
-  stripeId      String?
-  bookingId     String?
-  orderId       String?
-  createdAt     DateTime        @default(now())
-  updatedAt     DateTime        @updatedAt
+  id          String          @id @default(cuid())
+  userId      String
+  user        User            @relation(fields: [userId], references: [id])
+  type        TransactionType
+  amount      Float
+  status      PaymentStatus   @default(PENDING)
+  description String?
+  stripeId    String?
+  bookingId   String?
+  orderId     String?
+  createdAt   DateTime        @default(now())
+  updatedAt   DateTime        @updatedAt
 
   @@index([userId])
   @@index([type])

@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <!-- Background -->
+  <rect width="1280" height="720" fill="#F9FAFB"/>
+
+  <!-- Header -->
+  <rect width="1280" height="70" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <circle cx="60" cy="35" r="20" fill="#3B82F6"/>
+  <text x="90" y="42" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1F2937">Wandura</text>
+  <rect x="1150" y="20" width="100" height="35" rx="6" fill="#3B82F6"/>
+  <text x="1170" y="43" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">Dashboard</text>
+
+  <!-- Page Title -->
+  <text x="80" y="120" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#1F2937">Find Skilled Workers</text>
+
+  <!-- Filter Card -->
+  <rect x="60" y="140" width="1160" height="120" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="90" y="175" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1F2937">Filter Workers</text>
+
+  <!-- Filter Fields -->
+  <rect x="90" y="195" width="200" height="40" rx="6" fill="#FFFFFF" stroke="#D1D5DB"/>
+  <text x="105" y="220" font-family="Arial, sans-serif" font-size="14" fill="#6B7280">All Skills ▼</text>
+
+  <rect x="310" y="195" width="200" height="40" rx="6" fill="#FFFFFF" stroke="#D1D5DB"/>
+  <text x="325" y="220" font-family="Arial, sans-serif" font-size="14" fill="#9CA3AF">City</text>
+
+  <rect x="530" y="195" width="150" height="40" rx="6" fill="#FFFFFF" stroke="#D1D5DB"/>
+  <text x="545" y="220" font-family="Arial, sans-serif" font-size="14" fill="#9CA3AF">Min Rate ($)</text>
+
+  <rect x="700" y="195" width="150" height="40" rx="6" fill="#FFFFFF" stroke="#D1D5DB"/>
+  <text x="715" y="220" font-family="Arial, sans-serif" font-size="14" fill="#9CA3AF">Max Rate ($)</text>
+
+  <rect x="870" y="195" width="100" height="40" rx="6" fill="#3B82F6"/>
+  <text x="895" y="220" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">Search</text>
+
+  <!-- Worker Cards Grid -->
+  <!-- Card 1 -->
+  <rect x="60" y="280" width="360" height="200" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="90" y="315" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1F2937">Mike Thompson</text>
+  <rect x="280" y="295" width="60" height="24" rx="4" fill="#D1FAE5"/>
+  <text x="290" y="312" font-family="Arial, sans-serif" font-size="11" fill="#065F46">Verified</text>
+  <text x="90" y="340" font-family="Arial, sans-serif" font-size="14" fill="#6B7280">MASON</text>
+  <text x="90" y="370" font-family="Arial, sans-serif" font-size="13" fill="#6B7280">📍 Austin, TX</text>
+  <text x="90" y="395" font-family="Arial, sans-serif" font-size="13" fill="#6B7280">⭐ 4.8 (24 reviews)</text>
+  <text x="90" y="425" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#3B82F6">$180/day</text>
+  <rect x="90" y="440" width="300" height="35" rx="6" fill="#3B82F6"/>
+  <text x="195" y="462" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">View Profile</text>
+
+  <!-- Card 2 -->
+  <rect x="460" y="280" width="360" height="200" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="490" y="315" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1F2937">Sarah Chen</text>
+  <rect x="680" y="295" width="60" height="24" rx="4" fill="#D1FAE5"/>
+  <text x="690" y="312" font-family="Arial, sans-serif" font-size="11" fill="#065F46">Verified</text>
+  <text x="490" y="340" font-family="Arial, sans-serif" font-size="14" fill="#6B7280">ELECTRICIAN</text>
+  <text x="490" y="370" font-family="Arial, sans-serif" font-size="13" fill="#6B7280">📍 Houston, TX</text>
+  <text x="490" y="395" font-family="Arial, sans-serif" font-size="13" fill="#6B7280">⭐ 4.9 (42 reviews)</text>
+  <text x="490" y="425" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#3B82F6">$220/day</text>
+  <rect x="490" y="440" width="300" height="35" rx="6" fill="#3B82F6"/>
+  <text x="595" y="462" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">View Profile</text>
+
+  <!-- Card 3 -->
+  <rect x="860" y="280" width="360" height="200" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="890" y="315" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1F2937">James Wilson</text>
+  <text x="890" y="340" font-family="Arial, sans-serif" font-size="14" fill="#6B7280">WELDER</text>
+  <text x="890" y="370" font-family="Arial, sans-serif" font-size="13" fill="#6B7280">📍 Dallas, TX</text>
+  <text x="890" y="395" font-family="Arial, sans-serif" font-size="13" fill="#6B7280">⭐ 4.7 (18 reviews)</text>
+  <text x="890" y="425" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#3B82F6">$200/day</text>
+  <rect x="890" y="440" width="300" height="35" rx="6" fill="#3B82F6"/>
+  <text x="995" y="462" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">View Profile</text>
+
+  <!-- Card 4 -->
+  <rect x="60" y="500" width="360" height="200" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="90" y="535" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1F2937">Maria Garcia</text>
+  <rect x="280" y="515" width="60" height="24" rx="4" fill="#D1FAE5"/>
+  <text x="290" y="532" font-family="Arial, sans-serif" font-size="11" fill="#065F46">Verified</text>
+  <text x="90" y="560" font-family="Arial, sans-serif" font-size="14" fill="#6B7280">TILE LAYER</text>
+  <text x="90" y="590" font-family="Arial, sans-serif" font-size="13" fill="#6B7280">📍 San Antonio, TX</text>
+  <text x="90" y="615" font-family="Arial, sans-serif" font-size="13" fill="#6B7280">⭐ 4.6 (31 reviews)</text>
+  <text x="90" y="645" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#3B82F6">$160/day</text>
+  <rect x="90" y="660" width="300" height="35" rx="6" fill="#3B82F6"/>
+  <text x="195" y="682" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">View Profile</text>
+
+  <!-- Card 5 -->
+  <rect x="460" y="500" width="360" height="200" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="490" y="535" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1F2937">Robert Brown</text>
+  <text x="490" y="560" font-family="Arial, sans-serif" font-size="14" fill="#6B7280">CARPENTER</text>
+  <text x="490" y="590" font-family="Arial, sans-serif" font-size="13" fill="#6B7280">📍 Phoenix, AZ</text>
+  <text x="490" y="615" font-family="Arial, sans-serif" font-size="13" fill="#6B7280">⭐ 4.5 (15 reviews)</text>
+  <text x="490" y="645" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#3B82F6">$175/day</text>
+  <rect x="490" y="660" width="300" height="35" rx="6" fill="#3B82F6"/>
+  <text x="595" y="682" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">View Profile</text>
+
+  <!-- Card 6 -->
+  <rect x="860" y="500" width="360" height="200" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="890" y="535" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1F2937">David Lee</text>
+  <rect x="1080" y="515" width="60" height="24" rx="4" fill="#D1FAE5"/>
+  <text x="1090" y="532" font-family="Arial, sans-serif" font-size="11" fill="#065F46">Verified</text>
+  <text x="890" y="560" font-family="Arial, sans-serif" font-size="14" fill="#6B7280">PLUMBER</text>
+  <text x="890" y="590" font-family="Arial, sans-serif" font-size="13" fill="#6B7280">📍 Austin, TX</text>
+  <text x="890" y="615" font-family="Arial, sans-serif" font-size="13" fill="#6B7280">⭐ 4.9 (56 reviews)</text>
+  <text x="890" y="645" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#3B82F6">$190/day</text>
+  <rect x="890" y="660" width="300" height="35" rx="6" fill="#3B82F6"/>
+  <text x="995" y="682" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">View Profile</text>
+</svg>

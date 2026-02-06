@@ -1,158 +1,291 @@
-# Wandura - Skilled Labor On-Demand
+# 🏗️ Wandura - Skilled Labor On-Demand
 
-> 🚀 **Enterprise-Level Platform for Construction Industry**
+<div align="center">
 
-A comprehensive, production-ready full-stack web application connecting homeowners and contractors with skilled construction workers. Built with Next.js 14, TypeScript, PostgreSQL, and cutting-edge web technologies.
+![Wandura Logo](https://img.shields.io/badge/Wandura-Skilled%20Labor%20Platform-blue?style=for-the-badge&logo=hammer&logoColor=white)
 
-**Developed by: Sadeesha Jayaweera** 👨‍💻  
-📧 Email: sadeesha.jayaweera@gmail.com  
-🔗 LinkedIn: [https://www.linkedin.com/in/sadeesha-jayaweera](https://www.linkedin.com/in/sadeesha-jayaweera)  
-🐙 GitHub: [Sadeesha_Jayaweera](https://github.com/Sadeesha_Jayaweera)
+[![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-336791?style=for-the-badge&logo=postgresql)](https://www.postgresql.org/)
+[![Prisma](https://img.shields.io/badge/Prisma-5.8-2D3748?style=for-the-badge&logo=prisma)](https://www.prisma.io/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![Stripe](https://img.shields.io/badge/Stripe-Payments-635BFF?style=for-the-badge&logo=stripe)](https://stripe.com/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 
-[![Next.js](https://img.shields.io/badge/Next.js-14-black)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue)](https://www.typescriptlang.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+**A comprehensive, production-ready full-stack web application connecting homeowners and contractors with skilled construction workers.**
 
-## 📑 Table of Contents
+*Similar to Uber/Fiverr but specifically designed for the construction industry*
 
-- [Features](#-features)
-- [Application Statistics](#-application-statistics)
-- [Tech Stack](#️-tech-stack)
-- [Project Structure](#-project-structure)
-- [Getting Started](#-getting-started)
-- [Database Schema](#️-database-schema)
-- [API Documentation](#-api-documentation)
-- [Security Features](#-security-features)
-- [Payment Integration](#-payment-integration)
-- [Available Scripts](#-available-scripts)
-- [Deployment](#-deployment)
-- [Key Highlights](#-key-highlights)
-- [About the Developer](#-about-the-developer)
+[Features](#-features) • [Demo](#-application-preview) • [Installation](#-installation) • [Documentation](#-api-documentation) • [Contributing](#-contributing)
+
+</div>
+
+---
+
+
+## 📸 Application Preview
+
+### 🏠 Landing Page
+<p align="center">
+  <img src="./docs/screenshots/homepage.svg" alt="Landing Page" width="100%"/>
+</p>
+
+*Modern, responsive landing page showcasing platform features and call-to-action*
+
+### 👷 Worker Search & Discovery
+<p align="center">
+  <img src="./docs/screenshots/workers-search.svg" alt="Worker Search" width="100%"/>
+</p>
+
+*Advanced search with skill-based filtering, location, price range, and availability*
+
+### 📊 Customer Dashboard
+<p align="center">
+  <img src="./docs/screenshots/dashboard-customer.svg" alt="Customer Dashboard" width="100%"/>
+</p>
+
+*Comprehensive dashboard with booking management, projects, and quick actions*
+
+### 💼 Worker Dashboard
+<p align="center">
+  <img src="./docs/screenshots/dashboard-worker.svg" alt="Worker Dashboard" width="100%"/>
+</p>
+
+*Earnings tracking, job management, and availability settings*
+
+### 📅 Booking Management
+<p align="center">
+  <img src="./docs/screenshots/bookings.svg" alt="Bookings Page" width="100%"/>
+</p>
+
+*Complete booking lifecycle management with status tracking*
+
+### 💰 Material Cost Estimator
+<p align="center">
+  <img src="./docs/screenshots/estimator.svg" alt="Estimator" width="100%"/>
+</p>
+
+*Smart calculator with common materials library and PDF export*
+
+### 🏪 Hardware Stores
+<p align="center">
+  <img src="./docs/screenshots/stores.svg" alt="Stores" width="100%"/>
+</p>
+
+*Browse and order construction materials from verified hardware stores*
+
+### 📈 Analytics Dashboard
+<p align="center">
+  <img src="./docs/screenshots/analytics.svg" alt="Analytics" width="100%"/>
+</p>
+
+*Detailed insights and performance metrics for all user types*
+
+### 🔧 Admin Panel
+<p align="center">
+  <img src="./docs/screenshots/admin-panel.svg" alt="Admin Panel" width="100%"/>
+</p>
+
+*Complete platform management with user, booking, and transaction oversight*
+
+---
+
+## 🎯 Core Concept
+
+Wandura revolutionizes the construction labor marketplace by connecting:
+
+| Stakeholder | Benefits |
+|-------------|----------|
+| **Homeowners** | Easy access to verified skilled workers with transparent pricing |
+| **Contractors** | Quick hiring of specialized labor for projects |
+| **Workers** | Steady job opportunities with fair compensation |
+| **Hardware Stores** | Direct sales channel to construction professionals |
+
+---
 
 ## 🚀 Features
 
-### 🎯 Core Features
-- **Multi-role authentication** (Customer, Worker, Hardware Store, Admin)
-- **Worker marketplace** with advanced search and filtering
-- **Booking system** for hiring workers by day/hour
-- **Comprehensive project management** with task tracking and progress monitoring
-- **Advanced cost estimator** with save and PDF export
-- **Hardware store marketplace** with shopping cart
-- **Secure payments** via Stripe with commission tracking
-- **Rating and review system**
-- **Real-time notifications**
-- **Wallet system** for workers
-- **Google Maps integration** for location-based search
+### 🔐 Authentication & Security
+- ✅ Multi-role registration (Customer, Worker, Hardware Store, Admin)
+- ✅ JWT-based authentication with NextAuth.js
+- ✅ Role-based access control (RBAC)
+- ✅ Secure password hashing with bcrypt
+- ✅ Protected API routes and pages
+- ✅ Session management
 
-### ✨ Advanced Features (NEW!)
-- **📊 Analytics Dashboard** - Detailed insights for all user roles with charts and metrics
-- **🛒 E-commerce Integration** - Full shopping cart system for hardware materials
-- **📅 Booking Management** - Complete workflow from request to completion
-- **🏗️ Project Management** - Task lists, material tracking, and progress visualization
-- **👨‍💼 Admin Panel** - Comprehensive platform management and monitoring
-- **💬 Chat System** - Built-in messaging (API ready for real-time)
-- **💰 Enhanced Estimator** - Save estimates, export to PDF, and share
-- **📈 Business Intelligence** - Time-based analytics with visual reports
-- **🔔 Advanced Notifications** - Multi-channel notification system
-- **📦 Inventory Management** - Stock tracking and order processing
+### 👷 Worker Module
+- ✅ Professional profile creation with portfolio
+- ✅ Skills: Mason, Welder, Carpenter, Tile Layer, Plumber, Electrician, Steel Fixer, Painter
+- ✅ Daily/hourly rate setting
+- ✅ Experience and certification showcase
+- ✅ Location-based visibility
+- ✅ Availability calendar management
+- ✅ Rating and review system
+- ✅ Earnings dashboard with wallet
+- ✅ Job history tracking
+- ✅ Accept/Reject booking requests
 
-### User Roles
+### 🏠 Customer Module
+- ✅ Advanced worker search with multiple filters
+- ✅ Skill-based filtering
+- ✅ Location and price range filters
+- ✅ Rating-based sorting
+- ✅ Google Maps integration
+- ✅ Booking by day/hour
+- ✅ Project scheduling
+- ✅ Real-time chat with workers
+- ✅ Secure Stripe payments
+- ✅ Review and rating submission
+- ✅ Active project tracking
 
-#### Customer
-- Search and book skilled workers
-- Create and manage projects
-- Track project progress
-- Estimate material costs
-- Order materials from hardware stores
-- Rate and review workers
+### 🏗️ Project Management
+- ✅ Project creation and organization
+- ✅ Worker assignment to projects
+- ✅ Task list management
+- ✅ Material tracking
+- ✅ Budget monitoring
+- ✅ Progress visualization
+- ✅ Notes and documentation
 
-#### Worker
-- Create professional profile with portfolio
-- Set daily/hourly rates
-- Accept/reject booking requests
-- Track earnings and jobs
-- Manage availability
-- Receive and withdraw payments
+### 💰 Material Cost Estimator
+- ✅ Add unlimited materials
+- ✅ Quantity and unit price input
+- ✅ Auto-calculation of totals
+- ✅ Common materials library
+- ✅ Save estimates to account
+- ✅ Export to PDF
+- ✅ Share estimates
 
-#### Hardware Store
-- Manage product inventory
-- Accept and process orders
-- Track deliveries
-- Manage pricing and stock
+### 🏪 Hardware Store Module
+- ✅ Store dashboard
+- ✅ Product catalog management
+- ✅ Price and stock management
+- ✅ Order processing
+- ✅ Delivery status tracking
+- ✅ Customer ratings
 
-#### Admin
-- Platform oversight
-- User management
-- Analytics dashboard
+### 💳 Payment System
+- ✅ Stripe integration
+- ✅ Secure checkout
+- ✅ Platform commission (10%)
+- ✅ Worker wallet system
+- ✅ Withdrawal management
+- ✅ Transaction history
+- ✅ Payment webhooks
+
+### ⭐ Reviews & Ratings
+- ✅ 1-5 star rating system
+- ✅ Written reviews
+- ✅ Average rating calculation
+- ✅ Review moderation
+
+### 🔔 Notifications
+- ✅ Booking confirmations
+- ✅ Job acceptance/rejection alerts
+- ✅ Payment notifications
+- ✅ Delivery updates
+- ✅ System announcements
+
+### 📊 Analytics Dashboard
+- ✅ Role-specific metrics
+- ✅ Time-based filtering (7/30/90 days)
+- ✅ Earnings reports
+- ✅ Booking statistics
+- ✅ Performance insights
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Framework:** Next.js 14 (App Router)
-- **Language:** TypeScript
-- **Styling:** TailwindCSS
-- **Database:** PostgreSQL
-- **ORM:** Prisma
-- **Authentication:** NextAuth.js (JWT)
-- **Payments:** Stripe
-- **Maps:** Google Maps API
-- **UI Components:** Radix UI
-- **Form Validation:** Zod
-- **Icons:** Lucide React
+| Category | Technology |
+|----------|------------|
+| **Framework** | Next.js 14 (App Router) |
+| **Language** | TypeScript 5.3 |
+| **Styling** | TailwindCSS 3.4 |
+| **UI Components** | Radix UI + Custom Components |
+| **Database** | PostgreSQL |
+| **ORM** | Prisma 5.8 |
+| **Authentication** | NextAuth.js 4.24 |
+| **Payments** | Stripe |
+| **Maps** | Google Maps API |
+| **State Management** | Zustand |
+| **Form Validation** | Zod |
+| **Icons** | Lucide React |
+| **Date Handling** | date-fns |
+
+---
 
 ## 📁 Project Structure
 
 ```
 WANDURA/
-├── app/
-│   ├── api/
-│   │   ├── auth/
-│   │   ├── workers/
-│   │   ├── bookings/
-│   │   ├── projects/
-│   │   └── ...
-│   ├── auth/
-│   │   ├── signin/
-│   │   └── signup/
-│   ├── dashboard/
-│   ├── workers/
-│   ├── estimator/
-│   ├── globals.css
-│   ├── layout.tsx
-│   └── page.tsx
-├── components/
-│   └── ui/
-├── lib/
-│   ├── auth.ts
-│   ├── prisma.ts
-│   ├── stripe.ts
-│   ├── utils.ts
-│   └── validations.ts
-├── prisma/
-│   ├── schema.prisma
-│   └── seed.ts
-├── types/
-├── .env.example
-├── next.config.js
-├── tailwind.config.ts
-├── tsconfig.json
-└── package.json
+├── app/                          # Next.js App Router
+│   ├── api/                      # API Routes
+│   │   ├── auth/                 # Authentication endpoints
+│   │   ├── workers/              # Worker CRUD operations
+│   │   ├── bookings/             # Booking management
+│   │   ├── projects/             # Project management
+│   │   ├── products/             # Product catalog
+│   │   ├── estimates/            # Cost estimates
+│   │   ├── analytics/            # Analytics data
+│   │   ├── chat/                 # Messaging
+│   │   ├── notifications/        # Notification system
+│   │   ├── payments/             # Stripe integration
+│   │   └── webhooks/             # External webhooks
+│   ├── admin/                    # Admin panel
+│   ├── analytics/                # Analytics dashboard
+│   ├── auth/                     # Auth pages (signin/signup)
+│   ├── dashboard/                # User dashboards
+│   │   ├── bookings/             # Booking management
+│   │   └── projects/             # Project management
+│   ├── estimator/                # Cost estimator tool
+│   ├── stores/                   # Hardware store listing
+│   └── workers/                  # Worker search & profiles
+├── components/                   # Reusable components
+│   └── ui/                       # Base UI components
+│       ├── button.tsx
+│       ├── card.tsx
+│       ├── input.tsx
+│       ├── select.tsx
+│       ├── toast.tsx
+│       └── ...
+├── lib/                          # Utility libraries
+│   ├── auth.ts                   # Auth configuration
+│   ├── prisma.ts                 # Prisma client
+│   ├── stripe.ts                 # Stripe configuration
+│   ├── utils.ts                  # Helper functions
+│   └── validations.ts            # Zod schemas
+├── prisma/                       # Database
+│   ├── schema.prisma             # Database schema
+│   └── seed.ts                   # Seed data
+├── types/                        # TypeScript types
+│   ├── index.ts
+│   └── next-auth.d.ts
+├── docs/                         # Documentation
+│   └── screenshots/              # App screenshots
+├── .env.example                  # Environment template
+├── package.json                  # Dependencies
+├── tailwind.config.ts            # Tailwind configuration
+└── tsconfig.json                 # TypeScript configuration
 ```
 
-## 🚀 Getting Started
+---
+
+## 📦 Installation
 
 ### Prerequisites
 
-- Node.js 18+ and npm/yarn
-- PostgreSQL database
-- Stripe account (for payments)
-- Google Maps API key (for location features)
+- **Node.js** 18+ and npm/yarn
+- **PostgreSQL** database
+- **Stripe** account (for payments)
+- **Google Maps API** key (for location features)
 
-### Installation
+### Quick Start
 
 1. **Clone the repository**
 ```bash
-git clone <repository-url>
-cd WANDURA
+git clone https://github.com/SadeeshaJayaweera/wandura.git
+cd wandura
 ```
 
 2. **Install dependencies**
@@ -170,15 +303,15 @@ DATABASE_URL="postgresql://username:password@localhost:5432/wandura?schema=publi
 
 # NextAuth
 NEXTAUTH_URL="http://localhost:3000"
-NEXTAUTH_SECRET="your-secret-key-here-generate-with-openssl-rand-base64-32"
+NEXTAUTH_SECRET="generate-with-openssl-rand-base64-32"
 
 # Stripe
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY="pk_test_your_key_here"
-STRIPE_SECRET_KEY="sk_test_your_key_here"
-STRIPE_WEBHOOK_SECRET="whsec_your_webhook_secret_here"
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY="pk_test_your_key"
+STRIPE_SECRET_KEY="sk_test_your_key"
+STRIPE_WEBHOOK_SECRET="whsec_your_webhook_secret"
 
 # Google Maps
-NEXT_PUBLIC_GOOGLE_MAPS_API_KEY="your_google_maps_api_key_here"
+NEXT_PUBLIC_GOOGLE_MAPS_API_KEY="your_google_maps_api_key"
 
 # App Config
 NEXT_PUBLIC_APP_URL="http://localhost:3000"
@@ -186,108 +319,128 @@ PLATFORM_COMMISSION_RATE="0.10"
 ```
 
 4. **Set up the database**
-
 ```bash
 # Generate Prisma client
 npx prisma generate
 
 # Run migrations
-npx prisma migrate dev
+npx prisma migrate dev --name init
 
 # Seed the database with sample data
 npm run prisma:seed
 ```
 
-5. **Run the development server**
-
+5. **Start the development server**
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+6. **Open your browser**
+Navigate to [http://localhost:3000](http://localhost:3000)
+
+---
 
 ## 🗄️ Database Schema
 
-The application uses PostgreSQL with Prisma ORM. Key models include:
+### Core Models
 
-- **User** - Authentication and basic user data
-- **Profile** - Customer profile information
-- **WorkerProfile** - Worker-specific data (skills, rates, portfolio)
-- **StoreProfile** - Hardware store information
-- **Booking** - Worker booking/hiring records
-- **Project** - Customer project management
-- **Task** - Project tasks
-- **Material** - Project materials
-- **Estimate** - Cost estimates
-- **Product** - Hardware store products
-- **Order** - Material orders
-- **Review** - Ratings and reviews
-- **Transaction** - Payment records
-- **Notification** - User notifications
+| Model | Description |
+|-------|-------------|
+| **User** | Authentication and basic user data |
+| **Profile** | Customer profile information |
+| **WorkerProfile** | Worker-specific data (skills, rates, portfolio) |
+| **StoreProfile** | Hardware store information |
+| **Booking** | Worker booking/hiring records |
+| **Project** | Customer project management |
+| **Task** | Project tasks |
+| **Material** | Project materials |
+| **Estimate** | Cost estimates |
+| **Product** | Hardware store products |
+| **Order** | Material orders |
+| **Review** | Ratings and reviews |
+| **Transaction** | Payment records |
+| **Notification** | User notifications |
+
+### Enums
+
+- **Role**: CUSTOMER, WORKER, HARDWARE_STORE, ADMIN
+- **SkillType**: MASON, TILE_LAYER, WELDER, STEEL_FIXER, CARPENTER, PLUMBER, ELECTRICIAN, PAINTER
+- **BookingStatus**: PENDING, ACCEPTED, REJECTED, IN_PROGRESS, COMPLETED, CANCELLED
+- **PaymentStatus**: PENDING, COMPLETED, FAILED, REFUNDED
+
+---
 
 ## 👥 Sample Login Credentials
 
-After running the seed script, you can use these credentials:
+After running the seed script:
 
-- **Admin:** admin@wandura.com / password123
-- **Customer:** john.doe@example.com / password123
-- **Worker:** mike.mason@example.com / password123
-- **Hardware Store:** contact@buildersmart.com / password123
+| Role | Email | Password |
+|------|-------|----------|
+| Admin | admin@wandura.com | password123 |
+| Customer | john.doe@example.com | password123 |
+| Worker | mike.mason@example.com | password123 |
+| Hardware Store | contact@buildersmart.com | password123 |
 
-## 🎨 UI Components
+---
 
-The application uses a custom component library built on Radix UI:
+## 📚 API Documentation
 
-- Button
-- Input
-- Textarea
-- Select
-- Card
-- Label
-- Toast/Notifications
-- And more...
+### Authentication
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/api/auth/signup` | Register new user |
+| POST | `/api/auth/signin` | Sign in user |
+| POST | `/api/auth/signout` | Sign out user |
 
-All components support dark mode and are fully accessible.
+### Workers
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/workers` | Get all workers (with filters) |
+| GET | `/api/workers/[id]` | Get worker by ID |
+| POST | `/api/workers` | Create worker profile |
+| PATCH | `/api/workers/[id]` | Update worker profile |
 
-## 🔒 Security Features
+### Bookings
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/bookings` | Get user's bookings |
+| POST | `/api/bookings` | Create new booking |
+| PATCH | `/api/bookings/[id]` | Update booking status |
 
-- JWT-based authentication
-- Password hashing with bcrypt
-- Protected API routes
-- Role-based access control (RBAC)
-- Secure payment processing via Stripe
-- SQL injection prevention via Prisma
+### Projects
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/projects` | Get user's projects |
+| POST | `/api/projects` | Create new project |
+| PATCH | `/api/projects/[id]` | Update project |
 
-## 💳 Payment Integration
+### Estimates
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/estimates` | Get saved estimates |
+| POST | `/api/estimates` | Save new estimate |
 
-The platform integrates Stripe for secure payments:
+### Analytics
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/analytics` | Get analytics data |
 
-- Worker booking payments
-- 10% platform commission
-- Worker wallet system
-- Withdrawal management
-- Payment history tracking
-
-## 📱 Responsive Design
-
-Fully responsive design that works on:
-- Desktop (1920px+)
-- Laptop (1024px - 1920px)
-- Tablet (768px - 1024px)
-- Mobile (320px - 768px)
+---
 
 ## 🔧 Available Scripts
 
 ```bash
-npm run dev          # Start development server
-npm run build        # Build for production
-npm run start        # Start production server
-npm run lint         # Run ESLint
-npm run prisma:generate   # Generate Prisma client
-npm run prisma:migrate    # Run database migrations
-npm run prisma:seed       # Seed database with sample data
-npm run prisma:studio     # Open Prisma Studio
+npm run dev              # Start development server
+npm run build            # Build for production
+npm run start            # Start production server
+npm run lint             # Run ESLint
+npm run prisma:generate  # Generate Prisma client
+npm run prisma:migrate   # Run database migrations
+npm run prisma:seed      # Seed database with sample data
+npm run prisma:studio    # Open Prisma Studio
 ```
+
+---
 
 ## 🚀 Deployment
 
@@ -298,80 +451,66 @@ npm run build
 npm run start
 ```
 
-### Environment Variables for Production
-
-Ensure all environment variables are set in your production environment, especially:
-- DATABASE_URL (production database)
-- NEXTAUTH_SECRET (strong random string)
-- Stripe production keys
-- Google Maps API key with proper restrictions
-
 ### Recommended Platforms
 
-- **Vercel** (recommended for Next.js)
-- **Railway** (for PostgreSQL)
-- **AWS**
-- **DigitalOcean**
+| Platform | Use Case |
+|----------|----------|
+| **Vercel** | Frontend hosting (recommended for Next.js) |
+| **Railway** | PostgreSQL database |
+| **Neon** | Serverless PostgreSQL |
+| **AWS** | Full-stack deployment |
+| **DigitalOcean** | VPS deployment |
 
-## 📚 API Documentation
+### Environment Variables for Production
 
-### Authentication
-- `POST /api/auth/signup` - Register new user
-- `POST /api/auth/signin` - Sign in user
-- `POST /api/auth/signout` - Sign out user
+Ensure all environment variables are set:
+- `DATABASE_URL` - Production database connection string
+- `NEXTAUTH_SECRET` - Strong random string (32+ characters)
+- `NEXTAUTH_URL` - Production URL
+- Stripe production keys
+- Google Maps API key with restrictions
 
-### Workers
-- `GET /api/workers` - Get all workers (with filters)
-- `GET /api/workers/[id]` - Get worker by ID
-- `POST /api/workers` - Create worker profile
-- `PATCH /api/workers/[id]` - Update worker profile
+---
 
-### Bookings
-- `GET /api/bookings` - Get user's bookings
-- `POST /api/bookings` - Create new booking
-- `PATCH /api/bookings/[id]` - Update booking status
+## 🔒 Security Features
 
-### Projects
-- `GET /api/projects` - Get user's projects
-- `POST /api/projects` - Create new project
-- `PATCH /api/projects/[id]` - Update project
+- ✅ JWT-based authentication
+- ✅ Password hashing with bcrypt
+- ✅ Protected API routes
+- ✅ Role-based access control
+- ✅ Secure payment processing via Stripe
+- ✅ SQL injection prevention via Prisma
+- ✅ XSS protection
+- ✅ CSRF protection
 
-### Products & Stores ✨ NEW
-- `GET /api/products` - Get products (with category filters)
-- `POST /api/products` - Create new product (store only)
+---
 
-### Reviews
-- `POST /api/reviews` - Submit review and rating
+## 🎯 Key Highlights
 
-### Notifications
-- `GET /api/notifications` - Get user notifications
-- `PATCH /api/notifications` - Mark notifications as read
+| Feature | Description |
+|---------|-------------|
+| ✅ **Comprehensive** | Complete ecosystem for construction labor marketplace |
+| ✅ **Scalable** | Enterprise-level architecture built for growth |
+| ✅ **Modern** | Latest Next.js 14 with App Router |
+| ✅ **Type-Safe** | 100% TypeScript with strict mode |
+| ✅ **Secure** | Industry-standard security practices |
+| ✅ **Fast** | Optimized performance and loading |
+| ✅ **Beautiful** | Modern UI with TailwindCSS |
+| ✅ **Production-Ready** | Deployment-ready codebase |
 
-### Analytics ✨ NEW
-- `GET /api/analytics` - Get analytics data (role-specific, time-based)
+---
 
-### Chat ✨ NEW
-- `GET /api/chat` - Get messages for a booking
-- `POST /api/chat` - Send a message
+## 📊 Application Statistics
 
-### Availability ✨ NEW
-- `GET /api/availability` - Get worker availability
-- `PATCH /api/availability` - Update worker schedule
+| Metric | Count |
+|--------|-------|
+| **API Endpoints** | 25+ |
+| **Database Models** | 14 |
+| **UI Components** | 15+ |
+| **Pages** | 12+ |
+| **Features** | 50+ |
 
-### Tasks ✨ NEW
-- `POST /api/tasks` - Create project task
-- `PATCH /api/tasks` - Update task status
-
-### Materials ✨ NEW
-- `POST /api/materials` - Add material to project
-
-### Estimates ✨ NEW
-- `GET /api/estimates` - Get saved estimates
-- `POST /api/estimates` - Save new estimate
-
-### Payments
-- `POST /api/payments/create-intent` - Create Stripe payment intent
-- `POST /api/webhooks/stripe` - Handle Stripe webhooks
+---
 
 ## 🤝 Contributing
 
@@ -383,75 +522,42 @@ Contributions are welcome! Please follow these steps:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+---
+
 ## 📄 License
 
-This project is licensed under the MIT License.
-
-## 🎯 Key Highlights
-
-### What Makes Wandura Special
-
-✅ **Comprehensive** - Complete ecosystem for construction labor marketplace  
-✅ **Scalable** - Enterprise-level architecture built for growth  
-✅ **Modern** - Latest Next.js 14 with App Router and Server Components  
-✅ **Type-Safe** - 100% TypeScript with strict mode  
-✅ **Secure** - Industry-standard security practices  
-✅ **Fast** - Optimized performance and loading times  
-✅ **Beautiful** - Modern UI with TailwindCSS and Radix UI  
-✅ **Complete** - From authentication to payments, everything included  
-
-### Recent Major Updates
-
-**January 2026** - Massive Feature Enhancement 🚀
-- Added advanced analytics dashboard with charts
-- Implemented comprehensive booking management system
-- Built full project management with tasks and materials
-- Created hardware store marketplace with shopping cart
-- Developed admin panel for platform management
-- Enhanced cost estimator with save and PDF export
-- Added chat system API (real-time ready)
-- Implemented worker availability management
-- Added 8+ new API endpoints
-- Created 6+ new pages and features
-
-## 🙏 Acknowledgments
-
-**Developer:** Sadeesha Jay - Full-stack development and architecture
-
-**Technologies:**
-- Next.js team for the amazing framework
-- Prisma for the excellent ORM
-- Stripe for payment processing
-- Radix UI for accessible components
-- TailwindCSS for utility-first styling
-- Vercel for hosting platform
-
-## 📞 Support
-
-For support, email support@wandura.com or open an issue in the repository.
-
-## 👨‍💻 About the Developer
-
-**Sadeesha Jay** - Passionate full-stack developer specializing in modern web technologies. Built Wandura as a comprehensive platform to revolutionize the construction labor marketplace.
-
-**Key Achievements:**
-- 🏆 Built complete enterprise-level platform from scratch
-- 💼 Implemented 30+ major features
-- 📊 Created 20+ RESTful API endpoints  
-- 🎨 Designed modern, responsive UI/UX
-- 🔒 Ensured industry-standard security
-- 📱 Optimized for all devices
-- ⚡ Delivered production-ready code
-
-Connect:
-- 💼 LinkedIn: [linkedin.com/in/sadeesha-jayaweera](https://www.linkedin.com/in/sadeesha-jayaweera)
-- 🐙 GitHub: [github.com/Sadeesha_Jayaweera](https://github.com/Sadeesha_Jayaweera)
-- 📧 Email: sadeesha.jayaweera@gmail.com
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-**Built with ❤️ by Sadeesha Jay**
+## 🙏 Acknowledgments
 
-*Using Next.js 14, TypeScript, PostgreSQL, Prisma, and modern web technologies*
+- [Next.js](https://nextjs.org/) - The React framework
+- [Prisma](https://www.prisma.io/) - Next-generation ORM
+- [Stripe](https://stripe.com/) - Payment processing
+- [Radix UI](https://www.radix-ui.com/) - Accessible components
+- [TailwindCSS](https://tailwindcss.com/) - Utility-first CSS
+- [Vercel](https://vercel.com/) - Deployment platform
+
+---
+
+## 📞 Support
+
+For support, open an issue in the repository.
+
+---
+
+<div align="center">
+
+**Built with ❤️ using modern web technologies**
+
+*Next.js 14, TypeScript, PostgreSQL, Prisma, TailwindCSS*
 
 © 2026 Wandura. All rights reserved.
+
+---
+
+[![Made with Next.js](https://img.shields.io/badge/Made%20with-Next.js-000000?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-000000?style=for-the-badge&logo=vercel)](https://vercel.com/)
+
+</div>

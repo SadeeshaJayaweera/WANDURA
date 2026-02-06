@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <!-- Background -->
+  <rect width="1280" height="720" fill="#F9FAFB"/>
+
+  <!-- Header -->
+  <rect width="1280" height="70" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <circle cx="60" cy="35" r="20" fill="#3B82F6"/>
+  <text x="90" y="42" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1F2937">Wandura</text>
+  <rect x="1130" y="20" width="120" height="35" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="1145" y="43" font-family="Arial, sans-serif" font-size="14" fill="#374151">Back to Dashboard</text>
+
+  <!-- Page Title and Period Selector -->
+  <text x="80" y="120" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#1F2937">Analytics &amp; Insights</text>
+
+  <!-- Period Buttons -->
+  <rect x="900" y="95" width="80" height="35" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="920" y="117" font-family="Arial, sans-serif" font-size="13" fill="#374151">7 Days</text>
+
+  <rect x="990" y="95" width="80" height="35" rx="6" fill="#3B82F6"/>
+  <text x="1005" y="117" font-family="Arial, sans-serif" font-size="13" fill="#FFFFFF">30 Days</text>
+
+  <rect x="1080" y="95" width="80" height="35" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="1095" y="117" font-family="Arial, sans-serif" font-size="13" fill="#374151">90 Days</text>
+
+  <!-- Stats Cards Row -->
+  <rect x="60" y="150" width="280" height="100" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="90" y="185" font-family="Arial, sans-serif" font-size="14" fill="#6B7280">Total Earnings</text>
+  <text x="90" y="225" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#10B981">$4,250.00</text>
+  <text x="270" y="180" font-family="Arial, sans-serif" font-size="24" fill="#10B981">💰</text>
+
+  <rect x="360" y="150" width="280" height="100" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="390" y="185" font-family="Arial, sans-serif" font-size="14" fill="#6B7280">Completed Jobs</text>
+  <text x="390" y="225" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#3B82F6">12</text>
+  <text x="570" y="180" font-family="Arial, sans-serif" font-size="24" fill="#3B82F6">✅</text>
+
+  <rect x="660" y="150" width="280" height="100" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="690" y="185" font-family="Arial, sans-serif" font-size="14" fill="#6B7280">Average Rating</text>
+  <text x="690" y="225" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#F59E0B">4.8</text>
+  <text x="870" y="180" font-family="Arial, sans-serif" font-size="24" fill="#F59E0B">⭐</text>
+
+  <rect x="960" y="150" width="280" height="100" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="990" y="185" font-family="Arial, sans-serif" font-size="14" fill="#6B7280">New Reviews</text>
+  <text x="990" y="225" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#8B5CF6">8</text>
+  <text x="1170" y="180" font-family="Arial, sans-serif" font-size="24" fill="#8B5CF6">📝</text>
+
+  <!-- Earnings Chart Section -->
+  <rect x="60" y="280" width="740" height="280" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="90" y="320" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1F2937">Earnings Overview</text>
+
+  <!-- Y-axis labels -->
+  <text x="80" y="365" font-family="Arial, sans-serif" font-size="11" fill="#9CA3AF">$1,200</text>
+  <text x="80" y="405" font-family="Arial, sans-serif" font-size="11" fill="#9CA3AF">$900</text>
+  <text x="80" y="445" font-family="Arial, sans-serif" font-size="11" fill="#9CA3AF">$600</text>
+  <text x="80" y="485" font-family="Arial, sans-serif" font-size="11" fill="#9CA3AF">$300</text>
+  <text x="80" y="525" font-family="Arial, sans-serif" font-size="11" fill="#9CA3AF">$0</text>
+
+  <!-- Grid lines -->
+  <line x1="130" y1="360" x2="760" y2="360" stroke="#F3F4F6" stroke-width="1"/>
+  <line x1="130" y1="400" x2="760" y2="400" stroke="#F3F4F6" stroke-width="1"/>
+  <line x1="130" y1="440" x2="760" y2="440" stroke="#F3F4F6" stroke-width="1"/>
+  <line x1="130" y1="480" x2="760" y2="480" stroke="#F3F4F6" stroke-width="1"/>
+  <line x1="130" y1="520" x2="760" y2="520" stroke="#E5E7EB" stroke-width="1"/>
+
+  <!-- Bar Chart -->
+  <rect x="160" y="440" width="50" height="80" rx="4" fill="#BFDBFE"/>
+  <text x="170" y="540" font-family="Arial, sans-serif" font-size="10" fill="#6B7280">Week 1</text>
+
+  <rect x="260" y="400" width="50" height="120" rx="4" fill="#BFDBFE"/>
+  <text x="270" y="540" font-family="Arial, sans-serif" font-size="10" fill="#6B7280">Week 2</text>
+
+  <rect x="360" y="370" width="50" height="150" rx="4" fill="#3B82F6"/>
+  <text x="370" y="540" font-family="Arial, sans-serif" font-size="10" fill="#6B7280">Week 3</text>
+
+  <rect x="460" y="420" width="50" height="100" rx="4" fill="#BFDBFE"/>
+  <text x="470" y="540" font-family="Arial, sans-serif" font-size="10" fill="#6B7280">Week 4</text>
+
+  <rect x="560" y="380" width="50" height="140" rx="4" fill="#93C5FD"/>
+  <text x="567" y="540" font-family="Arial, sans-serif" font-size="10" fill="#6B7280">Current</text>
+
+  <!-- Job Breakdown Section -->
+  <rect x="820" y="280" width="420" height="280" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="850" y="320" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1F2937">Jobs Breakdown</text>
+
+  <!-- Pie Chart representation (simplified) -->
+  <circle cx="950" cy="430" r="80" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+  <path d="M 950 350 A 80 80 0 0 1 1030 430 L 950 430 Z" fill="#3B82F6"/>
+  <path d="M 1030 430 A 80 80 0 0 1 950 510 L 950 430 Z" fill="#10B981"/>
+  <path d="M 950 510 A 80 80 0 0 1 870 430 L 950 430 Z" fill="#F59E0B"/>
+  <path d="M 870 430 A 80 80 0 0 1 950 350 L 950 430 Z" fill="#8B5CF6"/>
+
+  <!-- Legend -->
+  <rect x="1060" y="380" width="12" height="12" fill="#3B82F6"/>
+  <text x="1080" y="390" font-family="Arial, sans-serif" font-size="12" fill="#374151">Masonry (5)</text>
+
+  <rect x="1060" y="405" width="12" height="12" fill="#10B981"/>
+  <text x="1080" y="415" font-family="Arial, sans-serif" font-size="12" fill="#374151">Tiling (3)</text>
+
+  <rect x="1060" y="430" width="12" height="12" fill="#F59E0B"/>
+  <text x="1080" y="440" font-family="Arial, sans-serif" font-size="12" fill="#374151">Repairs (2)</text>
+
+  <rect x="1060" y="455" width="12" height="12" fill="#8B5CF6"/>
+  <text x="1080" y="465" font-family="Arial, sans-serif" font-size="12" fill="#374151">Other (2)</text>
+
+  <!-- Recent Reviews Section -->
+  <rect x="60" y="580" width="600" height="120" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="90" y="615" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1F2937">Recent Reviews</text>
+
+  <rect x="80" y="635" width="260" height="50" rx="6" fill="#F9FAFB"/>
+  <text x="100" y="655" font-family="Arial, sans-serif" font-size="13" fill="#F59E0B">⭐⭐⭐⭐⭐</text>
+  <text x="100" y="675" font-family="Arial, sans-serif" font-size="12" fill="#6B7280">"Excellent work!" - John D.</text>
+
+  <rect x="360" y="635" width="280" height="50" rx="6" fill="#F9FAFB"/>
+  <text x="380" y="655" font-family="Arial, sans-serif" font-size="13" fill="#F59E0B">⭐⭐⭐⭐⭐</text>
+  <text x="380" y="675" font-family="Arial, sans-serif" font-size="12" fill="#6B7280">"Very professional" - Sarah M.</text>
+
+  <!-- Top Clients Section -->
+  <rect x="680" y="580" width="560" height="120" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="710" y="615" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1F2937">Top Clients</text>
+
+  <text x="710" y="655" font-family="Arial, sans-serif" font-size="14" fill="#1F2937">1. John Doe</text>
+  <text x="900" y="655" font-family="Arial, sans-serif" font-size="14" fill="#10B981">$1,200</text>
+
+  <text x="710" y="680" font-family="Arial, sans-serif" font-size="14" fill="#1F2937">2. Emily Johnson</text>
+  <text x="900" y="680" font-family="Arial, sans-serif" font-size="14" fill="#10B981">$980</text>
+
+  <text x="1010" y="655" font-family="Arial, sans-serif" font-size="14" fill="#1F2937">3. Robert Chen</text>
+  <text x="1170" y="655" font-family="Arial, sans-serif" font-size="14" fill="#10B981">$750</text>
+</svg>

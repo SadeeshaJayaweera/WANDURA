@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <!-- Background -->
+  <rect width="1280" height="720" fill="#F9FAFB"/>
+
+  <!-- Header -->
+  <rect width="1280" height="70" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <circle cx="60" cy="35" r="20" fill="#3B82F6"/>
+  <text x="90" y="42" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1F2937">Wandura</text>
+  <text x="1020" y="40" font-family="Arial, sans-serif" font-size="14" fill="#6B7280">Mike Thompson</text>
+  <rect x="1130" y="20" width="100" height="35" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="1150" y="43" font-family="Arial, sans-serif" font-size="14" fill="#374151">Sign Out</text>
+
+  <!-- Sidebar -->
+  <rect x="0" y="70" width="250" height="650" fill="#FFFFFF" stroke="#E5E7EB"/>
+
+  <!-- Sidebar Menu Items -->
+  <rect x="15" y="90" width="220" height="40" rx="8" fill="#3B82F6"/>
+  <text x="55" y="115" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">📊 Dashboard</text>
+
+  <text x="55" y="160" font-family="Arial, sans-serif" font-size="14" fill="#6B7280">📅 Bookings</text>
+  <text x="55" y="200" font-family="Arial, sans-serif" font-size="14" fill="#6B7280">💰 Earnings</text>
+  <text x="55" y="240" font-family="Arial, sans-serif" font-size="14" fill="#6B7280">📆 Availability</text>
+  <text x="55" y="280" font-family="Arial, sans-serif" font-size="14" fill="#6B7280">👤 Profile</text>
+  <text x="55" y="320" font-family="Arial, sans-serif" font-size="14" fill="#6B7280">⭐ Reviews</text>
+
+  <!-- Main Content Area -->
+  <text x="290" y="120" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#1F2937">Worker Dashboard</text>
+
+  <!-- Stats Cards Row -->
+  <rect x="280" y="150" width="200" height="100" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="310" y="185" font-family="Arial, sans-serif" font-size="14" fill="#6B7280">Total Earnings</text>
+  <text x="310" y="225" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#10B981">$8,540</text>
+  <text x="420" y="180" font-family="Arial, sans-serif" font-size="24" fill="#10B981">💵</text>
+
+  <rect x="500" y="150" width="200" height="100" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="530" y="185" font-family="Arial, sans-serif" font-size="14" fill="#6B7280">Wallet Balance</text>
+  <text x="530" y="225" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#3B82F6">$1,240</text>
+  <text x="640" y="180" font-family="Arial, sans-serif" font-size="24" fill="#3B82F6">👛</text>
+
+  <rect x="720" y="150" width="200" height="100" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="750" y="185" font-family="Arial, sans-serif" font-size="14" fill="#6B7280">Completed Jobs</text>
+  <text x="750" y="225" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#8B5CF6">47</text>
+  <text x="860" y="180" font-family="Arial, sans-serif" font-size="24" fill="#8B5CF6">✅</text>
+
+  <rect x="940" y="150" width="200" height="100" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="970" y="185" font-family="Arial, sans-serif" font-size="14" fill="#6B7280">Rating</text>
+  <text x="970" y="225" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#F59E0B">4.8 ⭐</text>
+  <text x="1080" y="225" font-family="Arial, sans-serif" font-size="12" fill="#6B7280">(24)</text>
+
+  <!-- Pending Bookings Section -->
+  <rect x="280" y="280" width="480" height="200" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="310" y="315" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1F2937">Pending Requests</text>
+
+  <!-- Booking Request 1 -->
+  <rect x="300" y="340" width="440" height="55" rx="6" fill="#FEF3C7"/>
+  <text x="320" y="365" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1F2937">John Doe • Kitchen Renovation</text>
+  <text x="320" y="383" font-family="Arial, sans-serif" font-size="12" fill="#6B7280">Feb 10-12, 2026 • Austin, TX • $540</text>
+  <rect x="620" y="350" width="50" height="30" rx="4" fill="#10B981"/>
+  <text x="630" y="370" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">✓</text>
+  <rect x="680" y="350" width="50" height="30" rx="4" fill="#EF4444"/>
+  <text x="690" y="370" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">✗</text>
+
+  <!-- Booking Request 2 -->
+  <rect x="300" y="405" width="440" height="55" rx="6" fill="#FEF3C7"/>
+  <text x="320" y="430" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1F2937">Sarah Smith • Wall Repair</text>
+  <text x="320" y="448" font-family="Arial, sans-serif" font-size="12" fill="#6B7280">Feb 15, 2026 • Houston, TX • $180</text>
+  <rect x="620" y="415" width="50" height="30" rx="4" fill="#10B981"/>
+  <text x="630" y="435" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">✓</text>
+  <rect x="680" y="415" width="50" height="30" rx="4" fill="#EF4444"/>
+  <text x="690" y="435" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">✗</text>
+
+  <!-- Upcoming Jobs Section -->
+  <rect x="780" y="280" width="460" height="200" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="810" y="315" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1F2937">Upcoming Jobs</text>
+
+  <rect x="800" y="340" width="420" height="50" rx="6" fill="#D1FAE5"/>
+  <text x="820" y="365" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#065F46">Emily Johnson • Patio Work</text>
+  <text x="820" y="383" font-family="Arial, sans-serif" font-size="12" fill="#047857">Feb 8-9, 2026 • Dallas, TX</text>
+  <text x="1140" y="365" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#065F46">$360</text>
+
+  <rect x="800" y="400" width="420" height="50" rx="6" fill="#DBEAFE"/>
+  <text x="820" y="425" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1E40AF">Robert Chen • Foundation</text>
+  <text x="820" y="443" font-family="Arial, sans-serif" font-size="12" fill="#1D4ED8">Feb 14-18, 2026 • Austin, TX</text>
+  <text x="1140" y="425" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1E40AF">$900</text>
+
+  <!-- Earnings Chart Section -->
+  <rect x="280" y="500" width="480" height="200" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="310" y="535" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1F2937">Monthly Earnings</text>
+
+  <!-- Simple Bar Chart -->
+  <rect x="320" y="600" width="40" height="60" fill="#BFDBFE"/>
+  <text x="330" y="680" font-family="Arial, sans-serif" font-size="10" fill="#6B7280">Sep</text>
+
+  <rect x="380" y="580" width="40" height="80" fill="#BFDBFE"/>
+  <text x="390" y="680" font-family="Arial, sans-serif" font-size="10" fill="#6B7280">Oct</text>
+
+  <rect x="440" y="560" width="40" height="100" fill="#BFDBFE"/>
+  <text x="450" y="680" font-family="Arial, sans-serif" font-size="10" fill="#6B7280">Nov</text>
+
+  <rect x="500" y="590" width="40" height="70" fill="#BFDBFE"/>
+  <text x="510" y="680" font-family="Arial, sans-serif" font-size="10" fill="#6B7280">Dec</text>
+
+  <rect x="560" y="550" width="40" height="110" fill="#3B82F6"/>
+  <text x="570" y="680" font-family="Arial, sans-serif" font-size="10" fill="#6B7280">Jan</text>
+
+  <rect x="620" y="570" width="40" height="90" fill="#93C5FD"/>
+  <text x="630" y="680" font-family="Arial, sans-serif" font-size="10" fill="#6B7280">Feb</text>
+
+  <!-- Withdraw Section -->
+  <rect x="780" y="500" width="460" height="200" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="810" y="535" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1F2937">Wallet</text>
+
+  <text x="810" y="580" font-family="Arial, sans-serif" font-size="14" fill="#6B7280">Available Balance</text>
+  <text x="810" y="620" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#10B981">$1,240.00</text>
+
+  <rect x="810" y="650" width="200" height="40" rx="6" fill="#10B981"/>
+  <text x="865" y="676" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">Withdraw Funds</text>
+
+  <rect x="1030" y="650" width="180" height="40" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="1065" y="676" font-family="Arial, sans-serif" font-size="14" fill="#374151">View History</text>
+</svg>

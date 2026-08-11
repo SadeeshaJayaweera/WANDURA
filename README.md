@@ -125,6 +125,14 @@ Wandura revolutionizes the construction labor marketplace by connecting:
 - ✅ Job history tracking
 - ✅ Accept/Reject booking requests
 
+### 🤖 Hybrid Recommender System
+- ✅ Paper-backed hybrid utility function for worker ranking
+- ✅ Content-based signals (Tag Similarity via Cosine Distance)
+- ✅ Geographic proximity signals (Haversine Distance)
+- ✅ Price-fit optimization based on budget gap
+- ✅ Z-Score normalization of ranking features
+- ✅ Comprehensive Jest test suite for all recommendation utilities
+
 ### 🏠 Customer Module
 - ✅ Advanced worker search with multiple filters
 - ✅ Skill-based filtering

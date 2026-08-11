@@ -270,6 +270,32 @@ async function main() {
     })
   }
 
+  // Create RecommendationWeightConfigs
+  await prisma.recommendationWeightConfig.createMany({
+    data: [
+      {
+        variant: 'WARM',
+        proximityWeight: 0.209,
+        priceWeight: 0.125,
+        ratingWeight: 0.292,
+        tagWeight: 0.125,
+        collabWeight: 0.25,
+        isActive: true,
+        createdBy: 'seed:paper-validated-weights'
+      },
+      {
+        variant: 'COLD',
+        proximityWeight: 0.278,
+        priceWeight: 0.167,
+        ratingWeight: 0.389,
+        tagWeight: 0.167,
+        collabWeight: 0.0,
+        isActive: true,
+        createdBy: 'seed:paper-validated-weights'
+      }
+    ]
+  })
+
   // Create Hardware Stores
   const store1 = await prisma.user.create({
     data: {

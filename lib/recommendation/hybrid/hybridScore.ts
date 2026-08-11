@@ -4,6 +4,7 @@ import { haversineDistanceKm } from "../geo";
 import { priceGap } from "../priceFit";
 import { cosineSimilarity } from "../tagSimilarity";
 import { zScoreNormalize } from "../zscore";
+import { ScoreBreakdown } from "../../../types/recommendation";
 
 export interface WorkerCandidate {
   id: string;
@@ -29,15 +30,15 @@ export interface HybridRequest extends RecommendationRequest {
  * @param request The user's recommendation request parameters
  * @param collabResult The pre-calculated collaborative (or popularity fallback) scores and warm-start flag
  * @param weights The weight configurations for WARM and COLD variants
- * @returns Array of final scores matching the order of the input pool
+ * @returns Object containing final scores and score breakdowns matching the order of the input pool
  */
 export function computeHybridScores(
   pool: WorkerCandidate[],
   request: HybridRequest,
   collabResult: { scores: number[]; isWarm: boolean },
   weights: { warm: WeightSet; cold: WeightSet }
-): number[] {
-  if (pool.length === 0) return [];
+): { scores: number[]; breakdowns: ScoreBreakdown[] } {
+  if (pool.length === 0) return { scores: [], breakdowns: [] };
 
   const rawProximity: number[] = [];
   const rawPrice: number[] = [];
@@ -86,18 +87,28 @@ export function computeHybridScores(
   // 6. Branch based on Collaborative result (Warm vs Cold start)
   const activeWeights = collabResult.isWarm ? weights.warm : weights.cold;
 
-  // 7. Combine weighted signals
+  // 7. Combine weighted signals and preserve breakdown for explainability
   const finalScores: number[] = [];
+  const breakdowns: ScoreBreakdown[] = [];
+  
   for (let i = 0; i < pool.length; i++) {
-    const score =
-      zProximity[i] * activeWeights.proximityWeight +
-      zPrice[i] * activeWeights.priceWeight +
-      zRating[i] * activeWeights.ratingWeight +
-      zTag[i] * activeWeights.tagWeight +
-      zCollab[i] * activeWeights.collabWeight;
+    const proximity = zProximity[i] * activeWeights.proximityWeight;
+    const price = zPrice[i] * activeWeights.priceWeight;
+    const rating = zRating[i] * activeWeights.ratingWeight;
+    const tag = zTag[i] * activeWeights.tagWeight;
+    const collab = zCollab[i] * activeWeights.collabWeight;
+
+    const score = proximity + price + rating + tag + collab;
 
     finalScores.push(score);
+    breakdowns.push({
+      proximity,
+      price,
+      rating,
+      tag,
+      collab,
+    });
   }
 
-  return finalScores;
+  return { scores: finalScores, breakdowns };
 }

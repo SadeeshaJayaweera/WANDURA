@@ -60,15 +60,15 @@ export async function rankPool(
   // 4. Load weights
   const weights = await loadActiveWeights(prisma);
 
-  // 5. Compute hybrid scores
-  const scores = computeHybridScores(pool, request, collabResult, weights);
+  // 5. Compute hybrid scores and breakdown
+  const { scores, breakdowns } = computeHybridScores(pool, request, collabResult, weights);
 
   // Combine into a sortable array
   const scoredPool = pool.map((worker, index) => {
     return {
       worker,
       score: scores[index],
-      collabRaw: collabResult.scores[index],
+      breakdown: breakdowns[index],
     };
   });
 
@@ -83,14 +83,7 @@ export async function rankPool(
       ...item.worker,
       score: item.score,
       rank: index + 1,
-      // Minimal placeholder breakdown, since core signals were consumed and z-scored internally
-      scoreBreakdown: {
-        proximity: 0, 
-        price: 0,
-        rating: item.worker.rating,
-        tag: 0,
-        collab: item.collabRaw,
-      },
+      scoreBreakdown: item.breakdown,
       user: item.worker.user,
     } as RankedWorker;
   });

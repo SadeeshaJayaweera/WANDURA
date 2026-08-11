@@ -3,10 +3,20 @@ import bcrypt from 'bcryptjs'
 
 const prisma = new PrismaClient()
 
+export const TAG_VOCABULARY = [
+  'waterproofing', 'interior_finishing', 'structural', 'wiring', 'pipefitting', 
+  'welding_metalwork', 'tiling', 'painting_decor', 'carpentry_joinery', 
+  'renovation', 'new_construction', 'outdoor', 'safety_certified', 'heavy_equipment'
+]
+
 async function main() {
   console.log('🌱 Starting seed...')
 
   // Clear existing data
+  await prisma.recommendationLog.deleteMany()
+  await prisma.recommendationModelCache.deleteMany()
+  await prisma.recommendationWeightConfig.deleteMany()
+  await prisma.workerSkillTag.deleteMany()
   await prisma.notification.deleteMany()
   await prisma.transaction.deleteMany()
   await prisma.review.deleteMany()
@@ -214,6 +224,51 @@ async function main() {
       },
     },
   })
+
+  // Create WorkerSkillTags
+  const workerProfile1 = await prisma.workerProfile.findUnique({ where: { userId: worker1.id } })
+  if (workerProfile1) {
+    await prisma.workerSkillTag.createMany({
+      data: [
+        { workerProfileId: workerProfile1.id, tag: 'structural', weight: 0.95 },
+        { workerProfileId: workerProfile1.id, tag: 'outdoor', weight: 0.85 },
+        { workerProfileId: workerProfile1.id, tag: 'heavy_equipment', weight: 0.70 },
+      ]
+    })
+  }
+
+  const workerProfile2 = await prisma.workerProfile.findUnique({ where: { userId: worker2.id } })
+  if (workerProfile2) {
+    await prisma.workerSkillTag.createMany({
+      data: [
+        { workerProfileId: workerProfile2.id, tag: 'welding_metalwork', weight: 0.98 },
+        { workerProfileId: workerProfile2.id, tag: 'structural', weight: 0.90 },
+        { workerProfileId: workerProfile2.id, tag: 'safety_certified', weight: 0.85 },
+      ]
+    })
+  }
+
+  const workerProfile3 = await prisma.workerProfile.findUnique({ where: { userId: worker3.id } })
+  if (workerProfile3) {
+    await prisma.workerSkillTag.createMany({
+      data: [
+        { workerProfileId: workerProfile3.id, tag: 'tiling', weight: 0.96 },
+        { workerProfileId: workerProfile3.id, tag: 'interior_finishing', weight: 0.88 },
+        { workerProfileId: workerProfile3.id, tag: 'waterproofing', weight: 0.80 },
+      ]
+    })
+  }
+
+  const workerProfile4 = await prisma.workerProfile.findUnique({ where: { userId: worker4.id } })
+  if (workerProfile4) {
+    await prisma.workerSkillTag.createMany({
+      data: [
+        { workerProfileId: workerProfile4.id, tag: 'carpentry_joinery', weight: 0.99 },
+        { workerProfileId: workerProfile4.id, tag: 'interior_finishing', weight: 0.85 },
+        { workerProfileId: workerProfile4.id, tag: 'renovation', weight: 0.75 },
+      ]
+    })
+  }
 
   // Create Hardware Stores
   const store1 = await prisma.user.create({

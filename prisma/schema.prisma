@@ -72,6 +72,11 @@ enum NotificationType {
   WITHDRAWAL_COMPLETED
 }
 
+enum RecommendationVariant {
+  WARM
+  COLD
+}
+
 model User {
   id            String   @id @default(cuid())
   email         String   @unique
@@ -414,4 +419,20 @@ model Notification {
   @@index([userId])
   @@index([isRead])
   @@index([createdAt])
+}
+
+model RecommendationWeightConfig {
+  id              String                @id @default(cuid())
+  variant         RecommendationVariant
+  proximityWeight Float
+  priceWeight     Float
+  ratingWeight    Float
+  tagWeight       Float
+  collabWeight    Float
+  isActive        Boolean               @default(true)
+  createdAt       DateTime              @default(now())
+  createdBy       String?
+
+  @@index([variant])
+  @@index([isActive])
 }

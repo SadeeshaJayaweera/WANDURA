@@ -3,6 +3,7 @@ import { prisma } from "@/lib/prisma";
 import { buildInteractionMatrix } from "@/lib/recommendation/collaborative/buildInteractionMatrix";
 import { computeTruncatedSVD } from "@/lib/recommendation/collaborative/svd";
 import { saveModelCache } from "@/lib/recommendation/collaborative/modelCache";
+import { computeSparsityStats } from "@/lib/recommendation/collaborative/sparsityStats";
 
 export async function POST(request: Request) {
   try {
@@ -30,14 +31,8 @@ export async function POST(request: Request) {
     const workerCount = matrixData.workerIds.length;
     
     // 2. Compute basic stats
-    let trainingInteractionCount = 0;
-    for (let i = 0; i < customerCount; i++) {
-      for (let j = 0; j < workerCount; j++) {
-        if (matrixData.matrix[i][j] > 0) {
-          trainingInteractionCount++;
-        }
-      }
-    }
+    const matrixStats = computeSparsityStats(matrixData.matrix);
+    const trainingInteractionCount = matrixStats.nonZeroCells;
 
     // 3. Compute SVD factors
     const factors = computeTruncatedSVD(matrixData.matrix, 12);
@@ -59,14 +54,8 @@ export async function POST(request: Request) {
     await saveModelCache(prisma, fullFactors, stats);
     
     // 5. Output summary log and respond
-    const totalPossible = customerCount * workerCount;
-    let sparsity = 100;
-    if (totalPossible > 0) {
-      sparsity = ((totalPossible - trainingInteractionCount) / totalPossible) * 100;
-    }
-    
     console.log(
-      `Recomputed via API: ${trainingInteractionCount} interactions across ${customerCount} customers x ${workerCount} workers, sparsity ${sparsity.toFixed(1)}%`
+      `Recomputed via API: ${trainingInteractionCount} interactions across ${customerCount} customers x ${workerCount} workers, sparsity ${matrixStats.sparsityPct.toFixed(1)}%. Avg interactions/customer: ${matrixStats.avgInteractionsPerCustomer.toFixed(2)}`
     );
 
     return NextResponse.json({
@@ -75,7 +64,7 @@ export async function POST(request: Request) {
         customerCount,
         workerCount,
         trainingInteractionCount,
-        sparsity: parseFloat(sparsity.toFixed(2)),
+        sparsity: parseFloat(matrixStats.sparsityPct.toFixed(2)),
       }
     });
 

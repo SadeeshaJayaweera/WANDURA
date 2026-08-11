@@ -1,0 +1,97 @@
+import { PrismaClient } from "@prisma/client";
+import { HybridRequest, computeHybridScores } from "./hybridScore";
+import { loadLatestModelCache } from "../collaborative/modelCache";
+import { scoreCollaborative } from "../collaborative/collaborativeScore";
+import { loadActiveWeights } from "./loadWeights";
+import { RankedWorker } from "../../../types/recommendation";
+
+/**
+ * Orchestrates the full hybrid recommendation pipeline for a given request.
+ * 
+ * 1. Fetches the initial qualified pool (matching skill and availability)
+ * 2. Loads cached collaborative factors and configurations
+ * 3. Calculates individual collaborative scores
+ * 4. Merges signals into a final hybrid score
+ * 5. Returns the top K ranked workers
+ * 
+ * @param prisma PrismaClient instance
+ * @param request The hybrid recommendation request context
+ * @param topK Number of recommendations to return
+ * @returns Array of RankedWorker items
+ */
+export async function rankPool(
+  prisma: PrismaClient,
+  request: HybridRequest,
+  topK = 5
+): Promise<RankedWorker[]> {
+  // 1. Fetch the qualified pool (matching skill + isAvailable=true)
+  const pool = await prisma.workerProfile.findMany({
+    where: {
+      skill: request.skill,
+      isAvailable: true,
+    },
+    include: {
+      user: {
+        select: {
+          id: true,
+          name: true,
+          email: true,
+          phone: true,
+          image: true,
+        }
+      },
+      skillTags: true,
+    },
+  });
+
+  if (pool.length === 0) return [];
+
+  // 2. Load cached collaborative factors
+  const factors = await loadLatestModelCache(prisma);
+
+  // 3. Compute collaborative scores
+  const workerIds = pool.map((w) => w.id);
+  let collabResult = { scores: new Array(pool.length).fill(0), isWarm: false };
+  
+  if (factors) {
+    collabResult = scoreCollaborative(request.customerId, workerIds, factors);
+  }
+
+  // 4. Load weights
+  const weights = await loadActiveWeights(prisma);
+
+  // 5. Compute hybrid scores
+  const scores = computeHybridScores(pool, request, collabResult, weights);
+
+  // Combine into a sortable array
+  const scoredPool = pool.map((worker, index) => {
+    return {
+      worker,
+      score: scores[index],
+      collabRaw: collabResult.scores[index],
+    };
+  });
+
+  // 6. Sort descending
+  scoredPool.sort((a, b) => b.score - a.score);
+
+  // 7. Take top K and assign rank
+  const topWorkers = scoredPool.slice(0, topK);
+
+  return topWorkers.map((item, index) => {
+    return {
+      ...item.worker,
+      score: item.score,
+      rank: index + 1,
+      // Minimal placeholder breakdown, since core signals were consumed and z-scored internally
+      scoreBreakdown: {
+        proximity: 0, 
+        price: 0,
+        rating: item.worker.rating,
+        tag: 0,
+        collab: item.collabRaw,
+      },
+      user: item.worker.user,
+    } as RankedWorker;
+  });
+}

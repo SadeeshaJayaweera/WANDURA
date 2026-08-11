@@ -100,6 +100,7 @@ model User {
   transactions    Transaction[]
   notifications   Notification[]
   estimates       Estimate[]
+  recommendationLogs RecommendationLog[]
 
   @@index([email])
   @@index([role])
@@ -147,6 +148,7 @@ model WorkerProfile {
   createdAt       DateTime  @default(now())
   updatedAt       DateTime  @updatedAt
   skillTags       WorkerSkillTag[]
+  recommendationLogs RecommendationLog[]
 
   @@index([skill])
   @@index([city])
@@ -435,4 +437,22 @@ model RecommendationWeightConfig {
 
   @@index([variant])
   @@index([isActive])
+}
+
+model RecommendationLog {
+  id              String        @id @default(cuid())
+  requestId       String
+  customerId      String
+  customer        User          @relation(fields: [customerId], references: [id], onDelete: Cascade)
+  workerId        String
+  worker          WorkerProfile @relation(fields: [workerId], references: [id], onDelete: Cascade)
+  rank            Int
+  score           Float
+  modelVariant    String
+  isColdStart     Boolean
+  scoreBreakdown  Json?
+  createdAt       DateTime      @default(now())
+
+  @@index([customerId])
+  @@index([requestId])
 }

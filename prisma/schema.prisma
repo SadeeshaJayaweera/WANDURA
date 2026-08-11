@@ -456,3 +456,15 @@ model RecommendationLog {
   @@index([customerId])
   @@index([requestId])
 }
+
+model RecommendationModelCache {
+  id                       String   @id @default(cuid())
+  modelType                String
+  serializedFactors        Json
+  customerCount            Int
+  workerCount              Int
+  trainingInteractionCount Int
+  computedAt               DateTime @default(now())
+
+  @@index([modelType])
+}

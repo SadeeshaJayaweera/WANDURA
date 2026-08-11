@@ -84,3 +84,15 @@ We have implemented and unit-tested the core signals and utilities described in 
 - **Baselines (`ruleBased.ts`, `contentBased.ts`)**: Implemented the rule-based (rating + reviews) and content-based baseline rankers.
 
 All utilities have been fully covered with Jest unit tests.
+
+## Day 3 - Collaborative Model Engine
+
+We designed and implemented a batched offline-SVD calculation pipeline to power the Collaborative Filtering arm, matching the architecture detailed in the paper's **Section II-B (Item 3)**.
+
+- **Interaction Matrix Construction (`buildInteractionMatrix.ts`)**: We query all `COMPLETED` bookings to fetch the known historical interactions and explicitly match the `rating` assigned via the unstructured `Review` records.
+- **Factorization (`svd.ts`)**: We use the `ml-matrix` library to execute a Truncated SVD over the interaction matrix, extracting customer and worker latent factors (defaulting to 12 components) scaled by singular values.
+- **Storage & Caching (`modelCache.ts`)**: We implemented read/write abstractions using Prisma to store the serialized latent factors inside the `RecommendationModelCache` JSON column.
+- **Scoring & Fallbacks**:
+  - `collaborativeScore.ts`: Performs fast dot-product ranking for customers inside the training matrix (warm-start).
+  - `popularityFallback.ts`: Computes a mean rating score across past booking interactions as a fallback mechanism for cold-start customers.
+- **Offline Batch Job (`scripts/recompute-collaborative-model.ts`) & Internal API (`app/api/internal/recompute-recommendations/route.ts`)**: Encapsulates the matrix extraction, SVD factorization, and caching logic, and outputs diagnostic sparsity statistics for model health monitoring.

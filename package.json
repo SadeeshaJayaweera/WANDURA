@@ -13,6 +13,7 @@
     "prisma:migrate": "prisma migrate dev",
     "prisma:seed": "tsx prisma/seed.ts",
     "prisma:studio": "prisma studio",
+    "recompute-recs": "tsx scripts/recompute-collaborative-model.ts",
     "test": "jest"
   },
   "dependencies": {

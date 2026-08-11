@@ -82,3 +82,17 @@ export type BookingInput = z.infer<typeof bookingSchema>
 export type ProjectInput = z.infer<typeof projectSchema>
 export type ProductInput = z.infer<typeof productSchema>
 export type ReviewInput = z.infer<typeof reviewSchema>
+
+export const recommendationRequestSchema = z.object({
+  skill: z.enum(['MASON', 'TILE_LAYER', 'WELDER', 'STEEL_FIXER', 'CARPENTER', 'PLUMBER', 'ELECTRICIAN', 'PAINTER']),
+  lat: z.number().min(-90).max(90),
+  lng: z.number().min(-180).max(180),
+  budget: z.number().positive(),
+  customerId: z.string().optional(),
+})
+
+/**
+ * Inferred type for recommendation requests.
+ * See RecommendationRequest in types/recommendation.ts for the domain interface.
+ */
+export type RecommendationRequestInput = z.infer<typeof recommendationRequestSchema>

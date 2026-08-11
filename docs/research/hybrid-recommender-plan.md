@@ -72,3 +72,15 @@ Worker search is primarily driven by the `GET /api/workers` endpoint (`app/api/w
 **Sorting & Output:**
 - Results are strictly ordered by `rating` in descending order (`orderBy: { rating: 'desc' }`).
 - The query joins with the `User` model to select basic user details (`id`, `name`, `email`, `phone`, `image`).
+
+## Day 2 - Signal Utilities
+
+We have implemented and unit-tested the core signals and utilities described in the paper's Section II-B:
+
+- **Proximity Signal (`geo.ts`)**: Calculates the Haversine distance between two sets of coordinates.
+- **Price Fit Signal (`priceFit.ts`)**: Calculates the relative price gap between a worker's daily rate and the customer's budget.
+- **Content-Based Signal (`tagSimilarity.ts`)**: Calculates the cosine similarity between user preference vectors and worker tag vectors.
+- **Normalization (`zscore.ts`)**: Implements Z-Score normalization for signal standardisation, matching the paper's `_znorm` behavior.
+- **Baselines (`ruleBased.ts`, `contentBased.ts`)**: Implemented the rule-based (rating + reviews) and content-based baseline rankers.
+
+All utilities have been fully covered with Jest unit tests.

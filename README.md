@@ -90,6 +90,10 @@
 
 ---
 
+## 💡 Motivation
+
+The construction and skilled labor industry often struggles with fragmentation and inefficiency. It can be incredibly challenging for homeowners or contractors to find reliable, verified professionals, while skilled workers struggle to maintain a consistent stream of fair-paying jobs. Wandura was created to bridge this gap by bringing transparency, trust, and modern technology to the process. By leveraging a state-of-the-art hybrid recommendation system alongside an end-to-end platform for bookings, payments, and material estimates, Wandura aims to modernize and streamline how construction labor is sourced and managed.
+
 ## 🎯 Core Concept
 
 Wandura revolutionizes the construction labor marketplace by connecting:

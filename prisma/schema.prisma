@@ -141,11 +141,23 @@ model WorkerProfile {
   walletBalance   Float     @default(0)
   createdAt       DateTime  @default(now())
   updatedAt       DateTime  @updatedAt
+  skillTags       WorkerSkillTag[]
 
   @@index([skill])
   @@index([city])
   @@index([isAvailable])
   @@index([rating])
+}
+
+model WorkerSkillTag {
+  id              String        @id @default(cuid())
+  workerProfileId String
+  workerProfile   WorkerProfile @relation(fields: [workerProfileId], references: [id], onDelete: Cascade)
+  tag             String
+  weight          Float         // 0-1
+
+  @@index([workerProfileId])
+  @@index([tag])
 }
 
 model StoreProfile {

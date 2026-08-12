@@ -12,6 +12,7 @@ export interface RankedWorker extends WorkerProfile {
   score: number
   rank: number
   scoreBreakdown: ScoreBreakdown
+  recommendationLogId?: string
   // Optional user details usually included in API responses
   user?: {
     id: string

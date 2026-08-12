@@ -144,8 +144,11 @@ export async function rankPool(
   // 8. Log the recommendations to the database
   const requestId = request.requestId || crypto.randomUUID();
   if (rankedWorkers.length > 0) {
-    await prisma.recommendationLog.createMany({
-      data: rankedWorkers.map((worker) => ({
+    const logsToCreate = rankedWorkers.map((worker) => {
+      const logId = crypto.randomUUID();
+      worker.recommendationLogId = logId; // Attach to the returned response
+      return {
+        id: logId,
         requestId,
         customerId: request.customerId,
         workerId: worker.id,
@@ -154,7 +157,11 @@ export async function rankPool(
         modelVariant,
         isColdStart: !collabResult.isWarm,
         scoreBreakdown: worker.scoreBreakdown as any, // Cast to any to satisfy Prisma Json input
-      })),
+      };
+    });
+
+    await prisma.recommendationLog.createMany({
+      data: logsToCreate,
     });
   }
 

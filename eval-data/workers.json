@@ -1,0 +1,4336 @@
+[
+  {
+    "id": "w0",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "reliable",
+      "punctual",
+      "experienced",
+      "expert",
+      "honest"
+    ],
+    "dailyRate": 270,
+    "rating": 3.3,
+    "totalReviews": 51,
+    "latitude": 6.953415157750343,
+    "longitude": 79.83961435185185
+  },
+  {
+    "id": "w1",
+    "skill": "PLUMBER",
+    "tags": [
+      "proactive",
+      "tidy",
+      "fast",
+      "punctual",
+      "affordable"
+    ],
+    "dailyRate": 175,
+    "rating": 4.2,
+    "totalReviews": 28,
+    "latitude": 6.887230744170096,
+    "longitude": 79.85838364197531
+  },
+  {
+    "id": "w2",
+    "skill": "CLEANER",
+    "tags": [
+      "fast",
+      "punctual",
+      "tidy"
+    ],
+    "dailyRate": 135,
+    "rating": 3.2,
+    "totalReviews": 29,
+    "latitude": 6.929029441015089,
+    "longitude": 79.82806299725651
+  },
+  {
+    "id": "w3",
+    "skill": "GARDENER",
+    "tags": [
+      "communicative",
+      "fast",
+      "affordable",
+      "honest"
+    ],
+    "dailyRate": 250,
+    "rating": 4.7,
+    "totalReviews": 47,
+    "latitude": 6.945523353909465,
+    "longitude": 79.83794682784637
+  },
+  {
+    "id": "w4",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "expert",
+      "fast",
+      "reliable"
+    ],
+    "dailyRate": 69,
+    "rating": 3.5,
+    "totalReviews": 51,
+    "latitude": 6.968289128943759,
+    "longitude": 79.88242042181069
+  },
+  {
+    "id": "w5",
+    "skill": "MASON",
+    "tags": [
+      "friendly",
+      "affordable"
+    ],
+    "dailyRate": 67,
+    "rating": 3.9,
+    "totalReviews": 35,
+    "latitude": 6.936322393689987,
+    "longitude": 79.85981582647462
+  },
+  {
+    "id": "w6",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "proactive",
+      "polite"
+    ],
+    "dailyRate": 260,
+    "rating": 3.4,
+    "totalReviews": 63,
+    "latitude": 6.904545558984911,
+    "longitude": 79.9034762345679
+  },
+  {
+    "id": "w7",
+    "skill": "CLEANER",
+    "tags": [
+      "reliable",
+      "proactive",
+      "expert"
+    ],
+    "dailyRate": 164,
+    "rating": 4.9,
+    "totalReviews": 35,
+    "latitude": 6.971338254458162,
+    "longitude": 79.84233683127572
+  },
+  {
+    "id": "w8",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "reliable",
+      "friendly",
+      "flexible",
+      "experienced",
+      "affordable"
+    ],
+    "dailyRate": 205,
+    "rating": 4.5,
+    "totalReviews": 57,
+    "latitude": 6.959427246227709,
+    "longitude": 79.85804927983538
+  },
+  {
+    "id": "w9",
+    "skill": "GARDENER",
+    "tags": [
+      "experienced",
+      "affordable",
+      "honest"
+    ],
+    "dailyRate": 94,
+    "rating": 3.5,
+    "totalReviews": 109,
+    "latitude": 6.917275325788752,
+    "longitude": 79.9030372770919
+  },
+  {
+    "id": "w10",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "flexible",
+      "fast",
+      "tidy"
+    ],
+    "dailyRate": 292,
+    "rating": 4.1,
+    "totalReviews": 63,
+    "latitude": 6.956907527434843,
+    "longitude": 79.82214478737997
+  },
+  {
+    "id": "w11",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "experienced",
+      "tidy"
+    ],
+    "dailyRate": 271,
+    "rating": 3.3,
+    "totalReviews": 27,
+    "latitude": 6.958171244855968,
+    "longitude": 79.875980521262
+  },
+  {
+    "id": "w12",
+    "skill": "MASON",
+    "tags": [
+      "friendly",
+      "polite",
+      "experienced"
+    ],
+    "dailyRate": 166,
+    "rating": 3.4,
+    "totalReviews": 19,
+    "latitude": 6.955319735939644,
+    "longitude": 79.85409609053498
+  },
+  {
+    "id": "w13",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "friendly",
+      "honest",
+      "reliable",
+      "proactive"
+    ],
+    "dailyRate": 286,
+    "rating": 3.6,
+    "totalReviews": 38,
+    "latitude": 6.882920901920439,
+    "longitude": 79.87254087791494
+  },
+  {
+    "id": "w14",
+    "skill": "PAINTER",
+    "tags": [
+      "reliable",
+      "polite"
+    ],
+    "dailyRate": 156,
+    "rating": 3.3,
+    "totalReviews": 70,
+    "latitude": 6.969585425240055,
+    "longitude": 79.83927227366254
+  },
+  {
+    "id": "w15",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "expert",
+      "tidy",
+      "fast",
+      "friendly",
+      "punctual"
+    ],
+    "dailyRate": 182,
+    "rating": 4.6,
+    "totalReviews": 20,
+    "latitude": 6.948729801097394,
+    "longitude": 79.86111212277092
+  },
+  {
+    "id": "w16",
+    "skill": "PAINTER",
+    "tags": [
+      "polite",
+      "reliable",
+      "experienced",
+      "proactive",
+      "friendly"
+    ],
+    "dailyRate": 157,
+    "rating": 4.8,
+    "totalReviews": 93,
+    "latitude": 6.959561419753086,
+    "longitude": 79.905997239369
+  },
+  {
+    "id": "w17",
+    "skill": "CARPENTER",
+    "tags": [
+      "friendly",
+      "expert",
+      "communicative"
+    ],
+    "dailyRate": 56,
+    "rating": 4.3,
+    "totalReviews": 82,
+    "latitude": 6.947640552126201,
+    "longitude": 79.83000744170096
+  },
+  {
+    "id": "w18",
+    "skill": "MASON",
+    "tags": [
+      "reliable",
+      "punctual",
+      "experienced"
+    ],
+    "dailyRate": 299,
+    "rating": 5,
+    "totalReviews": 98,
+    "latitude": 6.927348628257888,
+    "longitude": 79.89482354252401
+  },
+  {
+    "id": "w19",
+    "skill": "PLUMBER",
+    "tags": [
+      "affordable",
+      "polite",
+      "experienced"
+    ],
+    "dailyRate": 136,
+    "rating": 3.5,
+    "totalReviews": 95,
+    "latitude": 6.936775497256516,
+    "longitude": 79.87413209876543
+  },
+  {
+    "id": "w20",
+    "skill": "PAINTER",
+    "tags": [
+      "reliable",
+      "proactive",
+      "affordable",
+      "experienced",
+      "polite"
+    ],
+    "dailyRate": 203,
+    "rating": 4.5,
+    "totalReviews": 35,
+    "latitude": 6.94278158436214,
+    "longitude": 79.83674826817558
+  },
+  {
+    "id": "w21",
+    "skill": "MASON",
+    "tags": [
+      "friendly",
+      "proactive"
+    ],
+    "dailyRate": 177,
+    "rating": 3.7,
+    "totalReviews": 10,
+    "latitude": 6.885066820987655,
+    "longitude": 79.83173412208504
+  },
+  {
+    "id": "w22",
+    "skill": "PLUMBER",
+    "tags": [
+      "fast",
+      "reliable",
+      "flexible"
+    ],
+    "dailyRate": 296,
+    "rating": 3.6,
+    "totalReviews": 73,
+    "latitude": 6.912169444444444,
+    "longitude": 79.81323489368998
+  },
+  {
+    "id": "w23",
+    "skill": "MASON",
+    "tags": [
+      "reliable",
+      "affordable",
+      "communicative",
+      "friendly",
+      "flexible"
+    ],
+    "dailyRate": 128,
+    "rating": 4.3,
+    "totalReviews": 61,
+    "latitude": 6.953946279149521,
+    "longitude": 79.8795744855967
+  },
+  {
+    "id": "w24",
+    "skill": "GARDENER",
+    "tags": [
+      "reliable",
+      "expert",
+      "polite",
+      "tidy"
+    ],
+    "dailyRate": 156,
+    "rating": 4.7,
+    "totalReviews": 39,
+    "latitude": 6.955631378600823,
+    "longitude": 79.85268448216735
+  },
+  {
+    "id": "w25",
+    "skill": "GARDENER",
+    "tags": [
+      "reliable",
+      "punctual",
+      "expert",
+      "communicative",
+      "flexible"
+    ],
+    "dailyRate": 209,
+    "rating": 4.8,
+    "totalReviews": 45,
+    "latitude": 6.975973456790124,
+    "longitude": 79.85435372085048
+  },
+  {
+    "id": "w26",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "reliable",
+      "punctual",
+      "fast",
+      "affordable",
+      "friendly"
+    ],
+    "dailyRate": 293,
+    "rating": 3.4,
+    "totalReviews": 94,
+    "latitude": 6.887663700274349,
+    "longitude": 79.88530836762688
+  },
+  {
+    "id": "w27",
+    "skill": "PLUMBER",
+    "tags": [
+      "expert",
+      "friendly",
+      "thorough",
+      "experienced",
+      "honest"
+    ],
+    "dailyRate": 58,
+    "rating": 4.6,
+    "totalReviews": 63,
+    "latitude": 6.937075565843622,
+    "longitude": 79.86507002743484
+  },
+  {
+    "id": "w28",
+    "skill": "GARDENER",
+    "tags": [
+      "honest",
+      "affordable",
+      "polite",
+      "expert",
+      "flexible"
+    ],
+    "dailyRate": 186,
+    "rating": 4.5,
+    "totalReviews": 47,
+    "latitude": 6.970843569958848,
+    "longitude": 79.841276303155
+  },
+  {
+    "id": "w29",
+    "skill": "PAINTER",
+    "tags": [
+      "tidy",
+      "expert",
+      "honest",
+      "punctual",
+      "reliable"
+    ],
+    "dailyRate": 151,
+    "rating": 4.5,
+    "totalReviews": 56,
+    "latitude": 6.915789986282579,
+    "longitude": 79.88789453017833
+  },
+  {
+    "id": "w30",
+    "skill": "PAINTER",
+    "tags": [
+      "affordable",
+      "experienced",
+      "flexible",
+      "expert",
+      "tidy"
+    ],
+    "dailyRate": 69,
+    "rating": 3.5,
+    "totalReviews": 19,
+    "latitude": 6.924290929355282,
+    "longitude": 79.85516604938272
+  },
+  {
+    "id": "w31",
+    "skill": "MASON",
+    "tags": [
+      "punctual",
+      "polite",
+      "friendly",
+      "tidy",
+      "flexible"
+    ],
+    "dailyRate": 274,
+    "rating": 4.8,
+    "totalReviews": 8,
+    "latitude": 6.951593312757202,
+    "longitude": 79.89463407064471
+  },
+  {
+    "id": "w32",
+    "skill": "MASON",
+    "tags": [
+      "tidy",
+      "affordable",
+      "thorough",
+      "communicative",
+      "expert"
+    ],
+    "dailyRate": 210,
+    "rating": 4.9,
+    "totalReviews": 128,
+    "latitude": 6.958972427983539,
+    "longitude": 79.82778479080932
+  },
+  {
+    "id": "w33",
+    "skill": "CLEANER",
+    "tags": [
+      "experienced",
+      "polite"
+    ],
+    "dailyRate": 210,
+    "rating": 3.4,
+    "totalReviews": 150,
+    "latitude": 6.959242918381345,
+    "longitude": 79.8436159807956
+  },
+  {
+    "id": "w34",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "communicative",
+      "punctual"
+    ],
+    "dailyRate": 158,
+    "rating": 3.6,
+    "totalReviews": 143,
+    "latitude": 6.9044426783264745,
+    "longitude": 79.84658323045267
+  },
+  {
+    "id": "w35",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "thorough",
+      "affordable",
+      "flexible"
+    ],
+    "dailyRate": 159,
+    "rating": 3.8,
+    "totalReviews": 131,
+    "latitude": 6.913014780521262,
+    "longitude": 79.87570574417009
+  },
+  {
+    "id": "w36",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "communicative",
+      "proactive",
+      "honest",
+      "affordable"
+    ],
+    "dailyRate": 240,
+    "rating": 4.8,
+    "totalReviews": 130,
+    "latitude": 6.93340444101509,
+    "longitude": 79.81993799725652
+  },
+  {
+    "id": "w37",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "reliable",
+      "honest",
+      "punctual",
+      "flexible",
+      "tidy"
+    ],
+    "dailyRate": 171,
+    "rating": 3.7,
+    "totalReviews": 91,
+    "latitude": 6.933221827846365,
+    "longitude": 79.82145291495199
+  },
+  {
+    "id": "w38",
+    "skill": "CLEANER",
+    "tags": [
+      "expert",
+      "thorough",
+      "flexible",
+      "punctual",
+      "reliable"
+    ],
+    "dailyRate": 161,
+    "rating": 4.8,
+    "totalReviews": 49,
+    "latitude": 6.9276954218107,
+    "longitude": 79.82035037722908
+  },
+  {
+    "id": "w39",
+    "skill": "CARPENTER",
+    "tags": [
+      "fast",
+      "reliable"
+    ],
+    "dailyRate": 76,
+    "rating": 3.5,
+    "totalReviews": 77,
+    "latitude": 6.955090826474623,
+    "longitude": 79.8250091563786
+  },
+  {
+    "id": "w40",
+    "skill": "PAINTER",
+    "tags": [
+      "reliable",
+      "affordable",
+      "punctual",
+      "flexible"
+    ],
+    "dailyRate": 255,
+    "rating": 3.7,
+    "totalReviews": 93,
+    "latitude": 6.972934190672154,
+    "longitude": 79.88613955761316
+  },
+  {
+    "id": "w41",
+    "skill": "CARPENTER",
+    "tags": [
+      "affordable",
+      "expert",
+      "experienced",
+      "friendly"
+    ],
+    "dailyRate": 214,
+    "rating": 4.5,
+    "totalReviews": 147,
+    "latitude": 6.90627481138546,
+    "longitude": 79.88725281207132
+  },
+  {
+    "id": "w42",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "fast",
+      "friendly",
+      "punctual"
+    ],
+    "dailyRate": 147,
+    "rating": 5,
+    "totalReviews": 66,
+    "latitude": 6.922353343621399,
+    "longitude": 79.83368113854596
+  },
+  {
+    "id": "w43",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "proactive",
+      "friendly"
+    ],
+    "dailyRate": 134,
+    "rating": 4.6,
+    "totalReviews": 149,
+    "latitude": 6.889872205075446,
+    "longitude": 79.82661152263374
+  },
+  {
+    "id": "w44",
+    "skill": "GARDENER",
+    "tags": [
+      "affordable",
+      "honest",
+      "friendly"
+    ],
+    "dailyRate": 198,
+    "rating": 4.6,
+    "totalReviews": 34,
+    "latitude": 6.88440109739369,
+    "longitude": 79.83983897462277
+  },
+  {
+    "id": "w45",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "flexible",
+      "expert",
+      "affordable",
+      "proactive",
+      "experienced"
+    ],
+    "dailyRate": 107,
+    "rating": 3.2,
+    "totalReviews": 15,
+    "latitude": 6.958755521262003,
+    "longitude": 79.91033537379973
+  },
+  {
+    "id": "w46",
+    "skill": "CLEANER",
+    "tags": [
+      "experienced",
+      "tidy",
+      "expert",
+      "affordable"
+    ],
+    "dailyRate": 208,
+    "rating": 4.5,
+    "totalReviews": 83,
+    "latitude": 6.934694735939644,
+    "longitude": 79.82097109053498
+  },
+  {
+    "id": "w47",
+    "skill": "PLUMBER",
+    "tags": [
+      "reliable",
+      "affordable",
+      "friendly"
+    ],
+    "dailyRate": 228,
+    "rating": 4,
+    "totalReviews": 91,
+    "latitude": 6.914450394375858,
+    "longitude": 79.82835020576131
+  },
+  {
+    "id": "w48",
+    "skill": "CARPENTER",
+    "tags": [
+      "tidy",
+      "affordable",
+      "communicative",
+      "friendly",
+      "thorough"
+    ],
+    "dailyRate": 209,
+    "rating": 3.8,
+    "totalReviews": 101,
+    "latitude": 6.944405812757202,
+    "longitude": 79.84369657064471
+  },
+  {
+    "id": "w49",
+    "skill": "GARDENER",
+    "tags": [
+      "friendly",
+      "affordable",
+      "expert"
+    ],
+    "dailyRate": 237,
+    "rating": 4.5,
+    "totalReviews": 53,
+    "latitude": 6.961568449931413,
+    "longitude": 79.87338492798354
+  },
+  {
+    "id": "w50",
+    "skill": "PLUMBER",
+    "tags": [
+      "expert",
+      "reliable",
+      "proactive",
+      "tidy",
+      "experienced"
+    ],
+    "dailyRate": 195,
+    "rating": 3.6,
+    "totalReviews": 142,
+    "latitude": 6.933453737997257,
+    "longitude": 79.87844922839506
+  },
+  {
+    "id": "w51",
+    "skill": "PLUMBER",
+    "tags": [
+      "affordable",
+      "proactive",
+      "tidy"
+    ],
+    "dailyRate": 181,
+    "rating": 3.3,
+    "totalReviews": 23,
+    "latitude": 6.952104286694102,
+    "longitude": 79.84720265775034
+  },
+  {
+    "id": "w52",
+    "skill": "CLEANER",
+    "tags": [
+      "proactive",
+      "thorough",
+      "expert"
+    ],
+    "dailyRate": 105,
+    "rating": 4.5,
+    "totalReviews": 81,
+    "latitude": 6.915668244170096,
+    "longitude": 79.8555711419753
+  },
+  {
+    "id": "w53",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "thorough",
+      "reliable",
+      "tidy",
+      "communicative",
+      "honest"
+    ],
+    "dailyRate": 155,
+    "rating": 4.7,
+    "totalReviews": 1,
+    "latitude": 6.906165072016461,
+    "longitude": 79.86656694101508
+  },
+  {
+    "id": "w54",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "tidy",
+      "affordable",
+      "flexible",
+      "expert",
+      "friendly"
+    ],
+    "dailyRate": 73,
+    "rating": 4.9,
+    "totalReviews": 31,
+    "latitude": 6.9184250171467765,
+    "longitude": 79.89631659807955
+  },
+  {
+    "id": "w55",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "proactive",
+      "affordable",
+      "fast",
+      "flexible",
+      "expert"
+    ],
+    "dailyRate": 109,
+    "rating": 4.3,
+    "totalReviews": 94,
+    "latitude": 6.965476628943759,
+    "longitude": 79.8233579218107
+  },
+  {
+    "id": "w56",
+    "skill": "PLUMBER",
+    "tags": [
+      "tidy",
+      "affordable",
+      "communicative",
+      "flexible",
+      "experienced"
+    ],
+    "dailyRate": 175,
+    "rating": 4.6,
+    "totalReviews": 147,
+    "latitude": 6.930417472565158,
+    "longitude": 79.83814444444444
+  },
+  {
+    "id": "w57",
+    "skill": "CARPENTER",
+    "tags": [
+      "friendly",
+      "experienced",
+      "honest",
+      "fast"
+    ],
+    "dailyRate": 295,
+    "rating": 4.4,
+    "totalReviews": 48,
+    "latitude": 6.88332127914952,
+    "longitude": 79.8964494855967
+  },
+  {
+    "id": "w58",
+    "skill": "CARPENTER",
+    "tags": [
+      "polite",
+      "affordable"
+    ],
+    "dailyRate": 230,
+    "rating": 5,
+    "totalReviews": 121,
+    "latitude": 6.8975063786008235,
+    "longitude": 79.83205948216735
+  },
+  {
+    "id": "w59",
+    "skill": "CARPENTER",
+    "tags": [
+      "expert",
+      "tidy",
+      "affordable",
+      "reliable",
+      "experienced"
+    ],
+    "dailyRate": 94,
+    "rating": 3.6,
+    "totalReviews": 13,
+    "latitude": 6.942848456790124,
+    "longitude": 79.85872872085048
+  },
+  {
+    "id": "w60",
+    "skill": "CLEANER",
+    "tags": [
+      "tidy",
+      "reliable"
+    ],
+    "dailyRate": 210,
+    "rating": 3.5,
+    "totalReviews": 82,
+    "latitude": 6.9170387002743485,
+    "longitude": 79.90218336762689
+  },
+  {
+    "id": "w61",
+    "skill": "PAINTER",
+    "tags": [
+      "expert",
+      "punctual"
+    ],
+    "dailyRate": 120,
+    "rating": 4.3,
+    "totalReviews": 30,
+    "latitude": 6.908522753772291,
+    "longitude": 79.89536495198902
+  },
+  {
+    "id": "w62",
+    "skill": "MASON",
+    "tags": [
+      "fast",
+      "friendly"
+    ],
+    "dailyRate": 188,
+    "rating": 5,
+    "totalReviews": 148,
+    "latitude": 6.899051303155007,
+    "longitude": 79.901402760631
+  },
+  {
+    "id": "w63",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "experienced",
+      "honest",
+      "reliable",
+      "expert",
+      "friendly"
+    ],
+    "dailyRate": 218,
+    "rating": 4.1,
+    "totalReviews": 46,
+    "latitude": 6.975932304526749,
+    "longitude": 79.87159651920439
+  },
+  {
+    "id": "w64",
+    "skill": "GARDENER",
+    "tags": [
+      "affordable",
+      "honest",
+      "experienced",
+      "expert"
+    ],
+    "dailyRate": 187,
+    "rating": 3.5,
+    "totalReviews": 16,
+    "latitude": 6.930832424554184,
+    "longitude": 79.89761289437585
+  },
+  {
+    "id": "w65",
+    "skill": "MASON",
+    "tags": [
+      "fast",
+      "affordable",
+      "flexible",
+      "thorough"
+    ],
+    "dailyRate": 75,
+    "rating": 4.3,
+    "totalReviews": 19,
+    "latitude": 6.935398182441701,
+    "longitude": 79.86372700617284
+  },
+  {
+    "id": "w66",
+    "skill": "GARDENER",
+    "tags": [
+      "reliable",
+      "punctual",
+      "proactive",
+      "expert",
+      "experienced"
+    ],
+    "dailyRate": 87,
+    "rating": 5,
+    "totalReviews": 107,
+    "latitude": 6.895246433470508,
+    "longitude": 79.81230982510287
+  },
+  {
+    "id": "w67",
+    "skill": "MASON",
+    "tags": [
+      "experienced",
+      "expert",
+      "flexible",
+      "thorough",
+      "punctual"
+    ],
+    "dailyRate": 116,
+    "rating": 3.2,
+    "totalReviews": 112,
+    "latitude": 6.885868004115227,
+    "longitude": 79.88353839163237
+  },
+  {
+    "id": "w68",
+    "skill": "MASON",
+    "tags": [
+      "fast",
+      "reliable",
+      "honest"
+    ],
+    "dailyRate": 255,
+    "rating": 4.6,
+    "totalReviews": 150,
+    "latitude": 6.8802387174211255,
+    "longitude": 79.82554284979423
+  },
+  {
+    "id": "w69",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "tidy",
+      "experienced",
+      "friendly"
+    ],
+    "dailyRate": 233,
+    "rating": 4.2,
+    "totalReviews": 62,
+    "latitude": 6.954889780521262,
+    "longitude": 79.8550807441701
+  },
+  {
+    "id": "w70",
+    "skill": "PAINTER",
+    "tags": [
+      "fast",
+      "communicative",
+      "reliable",
+      "flexible"
+    ],
+    "dailyRate": 203,
+    "rating": 3,
+    "totalReviews": 146,
+    "latitude": 6.919984945130316,
+    "longitude": 79.90520677297668
+  },
+  {
+    "id": "w71",
+    "skill": "CLEANER",
+    "tags": [
+      "tidy",
+      "friendly",
+      "fast",
+      "polite",
+      "experienced"
+    ],
+    "dailyRate": 269,
+    "rating": 4.7,
+    "totalReviews": 137,
+    "latitude": 6.901770353223594,
+    "longitude": 79.89128744855967
+  },
+  {
+    "id": "w72",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "honest",
+      "reliable"
+    ],
+    "dailyRate": 165,
+    "rating": 3.3,
+    "totalReviews": 86,
+    "latitude": 6.950677674897119,
+    "longitude": 79.87828633401921
+  },
+  {
+    "id": "w73",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "tidy",
+      "punctual",
+      "thorough",
+      "honest"
+    ],
+    "dailyRate": 175,
+    "rating": 3.1,
+    "totalReviews": 66,
+    "latitude": 6.954353086419753,
+    "longitude": 79.86328890603566
+  },
+  {
+    "id": "w74",
+    "skill": "PLUMBER",
+    "tags": [
+      "reliable",
+      "experienced",
+      "thorough",
+      "affordable"
+    ],
+    "dailyRate": 57,
+    "rating": 4.3,
+    "totalReviews": 85,
+    "latitude": 6.937773010973937,
+    "longitude": 79.85200718449931
+  },
+  {
+    "id": "w75",
+    "skill": "GARDENER",
+    "tags": [
+      "reliable",
+      "affordable"
+    ],
+    "dailyRate": 292,
+    "rating": 3.4,
+    "totalReviews": 46,
+    "latitude": 6.885641666666667,
+    "longitude": 79.87837378257888
+  },
+  {
+    "id": "w76",
+    "skill": "PLUMBER",
+    "tags": [
+      "polite",
+      "punctual",
+      "reliable"
+    ],
+    "dailyRate": 252,
+    "rating": 3.1,
+    "totalReviews": 138,
+    "latitude": 6.964461539780522,
+    "longitude": 79.88201361454047
+  },
+  {
+    "id": "w77",
+    "skill": "PAINTER",
+    "tags": [
+      "punctual",
+      "reliable",
+      "friendly",
+      "thorough",
+      "communicative"
+    ],
+    "dailyRate": 69,
+    "rating": 4,
+    "totalReviews": 10,
+    "latitude": 6.902206310013717,
+    "longitude": 79.84612155349794
+  },
+  {
+    "id": "w78",
+    "skill": "CARPENTER",
+    "tags": [
+      "proactive",
+      "punctual"
+    ],
+    "dailyRate": 51,
+    "rating": 4.8,
+    "totalReviews": 83,
+    "latitude": 6.966577451989027,
+    "longitude": 79.86211306584362
+  },
+  {
+    "id": "w79",
+    "skill": "GARDENER",
+    "tags": [
+      "tidy",
+      "flexible",
+      "reliable",
+      "experienced"
+    ],
+    "dailyRate": 127,
+    "rating": 4,
+    "totalReviews": 25,
+    "latitude": 6.968555332647463,
+    "longitude": 79.85838106995884
+  },
+  {
+    "id": "w80",
+    "skill": "PAINTER",
+    "tags": [
+      "reliable",
+      "affordable",
+      "polite"
+    ],
+    "dailyRate": 117,
+    "rating": 4.9,
+    "totalReviews": 74,
+    "latitude": 6.935547788065844,
+    "longitude": 79.85520891632373
+  },
+  {
+    "id": "w81",
+    "skill": "MASON",
+    "tags": [
+      "polite",
+      "communicative",
+      "friendly",
+      "reliable"
+    ],
+    "dailyRate": 155,
+    "rating": 4.4,
+    "totalReviews": 139,
+    "latitude": 6.88070596707819,
+    "longitude": 79.87143191015089
+  },
+  {
+    "id": "w82",
+    "skill": "MASON",
+    "tags": [
+      "reliable",
+      "punctual",
+      "friendly",
+      "experienced"
+    ],
+    "dailyRate": 189,
+    "rating": 4.7,
+    "totalReviews": 54,
+    "latitude": 6.905928875171468,
+    "longitude": 79.86970008573388
+  },
+  {
+    "id": "w83",
+    "skill": "CARPENTER",
+    "tags": [
+      "reliable",
+      "experienced",
+      "polite"
+    ],
+    "dailyRate": 212,
+    "rating": 4.5,
+    "totalReviews": 80,
+    "latitude": 6.956096484910837,
+    "longitude": 79.87863827160494
+  },
+  {
+    "id": "w84",
+    "skill": "GARDENER",
+    "tags": [
+      "friendly",
+      "thorough"
+    ],
+    "dailyRate": 170,
+    "rating": 4,
+    "totalReviews": 148,
+    "latitude": 6.923724228395062,
+    "longitude": 79.88428041838134
+  },
+  {
+    "id": "w85",
+    "skill": "MASON",
+    "tags": [
+      "honest",
+      "reliable",
+      "communicative"
+    ],
+    "dailyRate": 129,
+    "rating": 4.7,
+    "totalReviews": 30,
+    "latitude": 6.943979286694102,
+    "longitude": 79.87657765775035
+  },
+  {
+    "id": "w86",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "thorough",
+      "affordable",
+      "flexible",
+      "experienced",
+      "fast"
+    ],
+    "dailyRate": 199,
+    "rating": 4.6,
+    "totalReviews": 23,
+    "latitude": 6.910202280521262,
+    "longitude": 79.8166432441701
+  },
+  {
+    "id": "w87",
+    "skill": "MASON",
+    "tags": [
+      "flexible",
+      "honest"
+    ],
+    "dailyRate": 72,
+    "rating": 3.1,
+    "totalReviews": 129,
+    "latitude": 6.970169272976681,
+    "longitude": 79.86964007201645
+  },
+  {
+    "id": "w88",
+    "skill": "GARDENER",
+    "tags": [
+      "friendly",
+      "tidy",
+      "flexible"
+    ],
+    "dailyRate": 81,
+    "rating": 4.4,
+    "totalReviews": 3,
+    "latitude": 6.922085853909465,
+    "longitude": 79.84575932784637
+  },
+  {
+    "id": "w89",
+    "skill": "PAINTER",
+    "tags": [
+      "fast",
+      "experienced",
+      "thorough",
+      "affordable"
+    ],
+    "dailyRate": 199,
+    "rating": 3.4,
+    "totalReviews": 98,
+    "latitude": 6.918816820987654,
+    "longitude": 79.84048412208504
+  },
+  {
+    "id": "w90",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "punctual",
+      "reliable"
+    ],
+    "dailyRate": 260,
+    "rating": 4.4,
+    "totalReviews": 25,
+    "latitude": 6.959066306584362,
+    "longitude": 79.90094965706447
+  },
+  {
+    "id": "w91",
+    "skill": "CLEANER",
+    "tags": [
+      "communicative",
+      "affordable",
+      "expert"
+    ],
+    "dailyRate": 298,
+    "rating": 4,
+    "totalReviews": 91,
+    "latitude": 6.904224485596708,
+    "longitude": 79.81717265089164
+  },
+  {
+    "id": "w92",
+    "skill": "GARDENER",
+    "tags": [
+      "flexible",
+      "reliable",
+      "punctual"
+    ],
+    "dailyRate": 195,
+    "rating": 5,
+    "totalReviews": 2,
+    "latitude": 6.894410528120714,
+    "longitude": 79.83755416666666
+  },
+  {
+    "id": "w93",
+    "skill": "MASON",
+    "tags": [
+      "expert",
+      "reliable",
+      "friendly",
+      "punctual"
+    ],
+    "dailyRate": 95,
+    "rating": 4,
+    "totalReviews": 73,
+    "latitude": 6.909814334705076,
+    "longitude": 79.90835920781893
+  },
+  {
+    "id": "w94",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "thorough",
+      "honest"
+    ],
+    "dailyRate": 133,
+    "rating": 3.3,
+    "totalReviews": 42,
+    "latitude": 6.946514437585734,
+    "longitude": 79.85601610082304
+  },
+  {
+    "id": "w95",
+    "skill": "PAINTER",
+    "tags": [
+      "reliable",
+      "proactive",
+      "thorough",
+      "affordable"
+    ],
+    "dailyRate": 202,
+    "rating": 3,
+    "totalReviews": 67,
+    "latitude": 6.895607801783265,
+    "longitude": 79.87339650205762
+  },
+  {
+    "id": "w96",
+    "skill": "PLUMBER",
+    "tags": [
+      "affordable",
+      "flexible",
+      "experienced",
+      "communicative"
+    ],
+    "dailyRate": 60,
+    "rating": 5,
+    "totalReviews": 54,
+    "latitude": 6.94019413580247,
+    "longitude": 79.87088921467763
+  },
+  {
+    "id": "w97",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "fast",
+      "flexible",
+      "honest"
+    ],
+    "dailyRate": 256,
+    "rating": 4.1,
+    "totalReviews": 63,
+    "latitude": 6.8846102880658435,
+    "longitude": 79.88552141632373
+  },
+  {
+    "id": "w98",
+    "skill": "CLEANER",
+    "tags": [
+      "experienced",
+      "thorough"
+    ],
+    "dailyRate": 217,
+    "rating": 4.2,
+    "totalReviews": 32,
+    "latitude": 6.908040929355281,
+    "longitude": 79.81391604938271
+  },
+  {
+    "id": "w99",
+    "skill": "CLEANER",
+    "tags": [
+      "tidy",
+      "affordable"
+    ],
+    "dailyRate": 135,
+    "rating": 4.4,
+    "totalReviews": 110,
+    "latitude": 6.922322908093279,
+    "longitude": 79.8506002914952
+  },
+  {
+    "id": "w100",
+    "skill": "CLEANER",
+    "tags": [
+      "honest",
+      "affordable",
+      "tidy",
+      "thorough"
+    ],
+    "dailyRate": 120,
+    "rating": 5,
+    "totalReviews": 1,
+    "latitude": 6.946255949931413,
+    "longitude": 79.85182242798354
+  },
+  {
+    "id": "w101",
+    "skill": "PAINTER",
+    "tags": [
+      "polite",
+      "fast",
+      "affordable",
+      "thorough",
+      "experienced"
+    ],
+    "dailyRate": 77,
+    "rating": 4.8,
+    "totalReviews": 85,
+    "latitude": 6.9511183470507545,
+    "longitude": 79.87697803497942
+  },
+  {
+    "id": "w102",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "thorough",
+      "proactive",
+      "punctual",
+      "polite"
+    ],
+    "dailyRate": 153,
+    "rating": 3.2,
+    "totalReviews": 65,
+    "latitude": 6.902989489026063,
+    "longitude": 79.8304695473251
+  },
+  {
+    "id": "w103",
+    "skill": "MASON",
+    "tags": [
+      "affordable",
+      "polite",
+      "punctual",
+      "friendly"
+    ],
+    "dailyRate": 214,
+    "rating": 5,
+    "totalReviews": 29,
+    "latitude": 6.884304218106996,
+    "longitude": 79.83876472908094
+  },
+  {
+    "id": "w104",
+    "skill": "PLUMBER",
+    "tags": [
+      "tidy",
+      "polite"
+    ],
+    "dailyRate": 88,
+    "rating": 4.4,
+    "totalReviews": 8,
+    "latitude": 6.917445078875172,
+    "longitude": 79.88191073388202
+  },
+  {
+    "id": "w105",
+    "skill": "PLUMBER",
+    "tags": [
+      "honest",
+      "fast",
+      "punctual"
+    ],
+    "dailyRate": 167,
+    "rating": 3.3,
+    "totalReviews": 144,
+    "latitude": 6.9699433641975315,
+    "longitude": 79.86846251714677
+  },
+  {
+    "id": "w106",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "communicative",
+      "reliable"
+    ],
+    "dailyRate": 204,
+    "rating": 4.3,
+    "totalReviews": 145,
+    "latitude": 6.885099828532236,
+    "longitude": 79.83873729423868
+  },
+  {
+    "id": "w107",
+    "skill": "MASON",
+    "tags": [
+      "polite",
+      "reliable",
+      "experienced",
+      "punctual"
+    ],
+    "dailyRate": 209,
+    "rating": 4.1,
+    "totalReviews": 149,
+    "latitude": 6.950841855281207,
+    "longitude": 79.90532808641974
+  },
+  {
+    "id": "w108",
+    "skill": "PLUMBER",
+    "tags": [
+      "honest",
+      "proactive",
+      "communicative"
+    ],
+    "dailyRate": 209,
+    "rating": 3.2,
+    "totalReviews": 3,
+    "latitude": 6.888247548010974,
+    "longitude": 79.81567616598079
+  },
+  {
+    "id": "w109",
+    "skill": "PAINTER",
+    "tags": [
+      "tidy",
+      "polite",
+      "expert"
+    ],
+    "dailyRate": 284,
+    "rating": 3.4,
+    "totalReviews": 1,
+    "latitude": 6.950683676268862,
+    "longitude": 79.8341050925926
+  },
+  {
+    "id": "w110",
+    "skill": "PAINTER",
+    "tags": [
+      "proactive",
+      "affordable",
+      "polite",
+      "expert",
+      "punctual"
+    ],
+    "dailyRate": 126,
+    "rating": 3.7,
+    "totalReviews": 91,
+    "latitude": 6.959499262688615,
+    "longitude": 79.82787438271605
+  },
+  {
+    "id": "w111",
+    "skill": "PLUMBER",
+    "tags": [
+      "honest",
+      "expert",
+      "tidy",
+      "affordable",
+      "thorough"
+    ],
+    "dailyRate": 198,
+    "rating": 4.3,
+    "totalReviews": 109,
+    "latitude": 6.945742403978052,
+    "longitude": 79.87533151577503
+  },
+  {
+    "id": "w112",
+    "skill": "PLUMBER",
+    "tags": [
+      "thorough",
+      "punctual",
+      "friendly",
+      "polite",
+      "experienced"
+    ],
+    "dailyRate": 110,
+    "rating": 4.1,
+    "totalReviews": 74,
+    "latitude": 6.920880435528121,
+    "longitude": 79.83416296296296
+  },
+  {
+    "id": "w113",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "honest",
+      "fast",
+      "friendly",
+      "thorough"
+    ],
+    "dailyRate": 256,
+    "rating": 3.3,
+    "totalReviews": 45,
+    "latitude": 6.89170133744856,
+    "longitude": 79.8393717249657
+  },
+  {
+    "id": "w114",
+    "skill": "MASON",
+    "tags": [
+      "honest",
+      "affordable",
+      "communicative",
+      "friendly",
+      "fast"
+    ],
+    "dailyRate": 258,
+    "rating": 4.1,
+    "totalReviews": 13,
+    "latitude": 6.947276183127572,
+    "longitude": 79.84101138545952
+  },
+  {
+    "id": "w115",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "communicative",
+      "reliable"
+    ],
+    "dailyRate": 205,
+    "rating": 3.3,
+    "totalReviews": 140,
+    "latitude": 6.908821965020576,
+    "longitude": 79.8783287722908
+  },
+  {
+    "id": "w116",
+    "skill": "CLEANER",
+    "tags": [
+      "reliable",
+      "punctual",
+      "polite"
+    ],
+    "dailyRate": 172,
+    "rating": 4,
+    "totalReviews": 126,
+    "latitude": 6.918612774348423,
+    "longitude": 79.84264633058984
+  },
+  {
+    "id": "w117",
+    "skill": "PLUMBER",
+    "tags": [
+      "reliable",
+      "polite",
+      "experienced"
+    ],
+    "dailyRate": 265,
+    "rating": 4.4,
+    "totalReviews": 14,
+    "latitude": 6.896401697530864,
+    "longitude": 79.85742085048011
+  },
+  {
+    "id": "w118",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "reliable",
+      "tidy",
+      "communicative",
+      "flexible",
+      "experienced"
+    ],
+    "dailyRate": 82,
+    "rating": 4.6,
+    "totalReviews": 34,
+    "latitude": 6.974058161865569,
+    "longitude": 79.84019562757202
+  },
+  {
+    "id": "w119",
+    "skill": "PLUMBER",
+    "tags": [
+      "proactive",
+      "fast",
+      "honest"
+    ],
+    "dailyRate": 64,
+    "rating": 3.3,
+    "totalReviews": 108,
+    "latitude": 6.938429303840878,
+    "longitude": 79.8561871399177
+  },
+  {
+    "id": "w120",
+    "skill": "MASON",
+    "tags": [
+      "punctual",
+      "fast"
+    ],
+    "dailyRate": 80,
+    "rating": 4.3,
+    "totalReviews": 145,
+    "latitude": 6.951688477366256,
+    "longitude": 79.8797600994513
+  },
+  {
+    "id": "w121",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "fast",
+      "affordable",
+      "flexible",
+      "expert"
+    ],
+    "dailyRate": 71,
+    "rating": 3.4,
+    "totalReviews": 79,
+    "latitude": 6.904071879286694,
+    "longitude": 79.89778136145404
+  },
+  {
+    "id": "w122",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "communicative",
+      "proactive"
+    ],
+    "dailyRate": 267,
+    "rating": 4.3,
+    "totalReviews": 147,
+    "latitude": 6.920294873113855,
+    "longitude": 79.8878469478738
+  },
+  {
+    "id": "w123",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "thorough",
+      "communicative"
+    ],
+    "dailyRate": 206,
+    "rating": 3.6,
+    "totalReviews": 137,
+    "latitude": 6.909434533607682,
+    "longitude": 79.87582920096021
+  },
+  {
+    "id": "w124",
+    "skill": "CARPENTER",
+    "tags": [
+      "honest",
+      "flexible",
+      "communicative"
+    ],
+    "dailyRate": 203,
+    "rating": 3.9,
+    "totalReviews": 85,
+    "latitude": 6.896490860768176,
+    "longitude": 79.8867281207133
+  },
+  {
+    "id": "w125",
+    "skill": "PLUMBER",
+    "tags": [
+      "honest",
+      "flexible",
+      "tidy"
+    ],
+    "dailyRate": 107,
+    "rating": 3.9,
+    "totalReviews": 80,
+    "latitude": 6.88519713648834,
+    "longitude": 79.84379859396434
+  },
+  {
+    "id": "w126",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "thorough",
+      "polite",
+      "tidy"
+    ],
+    "dailyRate": 199,
+    "rating": 3.6,
+    "totalReviews": 16,
+    "latitude": 6.887078137860082,
+    "longitude": 79.83899235253772
+  },
+  {
+    "id": "w127",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "reliable",
+      "proactive"
+    ],
+    "dailyRate": 171,
+    "rating": 3.1,
+    "totalReviews": 24,
+    "latitude": 6.921061762688614,
+    "longitude": 79.82068688271605
+  },
+  {
+    "id": "w128",
+    "skill": "PAINTER",
+    "tags": [
+      "friendly",
+      "fast"
+    ],
+    "dailyRate": 280,
+    "rating": 3.7,
+    "totalReviews": 21,
+    "latitude": 6.913362860082305,
+    "longitude": 79.8131937414266
+  },
+  {
+    "id": "w129",
+    "skill": "GARDENER",
+    "tags": [
+      "tidy",
+      "reliable",
+      "punctual",
+      "fast"
+    ],
+    "dailyRate": 123,
+    "rating": 4.2,
+    "totalReviews": 52,
+    "latitude": 6.9503716049382716,
+    "longitude": 79.8315296467764
+  },
+  {
+    "id": "w130",
+    "skill": "PLUMBER",
+    "tags": [
+      "reliable",
+      "communicative",
+      "experienced",
+      "punctual"
+    ],
+    "dailyRate": 185,
+    "rating": 3,
+    "totalReviews": 6,
+    "latitude": 6.8795575617283955,
+    "longitude": 79.89011375171468
+  },
+  {
+    "id": "w131",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "punctual",
+      "polite",
+      "proactive"
+    ],
+    "dailyRate": 269,
+    "rating": 4.8,
+    "totalReviews": 114,
+    "latitude": 6.949812620027435,
+    "longitude": 79.83241099108368
+  },
+  {
+    "id": "w132",
+    "skill": "PLUMBER",
+    "tags": [
+      "communicative",
+      "friendly",
+      "fast"
+    ],
+    "dailyRate": 194,
+    "rating": 4.6,
+    "totalReviews": 4,
+    "latitude": 6.972154869684499,
+    "longitude": 79.83767505144033
+  },
+  {
+    "id": "w133",
+    "skill": "GARDENER",
+    "tags": [
+      "tidy",
+      "proactive",
+      "expert"
+    ],
+    "dailyRate": 190,
+    "rating": 4.8,
+    "totalReviews": 137,
+    "latitude": 6.9420815672153635,
+    "longitude": 79.82588878600822
+  },
+  {
+    "id": "w134",
+    "skill": "MASON",
+    "tags": [
+      "affordable",
+      "proactive",
+      "punctual",
+      "fast",
+      "reliable"
+    ],
+    "dailyRate": 180,
+    "rating": 3.3,
+    "totalReviews": 40,
+    "latitude": 6.884924931412895,
+    "longitude": 79.8120191872428
+  },
+  {
+    "id": "w135",
+    "skill": "MASON",
+    "tags": [
+      "friendly",
+      "thorough"
+    ],
+    "dailyRate": 118,
+    "rating": 4.3,
+    "totalReviews": 116,
+    "latitude": 6.9484768861454045,
+    "longitude": 79.90875015432098
+  },
+  {
+    "id": "w136",
+    "skill": "CARPENTER",
+    "tags": [
+      "thorough",
+      "friendly",
+      "expert"
+    ],
+    "dailyRate": 144,
+    "rating": 5,
+    "totalReviews": 58,
+    "latitude": 6.926752777777778,
+    "longitude": 79.85281822702332
+  },
+  {
+    "id": "w137",
+    "skill": "PLUMBER",
+    "tags": [
+      "expert",
+      "communicative",
+      "affordable",
+      "experienced"
+    ],
+    "dailyRate": 91,
+    "rating": 3.6,
+    "totalReviews": 93,
+    "latitude": 6.955691392318244,
+    "longitude": 79.91087206790124
+  },
+  {
+    "id": "w138",
+    "skill": "GARDENER",
+    "tags": [
+      "fast",
+      "polite"
+    ],
+    "dailyRate": 283,
+    "rating": 4.7,
+    "totalReviews": 49,
+    "latitude": 6.953132664609054,
+    "longitude": 79.81214564471878
+  },
+  {
+    "id": "w139",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "polite",
+      "affordable",
+      "expert",
+      "experienced"
+    ],
+    "dailyRate": 61,
+    "rating": 4.4,
+    "totalReviews": 95,
+    "latitude": 6.909837054183813,
+    "longitude": 79.81967307956104
+  },
+  {
+    "id": "w140",
+    "skill": "CARPENTER",
+    "tags": [
+      "experienced",
+      "reliable",
+      "thorough"
+    ],
+    "dailyRate": 244,
+    "rating": 4,
+    "totalReviews": 58,
+    "latitude": 6.969742746913581,
+    "longitude": 79.90252115912209
+  },
+  {
+    "id": "w141",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "communicative",
+      "affordable",
+      "polite",
+      "flexible",
+      "expert"
+    ],
+    "dailyRate": 236,
+    "rating": 4.4,
+    "totalReviews": 100,
+    "latitude": 6.9339732853223595,
+    "longitude": 79.91075889917695
+  },
+  {
+    "id": "w142",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "experienced",
+      "reliable",
+      "fast",
+      "expert"
+    ],
+    "dailyRate": 162,
+    "rating": 3,
+    "totalReviews": 67,
+    "latitude": 6.911776354595336,
+    "longitude": 79.85710620713306
+  },
+  {
+    "id": "w143",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "reliable",
+      "punctual",
+      "tidy"
+    ],
+    "dailyRate": 58,
+    "rating": 4.3,
+    "totalReviews": 108,
+    "latitude": 6.897704852537723,
+    "longitude": 79.87806556927298
+  },
+  {
+    "id": "w144",
+    "skill": "MASON",
+    "tags": [
+      "proactive",
+      "expert"
+    ],
+    "dailyRate": 119,
+    "rating": 4.8,
+    "totalReviews": 12,
+    "latitude": 6.916040757887518,
+    "longitude": 79.82032122770919
+  },
+  {
+    "id": "w145",
+    "skill": "PAINTER",
+    "tags": [
+      "polite",
+      "expert"
+    ],
+    "dailyRate": 289,
+    "rating": 4.8,
+    "totalReviews": 34,
+    "latitude": 6.883106515775035,
+    "longitude": 79.89893533950617
+  },
+  {
+    "id": "w146",
+    "skill": "MASON",
+    "tags": [
+      "thorough",
+      "reliable",
+      "friendly"
+    ],
+    "dailyRate": 166,
+    "rating": 3.1,
+    "totalReviews": 137,
+    "latitude": 6.938418158436214,
+    "longitude": 79.85252373113855
+  },
+  {
+    "id": "w147",
+    "skill": "GARDENER",
+    "tags": [
+      "honest",
+      "tidy",
+      "reliable"
+    ],
+    "dailyRate": 104,
+    "rating": 5,
+    "totalReviews": 17,
+    "latitude": 6.911296673525378,
+    "longitude": 79.89559257544582
+  },
+  {
+    "id": "w148",
+    "skill": "PAINTER",
+    "tags": [
+      "polite",
+      "punctual"
+    ],
+    "dailyRate": 195,
+    "rating": 4.5,
+    "totalReviews": 89,
+    "latitude": 6.894026011659808,
+    "longitude": 79.861166563786
+  },
+  {
+    "id": "w149",
+    "skill": "PAINTER",
+    "tags": [
+      "reliable",
+      "tidy"
+    ],
+    "dailyRate": 242,
+    "rating": 4,
+    "totalReviews": 6,
+    "latitude": 6.930741975308642,
+    "longitude": 79.85634446159122
+  },
+  {
+    "id": "w150",
+    "skill": "PLUMBER",
+    "tags": [
+      "flexible",
+      "polite",
+      "friendly",
+      "proactive",
+      "punctual"
+    ],
+    "dailyRate": 290,
+    "rating": 4.5,
+    "totalReviews": 125,
+    "latitude": 6.880828566529493,
+    "longitude": 79.81172940672154
+  },
+  {
+    "id": "w151",
+    "skill": "MASON",
+    "tags": [
+      "experienced",
+      "fast"
+    ],
+    "dailyRate": 112,
+    "rating": 3.4,
+    "totalReviews": 96,
+    "latitude": 6.967570250342936,
+    "longitude": 79.89613055555556
+  },
+  {
+    "id": "w152",
+    "skill": "PAINTER",
+    "tags": [
+      "reliable",
+      "experienced"
+    ],
+    "dailyRate": 295,
+    "rating": 3.8,
+    "totalReviews": 35,
+    "latitude": 6.945474056927298,
+    "longitude": 79.87943559670782
+  },
+  {
+    "id": "w153",
+    "skill": "CLEANER",
+    "tags": [
+      "affordable",
+      "communicative",
+      "reliable",
+      "friendly",
+      "punctual"
+    ],
+    "dailyRate": 112,
+    "rating": 4.4,
+    "totalReviews": 23,
+    "latitude": 6.944674159807956,
+    "longitude": 79.83959248971193
+  },
+  {
+    "id": "w154",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "polite",
+      "proactive",
+      "communicative"
+    ],
+    "dailyRate": 146,
+    "rating": 4.5,
+    "totalReviews": 32,
+    "latitude": 6.975834567901235,
+    "longitude": 79.86254816529492
+  },
+  {
+    "id": "w155",
+    "skill": "PLUMBER",
+    "tags": [
+      "reliable",
+      "thorough"
+    ],
+    "dailyRate": 125,
+    "rating": 4.3,
+    "totalReviews": 19,
+    "latitude": 6.945858144718793,
+    "longitude": 79.85183614540466
+  },
+  {
+    "id": "w156",
+    "skill": "CLEANER",
+    "tags": [
+      "honest",
+      "communicative",
+      "thorough",
+      "expert"
+    ],
+    "dailyRate": 263,
+    "rating": 4.2,
+    "totalReviews": 128,
+    "latitude": 6.964164471879287,
+    "longitude": 79.81898506515775
+  },
+  {
+    "id": "w157",
+    "skill": "CARPENTER",
+    "tags": [
+      "punctual",
+      "affordable",
+      "experienced",
+      "fast"
+    ],
+    "dailyRate": 296,
+    "rating": 4.4,
+    "totalReviews": 20,
+    "latitude": 6.92945553840878,
+    "longitude": 79.89119485596707
+  },
+  {
+    "id": "w158",
+    "skill": "PAINTER",
+    "tags": [
+      "proactive",
+      "reliable",
+      "fast"
+    ],
+    "dailyRate": 95,
+    "rating": 3.1,
+    "totalReviews": 59,
+    "latitude": 6.9459100137174214,
+    "longitude": 79.8342697016461
+  },
+  {
+    "id": "w159",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "communicative",
+      "polite",
+      "flexible",
+      "affordable",
+      "reliable"
+    ],
+    "dailyRate": 160,
+    "rating": 4.2,
+    "totalReviews": 16,
+    "latitude": 6.920048816872428,
+    "longitude": 79.89927784636488
+  },
+  {
+    "id": "w160",
+    "skill": "CARPENTER",
+    "tags": [
+      "honest",
+      "friendly",
+      "polite"
+    ],
+    "dailyRate": 69,
+    "rating": 4.5,
+    "totalReviews": 24,
+    "latitude": 6.878925703017833,
+    "longitude": 79.81319588477366
+  },
+  {
+    "id": "w161",
+    "skill": "CLEANER",
+    "tags": [
+      "proactive",
+      "reliable",
+      "punctual",
+      "expert"
+    ],
+    "dailyRate": 241,
+    "rating": 3.4,
+    "totalReviews": 54,
+    "latitude": 6.91596188271605,
+    "longitude": 79.88670325788752
+  },
+  {
+    "id": "w162",
+    "skill": "CLEANER",
+    "tags": [
+      "honest",
+      "expert",
+      "flexible",
+      "affordable",
+      "polite"
+    ],
+    "dailyRate": 255,
+    "rating": 3.1,
+    "totalReviews": 146,
+    "latitude": 6.938419015775034,
+    "longitude": 79.86049783950617
+  },
+  {
+    "id": "w163",
+    "skill": "MASON",
+    "tags": [
+      "affordable",
+      "reliable",
+      "expert",
+      "proactive",
+      "tidy"
+    ],
+    "dailyRate": 94,
+    "rating": 3.7,
+    "totalReviews": 91,
+    "latitude": 6.898736231138546,
+    "longitude": 79.87091793552811
+  },
+  {
+    "id": "w164",
+    "skill": "PAINTER",
+    "tags": [
+      "reliable",
+      "punctual",
+      "polite"
+    ],
+    "dailyRate": 228,
+    "rating": 3.1,
+    "totalReviews": 106,
+    "latitude": 6.904411814128944,
+    "longitude": 79.8595153292181
+  },
+  {
+    "id": "w165",
+    "skill": "PLUMBER",
+    "tags": [
+      "reliable",
+      "proactive"
+    ],
+    "dailyRate": 252,
+    "rating": 3.1,
+    "totalReviews": 135,
+    "latitude": 6.952685991083676,
+    "longitude": 79.85763518518519
+  },
+  {
+    "id": "w166",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "friendly",
+      "thorough",
+      "fast",
+      "honest",
+      "affordable"
+    ],
+    "dailyRate": 131,
+    "rating": 3.2,
+    "totalReviews": 122,
+    "latitude": 6.884560562414267,
+    "longitude": 79.82302313100136
+  },
+  {
+    "id": "w167",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "tidy",
+      "fast",
+      "affordable",
+      "communicative",
+      "thorough"
+    ],
+    "dailyRate": 295,
+    "rating": 4.3,
+    "totalReviews": 87,
+    "latitude": 6.946456567215364,
+    "longitude": 79.81776378600823
+  },
+  {
+    "id": "w168",
+    "skill": "GARDENER",
+    "tags": [
+      "experienced",
+      "reliable"
+    ],
+    "dailyRate": 229,
+    "rating": 5,
+    "totalReviews": 111,
+    "latitude": 6.958619633058985,
+    "longitude": 79.84643919753086
+  },
+  {
+    "id": "w169",
+    "skill": "CLEANER",
+    "tags": [
+      "polite",
+      "tidy",
+      "reliable"
+    ],
+    "dailyRate": 54,
+    "rating": 4.8,
+    "totalReviews": 123,
+    "latitude": 6.884533127572016,
+    "longitude": 79.8678516632373
+  },
+  {
+    "id": "w170",
+    "skill": "MASON",
+    "tags": [
+      "affordable",
+      "expert"
+    ],
+    "dailyRate": 57,
+    "rating": 4.1,
+    "totalReviews": 47,
+    "latitude": 6.891866803840879,
+    "longitude": 79.8783746399177
+  },
+  {
+    "id": "w171",
+    "skill": "PLUMBER",
+    "tags": [
+      "reliable",
+      "tidy",
+      "fast",
+      "friendly",
+      "thorough"
+    ],
+    "dailyRate": 147,
+    "rating": 3.2,
+    "totalReviews": 14,
+    "latitude": 6.974097599451303,
+    "longitude": 79.90700461248285
+  },
+  {
+    "id": "w172",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "reliable",
+      "punctual",
+      "honest",
+      "fast"
+    ],
+    "dailyRate": 96,
+    "rating": 3.2,
+    "totalReviews": 98,
+    "latitude": 6.9386625,
+    "longitude": 79.82514461591221
+  },
+  {
+    "id": "w173",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "fast",
+      "honest",
+      "polite",
+      "affordable",
+      "friendly"
+    ],
+    "dailyRate": 66,
+    "rating": 3.5,
+    "totalReviews": 148,
+    "latitude": 6.960798988340192,
+    "longitude": 79.8166226680384
+  },
+  {
+    "id": "w174",
+    "skill": "PAINTER",
+    "tags": [
+      "reliable",
+      "polite",
+      "punctual",
+      "experienced",
+      "honest"
+    ],
+    "dailyRate": 177,
+    "rating": 3.3,
+    "totalReviews": 103,
+    "latitude": 6.964947222222222,
+    "longitude": 79.89934600480109
+  },
+  {
+    "id": "w175",
+    "skill": "GARDENER",
+    "tags": [
+      "proactive",
+      "affordable",
+      "friendly"
+    ],
+    "dailyRate": 95,
+    "rating": 3.5,
+    "totalReviews": 145,
+    "latitude": 6.898252263374486,
+    "longitude": 79.86953376200275
+  },
+  {
+    "id": "w176",
+    "skill": "CLEANER",
+    "tags": [
+      "fast",
+      "friendly"
+    ],
+    "dailyRate": 164,
+    "rating": 3.6,
+    "totalReviews": 41,
+    "latitude": 6.964845198902607,
+    "longitude": 79.8504271090535
+  },
+  {
+    "id": "w177",
+    "skill": "GARDENER",
+    "tags": [
+      "flexible",
+      "friendly",
+      "communicative",
+      "tidy",
+      "honest"
+    ],
+    "dailyRate": 156,
+    "rating": 4,
+    "totalReviews": 40,
+    "latitude": 6.9073186213991775,
+    "longitude": 79.89572974965706
+  },
+  {
+    "id": "w178",
+    "skill": "CARPENTER",
+    "tags": [
+      "experienced",
+      "reliable",
+      "punctual",
+      "honest"
+    ],
+    "dailyRate": 190,
+    "rating": 4.3,
+    "totalReviews": 119,
+    "latitude": 6.953586625514403,
+    "longitude": 79.83443602537723
+  },
+  {
+    "id": "w179",
+    "skill": "MASON",
+    "tags": [
+      "affordable",
+      "expert"
+    ],
+    "dailyRate": 204,
+    "rating": 3.2,
+    "totalReviews": 60,
+    "latitude": 6.962801731824417,
+    "longitude": 79.84413981481481
+  },
+  {
+    "id": "w180",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "affordable",
+      "reliable",
+      "polite",
+      "thorough"
+    ],
+    "dailyRate": 166,
+    "rating": 3.3,
+    "totalReviews": 121,
+    "latitude": 6.910011522633745,
+    "longitude": 79.8424041323731
+  },
+  {
+    "id": "w181",
+    "skill": "PAINTER",
+    "tags": [
+      "flexible",
+      "fast"
+    ],
+    "dailyRate": 277,
+    "rating": 3.5,
+    "totalReviews": 145,
+    "latitude": 6.886835082304527,
+    "longitude": 79.8783326303155
+  },
+  {
+    "id": "w182",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "flexible",
+      "friendly"
+    ],
+    "dailyRate": 217,
+    "rating": 5,
+    "totalReviews": 53,
+    "latitude": 6.891082338820302,
+    "longitude": 79.8820654835391
+  },
+  {
+    "id": "w183",
+    "skill": "MASON",
+    "tags": [
+      "punctual",
+      "fast"
+    ],
+    "dailyRate": 118,
+    "rating": 4.4,
+    "totalReviews": 91,
+    "latitude": 6.928029783950618,
+    "longitude": 79.83025264060356
+  },
+  {
+    "id": "w184",
+    "skill": "CARPENTER",
+    "tags": [
+      "reliable",
+      "flexible",
+      "punctual",
+      "thorough"
+    ],
+    "dailyRate": 62,
+    "rating": 3.7,
+    "totalReviews": 4,
+    "latitude": 6.972815877914952,
+    "longitude": 79.88571260288066
+  },
+  {
+    "id": "w185",
+    "skill": "GARDENER",
+    "tags": [
+      "reliable",
+      "honest"
+    ],
+    "dailyRate": 221,
+    "rating": 4,
+    "totalReviews": 113,
+    "latitude": 6.882824451303155,
+    "longitude": 79.87545368655692
+  },
+  {
+    "id": "w186",
+    "skill": "MASON",
+    "tags": [
+      "affordable",
+      "experienced"
+    ],
+    "dailyRate": 207,
+    "rating": 4.7,
+    "totalReviews": 122,
+    "latitude": 6.923887122770919,
+    "longitude": 79.89936100823044
+  },
+  {
+    "id": "w187",
+    "skill": "PLUMBER",
+    "tags": [
+      "experienced",
+      "reliable",
+      "honest",
+      "friendly"
+    ],
+    "dailyRate": 154,
+    "rating": 3.3,
+    "totalReviews": 149,
+    "latitude": 6.907631550068587,
+    "longitude": 79.90627930384088
+  },
+  {
+    "id": "w188",
+    "skill": "PAINTER",
+    "tags": [
+      "friendly",
+      "polite",
+      "reliable"
+    ],
+    "dailyRate": 120,
+    "rating": 3.9,
+    "totalReviews": 113,
+    "latitude": 6.957490517832648,
+    "longitude": 79.84453847736626
+  },
+  {
+    "id": "w189",
+    "skill": "PLUMBER",
+    "tags": [
+      "flexible",
+      "polite"
+    ],
+    "dailyRate": 141,
+    "rating": 4.8,
+    "totalReviews": 30,
+    "latitude": 6.900225,
+    "longitude": 79.81795711591221
+  },
+  {
+    "id": "w190",
+    "skill": "GARDENER",
+    "tags": [
+      "polite",
+      "experienced"
+    ],
+    "dailyRate": 58,
+    "rating": 5,
+    "totalReviews": 72,
+    "latitude": 6.933530041152264,
+    "longitude": 79.88814487311384
+  },
+  {
+    "id": "w191",
+    "skill": "CLEANER",
+    "tags": [
+      "reliable",
+      "proactive",
+      "communicative",
+      "fast",
+      "thorough"
+    ],
+    "dailyRate": 217,
+    "rating": 3.9,
+    "totalReviews": 135,
+    "latitude": 6.901604886831276,
+    "longitude": 79.85228453360767
+  },
+  {
+    "id": "w192",
+    "skill": "MASON",
+    "tags": [
+      "thorough",
+      "affordable",
+      "friendly",
+      "reliable",
+      "expert"
+    ],
+    "dailyRate": 100,
+    "rating": 4.6,
+    "totalReviews": 98,
+    "latitude": 6.8802408607681755,
+    "longitude": 79.84547812071331
+  },
+  {
+    "id": "w193",
+    "skill": "MASON",
+    "tags": [
+      "punctual",
+      "reliable",
+      "thorough"
+    ],
+    "dailyRate": 128,
+    "rating": 3.6,
+    "totalReviews": 17,
+    "latitude": 6.918947136488341,
+    "longitude": 79.85254859396433
+  },
+  {
+    "id": "w194",
+    "skill": "PLUMBER",
+    "tags": [
+      "reliable",
+      "flexible",
+      "punctual",
+      "communicative",
+      "friendly"
+    ],
+    "dailyRate": 71,
+    "rating": 3.7,
+    "totalReviews": 103,
+    "latitude": 6.890060819615912,
+    "longitude": 79.88091536351166
+  },
+  {
+    "id": "w195",
+    "skill": "MASON",
+    "tags": [
+      "experienced",
+      "thorough",
+      "polite"
+    ],
+    "dailyRate": 175,
+    "rating": 4.1,
+    "totalReviews": 140,
+    "latitude": 6.894478257887517,
+    "longitude": 79.8675087277092
+  },
+  {
+    "id": "w196",
+    "skill": "MASON",
+    "tags": [
+      "friendly",
+      "polite",
+      "honest"
+    ],
+    "dailyRate": 266,
+    "rating": 4.3,
+    "totalReviews": 99,
+    "latitude": 6.918272839506173,
+    "longitude": 79.88091236282578
+  },
+  {
+    "id": "w197",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "flexible",
+      "communicative",
+      "friendly",
+      "affordable"
+    ],
+    "dailyRate": 243,
+    "rating": 4.5,
+    "totalReviews": 2,
+    "latitude": 6.914125462962963,
+    "longitude": 79.90616313443073
+  },
+  {
+    "id": "w198",
+    "skill": "GARDENER",
+    "tags": [
+      "experienced",
+      "affordable",
+      "communicative",
+      "thorough",
+      "tidy"
+    ],
+    "dailyRate": 276,
+    "rating": 4.7,
+    "totalReviews": 113,
+    "latitude": 6.94326383744856,
+    "longitude": 79.82218422496571
+  },
+  {
+    "id": "w199",
+    "skill": "CLEANER",
+    "tags": [
+      "friendly",
+      "thorough"
+    ],
+    "dailyRate": 226,
+    "rating": 4.5,
+    "totalReviews": 39,
+    "latitude": 6.9626345507544585,
+    "longitude": 79.88918868312757
+  },
+  {
+    "id": "w200",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "reliable",
+      "experienced",
+      "communicative"
+    ],
+    "dailyRate": 236,
+    "rating": 3.3,
+    "totalReviews": 120,
+    "latitude": 6.899785613854595,
+    "longitude": 79.83122657750343
+  },
+  {
+    "id": "w201",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "communicative",
+      "experienced",
+      "polite",
+      "affordable"
+    ],
+    "dailyRate": 108,
+    "rating": 3.5,
+    "totalReviews": 87,
+    "latitude": 6.925123405349795,
+    "longitude": 79.89802527434841
+  },
+  {
+    "id": "w202",
+    "skill": "CLEANER",
+    "tags": [
+      "reliable",
+      "experienced",
+      "affordable",
+      "polite",
+      "tidy"
+    ],
+    "dailyRate": 201,
+    "rating": 3.3,
+    "totalReviews": 127,
+    "latitude": 6.976242661179699,
+    "longitude": 79.85822374828533
+  },
+  {
+    "id": "w203",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "polite",
+      "flexible",
+      "reliable"
+    ],
+    "dailyRate": 160,
+    "rating": 3.6,
+    "totalReviews": 103,
+    "latitude": 6.898021210562415,
+    "longitude": 79.8205115569273
+  },
+  {
+    "id": "w204",
+    "skill": "CARPENTER",
+    "tags": [
+      "flexible",
+      "punctual",
+      "expert"
+    ],
+    "dailyRate": 113,
+    "rating": 4.4,
+    "totalReviews": 0,
+    "latitude": 6.8927164266117975,
+    "longitude": 79.88071603223594
+  },
+  {
+    "id": "w205",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "tidy",
+      "communicative",
+      "experienced",
+      "expert"
+    ],
+    "dailyRate": 269,
+    "rating": 4.7,
+    "totalReviews": 44,
+    "latitude": 6.9347050240054875,
+    "longitude": 79.8166603909465
+  },
+  {
+    "id": "w206",
+    "skill": "PLUMBER",
+    "tags": [
+      "friendly",
+      "flexible",
+      "reliable",
+      "polite"
+    ],
+    "dailyRate": 74,
+    "rating": 3.2,
+    "totalReviews": 0,
+    "latitude": 6.908458024691359,
+    "longitude": 79.89331977023319
+  },
+  {
+    "id": "w207",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "punctual",
+      "communicative"
+    ],
+    "dailyRate": 93,
+    "rating": 3.2,
+    "totalReviews": 133,
+    "latitude": 6.908105229766804,
+    "longitude": 79.81197417695473
+  },
+  {
+    "id": "w208",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "expert",
+      "friendly",
+      "honest"
+    ],
+    "dailyRate": 294,
+    "rating": 3.5,
+    "totalReviews": 0,
+    "latitude": 6.9600831104252405,
+    "longitude": 79.85824218106995
+  },
+  {
+    "id": "w209",
+    "skill": "PAINTER",
+    "tags": [
+      "communicative",
+      "flexible",
+      "reliable"
+    ],
+    "dailyRate": 259,
+    "rating": 4.6,
+    "totalReviews": 135,
+    "latitude": 6.88059537037037,
+    "longitude": 79.84277193072703
+  },
+  {
+    "id": "w210",
+    "skill": "GARDENER",
+    "tags": [
+      "tidy",
+      "expert",
+      "flexible"
+    ],
+    "dailyRate": 261,
+    "rating": 3,
+    "totalReviews": 103,
+    "latitude": 6.931756207133059,
+    "longitude": 79.88971466049382
+  },
+  {
+    "id": "w211",
+    "skill": "CLEANER",
+    "tags": [
+      "reliable",
+      "punctual"
+    ],
+    "dailyRate": 205,
+    "rating": 3,
+    "totalReviews": 121,
+    "latitude": 6.881454852537723,
+    "longitude": 79.83681556927297
+  },
+  {
+    "id": "w212",
+    "skill": "GARDENER",
+    "tags": [
+      "proactive",
+      "flexible",
+      "communicative"
+    ],
+    "dailyRate": 232,
+    "rating": 3.3,
+    "totalReviews": 62,
+    "latitude": 6.955316735253772,
+    "longitude": 79.82618671124828
+  },
+  {
+    "id": "w213",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "friendly",
+      "tidy",
+      "flexible",
+      "communicative",
+      "fast"
+    ],
+    "dailyRate": 191,
+    "rating": 3.7,
+    "totalReviews": 38,
+    "latitude": 6.977095284636489,
+    "longitude": 79.88847451989025
+  },
+  {
+    "id": "w214",
+    "skill": "PAINTER",
+    "tags": [
+      "honest",
+      "affordable",
+      "flexible",
+      "proactive",
+      "experienced"
+    ],
+    "dailyRate": 231,
+    "rating": 4.2,
+    "totalReviews": 142,
+    "latitude": 6.9145789951989025,
+    "longitude": 79.82446646090534
+  },
+  {
+    "id": "w215",
+    "skill": "PLUMBER",
+    "tags": [
+      "friendly",
+      "communicative",
+      "honest"
+    ],
+    "dailyRate": 197,
+    "rating": 4.3,
+    "totalReviews": 131,
+    "latitude": 6.897700137174212,
+    "longitude": 79.83420797325103
+  },
+  {
+    "id": "w216",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "reliable",
+      "experienced",
+      "thorough"
+    ],
+    "dailyRate": 287,
+    "rating": 3.3,
+    "totalReviews": 98,
+    "latitude": 6.879930932784637,
+    "longitude": 79.86283794581618
+  },
+  {
+    "id": "w217",
+    "skill": "PLUMBER",
+    "tags": [
+      "polite",
+      "reliable"
+    ],
+    "dailyRate": 298,
+    "rating": 3.5,
+    "totalReviews": 101,
+    "latitude": 6.94795219478738,
+    "longitude": 79.82859583333332
+  },
+  {
+    "id": "w218",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "reliable",
+      "tidy",
+      "punctual",
+      "flexible",
+      "proactive"
+    ],
+    "dailyRate": 261,
+    "rating": 3,
+    "totalReviews": 59,
+    "latitude": 6.888356001371743,
+    "longitude": 79.82440087448559
+  },
+  {
+    "id": "w219",
+    "skill": "PLUMBER",
+    "tags": [
+      "tidy",
+      "friendly",
+      "experienced",
+      "reliable"
+    ],
+    "dailyRate": 110,
+    "rating": 4.9,
+    "totalReviews": 66,
+    "latitude": 6.9500561042524005,
+    "longitude": 79.89705776748971
+  },
+  {
+    "id": "w220",
+    "skill": "CLEANER",
+    "tags": [
+      "punctual",
+      "fast"
+    ],
+    "dailyRate": 85,
+    "rating": 4.8,
+    "totalReviews": 103,
+    "latitude": 6.975496776406036,
+    "longitude": 79.82074946844993
+  },
+  {
+    "id": "w221",
+    "skill": "MASON",
+    "tags": [
+      "communicative",
+      "polite",
+      "reliable"
+    ],
+    "dailyRate": 259,
+    "rating": 4.9,
+    "totalReviews": 143,
+    "latitude": 6.955406755829904,
+    "longitude": 79.8634680898491
+  },
+  {
+    "id": "w222",
+    "skill": "GARDENER",
+    "tags": [
+      "affordable",
+      "flexible"
+    ],
+    "dailyRate": 258,
+    "rating": 3.7,
+    "totalReviews": 60,
+    "latitude": 6.915267009602195,
+    "longitude": 79.82368842592592
+  },
+  {
+    "id": "w223",
+    "skill": "CLEANER",
+    "tags": [
+      "polite",
+      "friendly",
+      "reliable"
+    ],
+    "dailyRate": 256,
+    "rating": 4.6,
+    "totalReviews": 68,
+    "latitude": 6.952060133744856,
+    "longitude": 79.83653607681755
+  },
+  {
+    "id": "w224",
+    "skill": "GARDENER",
+    "tags": [
+      "punctual",
+      "reliable",
+      "tidy"
+    ],
+    "dailyRate": 175,
+    "rating": 4.5,
+    "totalReviews": 21,
+    "latitude": 6.950864574759946,
+    "longitude": 79.81664195816187
+  },
+  {
+    "id": "w225",
+    "skill": "CARPENTER",
+    "tags": [
+      "proactive",
+      "expert",
+      "tidy",
+      "communicative"
+    ],
+    "dailyRate": 187,
+    "rating": 4.2,
+    "totalReviews": 28,
+    "latitude": 6.943476457475994,
+    "longitude": 79.89976310013716
+  },
+  {
+    "id": "w226",
+    "skill": "MASON",
+    "tags": [
+      "reliable",
+      "honest",
+      "proactive",
+      "punctual"
+    ],
+    "dailyRate": 89,
+    "rating": 3.4,
+    "totalReviews": 41,
+    "latitude": 6.933919701646091,
+    "longitude": 79.81237712620027
+  },
+  {
+    "id": "w227",
+    "skill": "GARDENER",
+    "tags": [
+      "honest",
+      "polite"
+    ],
+    "dailyRate": 279,
+    "rating": 3.4,
+    "totalReviews": 40,
+    "latitude": 6.923927846364884,
+    "longitude": 79.87813115569273
+  },
+  {
+    "id": "w228",
+    "skill": "MASON",
+    "tags": [
+      "flexible",
+      "fast"
+    ],
+    "dailyRate": 217,
+    "rating": 3.1,
+    "totalReviews": 37,
+    "latitude": 6.962675703017833,
+    "longitude": 79.87194588477367
+  },
+  {
+    "id": "w229",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "expert",
+      "punctual",
+      "experienced",
+      "reliable",
+      "honest"
+    ],
+    "dailyRate": 222,
+    "rating": 4.2,
+    "totalReviews": 126,
+    "latitude": 6.933486745541838,
+    "longitude": 79.88545240054869
+  },
+  {
+    "id": "w230",
+    "skill": "MASON",
+    "tags": [
+      "thorough",
+      "affordable",
+      "flexible",
+      "expert"
+    ],
+    "dailyRate": 100,
+    "rating": 4,
+    "totalReviews": 90,
+    "latitude": 6.901015466392319,
+    "longitude": 79.87008503086419
+  },
+  {
+    "id": "w231",
+    "skill": "PLUMBER",
+    "tags": [
+      "expert",
+      "experienced"
+    ],
+    "dailyRate": 204,
+    "rating": 3.3,
+    "totalReviews": 36,
+    "latitude": 6.963997719478738,
+    "longitude": 79.86802098765432
+  },
+  {
+    "id": "w232",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "affordable",
+      "experienced"
+    ],
+    "dailyRate": 294,
+    "rating": 3.4,
+    "totalReviews": 83,
+    "latitude": 6.913464883401921,
+    "longitude": 79.8621126371742
+  },
+  {
+    "id": "w233",
+    "skill": "PAINTER",
+    "tags": [
+      "affordable",
+      "reliable",
+      "proactive",
+      "experienced",
+      "punctual"
+    ],
+    "dailyRate": 135,
+    "rating": 3,
+    "totalReviews": 122,
+    "latitude": 6.913323851165981,
+    "longitude": 79.85037181069958
+  },
+  {
+    "id": "w234",
+    "skill": "PAINTER",
+    "tags": [
+      "reliable",
+      "experienced"
+    ],
+    "dailyRate": 279,
+    "rating": 4.5,
+    "totalReviews": 43,
+    "latitude": 6.939690449245542,
+    "longitude": 79.88610054869685
+  },
+  {
+    "id": "w235",
+    "skill": "GARDENER",
+    "tags": [
+      "affordable",
+      "reliable",
+      "friendly",
+      "thorough"
+    ],
+    "dailyRate": 206,
+    "rating": 3.6,
+    "totalReviews": 137,
+    "latitude": 6.93107762345679,
+    "longitude": 79.87820788751715
+  },
+  {
+    "id": "w236",
+    "skill": "PAINTER",
+    "tags": [
+      "proactive",
+      "communicative",
+      "tidy",
+      "affordable",
+      "flexible"
+    ],
+    "dailyRate": 55,
+    "rating": 5,
+    "totalReviews": 121,
+    "latitude": 6.924017866941015,
+    "longitude": 79.81541253429354
+  },
+  {
+    "id": "w237",
+    "skill": "PLUMBER",
+    "tags": [
+      "punctual",
+      "tidy"
+    ],
+    "dailyRate": 259,
+    "rating": 3.5,
+    "totalReviews": 52,
+    "latitude": 6.948429732510288,
+    "longitude": 79.87017419410151
+  },
+  {
+    "id": "w238",
+    "skill": "MASON",
+    "tags": [
+      "polite",
+      "friendly",
+      "fast",
+      "experienced",
+      "expert"
+    ],
+    "dailyRate": 268,
+    "rating": 3.3,
+    "totalReviews": 147,
+    "latitude": 6.924281927297669,
+    "longitude": 79.87143791152263
+  },
+  {
+    "id": "w239",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "proactive",
+      "reliable"
+    ],
+    "dailyRate": 294,
+    "rating": 3.7,
+    "totalReviews": 104,
+    "latitude": 6.930964454732511,
+    "longitude": 79.8256255829904
+  },
+  {
+    "id": "w240",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "proactive",
+      "reliable",
+      "tidy",
+      "polite"
+    ],
+    "dailyRate": 171,
+    "rating": 3.7,
+    "totalReviews": 89,
+    "latitude": 6.964732458847737,
+    "longitude": 79.90183185871057
+  },
+  {
+    "id": "w241",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "honest",
+      "friendly",
+      "proactive",
+      "flexible"
+    ],
+    "dailyRate": 299,
+    "rating": 3,
+    "totalReviews": 76,
+    "latitude": 6.9186770747599455,
+    "longitude": 79.84070445816187
+  },
+  {
+    "id": "w242",
+    "skill": "MASON",
+    "tags": [
+      "friendly",
+      "fast",
+      "affordable",
+      "expert"
+    ],
+    "dailyRate": 84,
+    "rating": 4.3,
+    "totalReviews": 53,
+    "latitude": 6.896157355967079,
+    "longitude": 79.88479996570645
+  },
+  {
+    "id": "w243",
+    "skill": "GARDENER",
+    "tags": [
+      "friendly",
+      "polite",
+      "flexible"
+    ],
+    "dailyRate": 68,
+    "rating": 4.3,
+    "totalReviews": 66,
+    "latitude": 6.971065620713306,
+    "longitude": 79.90657037037036
+  },
+  {
+    "id": "w244",
+    "skill": "PAINTER",
+    "tags": [
+      "polite",
+      "reliable",
+      "affordable",
+      "communicative",
+      "tidy"
+    ],
+    "dailyRate": 103,
+    "rating": 3.9,
+    "totalReviews": 20,
+    "latitude": 6.897442078189301,
+    "longitude": 79.83400135459533
+  },
+  {
+    "id": "w245",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "fast",
+      "experienced",
+      "reliable",
+      "flexible"
+    ],
+    "dailyRate": 186,
+    "rating": 3.4,
+    "totalReviews": 126,
+    "latitude": 6.969590569272977,
+    "longitude": 79.8871169238683
+  },
+  {
+    "id": "w246",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "polite",
+      "reliable",
+      "affordable"
+    ],
+    "dailyRate": 246,
+    "rating": 4,
+    "totalReviews": 51,
+    "latitude": 6.954165757887518,
+    "longitude": 79.82094622770919
+  },
+  {
+    "id": "w247",
+    "skill": "GARDENER",
+    "tags": [
+      "reliable",
+      "punctual",
+      "experienced",
+      "polite",
+      "expert"
+    ],
+    "dailyRate": 116,
+    "rating": 4.9,
+    "totalReviews": 115,
+    "latitude": 6.910458624828532,
+    "longitude": 79.90090164609053
+  },
+  {
+    "id": "w248",
+    "skill": "CARPENTER",
+    "tags": [
+      "polite",
+      "proactive",
+      "reliable",
+      "punctual",
+      "affordable"
+    ],
+    "dailyRate": 213,
+    "rating": 4.2,
+    "totalReviews": 138,
+    "latitude": 6.884617146776407,
+    "longitude": 79.84931428326475
+  },
+  {
+    "id": "w249",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "friendly",
+      "affordable",
+      "communicative",
+      "expert",
+      "punctual"
+    ],
+    "dailyRate": 251,
+    "rating": 3.7,
+    "totalReviews": 6,
+    "latitude": 6.97459957133059,
+    "longitude": 79.8758450617284
+  },
+  {
+    "id": "w250",
+    "skill": "CLEANER",
+    "tags": [
+      "flexible",
+      "expert"
+    ],
+    "dailyRate": 300,
+    "rating": 3.9,
+    "totalReviews": 76,
+    "latitude": 6.918250120027435,
+    "longitude": 79.86959849108368
+  },
+  {
+    "id": "w251",
+    "skill": "CLEANER",
+    "tags": [
+      "flexible",
+      "tidy",
+      "polite"
+    ],
+    "dailyRate": 140,
+    "rating": 4.1,
+    "totalReviews": 29,
+    "latitude": 6.961779783950617,
+    "longitude": 79.83900264060357
+  },
+  {
+    "id": "w252",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "thorough",
+      "reliable"
+    ],
+    "dailyRate": 141,
+    "rating": 3,
+    "totalReviews": 87,
+    "latitude": 6.898701508916324,
+    "longitude": 79.84796654663923
+  },
+  {
+    "id": "w253",
+    "skill": "CLEANER",
+    "tags": [
+      "communicative",
+      "polite",
+      "thorough",
+      "affordable",
+      "fast"
+    ],
+    "dailyRate": 86,
+    "rating": 4,
+    "totalReviews": 5,
+    "latitude": 6.914924502743484,
+    "longitude": 79.83803213305899
+  },
+  {
+    "id": "w254",
+    "skill": "CLEANER",
+    "tags": [
+      "tidy",
+      "reliable",
+      "proactive",
+      "expert"
+    ],
+    "dailyRate": 293,
+    "rating": 4.8,
+    "totalReviews": 21,
+    "latitude": 6.973595627572017,
+    "longitude": 79.83816416323731
+  },
+  {
+    "id": "w255",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "reliable",
+      "tidy"
+    ],
+    "dailyRate": 239,
+    "rating": 3.4,
+    "totalReviews": 125,
+    "latitude": 6.966381550068587,
+    "longitude": 79.84002930384088
+  },
+  {
+    "id": "w256",
+    "skill": "PAINTER",
+    "tags": [
+      "punctual",
+      "reliable"
+    ],
+    "dailyRate": 115,
+    "rating": 4.8,
+    "totalReviews": 120,
+    "latitude": 6.961106344307271,
+    "longitude": 79.87534051783264
+  },
+  {
+    "id": "w257",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "proactive",
+      "affordable",
+      "experienced"
+    ],
+    "dailyRate": 146,
+    "rating": 3.4,
+    "totalReviews": 67,
+    "latitude": 6.931181361454047,
+    "longitude": 79.843075
+  },
+  {
+    "id": "w258",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "tidy",
+      "expert",
+      "polite"
+    ],
+    "dailyRate": 60,
+    "rating": 3.6,
+    "totalReviews": 22,
+    "latitude": 6.8877948731138545,
+    "longitude": 79.9053469478738
+  },
+  {
+    "id": "w259",
+    "skill": "CLEANER",
+    "tags": [
+      "fast",
+      "affordable"
+    ],
+    "dailyRate": 128,
+    "rating": 4.5,
+    "totalReviews": 45,
+    "latitude": 6.925539643347051,
+    "longitude": 79.86945488683128
+  },
+  {
+    "id": "w260",
+    "skill": "MASON",
+    "tags": [
+      "affordable",
+      "tidy",
+      "flexible"
+    ],
+    "dailyRate": 164,
+    "rating": 4.7,
+    "totalReviews": 36,
+    "latitude": 6.888567335390947,
+    "longitude": 79.89001858710562
+  },
+  {
+    "id": "w261",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "proactive",
+      "flexible",
+      "reliable",
+      "punctual"
+    ],
+    "dailyRate": 199,
+    "rating": 5,
+    "totalReviews": 81,
+    "latitude": 6.951964969135803,
+    "longitude": 79.85141004801098
+  },
+  {
+    "id": "w262",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "reliable",
+      "punctual",
+      "thorough",
+      "proactive"
+    ],
+    "dailyRate": 176,
+    "rating": 3.3,
+    "totalReviews": 109,
+    "latitude": 6.958881121399177,
+    "longitude": 79.87854224965706
+  },
+  {
+    "id": "w263",
+    "skill": "GARDENER",
+    "tags": [
+      "experienced",
+      "reliable",
+      "proactive",
+      "polite",
+      "affordable"
+    ],
+    "dailyRate": 178,
+    "rating": 4.3,
+    "totalReviews": 17,
+    "latitude": 6.942649125514404,
+    "longitude": 79.90474852537723
+  },
+  {
+    "id": "w264",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "polite",
+      "reliable",
+      "punctual"
+    ],
+    "dailyRate": 205,
+    "rating": 3.4,
+    "totalReviews": 12,
+    "latitude": 6.8903968964334705,
+    "longitude": 79.9067658436214
+  },
+  {
+    "id": "w265",
+    "skill": "CLEANER",
+    "tags": [
+      "thorough",
+      "reliable"
+    ],
+    "dailyRate": 154,
+    "rating": 4.8,
+    "totalReviews": 116,
+    "latitude": 6.907959053497943,
+    "longitude": 79.85238870027435
+  },
+  {
+    "id": "w266",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "reliable",
+      "flexible"
+    ],
+    "dailyRate": 257,
+    "rating": 4.2,
+    "totalReviews": 61,
+    "latitude": 6.924095027434842,
+    "longitude": 79.83308228737997
+  },
+  {
+    "id": "w267",
+    "skill": "MASON",
+    "tags": [
+      "thorough",
+      "reliable",
+      "affordable"
+    ],
+    "dailyRate": 112,
+    "rating": 4,
+    "totalReviews": 148,
+    "latitude": 6.968552760631002,
+    "longitude": 79.83445874485597
+  },
+  {
+    "id": "w268",
+    "skill": "PAINTER",
+    "tags": [
+      "tidy",
+      "expert",
+      "flexible"
+    ],
+    "dailyRate": 256,
+    "rating": 4.5,
+    "totalReviews": 93,
+    "latitude": 6.972507235939643,
+    "longitude": 79.81503359053498
+  },
+  {
+    "id": "w269",
+    "skill": "CLEANER",
+    "tags": [
+      "tidy",
+      "reliable"
+    ],
+    "dailyRate": 119,
+    "rating": 3.7,
+    "totalReviews": 7,
+    "latitude": 6.939762894375858,
+    "longitude": 79.85991270576132
+  },
+  {
+    "id": "w270",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "polite",
+      "fast",
+      "flexible",
+      "honest",
+      "punctual"
+    ],
+    "dailyRate": 249,
+    "rating": 4.2,
+    "totalReviews": 64,
+    "latitude": 6.891159070644719,
+    "longitude": 79.8957481824417
+  },
+  {
+    "id": "w271",
+    "skill": "PLUMBER",
+    "tags": [
+      "reliable",
+      "affordable",
+      "honest",
+      "communicative"
+    ],
+    "dailyRate": 201,
+    "rating": 3.3,
+    "totalReviews": 37,
+    "latitude": 6.899309790809328,
+    "longitude": 79.9055964334705
+  },
+  {
+    "id": "w272",
+    "skill": "PLUMBER",
+    "tags": [
+      "honest",
+      "communicative",
+      "proactive",
+      "punctual"
+    ],
+    "dailyRate": 94,
+    "rating": 4.3,
+    "totalReviews": 38,
+    "latitude": 6.954894495884774,
+    "longitude": 79.89893834019205
+  },
+  {
+    "id": "w273",
+    "skill": "CLEANER",
+    "tags": [
+      "tidy",
+      "experienced",
+      "communicative"
+    ],
+    "dailyRate": 107,
+    "rating": 4.1,
+    "totalReviews": 104,
+    "latitude": 6.888415157750343,
+    "longitude": 79.87461435185185
+  },
+  {
+    "id": "w274",
+    "skill": "MASON",
+    "tags": [
+      "affordable",
+      "friendly",
+      "reliable"
+    ],
+    "dailyRate": 236,
+    "rating": 4.7,
+    "totalReviews": 139,
+    "latitude": 6.931139780521263,
+    "longitude": 79.8563307441701
+  },
+  {
+    "id": "w275",
+    "skill": "CLEANER",
+    "tags": [
+      "proactive",
+      "friendly"
+    ],
+    "dailyRate": 80,
+    "rating": 4.6,
+    "totalReviews": 148,
+    "latitude": 6.946234945130316,
+    "longitude": 79.85645677297667
+  },
+  {
+    "id": "w276",
+    "skill": "PAINTER",
+    "tags": [
+      "friendly",
+      "reliable",
+      "thorough",
+      "affordable",
+      "punctual"
+    ],
+    "dailyRate": 89,
+    "rating": 3.6,
+    "totalReviews": 22,
+    "latitude": 6.893737517146777,
+    "longitude": 79.87787909807956
+  },
+  {
+    "id": "w277",
+    "skill": "PLUMBER",
+    "tags": [
+      "punctual",
+      "communicative",
+      "reliable",
+      "proactive"
+    ],
+    "dailyRate": 96,
+    "rating": 4.4,
+    "totalReviews": 112,
+    "latitude": 6.906980829903978,
+    "longitude": 79.85393105281207
+  },
+  {
+    "id": "w278",
+    "skill": "GARDENER",
+    "tags": [
+      "thorough",
+      "expert",
+      "communicative",
+      "punctual"
+    ],
+    "dailyRate": 183,
+    "rating": 3.5,
+    "totalReviews": 16,
+    "latitude": 6.919298216735254,
+    "longitude": 79.81794597050754
+  },
+  {
+    "id": "w279",
+    "skill": "GARDENER",
+    "tags": [
+      "proactive",
+      "reliable",
+      "tidy"
+    ],
+    "dailyRate": 102,
+    "rating": 4,
+    "totalReviews": 81,
+    "latitude": 6.9169491083676276,
+    "longitude": 79.86888904320988
+  },
+  {
+    "id": "w280",
+    "skill": "CLEANER",
+    "tags": [
+      "flexible",
+      "proactive",
+      "honest",
+      "affordable",
+      "communicative"
+    ],
+    "dailyRate": 185,
+    "rating": 3.8,
+    "totalReviews": 72,
+    "latitude": 6.974488545953361,
+    "longitude": 79.84319802812071
+  },
+  {
+    "id": "w281",
+    "skill": "CARPENTER",
+    "tags": [
+      "experienced",
+      "reliable"
+    ],
+    "dailyRate": 72,
+    "rating": 4.8,
+    "totalReviews": 96,
+    "latitude": 6.892139866255144,
+    "longitude": 79.81812815500686
+  },
+  {
+    "id": "w282",
+    "skill": "PAINTER",
+    "tags": [
+      "reliable",
+      "punctual",
+      "affordable",
+      "communicative"
+    ],
+    "dailyRate": 261,
+    "rating": 3.8,
+    "totalReviews": 139,
+    "latitude": 6.925975171467765,
+    "longitude": 79.82030193758573
+  },
+  {
+    "id": "w283",
+    "skill": "CLEANER",
+    "tags": [
+      "expert",
+      "punctual",
+      "experienced",
+      "flexible"
+    ],
+    "dailyRate": 82,
+    "rating": 4.1,
+    "totalReviews": 19,
+    "latitude": 6.975695679012346,
+    "longitude": 79.87074260973937
+  },
+  {
+    "id": "w284",
+    "skill": "CARPENTER",
+    "tags": [
+      "affordable",
+      "friendly",
+      "honest"
+    ],
+    "dailyRate": 285,
+    "rating": 3.2,
+    "totalReviews": 95,
+    "latitude": 6.8818243655692735,
+    "longitude": 79.87365627572017
+  },
+  {
+    "id": "w285",
+    "skill": "CARPENTER",
+    "tags": [
+      "expert",
+      "proactive"
+    ],
+    "dailyRate": 96,
+    "rating": 3,
+    "totalReviews": 26,
+    "latitude": 6.880268724279835,
+    "longitude": 79.90463664266117
+  },
+  {
+    "id": "w286",
+    "skill": "CLEANER",
+    "tags": [
+      "polite",
+      "communicative"
+    ],
+    "dailyRate": 68,
+    "rating": 4.7,
+    "totalReviews": 81,
+    "latitude": 6.96942810356653,
+    "longitude": 79.87602338820301
+  },
+  {
+    "id": "w287",
+    "skill": "MASON",
+    "tags": [
+      "punctual",
+      "reliable",
+      "honest",
+      "fast",
+      "thorough"
+    ],
+    "dailyRate": 153,
+    "rating": 4,
+    "totalReviews": 86,
+    "latitude": 6.886030898491084,
+    "longitude": 79.89861898148148
+  },
+  {
+    "id": "w288",
+    "skill": "PLUMBER",
+    "tags": [
+      "honest",
+      "polite",
+      "communicative",
+      "reliable"
+    ],
+    "dailyRate": 101,
+    "rating": 3.8,
+    "totalReviews": 113,
+    "latitude": 6.956533299039781,
+    "longitude": 79.84144648491083
+  },
+  {
+    "id": "w289",
+    "skill": "MASON",
+    "tags": [
+      "proactive",
+      "fast",
+      "honest",
+      "tidy"
+    ],
+    "dailyRate": 182,
+    "rating": 4.8,
+    "totalReviews": 112,
+    "latitude": 6.976922959533608,
+    "longitude": 79.88567873799725
+  },
+  {
+    "id": "w290",
+    "skill": "MASON",
+    "tags": [
+      "thorough",
+      "reliable",
+      "communicative",
+      "honest",
+      "friendly"
+    ],
+    "dailyRate": 254,
+    "rating": 3.6,
+    "totalReviews": 14,
+    "latitude": 6.948557047325103,
+    "longitude": 79.8543292866941
+  },
+  {
+    "id": "w291",
+    "skill": "GARDENER",
+    "tags": [
+      "flexible",
+      "honest"
+    ],
+    "dailyRate": 297,
+    "rating": 4.3,
+    "totalReviews": 108,
+    "latitude": 6.963102229080933,
+    "longitude": 79.83906479766803
+  },
+  {
+    "id": "w292",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "proactive",
+      "affordable",
+      "thorough"
+    ],
+    "dailyRate": 257,
+    "rating": 4.2,
+    "totalReviews": 15,
+    "latitude": 6.912205452674898,
+    "longitude": 79.84814744513031
+  },
+  {
+    "id": "w293",
+    "skill": "GARDENER",
+    "tags": [
+      "flexible",
+      "reliable",
+      "polite",
+      "punctual"
+    ],
+    "dailyRate": 238,
+    "rating": 3.7,
+    "totalReviews": 3,
+    "latitude": 6.924661299725652,
+    "longitude": 79.89998086419753
+  },
+  {
+    "id": "w294",
+    "skill": "GARDENER",
+    "tags": [
+      "thorough",
+      "reliable",
+      "experienced"
+    ],
+    "dailyRate": 219,
+    "rating": 3.8,
+    "totalReviews": 109,
+    "latitude": 6.9630747942386835,
+    "longitude": 79.88389332990397
+  },
+  {
+    "id": "w295",
+    "skill": "MASON",
+    "tags": [
+      "fast",
+      "affordable",
+      "experienced"
+    ],
+    "dailyRate": 200,
+    "rating": 4.5,
+    "totalReviews": 65,
+    "latitude": 6.910316306584362,
+    "longitude": 79.87719965706447
+  },
+  {
+    "id": "w296",
+    "skill": "CLEANER",
+    "tags": [
+      "expert",
+      "honest",
+      "experienced",
+      "punctual"
+    ],
+    "dailyRate": 50,
+    "rating": 4.5,
+    "totalReviews": 17,
+    "latitude": 6.880474485596708,
+    "longitude": 79.81842265089163
+  },
+  {
+    "id": "w297",
+    "skill": "TECHNICIAN",
+    "tags": [
+      "thorough",
+      "polite",
+      "honest",
+      "expert",
+      "punctual"
+    ],
+    "dailyRate": 203,
+    "rating": 3.2,
+    "totalReviews": 115,
+    "latitude": 6.8804007544581625,
+    "longitude": 79.83264933127572
+  },
+  {
+    "id": "w298",
+    "skill": "ELECTRICIAN",
+    "tags": [
+      "polite",
+      "expert"
+    ],
+    "dailyRate": 135,
+    "rating": 4.6,
+    "totalReviews": 43,
+    "latitude": 6.901761779835391,
+    "longitude": 79.8115463648834
+  },
+  {
+    "id": "w299",
+    "skill": "MASON",
+    "tags": [
+      "fast",
+      "experienced"
+    ],
+    "dailyRate": 291,
+    "rating": 3.6,
+    "totalReviews": 85,
+    "latitude": 6.9748340534979425,
+    "longitude": 79.85676370027434
+  }
+]

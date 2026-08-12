@@ -1,0 +1,4809 @@
+[
+  {
+    "customerId": "c0",
+    "skill": "PLUMBER",
+    "latitude": 6.915159413580247,
+    "longitude": 79.82293782578874,
+    "budget": 332,
+    "tags": [
+      "proactive",
+      "communicative",
+      "thorough"
+    ],
+    "groundTruth": {
+      "true_top1": "w217",
+      "true_top2": "w1",
+      "true_top3": "w108"
+    }
+  },
+  {
+    "customerId": "c1",
+    "skill": "TECHNICIAN",
+    "latitude": 6.888039214677641,
+    "longitude": 79.87796783264746,
+    "budget": 150,
+    "tags": [
+      "honest"
+    ],
+    "groundTruth": {
+      "true_top1": "w94",
+      "true_top2": "w172",
+      "true_top3": "w121"
+    }
+  },
+  {
+    "customerId": "c2",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.89349060356653,
+    "longitude": 79.88133588820301,
+    "budget": 187,
+    "tags": [
+      "flexible",
+      "experienced"
+    ],
+    "groundTruth": {
+      "true_top1": "w182",
+      "true_top2": "w53",
+      "true_top3": "w261"
+    }
+  },
+  {
+    "customerId": "c3",
+    "skill": "PAINTER",
+    "latitude": 6.965062534293553,
+    "longitude": 79.87186358024691,
+    "budget": 306,
+    "tags": [
+      "experienced",
+      "communicative"
+    ],
+    "groundTruth": {
+      "true_top1": "w20",
+      "true_top2": "w89",
+      "true_top3": "w209"
+    }
+  },
+  {
+    "customerId": "c4",
+    "skill": "CLEANER",
+    "latitude": 6.942472942386831,
+    "longitude": 79.8660692558299,
+    "budget": 201,
+    "tags": [
+      "proactive",
+      "expert"
+    ],
+    "groundTruth": {
+      "true_top1": "w7",
+      "true_top2": "w253",
+      "true_top3": "w52"
+    }
+  },
+  {
+    "customerId": "c5",
+    "skill": "CARPENTER",
+    "latitude": 6.964604715363512,
+    "longitude": 79.81368971193416,
+    "budget": 388,
+    "tags": [
+      "reliable",
+      "tidy",
+      "punctual"
+    ],
+    "groundTruth": {
+      "true_top1": "w59",
+      "true_top2": "w39",
+      "true_top3": "w178"
+    }
+  },
+  {
+    "customerId": "c6",
+    "skill": "CLEANER",
+    "latitude": 6.882377349108368,
+    "longitude": 79.8169561728395,
+    "budget": 231,
+    "tags": [
+      "polite",
+      "expert"
+    ],
+    "groundTruth": {
+      "true_top1": "w296",
+      "true_top2": "w46",
+      "true_top3": "w286"
+    }
+  },
+  {
+    "customerId": "c7",
+    "skill": "PLUMBER",
+    "latitude": 6.943722513717422,
+    "longitude": 79.8883322016461,
+    "budget": 119,
+    "tags": [
+      "honest"
+    ],
+    "groundTruth": {
+      "true_top1": "w27",
+      "true_top2": "w119",
+      "true_top3": "w288"
+    }
+  },
+  {
+    "customerId": "c8",
+    "skill": "MASON",
+    "latitude": 6.958015637860083,
+    "longitude": 79.82867985253772,
+    "budget": 271,
+    "tags": [
+      "tidy"
+    ],
+    "groundTruth": {
+      "true_top1": "w163",
+      "true_top2": "w267",
+      "true_top3": "w32"
+    }
+  },
+  {
+    "customerId": "c9",
+    "skill": "PAINTER",
+    "latitude": 6.933999862825789,
+    "longitude": 79.85795625857338,
+    "budget": 275,
+    "tags": [
+      "fast"
+    ],
+    "groundTruth": {
+      "true_top1": "w20",
+      "true_top2": "w149",
+      "true_top3": "w89"
+    }
+  },
+  {
+    "customerId": "c10",
+    "skill": "GARDENER",
+    "latitude": 6.889943792866942,
+    "longitude": 79.89244957133059,
+    "budget": 142,
+    "tags": [
+      "honest"
+    ],
+    "groundTruth": {
+      "true_top1": "w177",
+      "true_top2": "w147",
+      "true_top3": "w9"
+    }
+  },
+  {
+    "customerId": "c11",
+    "skill": "PLUMBER",
+    "latitude": 6.96718401920439,
+    "longitude": 79.90379473593964,
+    "budget": 353,
+    "tags": [
+      "expert",
+      "flexible"
+    ],
+    "groundTruth": {
+      "true_top1": "w288",
+      "true_top2": "w171",
+      "true_top3": "w96"
+    }
+  },
+  {
+    "customerId": "c12",
+    "skill": "CLEANER",
+    "latitude": 6.879312791495199,
+    "longitude": 79.8135058127572,
+    "budget": 311,
+    "tags": [
+      "honest",
+      "polite",
+      "tidy"
+    ],
+    "groundTruth": {
+      "true_top1": "w91",
+      "true_top2": "w253",
+      "true_top3": "w161"
+    }
+  },
+  {
+    "customerId": "c13",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.970180847050755,
+    "longitude": 79.87729053497942,
+    "budget": 308,
+    "tags": [
+      "experienced"
+    ],
+    "groundTruth": {
+      "true_top1": "w118",
+      "true_top2": "w15",
+      "true_top3": "w11"
+    }
+  },
+  {
+    "customerId": "c14",
+    "skill": "TECHNICIAN",
+    "latitude": 6.971973971193416,
+    "longitude": 79.85513818587106,
+    "budget": 388,
+    "tags": [
+      "thorough",
+      "proactive",
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w297",
+      "true_top2": "w154",
+      "true_top3": "w239"
+    }
+  },
+  {
+    "customerId": "c15",
+    "skill": "PAINTER",
+    "latitude": 6.951489574759945,
+    "longitude": 79.82976695816187,
+    "budget": 293,
+    "tags": [
+      "proactive"
+    ],
+    "groundTruth": {
+      "true_top1": "w158",
+      "true_top2": "w20",
+      "true_top3": "w268"
+    }
+  },
+  {
+    "customerId": "c16",
+    "skill": "CLEANER",
+    "latitude": 6.947740860768175,
+    "longitude": 79.86297812071331,
+    "budget": 247,
+    "tags": [
+      "thorough"
+    ],
+    "groundTruth": {
+      "true_top1": "w100",
+      "true_top2": "w199",
+      "true_top3": "w2"
+    }
+  },
+  {
+    "customerId": "c17",
+    "skill": "MASON",
+    "latitude": 6.958278840877915,
+    "longitude": 79.87673112139917,
+    "budget": 280,
+    "tags": [
+      "communicative"
+    ],
+    "groundTruth": {
+      "true_top1": "w23",
+      "true_top2": "w120",
+      "true_top3": "w18"
+    }
+  },
+  {
+    "customerId": "c18",
+    "skill": "PAINTER",
+    "latitude": 6.918271124828532,
+    "longitude": 79.86496414609053,
+    "budget": 249,
+    "tags": [
+      "expert",
+      "affordable",
+      "polite"
+    ],
+    "groundTruth": {
+      "true_top1": "w234",
+      "true_top2": "w95",
+      "true_top3": "w101"
+    }
+  },
+  {
+    "customerId": "c19",
+    "skill": "PLUMBER",
+    "latitude": 6.94971359739369,
+    "longitude": 79.81140147462277,
+    "budget": 271,
+    "tags": [
+      "fast",
+      "tidy",
+      "friendly"
+    ],
+    "groundTruth": {
+      "true_top1": "w56",
+      "true_top2": "w112",
+      "true_top3": "w132"
+    }
+  },
+  {
+    "customerId": "c20",
+    "skill": "PLUMBER",
+    "latitude": 6.879171759259259,
+    "longitude": 79.90176498628257,
+    "budget": 241,
+    "tags": [
+      "punctual",
+      "experienced"
+    ],
+    "groundTruth": {
+      "true_top1": "w130",
+      "true_top2": "w27",
+      "true_top3": "w194"
+    }
+  },
+  {
+    "customerId": "c21",
+    "skill": "PLUMBER",
+    "latitude": 6.908218398491084,
+    "longitude": 79.86455648148147,
+    "budget": 165,
+    "tags": [
+      "affordable",
+      "tidy",
+      "expert"
+    ],
+    "groundTruth": {
+      "true_top1": "w187",
+      "true_top2": "w1",
+      "true_top3": "w137"
+    }
+  },
+  {
+    "customerId": "c22",
+    "skill": "GARDENER",
+    "latitude": 6.949199194101509,
+    "longitude": 79.82693645404663,
+    "budget": 380,
+    "tags": [
+      "proactive",
+      "honest",
+      "tidy"
+    ],
+    "groundTruth": {
+      "true_top1": "w129",
+      "true_top2": "w3",
+      "true_top3": "w224"
+    }
+  },
+  {
+    "customerId": "c23",
+    "skill": "GARDENER",
+    "latitude": 6.967150582990398,
+    "longitude": 79.89280450960219,
+    "budget": 181,
+    "tags": [
+      "proactive"
+    ],
+    "groundTruth": {
+      "true_top1": "w64",
+      "true_top2": "w175",
+      "true_top3": "w84"
+    }
+  },
+  {
+    "customerId": "c24",
+    "skill": "CARPENTER",
+    "latitude": 6.911823079561043,
+    "longitude": 79.89169511316872,
+    "budget": 144,
+    "tags": [
+      "honest"
+    ],
+    "groundTruth": {
+      "true_top1": "w136",
+      "true_top2": "w17",
+      "true_top3": "w204"
+    }
+  },
+  {
+    "customerId": "c25",
+    "skill": "PLUMBER",
+    "latitude": 6.903224828532236,
+    "longitude": 79.81936229423869,
+    "budget": 176,
+    "tags": [
+      "fast",
+      "affordable"
+    ],
+    "groundTruth": {
+      "true_top1": "w56",
+      "true_top2": "w108",
+      "true_top3": "w189"
+    }
+  },
+  {
+    "customerId": "c26",
+    "skill": "TECHNICIAN",
+    "latitude": 6.946868518518519,
+    "longitude": 79.84932285665295,
+    "budget": 192,
+    "tags": [
+      "thorough"
+    ],
+    "groundTruth": {
+      "true_top1": "w94",
+      "true_top2": "w167",
+      "true_top3": "w292"
+    }
+  },
+  {
+    "customerId": "c27",
+    "skill": "TECHNICIAN",
+    "latitude": 6.906997119341564,
+    "longitude": 79.90543911179698,
+    "budget": 114,
+    "tags": [
+      "friendly",
+      "fast"
+    ],
+    "groundTruth": {
+      "true_top1": "w258",
+      "true_top2": "w143",
+      "true_top3": "w121"
+    }
+  },
+  {
+    "customerId": "c28",
+    "skill": "CARPENTER",
+    "latitude": 6.957084996570645,
+    "longitude": 79.87278521947873,
+    "budget": 223,
+    "tags": [
+      "honest"
+    ],
+    "groundTruth": {
+      "true_top1": "w178",
+      "true_top2": "w140",
+      "true_top3": "w225"
+    }
+  },
+  {
+    "customerId": "c29",
+    "skill": "PAINTER",
+    "latitude": 6.976921244855967,
+    "longitude": 79.869730521262,
+    "budget": 125,
+    "tags": [
+      "experienced"
+    ],
+    "groundTruth": {
+      "true_top1": "w101",
+      "true_top2": "w16",
+      "true_top3": "w188"
+    }
+  },
+  {
+    "customerId": "c30",
+    "skill": "CLEANER",
+    "latitude": 6.9006733882030185,
+    "longitude": 79.88841579218106,
+    "budget": 153,
+    "tags": [
+      "expert"
+    ],
+    "groundTruth": {
+      "true_top1": "w52",
+      "true_top2": "w273",
+      "true_top3": "w259"
+    }
+  },
+  {
+    "customerId": "c31",
+    "skill": "PAINTER",
+    "latitude": 6.905600514403292,
+    "longitude": 79.81561658093278,
+    "budget": 257,
+    "tags": [
+      "expert",
+      "proactive",
+      "communicative"
+    ],
+    "groundTruth": {
+      "true_top1": "w244",
+      "true_top2": "w77",
+      "true_top3": "w145"
+    }
+  },
+  {
+    "customerId": "c32",
+    "skill": "GARDENER",
+    "latitude": 6.9729067558299045,
+    "longitude": 79.83096808984911,
+    "budget": 210,
+    "tags": [
+      "thorough",
+      "affordable",
+      "flexible"
+    ],
+    "groundTruth": {
+      "true_top1": "w235",
+      "true_top2": "w79",
+      "true_top3": "w25"
+    }
+  },
+  {
+    "customerId": "c33",
+    "skill": "GARDENER",
+    "latitude": 6.915945164609054,
+    "longitude": 79.83120814471879,
+    "budget": 339,
+    "tags": [
+      "experienced"
+    ],
+    "groundTruth": {
+      "true_top1": "w66",
+      "true_top2": "w92",
+      "true_top3": "w64"
+    }
+  },
+  {
+    "customerId": "c34",
+    "skill": "TECHNICIAN",
+    "latitude": 6.927559533607682,
+    "longitude": 79.85645420096021,
+    "budget": 314,
+    "tags": [
+      "honest"
+    ],
+    "groundTruth": {
+      "true_top1": "w131",
+      "true_top2": "w63",
+      "true_top3": "w241"
+    }
+  },
+  {
+    "customerId": "c35",
+    "skill": "PLUMBER",
+    "latitude": 6.906972256515775,
+    "longitude": 79.8741899691358,
+    "budget": 109,
+    "tags": [
+      "reliable",
+      "punctual",
+      "honest"
+    ],
+    "groundTruth": {
+      "true_top1": "w194",
+      "true_top2": "w96",
+      "true_top3": "w206"
+    }
+  },
+  {
+    "customerId": "c36",
+    "skill": "PAINTER",
+    "latitude": 6.90721231138546,
+    "longitude": 79.90694031207133,
+    "budget": 135,
+    "tags": [
+      "friendly"
+    ],
+    "groundTruth": {
+      "true_top1": "w276",
+      "true_top2": "w29",
+      "true_top3": "w77"
+    }
+  },
+  {
+    "customerId": "c37",
+    "skill": "GARDENER",
+    "latitude": 6.881514437585734,
+    "longitude": 79.89101610082304,
+    "budget": 367,
+    "tags": [
+      "polite",
+      "reliable",
+      "communicative"
+    ],
+    "groundTruth": {
+      "true_top1": "w185",
+      "true_top2": "w75",
+      "true_top3": "w25"
+    }
+  },
+  {
+    "customerId": "c38",
+    "skill": "PAINTER",
+    "latitude": 6.967396639231825,
+    "longitude": 79.8813736111111,
+    "budget": 396,
+    "tags": [
+      "flexible"
+    ],
+    "groundTruth": {
+      "true_top1": "w158",
+      "true_top2": "w40",
+      "true_top3": "w236"
+    }
+  },
+  {
+    "customerId": "c39",
+    "skill": "PAINTER",
+    "latitude": 6.955931875857339,
+    "longitude": 79.84760946502057,
+    "budget": 317,
+    "tags": [
+      "affordable",
+      "polite"
+    ],
+    "groundTruth": {
+      "true_top1": "w20",
+      "true_top2": "w40",
+      "true_top3": "w110"
+    }
+  },
+  {
+    "customerId": "c40",
+    "skill": "MASON",
+    "latitude": 6.974791186556928,
+    "longitude": 79.858058281893,
+    "budget": 312,
+    "tags": [
+      "reliable",
+      "affordable"
+    ],
+    "groundTruth": {
+      "true_top1": "w267",
+      "true_top2": "w87",
+      "true_top3": "w274"
+    }
+  },
+  {
+    "customerId": "c41",
+    "skill": "PLUMBER",
+    "latitude": 6.9598289094650205,
+    "longitude": 79.89391905006859,
+    "budget": 336,
+    "tags": [
+      "affordable",
+      "tidy",
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w56",
+      "true_top2": "w194",
+      "true_top3": "w219"
+    }
+  },
+  {
+    "customerId": "c42",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.916036042524006,
+    "longitude": 79.87646363168724,
+    "budget": 190,
+    "tags": [
+      "expert",
+      "affordable"
+    ],
+    "groundTruth": {
+      "true_top1": "w182",
+      "true_top2": "w35",
+      "true_top3": "w229"
+    }
+  },
+  {
+    "customerId": "c43",
+    "skill": "CARPENTER",
+    "latitude": 6.969362517146776,
+    "longitude": 79.86600409807956,
+    "budget": 342,
+    "tags": [
+      "tidy",
+      "honest"
+    ],
+    "groundTruth": {
+      "true_top1": "w78",
+      "true_top2": "w39",
+      "true_top3": "w225"
+    }
+  },
+  {
+    "customerId": "c44",
+    "skill": "PAINTER",
+    "latitude": 6.941628463648835,
+    "longitude": 79.81157251371742,
+    "budget": 176,
+    "tags": [
+      "affordable",
+      "experienced",
+      "tidy"
+    ],
+    "groundTruth": {
+      "true_top1": "w236",
+      "true_top2": "w20",
+      "true_top3": "w89"
+    }
+  },
+  {
+    "customerId": "c45",
+    "skill": "PAINTER",
+    "latitude": 6.973498319615913,
+    "longitude": 79.83310286351166,
+    "budget": 173,
+    "tags": [
+      "tidy",
+      "proactive"
+    ],
+    "groundTruth": {
+      "true_top1": "w20",
+      "true_top2": "w244",
+      "true_top3": "w110"
+    }
+  },
+  {
+    "customerId": "c46",
+    "skill": "GARDENER",
+    "latitude": 6.965084396433471,
+    "longitude": 79.8752033436214,
+    "budget": 169,
+    "tags": [
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w147",
+      "true_top2": "w243",
+      "true_top3": "w24"
+    }
+  },
+  {
+    "customerId": "c47",
+    "skill": "CLEANER",
+    "latitude": 6.879609002057613,
+    "longitude": 79.86856025377229,
+    "budget": 371,
+    "tags": [
+      "expert"
+    ],
+    "groundTruth": {
+      "true_top1": "w46",
+      "true_top2": "w7",
+      "true_top3": "w273"
+    }
+  },
+  {
+    "customerId": "c48",
+    "skill": "PAINTER",
+    "latitude": 6.958038357338821,
+    "longitude": 79.83999372427984,
+    "budget": 145,
+    "tags": [
+      "affordable"
+    ],
+    "groundTruth": {
+      "true_top1": "w89",
+      "true_top2": "w110",
+      "true_top3": "w236"
+    }
+  },
+  {
+    "customerId": "c49",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.887175874485597,
+    "longitude": 79.84804070644718,
+    "budget": 231,
+    "tags": [
+      "honest",
+      "expert",
+      "fast"
+    ],
+    "groundTruth": {
+      "true_top1": "w173",
+      "true_top2": "w142",
+      "true_top3": "w298"
+    }
+  },
+  {
+    "customerId": "c50",
+    "skill": "CARPENTER",
+    "latitude": 6.925760836762689,
+    "longitude": 79.82677484567901,
+    "budget": 169,
+    "tags": [
+      "flexible",
+      "fast",
+      "communicative"
+    ],
+    "groundTruth": {
+      "true_top1": "w17",
+      "true_top2": "w160",
+      "true_top3": "w136"
+    }
+  },
+  {
+    "customerId": "c51",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.931852657750343,
+    "longitude": 79.88680185185184,
+    "budget": 223,
+    "tags": [
+      "tidy",
+      "polite",
+      "fast"
+    ],
+    "groundTruth": {
+      "true_top1": "w8",
+      "true_top2": "w264",
+      "true_top3": "w298"
+    }
+  },
+  {
+    "customerId": "c52",
+    "skill": "MASON",
+    "latitude": 6.941854372427984,
+    "longitude": 79.8127500685871,
+    "budget": 190,
+    "tags": [
+      "proactive",
+      "communicative"
+    ],
+    "groundTruth": {
+      "true_top1": "w179",
+      "true_top2": "w144",
+      "true_top3": "w146"
+    }
+  },
+  {
+    "customerId": "c53",
+    "skill": "TECHNICIAN",
+    "latitude": 6.95786517489712,
+    "longitude": 79.8292238340192,
+    "budget": 375,
+    "tags": [
+      "expert",
+      "punctual"
+    ],
+    "groundTruth": {
+      "true_top1": "w10",
+      "true_top2": "w55",
+      "true_top3": "w0"
+    }
+  },
+  {
+    "customerId": "c54",
+    "skill": "CLEANER",
+    "latitude": 6.944325222908094,
+    "longitude": 79.89413038408779,
+    "budget": 133,
+    "tags": [
+      "affordable",
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w100",
+      "true_top2": "w153",
+      "true_top3": "w286"
+    }
+  },
+  {
+    "customerId": "c55",
+    "skill": "PLUMBER",
+    "latitude": 6.941684619341564,
+    "longitude": 79.83387661179698,
+    "budget": 350,
+    "tags": [
+      "friendly",
+      "affordable"
+    ],
+    "groundTruth": {
+      "true_top1": "w19",
+      "true_top2": "w104",
+      "true_top3": "w217"
+    }
+  },
+  {
+    "customerId": "c56",
+    "skill": "PAINTER",
+    "latitude": 6.886478000685871,
+    "longitude": 79.8571164951989,
+    "budget": 104,
+    "tags": [
+      "proactive",
+      "punctual",
+      "polite"
+    ],
+    "groundTruth": {
+      "true_top1": "w77",
+      "true_top2": "w236",
+      "true_top3": "w276"
+    }
+  },
+  {
+    "customerId": "c57",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.888140380658436,
+    "longitude": 79.81891262002743,
+    "budget": 141,
+    "tags": [
+      "punctual",
+      "expert"
+    ],
+    "groundTruth": {
+      "true_top1": "w298",
+      "true_top2": "w139",
+      "true_top3": "w43"
+    }
+  },
+  {
+    "customerId": "c58",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.892608401920439,
+    "longitude": 79.87597837791495,
+    "budget": 345,
+    "tags": [
+      "polite"
+    ],
+    "groundTruth": {
+      "true_top1": "w43",
+      "true_top2": "w102",
+      "true_top3": "w298"
+    }
+  },
+  {
+    "customerId": "c59",
+    "skill": "CLEANER",
+    "latitude": 6.960630949931413,
+    "longitude": 79.85369742798353,
+    "budget": 341,
+    "tags": [
+      "tidy",
+      "thorough",
+      "experienced"
+    ],
+    "groundTruth": {
+      "true_top1": "w100",
+      "true_top2": "w265",
+      "true_top3": "w7"
+    }
+  },
+  {
+    "customerId": "c60",
+    "skill": "CARPENTER",
+    "latitude": 6.891735202331962,
+    "longitude": 79.85434900548697,
+    "budget": 105,
+    "tags": [
+      "reliable",
+      "polite"
+    ],
+    "groundTruth": {
+      "true_top1": "w160",
+      "true_top2": "w281",
+      "true_top3": "w78"
+    }
+  },
+  {
+    "customerId": "c61",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.9591696159122085,
+    "longitude": 79.86182971536351,
+    "budget": 321,
+    "tags": [
+      "tidy"
+    ],
+    "groundTruth": {
+      "true_top1": "w69",
+      "true_top2": "w8",
+      "true_top3": "w34"
+    }
+  },
+  {
+    "customerId": "c62",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.933072222222222,
+    "longitude": 79.8299710048011,
+    "budget": 292,
+    "tags": [
+      "thorough"
+    ],
+    "groundTruth": {
+      "true_top1": "w53",
+      "true_top2": "w102",
+      "true_top3": "w266"
+    }
+  },
+  {
+    "customerId": "c63",
+    "skill": "PLUMBER",
+    "latitude": 6.928215826474623,
+    "longitude": 79.8606341563786,
+    "budget": 345,
+    "tags": [
+      "affordable"
+    ],
+    "groundTruth": {
+      "true_top1": "w74",
+      "true_top2": "w56",
+      "true_top3": "w51"
+    }
+  },
+  {
+    "customerId": "c64",
+    "skill": "TECHNICIAN",
+    "latitude": 6.929391666666667,
+    "longitude": 79.89712378257887,
+    "budget": 106,
+    "tags": [
+      "reliable",
+      "punctual",
+      "communicative"
+    ],
+    "groundTruth": {
+      "true_top1": "w143",
+      "true_top2": "w201",
+      "true_top3": "w54"
+    }
+  },
+  {
+    "customerId": "c65",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.9313232510288065,
+    "longitude": 79.86278993484224,
+    "budget": 369,
+    "tags": [
+      "tidy",
+      "polite"
+    ],
+    "groundTruth": {
+      "true_top1": "w142",
+      "true_top2": "w264",
+      "true_top3": "w11"
+    }
+  },
+  {
+    "customerId": "c66",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.895543072702332,
+    "longitude": 79.87135132030178,
+    "budget": 355,
+    "tags": [
+      "expert",
+      "punctual",
+      "flexible"
+    ],
+    "groundTruth": {
+      "true_top1": "w216",
+      "true_top2": "w53",
+      "true_top3": "w43"
+    }
+  },
+  {
+    "customerId": "c67",
+    "skill": "PLUMBER",
+    "latitude": 6.962598113854596,
+    "longitude": 79.85028907750343,
+    "budget": 378,
+    "tags": [
+      "fast",
+      "experienced",
+      "communicative"
+    ],
+    "groundTruth": {
+      "true_top1": "w288",
+      "true_top2": "w112",
+      "true_top3": "w132"
+    }
+  },
+  {
+    "customerId": "c68",
+    "skill": "PLUMBER",
+    "latitude": 6.913307133058985,
+    "longitude": 79.89487669753086,
+    "budget": 257,
+    "tags": [
+      "proactive",
+      "punctual",
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w219",
+      "true_top2": "w277",
+      "true_top3": "w194"
+    }
+  },
+  {
+    "customerId": "c69",
+    "skill": "MASON",
+    "latitude": 6.917250891632373,
+    "longitude": 79.87577518861454,
+    "budget": 254,
+    "tags": [
+      "thorough",
+      "proactive"
+    ],
+    "groundTruth": {
+      "true_top1": "w186",
+      "true_top2": "w230",
+      "true_top3": "w135"
+    }
+  },
+  {
+    "customerId": "c70",
+    "skill": "CLEANER",
+    "latitude": 6.953056361454047,
+    "longitude": 79.90245,
+    "budget": 287,
+    "tags": [
+      "expert",
+      "punctual"
+    ],
+    "groundTruth": {
+      "true_top1": "w60",
+      "true_top2": "w253",
+      "true_top3": "w156"
+    }
+  },
+  {
+    "customerId": "c71",
+    "skill": "MASON",
+    "latitude": 6.940835853909466,
+    "longitude": 79.83950932784636,
+    "budget": 220,
+    "tags": [
+      "expert"
+    ],
+    "groundTruth": {
+      "true_top1": "w32",
+      "true_top2": "w192",
+      "true_top3": "w238"
+    }
+  },
+  {
+    "customerId": "c72",
+    "skill": "TECHNICIAN",
+    "latitude": 6.881634893689987,
+    "longitude": 79.81137832647462,
+    "budget": 185,
+    "tags": [
+      "experienced",
+      "flexible",
+      "thorough"
+    ],
+    "groundTruth": {
+      "true_top1": "w297",
+      "true_top2": "w203",
+      "true_top3": "w54"
+    }
+  },
+  {
+    "customerId": "c73",
+    "skill": "PLUMBER",
+    "latitude": 6.883702794924554,
+    "longitude": 79.84492770919067,
+    "budget": 174,
+    "tags": [
+      "friendly"
+    ],
+    "groundTruth": {
+      "true_top1": "w194",
+      "true_top2": "w215",
+      "true_top3": "w27"
+    }
+  },
+  {
+    "customerId": "c74",
+    "skill": "CLEANER",
+    "latitude": 6.889195764746228,
+    "longitude": 79.83504002057613,
+    "budget": 213,
+    "tags": [
+      "tidy",
+      "friendly"
+    ],
+    "groundTruth": {
+      "true_top1": "w169",
+      "true_top2": "w99",
+      "true_top3": "w153"
+    }
+  },
+  {
+    "customerId": "c75",
+    "skill": "TECHNICIAN",
+    "latitude": 6.90101975308642,
+    "longitude": 79.90995557270233,
+    "budget": 314,
+    "tags": [
+      "communicative",
+      "fast"
+    ],
+    "groundTruth": {
+      "true_top1": "w90",
+      "true_top2": "w141",
+      "true_top3": "w270"
+    }
+  },
+  {
+    "customerId": "c76",
+    "skill": "TECHNICIAN",
+    "latitude": 6.938880692729767,
+    "longitude": 79.85455519547325,
+    "budget": 188,
+    "tags": [
+      "friendly",
+      "reliable",
+      "flexible"
+    ],
+    "groundTruth": {
+      "true_top1": "w63",
+      "true_top2": "w159",
+      "true_top3": "w172"
+    }
+  },
+  {
+    "customerId": "c77",
+    "skill": "CARPENTER",
+    "latitude": 6.939132750342936,
+    "longitude": 79.89894305555555,
+    "budget": 150,
+    "tags": [
+      "proactive"
+    ],
+    "groundTruth": {
+      "true_top1": "w78",
+      "true_top2": "w225",
+      "true_top3": "w59"
+    }
+  },
+  {
+    "customerId": "c78",
+    "skill": "TECHNICIAN",
+    "latitude": 6.8873241941015095,
+    "longitude": 79.82756145404663,
+    "budget": 395,
+    "tags": [
+      "communicative",
+      "affordable",
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w292",
+      "true_top2": "w10",
+      "true_top3": "w42"
+    }
+  },
+  {
+    "customerId": "c79",
+    "skill": "TECHNICIAN",
+    "latitude": 6.971829509602195,
+    "longitude": 79.81150092592593,
+    "budget": 206,
+    "tags": [
+      "affordable"
+    ],
+    "groundTruth": {
+      "true_top1": "w37",
+      "true_top2": "w55",
+      "true_top3": "w86"
+    }
+  },
+  {
+    "customerId": "c80",
+    "skill": "CLEANER",
+    "latitude": 6.952595541838135,
+    "longitude": 79.81636675240054,
+    "budget": 161,
+    "tags": [
+      "reliable",
+      "flexible",
+      "communicative"
+    ],
+    "groundTruth": {
+      "true_top1": "w2",
+      "true_top2": "w153",
+      "true_top3": "w100"
+    }
+  },
+  {
+    "customerId": "c81",
+    "skill": "GARDENER",
+    "latitude": 6.939296930727023,
+    "longitude": 79.8259848079561,
+    "budget": 240,
+    "tags": [
+      "expert",
+      "thorough"
+    ],
+    "groundTruth": {
+      "true_top1": "w278",
+      "true_top2": "w133",
+      "true_top3": "w138"
+    }
+  },
+  {
+    "customerId": "c82",
+    "skill": "TECHNICIAN",
+    "latitude": 6.882248319615912,
+    "longitude": 79.81685286351166,
+    "budget": 323,
+    "tags": [
+      "flexible",
+      "friendly",
+      "communicative"
+    ],
+    "groundTruth": {
+      "true_top1": "w241",
+      "true_top2": "w55",
+      "true_top3": "w205"
+    }
+  },
+  {
+    "customerId": "c83",
+    "skill": "TECHNICIAN",
+    "latitude": 6.880031241426612,
+    "longitude": 79.89580862482853,
+    "budget": 145,
+    "tags": [
+      "affordable",
+      "polite"
+    ],
+    "groundTruth": {
+      "true_top1": "w54",
+      "true_top2": "w201",
+      "true_top3": "w159"
+    }
+  },
+  {
+    "customerId": "c84",
+    "skill": "MASON",
+    "latitude": 6.879232630315501,
+    "longitude": 79.86792668038409,
+    "budget": 138,
+    "tags": [
+      "polite",
+      "fast"
+    ],
+    "groundTruth": {
+      "true_top1": "w81",
+      "true_top2": "w67",
+      "true_top3": "w295"
+    }
+  },
+  {
+    "customerId": "c85",
+    "skill": "PAINTER",
+    "latitude": 6.941842369684499,
+    "longitude": 79.90111255144032,
+    "budget": 394,
+    "tags": [
+      "flexible",
+      "friendly",
+      "communicative"
+    ],
+    "groundTruth": {
+      "true_top1": "w40",
+      "true_top2": "w70",
+      "true_top3": "w234"
+    }
+  },
+  {
+    "customerId": "c86",
+    "skill": "CLEANER",
+    "latitude": 6.951335682441702,
+    "longitude": 79.89841450617284,
+    "budget": 267,
+    "tags": [
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w38",
+      "true_top2": "w60",
+      "true_top3": "w254"
+    }
+  },
+  {
+    "customerId": "c87",
+    "skill": "TECHNICIAN",
+    "latitude": 6.885953737997257,
+    "longitude": 79.88094922839505,
+    "budget": 304,
+    "tags": [
+      "punctual",
+      "tidy"
+    ],
+    "groundTruth": {
+      "true_top1": "w55",
+      "true_top2": "w73",
+      "true_top3": "w201"
+    }
+  },
+  {
+    "customerId": "c88",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.935633950617285,
+    "longitude": 79.85660680727023,
+    "budget": 281,
+    "tags": [
+      "honest",
+      "expert"
+    ],
+    "groundTruth": {
+      "true_top1": "w208",
+      "true_top2": "w229",
+      "true_top3": "w249"
+    }
+  },
+  {
+    "customerId": "c89",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.9239398491083675,
+    "longitude": 79.88976867283951,
+    "budget": 233,
+    "tags": [
+      "expert",
+      "affordable",
+      "punctual"
+    ],
+    "groundTruth": {
+      "true_top1": "w229",
+      "true_top2": "w34",
+      "true_top3": "w15"
+    }
+  },
+  {
+    "customerId": "c90",
+    "skill": "CARPENTER",
+    "latitude": 6.880690963648834,
+    "longitude": 79.83188501371741,
+    "budget": 329,
+    "tags": [
+      "affordable"
+    ],
+    "groundTruth": {
+      "true_top1": "w58",
+      "true_top2": "w248",
+      "true_top3": "w48"
+    }
+  },
+  {
+    "customerId": "c91",
+    "skill": "PAINTER",
+    "latitude": 6.927594684499314,
+    "longitude": 79.88339264403292,
+    "budget": 250,
+    "tags": [
+      "polite",
+      "fast",
+      "flexible"
+    ],
+    "groundTruth": {
+      "true_top1": "w80",
+      "true_top2": "w89",
+      "true_top3": "w188"
+    }
+  },
+  {
+    "customerId": "c92",
+    "skill": "CLEANER",
+    "latitude": 6.947148439643347,
+    "longitude": 79.85286923868313,
+    "budget": 300,
+    "tags": [
+      "tidy",
+      "thorough",
+      "punctual"
+    ],
+    "groundTruth": {
+      "true_top1": "w202",
+      "true_top2": "w259",
+      "true_top3": "w253"
+    }
+  },
+  {
+    "customerId": "c93",
+    "skill": "PAINTER",
+    "latitude": 6.95130396090535,
+    "longitude": 79.90337249657064,
+    "budget": 222,
+    "tags": [
+      "honest"
+    ],
+    "groundTruth": {
+      "true_top1": "w174",
+      "true_top2": "w29",
+      "true_top3": "w16"
+    }
+  },
+  {
+    "customerId": "c94",
+    "skill": "MASON",
+    "latitude": 6.931264523319616,
+    "longitude": 79.81656351165981,
+    "budget": 144,
+    "tags": [
+      "tidy"
+    ],
+    "groundTruth": {
+      "true_top1": "w230",
+      "true_top2": "w226",
+      "true_top3": "w163"
+    }
+  },
+  {
+    "customerId": "c95",
+    "skill": "PLUMBER",
+    "latitude": 6.928566906721537,
+    "longitude": 79.8260315329218,
+    "budget": 386,
+    "tags": [
+      "flexible",
+      "friendly",
+      "tidy"
+    ],
+    "groundTruth": {
+      "true_top1": "w219",
+      "true_top2": "w56",
+      "true_top3": "w96"
+    }
+  },
+  {
+    "customerId": "c96",
+    "skill": "TECHNICIAN",
+    "latitude": 6.886408127572016,
+    "longitude": 79.90722666323731,
+    "budget": 284,
+    "tags": [
+      "flexible",
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w26",
+      "true_top2": "w270",
+      "true_top3": "w55"
+    }
+  },
+  {
+    "customerId": "c97",
+    "skill": "PLUMBER",
+    "latitude": 6.932738717421125,
+    "longitude": 79.82804284979423,
+    "budget": 219,
+    "tags": [
+      "fast",
+      "honest",
+      "friendly"
+    ],
+    "groundTruth": {
+      "true_top1": "w96",
+      "true_top2": "w272",
+      "true_top3": "w27"
+    }
+  },
+  {
+    "customerId": "c98",
+    "skill": "CARPENTER",
+    "latitude": 6.965279441015089,
+    "longitude": 79.88931299725651,
+    "budget": 304,
+    "tags": [
+      "proactive",
+      "affordable"
+    ],
+    "groundTruth": {
+      "true_top1": "w140",
+      "true_top2": "w78",
+      "true_top3": "w248"
+    }
+  },
+  {
+    "customerId": "c99",
+    "skill": "TECHNICIAN",
+    "latitude": 6.932138151577504,
+    "longitude": 79.8421799382716,
+    "budget": 120,
+    "tags": [
+      "fast",
+      "honest"
+    ],
+    "groundTruth": {
+      "true_top1": "w203",
+      "true_top2": "w54",
+      "true_top3": "w257"
+    }
+  },
+  {
+    "customerId": "c100",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.898089368998629,
+    "longitude": 79.85445317215363,
+    "budget": 282,
+    "tags": [
+      "communicative"
+    ],
+    "groundTruth": {
+      "true_top1": "w166",
+      "true_top2": "w106",
+      "true_top3": "w53"
+    }
+  },
+  {
+    "customerId": "c101",
+    "skill": "PLUMBER",
+    "latitude": 6.879399382716049,
+    "longitude": 79.81889075788752,
+    "budget": 198,
+    "tags": [
+      "thorough",
+      "honest"
+    ],
+    "groundTruth": {
+      "true_top1": "w19",
+      "true_top2": "w108",
+      "true_top3": "w27"
+    }
+  },
+  {
+    "customerId": "c102",
+    "skill": "PAINTER",
+    "latitude": 6.920839283264747,
+    "longitude": 79.85140576131687,
+    "budget": 345,
+    "tags": [
+      "expert",
+      "tidy",
+      "punctual"
+    ],
+    "groundTruth": {
+      "true_top1": "w282",
+      "true_top2": "w145",
+      "true_top3": "w29"
+    }
+  },
+  {
+    "customerId": "c103",
+    "skill": "PAINTER",
+    "latitude": 6.956365260631002,
+    "longitude": 79.87852124485596,
+    "budget": 252,
+    "tags": [
+      "reliable",
+      "friendly",
+      "punctual"
+    ],
+    "groundTruth": {
+      "true_top1": "w16",
+      "true_top2": "w40",
+      "true_top3": "w89"
+    }
+  },
+  {
+    "customerId": "c104",
+    "skill": "CLEANER",
+    "latitude": 6.957416358024692,
+    "longitude": 79.85477810356653,
+    "budget": 399,
+    "tags": [
+      "expert",
+      "flexible"
+    ],
+    "groundTruth": {
+      "true_top1": "w100",
+      "true_top2": "w250",
+      "true_top3": "w7"
+    }
+  },
+  {
+    "customerId": "c105",
+    "skill": "PAINTER",
+    "latitude": 6.897455366941015,
+    "longitude": 79.85760003429355,
+    "budget": 200,
+    "tags": [
+      "affordable",
+      "experienced",
+      "expert"
+    ],
+    "groundTruth": {
+      "true_top1": "w89",
+      "true_top2": "w101",
+      "true_top3": "w181"
+    }
+  },
+  {
+    "customerId": "c106",
+    "skill": "PLUMBER",
+    "latitude": 6.913424159807956,
+    "longitude": 79.88334248971194,
+    "budget": 121,
+    "tags": [
+      "affordable"
+    ],
+    "groundTruth": {
+      "true_top1": "w96",
+      "true_top2": "w74",
+      "true_top3": "w272"
+    }
+  },
+  {
+    "customerId": "c107",
+    "skill": "GARDENER",
+    "latitude": 6.898042215363512,
+    "longitude": 79.81587721193415,
+    "budget": 124,
+    "tags": [
+      "experienced"
+    ],
+    "groundTruth": {
+      "true_top1": "w66",
+      "true_top2": "w190",
+      "true_top3": "w88"
+    }
+  },
+  {
+    "customerId": "c108",
+    "skill": "MASON",
+    "latitude": 6.966183504801098,
+    "longitude": 79.89801027091906,
+    "budget": 386,
+    "tags": [
+      "communicative",
+      "honest"
+    ],
+    "groundTruth": {
+      "true_top1": "w135",
+      "true_top2": "w274",
+      "true_top3": "w107"
+    }
+  },
+  {
+    "customerId": "c109",
+    "skill": "CLEANER",
+    "latitude": 6.956760922496571,
+    "longitude": 79.85857225651577,
+    "budget": 239,
+    "tags": [
+      "affordable"
+    ],
+    "groundTruth": {
+      "true_top1": "w253",
+      "true_top2": "w199",
+      "true_top3": "w286"
+    }
+  },
+  {
+    "customerId": "c110",
+    "skill": "MASON",
+    "latitude": 6.904834482167352,
+    "longitude": 79.89075075445815,
+    "budget": 254,
+    "tags": [
+      "friendly"
+    ],
+    "groundTruth": {
+      "true_top1": "w135",
+      "true_top2": "w170",
+      "true_top3": "w62"
+    }
+  },
+  {
+    "customerId": "c111",
+    "skill": "MASON",
+    "latitude": 6.912058847736626,
+    "longitude": 79.88457491426611,
+    "budget": 239,
+    "tags": [
+      "honest",
+      "polite",
+      "expert"
+    ],
+    "groundTruth": {
+      "true_top1": "w85",
+      "true_top2": "w170",
+      "true_top3": "w295"
+    }
+  },
+  {
+    "customerId": "c112",
+    "skill": "GARDENER",
+    "latitude": 6.898269838820302,
+    "longitude": 79.83300298353909,
+    "budget": 354,
+    "tags": [
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w44",
+      "true_top2": "w185",
+      "true_top3": "w79"
+    }
+  },
+  {
+    "customerId": "c113",
+    "skill": "PAINTER",
+    "latitude": 6.962707424554184,
+    "longitude": 79.86698789437585,
+    "budget": 226,
+    "tags": [
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w40",
+      "true_top2": "w109",
+      "true_top3": "w256"
+    }
+  },
+  {
+    "customerId": "c114",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.964803189300412,
+    "longitude": 79.85969579903978,
+    "budget": 198,
+    "tags": [
+      "polite",
+      "punctual",
+      "experienced"
+    ],
+    "groundTruth": {
+      "true_top1": "w8",
+      "true_top2": "w229",
+      "true_top3": "w249"
+    }
+  },
+  {
+    "customerId": "c115",
+    "skill": "PAINTER",
+    "latitude": 6.909780469821674,
+    "longitude": 79.89338192729767,
+    "budget": 248,
+    "tags": [
+      "expert",
+      "tidy",
+      "experienced"
+    ],
+    "groundTruth": {
+      "true_top1": "w61",
+      "true_top2": "w148",
+      "true_top3": "w276"
+    }
+  },
+  {
+    "customerId": "c116",
+    "skill": "CARPENTER",
+    "latitude": 6.941798645404664,
+    "longitude": 79.89443302469135,
+    "budget": 333,
+    "tags": [
+      "experienced",
+      "affordable",
+      "thorough"
+    ],
+    "groundTruth": {
+      "true_top1": "w225",
+      "true_top2": "w140",
+      "true_top3": "w157"
+    }
+  },
+  {
+    "customerId": "c117",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.948648353909466,
+    "longitude": 79.90357182784636,
+    "budget": 190,
+    "tags": [
+      "expert",
+      "proactive",
+      "tidy"
+    ],
+    "groundTruth": {
+      "true_top1": "w8",
+      "true_top2": "w142",
+      "true_top3": "w197"
+    }
+  },
+  {
+    "customerId": "c118",
+    "skill": "MASON",
+    "latitude": 6.886063906035665,
+    "longitude": 79.90562215363511,
+    "budget": 289,
+    "tags": [
+      "reliable",
+      "polite"
+    ],
+    "groundTruth": {
+      "true_top1": "w287",
+      "true_top2": "w93",
+      "true_top3": "w81"
+    }
+  },
+  {
+    "customerId": "c119",
+    "skill": "TECHNICIAN",
+    "latitude": 6.964723028120714,
+    "longitude": 79.81411666666666,
+    "budget": 312,
+    "tags": [
+      "experienced",
+      "expert"
+    ],
+    "groundTruth": {
+      "true_top1": "w10",
+      "true_top2": "w0",
+      "true_top3": "w4"
+    }
+  },
+  {
+    "customerId": "c120",
+    "skill": "TECHNICIAN",
+    "latitude": 6.891826937585734,
+    "longitude": 79.90757860082304,
+    "budget": 135,
+    "tags": [
+      "reliable",
+      "punctual"
+    ],
+    "groundTruth": {
+      "true_top1": "w201",
+      "true_top2": "w258",
+      "true_top3": "w54"
+    }
+  },
+  {
+    "customerId": "c121",
+    "skill": "PLUMBER",
+    "latitude": 6.968513323045268,
+    "longitude": 79.86764975994512,
+    "budget": 197,
+    "tags": [
+      "friendly",
+      "fast"
+    ],
+    "groundTruth": {
+      "true_top1": "w187",
+      "true_top2": "w51",
+      "true_top3": "w56"
+    }
+  },
+  {
+    "customerId": "c122",
+    "skill": "MASON",
+    "latitude": 6.917313048696845,
+    "longitude": 79.85389804526748,
+    "budget": 214,
+    "tags": [
+      "expert",
+      "punctual"
+    ],
+    "groundTruth": {
+      "true_top1": "w193",
+      "true_top2": "w144",
+      "true_top3": "w103"
+    }
+  },
+  {
+    "customerId": "c123",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.9180044924554185,
+    "longitude": 79.88501644375857,
+    "budget": 374,
+    "tags": [
+      "experienced",
+      "reliable",
+      "friendly"
+    ],
+    "groundTruth": {
+      "true_top1": "w232",
+      "true_top2": "w264",
+      "true_top3": "w266"
+    }
+  },
+  {
+    "customerId": "c124",
+    "skill": "PLUMBER",
+    "latitude": 6.893743089849108,
+    "longitude": 79.82971080246914,
+    "budget": 173,
+    "tags": [
+      "tidy",
+      "reliable",
+      "communicative"
+    ],
+    "groundTruth": {
+      "true_top1": "w277",
+      "true_top2": "w104",
+      "true_top3": "w288"
+    }
+  },
+  {
+    "customerId": "c125",
+    "skill": "CARPENTER",
+    "latitude": 6.925320164609054,
+    "longitude": 79.82808314471879,
+    "budget": 237,
+    "tags": [
+      "experienced",
+      "affordable"
+    ],
+    "groundTruth": {
+      "true_top1": "w225",
+      "true_top2": "w48",
+      "true_top3": "w284"
+    }
+  },
+  {
+    "customerId": "c126",
+    "skill": "GARDENER",
+    "latitude": 6.967928617969822,
+    "longitude": 79.8293078532236,
+    "budget": 208,
+    "tags": [
+      "expert",
+      "affordable"
+    ],
+    "groundTruth": {
+      "true_top1": "w24",
+      "true_top2": "w133",
+      "true_top3": "w9"
+    }
+  },
+  {
+    "customerId": "c127",
+    "skill": "GARDENER",
+    "latitude": 6.973409585048011,
+    "longitude": 79.90778264746227,
+    "budget": 374,
+    "tags": [
+      "honest",
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w66",
+      "true_top2": "w3",
+      "true_top3": "w147"
+    }
+  },
+  {
+    "customerId": "c128",
+    "skill": "PAINTER",
+    "latitude": 6.966853515089164,
+    "longitude": 79.82977596021948,
+    "budget": 136,
+    "tags": [
+      "punctual",
+      "fast",
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w110",
+      "true_top2": "w20",
+      "true_top3": "w158"
+    }
+  },
+  {
+    "customerId": "c129",
+    "skill": "TECHNICIAN",
+    "latitude": 6.964262208504802,
+    "longitude": 79.82803341906721,
+    "budget": 196,
+    "tags": [
+      "tidy",
+      "flexible",
+      "communicative"
+    ],
+    "groundTruth": {
+      "true_top1": "w54",
+      "true_top2": "w73",
+      "true_top3": "w141"
+    }
+  },
+  {
+    "customerId": "c130",
+    "skill": "CARPENTER",
+    "latitude": 6.922889180384088,
+    "longitude": 79.81749886831275,
+    "budget": 354,
+    "tags": [
+      "tidy"
+    ],
+    "groundTruth": {
+      "true_top1": "w59",
+      "true_top2": "w48",
+      "true_top3": "w225"
+    }
+  },
+  {
+    "customerId": "c131",
+    "skill": "TECHNICIAN",
+    "latitude": 6.917175445816187,
+    "longitude": 79.87405365226337,
+    "budget": 121,
+    "tags": [
+      "proactive"
+    ],
+    "groundTruth": {
+      "true_top1": "w180",
+      "true_top2": "w257",
+      "true_top3": "w55"
+    }
+  },
+  {
+    "customerId": "c132",
+    "skill": "CARPENTER",
+    "latitude": 6.8788588305898495,
+    "longitude": 79.89121543209876,
+    "budget": 379,
+    "tags": [
+      "tidy",
+      "experienced"
+    ],
+    "groundTruth": {
+      "true_top1": "w124",
+      "true_top2": "w285",
+      "true_top3": "w204"
+    }
+  },
+  {
+    "customerId": "c133",
+    "skill": "PAINTER",
+    "latitude": 6.972533813443073,
+    "longitude": 79.86223094993142,
+    "budget": 226,
+    "tags": [
+      "expert",
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w20",
+      "true_top2": "w188",
+      "true_top3": "w234"
+    }
+  },
+  {
+    "customerId": "c134",
+    "skill": "MASON",
+    "latitude": 6.890402040466393,
+    "longitude": 79.85461049382715,
+    "budget": 316,
+    "tags": [
+      "communicative",
+      "reliable",
+      "honest"
+    ],
+    "groundTruth": {
+      "true_top1": "w144",
+      "true_top2": "w21",
+      "true_top3": "w68"
+    }
+  },
+  {
+    "customerId": "c135",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.924320078875172,
+    "longitude": 79.82628573388203,
+    "budget": 132,
+    "tags": [
+      "punctual",
+      "friendly"
+    ],
+    "groundTruth": {
+      "true_top1": "w102",
+      "true_top2": "w118",
+      "true_top3": "w207"
+    }
+  },
+  {
+    "customerId": "c136",
+    "skill": "PLUMBER",
+    "latitude": 6.909333796296297,
+    "longitude": 79.83887146776405,
+    "budget": 330,
+    "tags": [
+      "expert",
+      "polite",
+      "punctual"
+    ],
+    "groundTruth": {
+      "true_top1": "w215",
+      "true_top2": "w125",
+      "true_top3": "w217"
+    }
+  },
+  {
+    "customerId": "c137",
+    "skill": "PAINTER",
+    "latitude": 6.9231185185185184,
+    "longitude": 79.85057285665295,
+    "budget": 266,
+    "tags": [
+      "expert"
+    ],
+    "groundTruth": {
+      "true_top1": "w188",
+      "true_top2": "w149",
+      "true_top3": "w61"
+    }
+  },
+  {
+    "customerId": "c138",
+    "skill": "PAINTER",
+    "latitude": 6.949066735253773,
+    "longitude": 79.89493671124828,
+    "budget": 371,
+    "tags": [
+      "tidy",
+      "experienced"
+    ],
+    "groundTruth": {
+      "true_top1": "w234",
+      "true_top2": "w149",
+      "true_top3": "w101"
+    }
+  },
+  {
+    "customerId": "c139",
+    "skill": "PAINTER",
+    "latitude": 6.9364921467764065,
+    "longitude": 79.83868928326474,
+    "budget": 236,
+    "tags": [
+      "expert",
+      "proactive",
+      "punctual"
+    ],
+    "groundTruth": {
+      "true_top1": "w233",
+      "true_top2": "w236",
+      "true_top3": "w110"
+    }
+  },
+  {
+    "customerId": "c140",
+    "skill": "PAINTER",
+    "latitude": 6.965613803155007,
+    "longitude": 79.899215260631,
+    "budget": 131,
+    "tags": [
+      "affordable",
+      "expert"
+    ],
+    "groundTruth": {
+      "true_top1": "w61",
+      "true_top2": "w110",
+      "true_top3": "w30"
+    }
+  },
+  {
+    "customerId": "c141",
+    "skill": "TECHNICIAN",
+    "latitude": 6.882090997942387,
+    "longitude": 79.85360397805212,
+    "budget": 170,
+    "tags": [
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w37",
+      "true_top2": "w143",
+      "true_top3": "w159"
+    }
+  },
+  {
+    "customerId": "c142",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.931205366941016,
+    "longitude": 79.86635003429355,
+    "budget": 199,
+    "tags": [
+      "reliable",
+      "flexible",
+      "proactive"
+    ],
+    "groundTruth": {
+      "true_top1": "w261",
+      "true_top2": "w8",
+      "true_top3": "w262"
+    }
+  },
+  {
+    "customerId": "c143",
+    "skill": "GARDENER",
+    "latitude": 6.957992489711934,
+    "longitude": 79.81337892661179,
+    "budget": 171,
+    "tags": [
+      "proactive",
+      "tidy",
+      "communicative"
+    ],
+    "groundTruth": {
+      "true_top1": "w279",
+      "true_top2": "w133",
+      "true_top3": "w278"
+    }
+  },
+  {
+    "customerId": "c144",
+    "skill": "CARPENTER",
+    "latitude": 6.965527211934156,
+    "longitude": 79.89383031550068,
+    "budget": 343,
+    "tags": [
+      "reliable",
+      "polite"
+    ],
+    "groundTruth": {
+      "true_top1": "w83",
+      "true_top2": "w184",
+      "true_top3": "w140"
+    }
+  },
+  {
+    "customerId": "c145",
+    "skill": "GARDENER",
+    "latitude": 6.916083196159122,
+    "longitude": 79.81503959190673,
+    "budget": 145,
+    "tags": [
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w24",
+      "true_top2": "w88",
+      "true_top3": "w92"
+    }
+  },
+  {
+    "customerId": "c146",
+    "skill": "PLUMBER",
+    "latitude": 6.952784585048011,
+    "longitude": 79.87465764746227,
+    "budget": 291,
+    "tags": [
+      "reliable",
+      "friendly"
+    ],
+    "groundTruth": {
+      "true_top1": "w50",
+      "true_top2": "w206",
+      "true_top3": "w74"
+    }
+  },
+  {
+    "customerId": "c147",
+    "skill": "CLEANER",
+    "latitude": 6.9212285150891635,
+    "longitude": 79.87165096021947,
+    "budget": 365,
+    "tags": [
+      "polite",
+      "reliable",
+      "flexible"
+    ],
+    "groundTruth": {
+      "true_top1": "w162",
+      "true_top2": "w251",
+      "true_top3": "w191"
+    }
+  },
+  {
+    "customerId": "c148",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.957737860082305,
+    "longitude": 79.8450687414266,
+    "budget": 110,
+    "tags": [
+      "affordable",
+      "experienced"
+    ],
+    "groundTruth": {
+      "true_top1": "w139",
+      "true_top2": "w118",
+      "true_top3": "w173"
+    }
+  },
+  {
+    "customerId": "c149",
+    "skill": "CLEANER",
+    "latitude": 6.895426474622771,
+    "longitude": 79.88687258230452,
+    "budget": 250,
+    "tags": [
+      "fast",
+      "experienced"
+    ],
+    "groundTruth": {
+      "true_top1": "w100",
+      "true_top2": "w60",
+      "true_top3": "w169"
+    }
+  },
+  {
+    "customerId": "c150",
+    "skill": "PLUMBER",
+    "latitude": 6.885789986282579,
+    "longitude": 79.85789453017833,
+    "budget": 115,
+    "tags": [
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w277",
+      "true_top2": "w27",
+      "true_top3": "w194"
+    }
+  },
+  {
+    "customerId": "c151",
+    "skill": "MASON",
+    "latitude": 6.930622805212621,
+    "longitude": 79.84794339849108,
+    "budget": 294,
+    "tags": [
+      "reliable",
+      "polite",
+      "proactive"
+    ],
+    "groundTruth": {
+      "true_top1": "w290",
+      "true_top2": "w5",
+      "true_top3": "w193"
+    }
+  },
+  {
+    "customerId": "c152",
+    "skill": "PAINTER",
+    "latitude": 6.910985459533608,
+    "longitude": 79.90099123799725,
+    "budget": 130,
+    "tags": [
+      "tidy",
+      "reliable",
+      "flexible"
+    ],
+    "groundTruth": {
+      "true_top1": "w61",
+      "true_top2": "w236",
+      "true_top3": "w174"
+    }
+  },
+  {
+    "customerId": "c153",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.964644152949246,
+    "longitude": 79.880498696845,
+    "budget": 269,
+    "tags": [
+      "reliable",
+      "experienced",
+      "flexible"
+    ],
+    "groundTruth": {
+      "true_top1": "w72",
+      "true_top2": "w261",
+      "true_top3": "w229"
+    }
+  },
+  {
+    "customerId": "c154",
+    "skill": "CARPENTER",
+    "latitude": 6.946976971879287,
+    "longitude": 79.85804756515775,
+    "budget": 207,
+    "tags": [
+      "experienced",
+      "proactive"
+    ],
+    "groundTruth": {
+      "true_top1": "w59",
+      "true_top2": "w83",
+      "true_top3": "w41"
+    }
+  },
+  {
+    "customerId": "c155",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.933855829903978,
+    "longitude": 79.81830605281206,
+    "budget": 260,
+    "tags": [
+      "experienced"
+    ],
+    "groundTruth": {
+      "true_top1": "w266",
+      "true_top2": "w126",
+      "true_top3": "w216"
+    }
+  },
+  {
+    "customerId": "c156",
+    "skill": "PAINTER",
+    "latitude": 6.954672016460906,
+    "longitude": 79.82965721879286,
+    "budget": 320,
+    "tags": [
+      "tidy",
+      "expert",
+      "friendly"
+    ],
+    "groundTruth": {
+      "true_top1": "w110",
+      "true_top2": "w40",
+      "true_top3": "w214"
+    }
+  },
+  {
+    "customerId": "c157",
+    "skill": "MASON",
+    "latitude": 6.900414900548697,
+    "longitude": 79.88422211934156,
+    "budget": 289,
+    "tags": [
+      "reliable",
+      "punctual",
+      "fast"
+    ],
+    "groundTruth": {
+      "true_top1": "w62",
+      "true_top2": "w82",
+      "true_top3": "w87"
+    }
+  },
+  {
+    "customerId": "c158",
+    "skill": "PAINTER",
+    "latitude": 6.970550788751715,
+    "longitude": 79.81811829561042,
+    "budget": 346,
+    "tags": [
+      "affordable",
+      "polite",
+      "flexible"
+    ],
+    "groundTruth": {
+      "true_top1": "w70",
+      "true_top2": "w40",
+      "true_top3": "w20"
+    }
+  },
+  {
+    "customerId": "c159",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.9714415637860085,
+    "longitude": 79.90321688957475,
+    "budget": 208,
+    "tags": [
+      "reliable",
+      "flexible",
+      "fast"
+    ],
+    "groundTruth": {
+      "true_top1": "w261",
+      "true_top2": "w72",
+      "true_top3": "w118"
+    }
+  },
+  {
+    "customerId": "c160",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.9664762860082305,
+    "longitude": 79.82116827846365,
+    "budget": 300,
+    "tags": [
+      "proactive",
+      "communicative"
+    ],
+    "groundTruth": {
+      "true_top1": "w8",
+      "true_top2": "w182",
+      "true_top3": "w122"
+    }
+  },
+  {
+    "customerId": "c161",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.96516712962963,
+    "longitude": 79.8447048010974,
+    "budget": 123,
+    "tags": [
+      "experienced",
+      "affordable"
+    ],
+    "groundTruth": {
+      "true_top1": "w118",
+      "true_top2": "w139",
+      "true_top3": "w53"
+    }
+  },
+  {
+    "customerId": "c162",
+    "skill": "CLEANER",
+    "latitude": 6.962932047325103,
+    "longitude": 79.8562042866941,
+    "budget": 328,
+    "tags": [
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w202",
+      "true_top2": "w254",
+      "true_top3": "w286"
+    }
+  },
+  {
+    "customerId": "c163",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.954900068587106,
+    "longitude": 79.85077004458161,
+    "budget": 238,
+    "tags": [
+      "experienced",
+      "expert"
+    ],
+    "groundTruth": {
+      "true_top1": "w173",
+      "true_top2": "w255",
+      "true_top3": "w139"
+    }
+  },
+  {
+    "customerId": "c164",
+    "skill": "PLUMBER",
+    "latitude": 6.941601457475995,
+    "longitude": 79.86038810013717,
+    "budget": 303,
+    "tags": [
+      "friendly"
+    ],
+    "groundTruth": {
+      "true_top1": "w219",
+      "true_top2": "w47",
+      "true_top3": "w27"
+    }
+  },
+  {
+    "customerId": "c165",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.884552846364883,
+    "longitude": 79.85125615569272,
+    "budget": 201,
+    "tags": [
+      "communicative",
+      "experienced",
+      "expert"
+    ],
+    "groundTruth": {
+      "true_top1": "w261",
+      "true_top2": "w106",
+      "true_top3": "w139"
+    }
+  },
+  {
+    "customerId": "c166",
+    "skill": "CARPENTER",
+    "latitude": 6.955570936213992,
+    "longitude": 79.89050984224966,
+    "budget": 149,
+    "tags": [
+      "reliable",
+      "affordable",
+      "experienced"
+    ],
+    "groundTruth": {
+      "true_top1": "w184",
+      "true_top2": "w39",
+      "true_top3": "w59"
+    }
+  },
+  {
+    "customerId": "c167",
+    "skill": "PLUMBER",
+    "latitude": 6.910910871056242,
+    "longitude": 79.90724381001371,
+    "budget": 216,
+    "tags": [
+      "punctual"
+    ],
+    "groundTruth": {
+      "true_top1": "w219",
+      "true_top2": "w272",
+      "true_top3": "w237"
+    }
+  },
+  {
+    "customerId": "c168",
+    "skill": "CARPENTER",
+    "latitude": 6.963825823045267,
+    "longitude": 79.86921225994513,
+    "budget": 249,
+    "tags": [
+      "affordable",
+      "expert",
+      "communicative"
+    ],
+    "groundTruth": {
+      "true_top1": "w41",
+      "true_top2": "w39",
+      "true_top3": "w17"
+    }
+  },
+  {
+    "customerId": "c169",
+    "skill": "TECHNICIAN",
+    "latitude": 6.917092283950618,
+    "longitude": 79.90056514060356,
+    "budget": 152,
+    "tags": [
+      "expert"
+    ],
+    "groundTruth": {
+      "true_top1": "w159",
+      "true_top2": "w54",
+      "true_top3": "w121"
+    }
+  },
+  {
+    "customerId": "c170",
+    "skill": "MASON",
+    "latitude": 6.936772925240055,
+    "longitude": 79.85020977366254,
+    "budget": 355,
+    "tags": [
+      "flexible",
+      "honest"
+    ],
+    "groundTruth": {
+      "true_top1": "w290",
+      "true_top2": "w230",
+      "true_top3": "w87"
+    }
+  },
+  {
+    "customerId": "c171",
+    "skill": "CLEANER",
+    "latitude": 6.919438391632373,
+    "longitude": 79.82171268861454,
+    "budget": 242,
+    "tags": [
+      "friendly",
+      "experienced",
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w265",
+      "true_top2": "w116",
+      "true_top3": "w38"
+    }
+  },
+  {
+    "customerId": "c172",
+    "skill": "PLUMBER",
+    "latitude": 6.924889780521262,
+    "longitude": 79.8250807441701,
+    "budget": 200,
+    "tags": [
+      "affordable"
+    ],
+    "groundTruth": {
+      "true_top1": "w56",
+      "true_top2": "w111",
+      "true_top3": "w47"
+    }
+  },
+  {
+    "customerId": "c173",
+    "skill": "PAINTER",
+    "latitude": 6.971770353223595,
+    "longitude": 79.86128744855966,
+    "budget": 360,
+    "tags": [
+      "communicative",
+      "polite",
+      "fast"
+    ],
+    "groundTruth": {
+      "true_top1": "w188",
+      "true_top2": "w109",
+      "true_top3": "w174"
+    }
+  },
+  {
+    "customerId": "c174",
+    "skill": "CARPENTER",
+    "latitude": 6.962745147462277,
+    "longitude": 79.81784866255144,
+    "budget": 114,
+    "tags": [
+      "experienced",
+      "proactive"
+    ],
+    "groundTruth": {
+      "true_top1": "w17",
+      "true_top2": "w59",
+      "true_top3": "w78"
+    }
+  },
+  {
+    "customerId": "c175",
+    "skill": "CLEANER",
+    "latitude": 6.901693621399177,
+    "longitude": 79.87760474965707,
+    "budget": 283,
+    "tags": [
+      "expert",
+      "friendly"
+    ],
+    "groundTruth": {
+      "true_top1": "w153",
+      "true_top2": "w71",
+      "true_top3": "w52"
+    }
+  },
+  {
+    "customerId": "c176",
+    "skill": "PAINTER",
+    "latitude": 6.9717283436213995,
+    "longitude": 79.87055613854595,
+    "budget": 104,
+    "tags": [
+      "friendly",
+      "expert",
+      "experienced"
+    ],
+    "groundTruth": {
+      "true_top1": "w244",
+      "true_top2": "w77",
+      "true_top3": "w101"
+    }
+  },
+  {
+    "customerId": "c177",
+    "skill": "TECHNICIAN",
+    "latitude": 6.905392609739369,
+    "longitude": 79.88189530178326,
+    "budget": 271,
+    "tags": [
+      "tidy",
+      "friendly"
+    ],
+    "groundTruth": {
+      "true_top1": "w205",
+      "true_top2": "w143",
+      "true_top3": "w26"
+    }
+  },
+  {
+    "customerId": "c178",
+    "skill": "CARPENTER",
+    "latitude": 6.974018724279835,
+    "longitude": 79.87338664266117,
+    "budget": 124,
+    "tags": [
+      "friendly"
+    ],
+    "groundTruth": {
+      "true_top1": "w17",
+      "true_top2": "w48",
+      "true_top3": "w78"
+    }
+  },
+  {
+    "customerId": "c179",
+    "skill": "CARPENTER",
+    "latitude": 6.914894067215363,
+    "longitude": 79.85495128600823,
+    "budget": 389,
+    "tags": [
+      "polite",
+      "punctual"
+    ],
+    "groundTruth": {
+      "true_top1": "w248",
+      "true_top2": "w83",
+      "true_top3": "w136"
+    }
+  },
+  {
+    "customerId": "c180",
+    "skill": "MASON",
+    "latitude": 6.964041443758574,
+    "longitude": 79.87470051440329,
+    "budget": 314,
+    "tags": [
+      "thorough",
+      "tidy"
+    ],
+    "groundTruth": {
+      "true_top1": "w192",
+      "true_top2": "w32",
+      "true_top3": "w267"
+    }
+  },
+  {
+    "customerId": "c181",
+    "skill": "MASON",
+    "latitude": 6.915219427297668,
+    "longitude": 79.88112541152263,
+    "budget": 145,
+    "tags": [
+      "reliable",
+      "punctual",
+      "fast"
+    ],
+    "groundTruth": {
+      "true_top1": "w193",
+      "true_top2": "w135",
+      "true_top3": "w260"
+    }
+  },
+  {
+    "customerId": "c182",
+    "skill": "MASON",
+    "latitude": 6.921045044581619,
+    "longitude": 79.86519176954732,
+    "budget": 193,
+    "tags": [
+      "flexible",
+      "friendly",
+      "expert"
+    ],
+    "groundTruth": {
+      "true_top1": "w12",
+      "true_top2": "w295",
+      "true_top3": "w23"
+    }
+  },
+  {
+    "customerId": "c183",
+    "skill": "CLEANER",
+    "latitude": 6.913248834019205,
+    "longitude": 79.85263732853224,
+    "budget": 311,
+    "tags": [
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w161",
+      "true_top2": "w191",
+      "true_top3": "w273"
+    }
+  },
+  {
+    "customerId": "c184",
+    "skill": "CLEANER",
+    "latitude": 6.956734344993142,
+    "longitude": 79.81137489711934,
+    "budget": 186,
+    "tags": [
+      "experienced",
+      "honest"
+    ],
+    "groundTruth": {
+      "true_top1": "w153",
+      "true_top2": "w116",
+      "true_top3": "w156"
+    }
+  },
+  {
+    "customerId": "c185",
+    "skill": "MASON",
+    "latitude": 6.892901611796982,
+    "longitude": 79.90312343964334,
+    "budget": 284,
+    "tags": [
+      "punctual"
+    ],
+    "groundTruth": {
+      "true_top1": "w67",
+      "true_top2": "w287",
+      "true_top3": "w93"
+    }
+  },
+  {
+    "customerId": "c186",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.8831823902606315,
+    "longitude": 79.90464393004115,
+    "budget": 115,
+    "tags": [
+      "punctual",
+      "thorough"
+    ],
+    "groundTruth": {
+      "true_top1": "w118",
+      "true_top2": "w207",
+      "true_top3": "w166"
+    }
+  },
+  {
+    "customerId": "c187",
+    "skill": "TECHNICIAN",
+    "latitude": 6.937743432784637,
+    "longitude": 79.87690044581619,
+    "budget": 384,
+    "tags": [
+      "expert"
+    ],
+    "groundTruth": {
+      "true_top1": "w86",
+      "true_top2": "w54",
+      "true_top3": "w141"
+    }
+  },
+  {
+    "customerId": "c188",
+    "skill": "PAINTER",
+    "latitude": 6.8836685013717425,
+    "longitude": 79.8259633744856,
+    "budget": 217,
+    "tags": [
+      "tidy",
+      "polite"
+    ],
+    "groundTruth": {
+      "true_top1": "w282",
+      "true_top2": "w61",
+      "true_top3": "w244"
+    }
+  },
+  {
+    "customerId": "c189",
+    "skill": "TECHNICIAN",
+    "latitude": 6.915342455418382,
+    "longitude": 79.82540996227709,
+    "budget": 178,
+    "tags": [
+      "honest",
+      "punctual",
+      "tidy"
+    ],
+    "groundTruth": {
+      "true_top1": "w63",
+      "true_top2": "w97",
+      "true_top3": "w172"
+    }
+  },
+  {
+    "customerId": "c190",
+    "skill": "TECHNICIAN",
+    "latitude": 6.885347599451303,
+    "longitude": 79.84325461248285,
+    "budget": 338,
+    "tags": [
+      "reliable",
+      "friendly"
+    ],
+    "groundTruth": {
+      "true_top1": "w241",
+      "true_top2": "w13",
+      "true_top3": "w270"
+    }
+  },
+  {
+    "customerId": "c191",
+    "skill": "PLUMBER",
+    "latitude": 6.897048988340193,
+    "longitude": 79.8778726680384,
+    "budget": 212,
+    "tags": [
+      "affordable",
+      "experienced"
+    ],
+    "groundTruth": {
+      "true_top1": "w271",
+      "true_top2": "w206",
+      "true_top3": "w96"
+    }
+  },
+  {
+    "customerId": "c192",
+    "skill": "MASON",
+    "latitude": 6.938914128943759,
+    "longitude": 79.8655454218107,
+    "budget": 340,
+    "tags": [
+      "communicative",
+      "reliable",
+      "affordable"
+    ],
+    "groundTruth": {
+      "true_top1": "w65",
+      "true_top2": "w23",
+      "true_top3": "w221"
+    }
+  },
+  {
+    "customerId": "c193",
+    "skill": "GARDENER",
+    "latitude": 6.942614831961592,
+    "longitude": 79.88578419067215,
+    "budget": 149,
+    "tags": [
+      "thorough"
+    ],
+    "groundTruth": {
+      "true_top1": "w24",
+      "true_top2": "w235",
+      "true_top3": "w84"
+    }
+  },
+  {
+    "customerId": "c194",
+    "skill": "TECHNICIAN",
+    "latitude": 6.935126834705076,
+    "longitude": 79.83992170781893,
+    "budget": 372,
+    "tags": [
+      "honest",
+      "thorough"
+    ],
+    "groundTruth": {
+      "true_top1": "w131",
+      "true_top2": "w167",
+      "true_top3": "w241"
+    }
+  },
+  {
+    "customerId": "c195",
+    "skill": "TECHNICIAN",
+    "latitude": 6.938156670096022,
+    "longitude": 79.82042067901234,
+    "budget": 351,
+    "tags": [
+      "expert",
+      "polite",
+      "punctual"
+    ],
+    "groundTruth": {
+      "true_top1": "w205",
+      "true_top2": "w167",
+      "true_top3": "w42"
+    }
+  },
+  {
+    "customerId": "c196",
+    "skill": "MASON",
+    "latitude": 6.918855401234568,
+    "longitude": 79.89931899862826,
+    "budget": 123,
+    "tags": [
+      "friendly"
+    ],
+    "groundTruth": {
+      "true_top1": "w93",
+      "true_top2": "w135",
+      "true_top3": "w23"
+    }
+  },
+  {
+    "customerId": "c197",
+    "skill": "PAINTER",
+    "latitude": 6.9571853052126205,
+    "longitude": 79.90575589849108,
+    "budget": 224,
+    "tags": [
+      "affordable",
+      "reliable",
+      "fast"
+    ],
+    "groundTruth": {
+      "true_top1": "w164",
+      "true_top2": "w70",
+      "true_top3": "w244"
+    }
+  },
+  {
+    "customerId": "c198",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.96221316872428,
+    "longitude": 79.86991442043896,
+    "budget": 138,
+    "tags": [
+      "polite"
+    ],
+    "groundTruth": {
+      "true_top1": "w298",
+      "true_top2": "w173",
+      "true_top3": "w15"
+    }
+  },
+  {
+    "customerId": "c199",
+    "skill": "CLEANER",
+    "latitude": 6.953959567901235,
+    "longitude": 79.90317316529492,
+    "budget": 270,
+    "tags": [
+      "friendly",
+      "tidy"
+    ],
+    "groundTruth": {
+      "true_top1": "w202",
+      "true_top2": "w71",
+      "true_top3": "w199"
+    }
+  },
+  {
+    "customerId": "c200",
+    "skill": "GARDENER",
+    "latitude": 6.9167231995884775,
+    "longitude": 79.86771148834019,
+    "budget": 195,
+    "tags": [
+      "reliable",
+      "expert"
+    ],
+    "groundTruth": {
+      "true_top1": "w92",
+      "true_top2": "w247",
+      "true_top3": "w24"
+    }
+  },
+  {
+    "customerId": "c201",
+    "skill": "PLUMBER",
+    "latitude": 6.893191820987655,
+    "longitude": 79.90235912208504,
+    "budget": 162,
+    "tags": [
+      "tidy",
+      "experienced",
+      "flexible"
+    ],
+    "groundTruth": {
+      "true_top1": "w137",
+      "true_top2": "w112",
+      "true_top3": "w125"
+    }
+  },
+  {
+    "customerId": "c202",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.970386608367627,
+    "longitude": 79.89107654320988,
+    "budget": 331,
+    "tags": [
+      "reliable",
+      "affordable"
+    ],
+    "groundTruth": {
+      "true_top1": "w266",
+      "true_top2": "w246",
+      "true_top3": "w262"
+    }
+  },
+  {
+    "customerId": "c203",
+    "skill": "GARDENER",
+    "latitude": 6.945019238683128,
+    "longitude": 79.84917110768176,
+    "budget": 190,
+    "tags": [
+      "honest",
+      "tidy",
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w190",
+      "true_top2": "w243",
+      "true_top3": "w177"
+    }
+  },
+  {
+    "customerId": "c204",
+    "skill": "MASON",
+    "latitude": 6.958016495198903,
+    "longitude": 79.83665396090535,
+    "budget": 301,
+    "tags": [
+      "experienced",
+      "affordable",
+      "tidy"
+    ],
+    "groundTruth": {
+      "true_top1": "w267",
+      "true_top2": "w32",
+      "true_top3": "w221"
+    }
+  },
+  {
+    "customerId": "c205",
+    "skill": "GARDENER",
+    "latitude": 6.934675445816187,
+    "longitude": 79.84155365226337,
+    "budget": 349,
+    "tags": [
+      "thorough",
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w198",
+      "true_top2": "w168",
+      "true_top3": "w293"
+    }
+  },
+  {
+    "customerId": "c206",
+    "skill": "CLEANER",
+    "latitude": 6.943181532921811,
+    "longitude": 79.85666982167352,
+    "budget": 205,
+    "tags": [
+      "experienced",
+      "punctual"
+    ],
+    "groundTruth": {
+      "true_top1": "w275",
+      "true_top2": "w162",
+      "true_top3": "w161"
+    }
+  },
+  {
+    "customerId": "c207",
+    "skill": "PLUMBER",
+    "latitude": 6.895684962277092,
+    "longitude": 79.89106625514403,
+    "budget": 279,
+    "tags": [
+      "affordable",
+      "expert"
+    ],
+    "groundTruth": {
+      "true_top1": "w1",
+      "true_top2": "w19",
+      "true_top3": "w130"
+    }
+  },
+  {
+    "customerId": "c208",
+    "skill": "PAINTER",
+    "latitude": 6.921844941700961,
+    "longitude": 79.90503487654321,
+    "budget": 220,
+    "tags": [
+      "thorough",
+      "honest",
+      "affordable"
+    ],
+    "groundTruth": {
+      "true_top1": "w29",
+      "true_top2": "w101",
+      "true_top3": "w209"
+    }
+  },
+  {
+    "customerId": "c209",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.924856772976681,
+    "longitude": 79.81807757201646,
+    "budget": 347,
+    "tags": [
+      "tidy",
+      "affordable",
+      "communicative"
+    ],
+    "groundTruth": {
+      "true_top1": "w266",
+      "true_top2": "w207",
+      "true_top3": "w102"
+    }
+  },
+  {
+    "customerId": "c210",
+    "skill": "PAINTER",
+    "latitude": 6.92942767489712,
+    "longitude": 79.83203633401921,
+    "budget": 262,
+    "tags": [
+      "honest"
+    ],
+    "groundTruth": {
+      "true_top1": "w282",
+      "true_top2": "w244",
+      "true_top3": "w16"
+    }
+  },
+  {
+    "customerId": "c211",
+    "skill": "TECHNICIAN",
+    "latitude": 6.933770953360768,
+    "longitude": 79.82886932441701,
+    "budget": 173,
+    "tags": [
+      "experienced",
+      "affordable"
+    ],
+    "groundTruth": {
+      "true_top1": "w42",
+      "true_top2": "w172",
+      "true_top3": "w205"
+    }
+  },
+  {
+    "customerId": "c212",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.935653240740741,
+    "longitude": 79.83602424554184,
+    "budget": 209,
+    "tags": [
+      "thorough"
+    ],
+    "groundTruth": {
+      "true_top1": "w123",
+      "true_top2": "w261",
+      "true_top3": "w53"
+    }
+  },
+  {
+    "customerId": "c213",
+    "skill": "PLUMBER",
+    "latitude": 6.920255435528121,
+    "longitude": 79.82103796296296,
+    "budget": 376,
+    "tags": [
+      "fast"
+    ],
+    "groundTruth": {
+      "true_top1": "w1",
+      "true_top2": "w22",
+      "true_top3": "w56"
+    }
+  },
+  {
+    "customerId": "c214",
+    "skill": "PAINTER",
+    "latitude": 6.972202880658436,
+    "longitude": 79.88422512002744,
+    "budget": 236,
+    "tags": [
+      "friendly"
+    ],
+    "groundTruth": {
+      "true_top1": "w16",
+      "true_top2": "w101",
+      "true_top3": "w77"
+    }
+  },
+  {
+    "customerId": "c215",
+    "skill": "GARDENER",
+    "latitude": 6.889875205761317,
+    "longitude": 79.85452090192044,
+    "budget": 273,
+    "tags": [
+      "tidy",
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w24",
+      "true_top2": "w185",
+      "true_top3": "w175"
+    }
+  },
+  {
+    "customerId": "c216",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.970601371742113,
+    "longitude": 79.88859068930041,
+    "budget": 107,
+    "tags": [
+      "punctual"
+    ],
+    "groundTruth": {
+      "true_top1": "w166",
+      "true_top2": "w229",
+      "true_top3": "w252"
+    }
+  },
+  {
+    "customerId": "c217",
+    "skill": "CARPENTER",
+    "latitude": 6.957409499314129,
+    "longitude": 79.89098523662551,
+    "budget": 354,
+    "tags": [
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w83",
+      "true_top2": "w41",
+      "true_top3": "w140"
+    }
+  },
+  {
+    "customerId": "c218",
+    "skill": "CLEANER",
+    "latitude": 6.879596141975309,
+    "longitude": 79.84894862825789,
+    "budget": 218,
+    "tags": [
+      "proactive"
+    ],
+    "groundTruth": {
+      "true_top1": "w52",
+      "true_top2": "w161",
+      "true_top3": "w38"
+    }
+  },
+  {
+    "customerId": "c219",
+    "skill": "PAINTER",
+    "latitude": 6.927161299725652,
+    "longitude": 79.85248086419753,
+    "budget": 349,
+    "tags": [
+      "communicative",
+      "polite",
+      "experienced"
+    ],
+    "groundTruth": {
+      "true_top1": "w20",
+      "true_top2": "w149",
+      "true_top3": "w188"
+    }
+  },
+  {
+    "customerId": "c220",
+    "skill": "TECHNICIAN",
+    "latitude": 6.939527126200274,
+    "longitude": 79.86703290466392,
+    "budget": 182,
+    "tags": [
+      "proactive"
+    ],
+    "groundTruth": {
+      "true_top1": "w94",
+      "true_top2": "w257",
+      "true_top3": "w159"
+    }
+  },
+  {
+    "customerId": "c221",
+    "skill": "CLEANER",
+    "latitude": 6.920113117283951,
+    "longitude": 79.89733597393689,
+    "budget": 255,
+    "tags": [
+      "honest",
+      "tidy",
+      "fast"
+    ],
+    "groundTruth": {
+      "true_top1": "w71",
+      "true_top2": "w283",
+      "true_top3": "w2"
+    }
+  },
+  {
+    "customerId": "c222",
+    "skill": "CLEANER",
+    "latitude": 6.9441799039780525,
+    "longitude": 79.84251901577503,
+    "budget": 281,
+    "tags": [
+      "honest"
+    ],
+    "groundTruth": {
+      "true_top1": "w100",
+      "true_top2": "w98",
+      "true_top3": "w162"
+    }
+  },
+  {
+    "customerId": "c223",
+    "skill": "MASON",
+    "latitude": 6.946420130315501,
+    "longitude": 79.87886418038408,
+    "budget": 250,
+    "tags": [
+      "communicative",
+      "proactive"
+    ],
+    "groundTruth": {
+      "true_top1": "w23",
+      "true_top2": "w221",
+      "true_top3": "w267"
+    }
+  },
+  {
+    "customerId": "c224",
+    "skill": "CLEANER",
+    "latitude": 6.935173559670782,
+    "longitude": 79.8745106138546,
+    "budget": 183,
+    "tags": [
+      "affordable",
+      "friendly",
+      "tidy"
+    ],
+    "groundTruth": {
+      "true_top1": "w99",
+      "true_top2": "w176",
+      "true_top3": "w259"
+    }
+  },
+  {
+    "customerId": "c225",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.9185411865569275,
+    "longitude": 79.876808281893,
+    "budget": 293,
+    "tags": [
+      "reliable",
+      "thorough"
+    ],
+    "groundTruth": {
+      "true_top1": "w123",
+      "true_top2": "w118",
+      "true_top3": "w53"
+    }
+  },
+  {
+    "customerId": "c226",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.897015980795611,
+    "longitude": 79.87086949588478,
+    "budget": 262,
+    "tags": [
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w216",
+      "true_top2": "w266",
+      "true_top3": "w53"
+    }
+  },
+  {
+    "customerId": "c227",
+    "skill": "PLUMBER",
+    "latitude": 6.92073640260631,
+    "longitude": 79.89451275720164,
+    "budget": 226,
+    "tags": [
+      "fast"
+    ],
+    "groundTruth": {
+      "true_top1": "w119",
+      "true_top2": "w137",
+      "true_top3": "w74"
+    }
+  },
+  {
+    "customerId": "c228",
+    "skill": "MASON",
+    "latitude": 6.889196193415638,
+    "longitude": 79.83902707475994,
+    "budget": 204,
+    "tags": [
+      "flexible",
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w23",
+      "true_top2": "w221",
+      "true_top3": "w146"
+    }
+  },
+  {
+    "customerId": "c229",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.8843736625514405,
+    "longitude": 79.8846675068587,
+    "budget": 105,
+    "tags": [
+      "expert",
+      "punctual"
+    ],
+    "groundTruth": {
+      "true_top1": "w53",
+      "true_top2": "w197",
+      "true_top3": "w207"
+    }
+  },
+  {
+    "customerId": "c230",
+    "skill": "PAINTER",
+    "latitude": 6.9060484739369,
+    "longitude": 79.88208820301783,
+    "budget": 163,
+    "tags": [
+      "tidy",
+      "communicative"
+    ],
+    "groundTruth": {
+      "true_top1": "w77",
+      "true_top2": "w244",
+      "true_top3": "w29"
+    }
+  },
+  {
+    "customerId": "c231",
+    "skill": "MASON",
+    "latitude": 6.905550360082305,
+    "longitude": 79.8491312414266,
+    "budget": 108,
+    "tags": [
+      "affordable"
+    ],
+    "groundTruth": {
+      "true_top1": "w242",
+      "true_top2": "w163",
+      "true_top3": "w192"
+    }
+  },
+  {
+    "customerId": "c232",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.960974314128944,
+    "longitude": 79.8473278292181,
+    "budget": 344,
+    "tags": [
+      "punctual",
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w122",
+      "true_top2": "w266",
+      "true_top3": "w229"
+    }
+  },
+  {
+    "customerId": "c233",
+    "skill": "CARPENTER",
+    "latitude": 6.8980297839506175,
+    "longitude": 79.90025264060357,
+    "budget": 297,
+    "tags": [
+      "fast",
+      "experienced",
+      "flexible"
+    ],
+    "groundTruth": {
+      "true_top1": "w178",
+      "true_top2": "w57",
+      "true_top3": "w284"
+    }
+  },
+  {
+    "customerId": "c234",
+    "skill": "PAINTER",
+    "latitude": 6.961406412894376,
+    "longitude": 79.86627844650205,
+    "budget": 211,
+    "tags": [
+      "polite"
+    ],
+    "groundTruth": {
+      "true_top1": "w101",
+      "true_top2": "w16",
+      "true_top3": "w128"
+    }
+  },
+  {
+    "customerId": "c235",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.882210596707819,
+    "longitude": 79.86599209533607,
+    "budget": 258,
+    "tags": [
+      "honest",
+      "thorough"
+    ],
+    "groundTruth": {
+      "true_top1": "w15",
+      "true_top2": "w182",
+      "true_top3": "w261"
+    }
+  },
+  {
+    "customerId": "c236",
+    "skill": "GARDENER",
+    "latitude": 6.954467112482853,
+    "longitude": 79.82384531893004,
+    "budget": 380,
+    "tags": [
+      "polite",
+      "punctual"
+    ],
+    "groundTruth": {
+      "true_top1": "w28",
+      "true_top2": "w24",
+      "true_top3": "w247"
+    }
+  },
+  {
+    "customerId": "c237",
+    "skill": "GARDENER",
+    "latitude": 6.942361488340192,
+    "longitude": 79.8294351680384,
+    "budget": 227,
+    "tags": [
+      "punctual"
+    ],
+    "groundTruth": {
+      "true_top1": "w3",
+      "true_top2": "w224",
+      "true_top3": "w294"
+    }
+  },
+  {
+    "customerId": "c238",
+    "skill": "MASON",
+    "latitude": 6.902976628943759,
+    "longitude": 79.9108579218107,
+    "budget": 145,
+    "tags": [
+      "communicative",
+      "polite"
+    ],
+    "groundTruth": {
+      "true_top1": "w186",
+      "true_top2": "w242",
+      "true_top3": "w260"
+    }
+  },
+  {
+    "customerId": "c239",
+    "skill": "PAINTER",
+    "latitude": 6.953246690672154,
+    "longitude": 79.87270205761317,
+    "budget": 185,
+    "tags": [
+      "experienced",
+      "affordable"
+    ],
+    "groundTruth": {
+      "true_top1": "w101",
+      "true_top2": "w149",
+      "true_top3": "w16"
+    }
+  },
+  {
+    "customerId": "c240",
+    "skill": "PAINTER",
+    "latitude": 6.896649039780521,
+    "longitude": 79.85795111454047,
+    "budget": 149,
+    "tags": [
+      "experienced",
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w80",
+      "true_top2": "w110",
+      "true_top3": "w77"
+    }
+  },
+  {
+    "customerId": "c241",
+    "skill": "PAINTER",
+    "latitude": 6.912045987654321,
+    "longitude": 79.86496328875171,
+    "budget": 143,
+    "tags": [
+      "friendly",
+      "reliable",
+      "punctual"
+    ],
+    "groundTruth": {
+      "true_top1": "w61",
+      "true_top2": "w30",
+      "true_top3": "w101"
+    }
+  },
+  {
+    "customerId": "c242",
+    "skill": "TECHNICIAN",
+    "latitude": 6.932634550754458,
+    "longitude": 79.85918868312757,
+    "budget": 359,
+    "tags": [
+      "affordable",
+      "tidy"
+    ],
+    "groundTruth": {
+      "true_top1": "w154",
+      "true_top2": "w201",
+      "true_top3": "w36"
+    }
+  },
+  {
+    "customerId": "c243",
+    "skill": "TECHNICIAN",
+    "latitude": 6.972380778463649,
+    "longitude": 79.83885260631001,
+    "budget": 200,
+    "tags": [
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w0",
+      "true_top2": "w154",
+      "true_top3": "w159"
+    }
+  },
+  {
+    "customerId": "c244",
+    "skill": "CARPENTER",
+    "latitude": 6.877832167352538,
+    "longitude": 79.84222066186557,
+    "budget": 292,
+    "tags": [
+      "tidy",
+      "experienced"
+    ],
+    "groundTruth": {
+      "true_top1": "w41",
+      "true_top2": "w17",
+      "true_top3": "w248"
+    }
+  },
+  {
+    "customerId": "c245",
+    "skill": "CLEANER",
+    "latitude": 6.9146733024691365,
+    "longitude": 79.9016183813443,
+    "budget": 260,
+    "tags": [
+      "punctual"
+    ],
+    "groundTruth": {
+      "true_top1": "w2",
+      "true_top2": "w169",
+      "true_top3": "w116"
+    }
+  },
+  {
+    "customerId": "c246",
+    "skill": "GARDENER",
+    "latitude": 6.911917815500686,
+    "longitude": 79.87283408779149,
+    "budget": 270,
+    "tags": [
+      "reliable",
+      "tidy",
+      "proactive"
+    ],
+    "groundTruth": {
+      "true_top1": "w84",
+      "true_top2": "w24",
+      "true_top3": "w175"
+    }
+  },
+  {
+    "customerId": "c247",
+    "skill": "MASON",
+    "latitude": 6.9646210048010975,
+    "longitude": 79.86519777091907,
+    "budget": 366,
+    "tags": [
+      "reliable",
+      "affordable"
+    ],
+    "groundTruth": {
+      "true_top1": "w221",
+      "true_top2": "w103",
+      "true_top3": "w5"
+    }
+  },
+  {
+    "customerId": "c248",
+    "skill": "TECHNICIAN",
+    "latitude": 6.924777469135803,
+    "longitude": 79.88047254801097,
+    "budget": 225,
+    "tags": [
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w54",
+      "true_top2": "w240",
+      "true_top3": "w172"
+    }
+  },
+  {
+    "customerId": "c249",
+    "skill": "GARDENER",
+    "latitude": 6.905569221536352,
+    "longitude": 79.8245616255144,
+    "budget": 275,
+    "tags": [
+      "tidy",
+      "polite",
+      "friendly"
+    ],
+    "groundTruth": {
+      "true_top1": "w129",
+      "true_top2": "w88",
+      "true_top3": "w3"
+    }
+  },
+  {
+    "customerId": "c250",
+    "skill": "MASON",
+    "latitude": 6.916603600823046,
+    "longitude": 79.85532337105624,
+    "budget": 153,
+    "tags": [
+      "proactive"
+    ],
+    "groundTruth": {
+      "true_top1": "w5",
+      "true_top2": "w163",
+      "true_top3": "w226"
+    }
+  },
+  {
+    "customerId": "c251",
+    "skill": "CARPENTER",
+    "latitude": 6.911781069958848,
+    "longitude": 79.90096380315501,
+    "budget": 112,
+    "tags": [
+      "experienced"
+    ],
+    "groundTruth": {
+      "true_top1": "w140",
+      "true_top2": "w59",
+      "true_top3": "w285"
+    }
+  },
+  {
+    "customerId": "c252",
+    "skill": "CARPENTER",
+    "latitude": 6.934939077503429,
+    "longitude": 79.89359197530864,
+    "budget": 133,
+    "tags": [
+      "communicative",
+      "polite"
+    ],
+    "groundTruth": {
+      "true_top1": "w285",
+      "true_top2": "w59",
+      "true_top3": "w136"
+    }
+  },
+  {
+    "customerId": "c253",
+    "skill": "GARDENER",
+    "latitude": 6.950768981481482,
+    "longitude": 79.82752887517147,
+    "budget": 343,
+    "tags": [
+      "expert",
+      "affordable",
+      "polite"
+    ],
+    "groundTruth": {
+      "true_top1": "w235",
+      "true_top2": "w129",
+      "true_top3": "w133"
+    }
+  },
+  {
+    "customerId": "c254",
+    "skill": "PAINTER",
+    "latitude": 6.88826169410151,
+    "longitude": 79.84724895404663,
+    "budget": 210,
+    "tags": [
+      "polite"
+    ],
+    "groundTruth": {
+      "true_top1": "w164",
+      "true_top2": "w148",
+      "true_top3": "w244"
+    }
+  },
+  {
+    "customerId": "c255",
+    "skill": "CARPENTER",
+    "latitude": 6.932198165294925,
+    "longitude": 79.90036752400549,
+    "budget": 277,
+    "tags": [
+      "expert",
+      "affordable",
+      "experienced"
+    ],
+    "groundTruth": {
+      "true_top1": "w140",
+      "true_top2": "w225",
+      "true_top3": "w157"
+    }
+  },
+  {
+    "customerId": "c256",
+    "skill": "GARDENER",
+    "latitude": 6.949632578875172,
+    "longitude": 79.85784823388202,
+    "budget": 291,
+    "tags": [
+      "proactive",
+      "experienced",
+      "flexible"
+    ],
+    "groundTruth": {
+      "true_top1": "w138",
+      "true_top2": "w49",
+      "true_top3": "w129"
+    }
+  },
+  {
+    "customerId": "c257",
+    "skill": "PAINTER",
+    "latitude": 6.933366289437586,
+    "longitude": 79.86509017489712,
+    "budget": 369,
+    "tags": [
+      "expert",
+      "thorough"
+    ],
+    "groundTruth": {
+      "true_top1": "w14",
+      "true_top2": "w276",
+      "true_top3": "w110"
+    }
+  },
+  {
+    "customerId": "c258",
+    "skill": "CARPENTER",
+    "latitude": 6.89491121399177,
+    "longitude": 79.89443345336076,
+    "budget": 385,
+    "tags": [
+      "expert",
+      "affordable",
+      "communicative"
+    ],
+    "groundTruth": {
+      "true_top1": "w41",
+      "true_top2": "w248",
+      "true_top3": "w157"
+    }
+  },
+  {
+    "customerId": "c259",
+    "skill": "PAINTER",
+    "latitude": 6.95971231138546,
+    "longitude": 79.90944031207133,
+    "budget": 134,
+    "tags": [
+      "flexible",
+      "tidy"
+    ],
+    "groundTruth": {
+      "true_top1": "w30",
+      "true_top2": "w16",
+      "true_top3": "w101"
+    }
+  },
+  {
+    "customerId": "c260",
+    "skill": "MASON",
+    "latitude": 6.970018810013718,
+    "longitude": 79.87018405349794,
+    "budget": 197,
+    "tags": [
+      "honest"
+    ],
+    "groundTruth": {
+      "true_top1": "w289",
+      "true_top2": "w107",
+      "true_top3": "w87"
+    }
+  },
+  {
+    "customerId": "c261",
+    "skill": "CLEANER",
+    "latitude": 6.903483744855968,
+    "longitude": 79.827543021262,
+    "budget": 355,
+    "tags": [
+      "polite"
+    ],
+    "groundTruth": {
+      "true_top1": "w71",
+      "true_top2": "w250",
+      "true_top3": "w98"
+    }
+  },
+  {
+    "customerId": "c262",
+    "skill": "CARPENTER",
+    "latitude": 6.931295816186557,
+    "longitude": 79.90761846707818,
+    "budget": 364,
+    "tags": [
+      "proactive"
+    ],
+    "groundTruth": {
+      "true_top1": "w225",
+      "true_top2": "w285",
+      "true_top3": "w83"
+    }
+  },
+  {
+    "customerId": "c263",
+    "skill": "CLEANER",
+    "latitude": 6.948498748285322,
+    "longitude": 79.81208991769547,
+    "budget": 303,
+    "tags": [
+      "friendly",
+      "fast",
+      "honest"
+    ],
+    "groundTruth": {
+      "true_top1": "w280",
+      "true_top2": "w251",
+      "true_top3": "w91"
+    }
+  },
+  {
+    "customerId": "c264",
+    "skill": "TECHNICIAN",
+    "latitude": 6.971987688614541,
+    "longitude": 79.88272391975309,
+    "budget": 195,
+    "tags": [
+      "communicative",
+      "tidy"
+    ],
+    "groundTruth": {
+      "true_top1": "w54",
+      "true_top2": "w73",
+      "true_top3": "w4"
+    }
+  },
+  {
+    "customerId": "c265",
+    "skill": "CARPENTER",
+    "latitude": 6.968536042524006,
+    "longitude": 79.87896363168724,
+    "budget": 217,
+    "tags": [
+      "friendly",
+      "punctual",
+      "flexible"
+    ],
+    "groundTruth": {
+      "true_top1": "w78",
+      "true_top2": "w136",
+      "true_top3": "w184"
+    }
+  },
+  {
+    "customerId": "c266",
+    "skill": "GARDENER",
+    "latitude": 6.878685648148148,
+    "longitude": 79.88044554183813,
+    "budget": 204,
+    "tags": [
+      "experienced",
+      "proactive",
+      "affordable"
+    ],
+    "groundTruth": {
+      "true_top1": "w133",
+      "true_top2": "w9",
+      "true_top3": "w66"
+    }
+  },
+  {
+    "customerId": "c267",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.941065620713307,
+    "longitude": 79.87657037037037,
+    "budget": 146,
+    "tags": [
+      "affordable"
+    ],
+    "groundTruth": {
+      "true_top1": "w139",
+      "true_top2": "w262",
+      "true_top3": "w8"
+    }
+  },
+  {
+    "customerId": "c268",
+    "skill": "MASON",
+    "latitude": 6.938183676268862,
+    "longitude": 79.87160509259259,
+    "budget": 225,
+    "tags": [
+      "punctual",
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w120",
+      "true_top2": "w290",
+      "true_top3": "w274"
+    }
+  },
+  {
+    "customerId": "c269",
+    "skill": "PLUMBER",
+    "latitude": 6.936801646090535,
+    "longitude": 79.81734240397805,
+    "budget": 205,
+    "tags": [
+      "punctual",
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w56",
+      "true_top2": "w112",
+      "true_top3": "w47"
+    }
+  },
+  {
+    "customerId": "c270",
+    "skill": "TECHNICIAN",
+    "latitude": 6.965585082304527,
+    "longitude": 79.8320826303155,
+    "budget": 232,
+    "tags": [
+      "punctual",
+      "affordable"
+    ],
+    "groundTruth": {
+      "true_top1": "w36",
+      "true_top2": "w42",
+      "true_top3": "w292"
+    }
+  },
+  {
+    "customerId": "c271",
+    "skill": "PAINTER",
+    "latitude": 6.973119804526749,
+    "longitude": 79.81253401920439,
+    "budget": 106,
+    "tags": [
+      "expert"
+    ],
+    "groundTruth": {
+      "true_top1": "w101",
+      "true_top2": "w236",
+      "true_top3": "w30"
+    }
+  },
+  {
+    "customerId": "c272",
+    "skill": "MASON",
+    "latitude": 6.889155898491084,
+    "longitude": 79.86424398148148,
+    "budget": 320,
+    "tags": [
+      "friendly",
+      "affordable",
+      "flexible"
+    ],
+    "groundTruth": {
+      "true_top1": "w163",
+      "true_top2": "w85",
+      "true_top3": "w170"
+    }
+  },
+  {
+    "customerId": "c273",
+    "skill": "PAINTER",
+    "latitude": 6.958086796982168,
+    "longitude": 79.89053084705075,
+    "budget": 188,
+    "tags": [
+      "communicative",
+      "reliable",
+      "punctual"
+    ],
+    "groundTruth": {
+      "true_top1": "w256",
+      "true_top2": "w16",
+      "true_top3": "w110"
+    }
+  },
+  {
+    "customerId": "c274",
+    "skill": "MASON",
+    "latitude": 6.884424674211249,
+    "longitude": 79.8591269547325,
+    "budget": 353,
+    "tags": [
+      "experienced",
+      "reliable",
+      "friendly"
+    ],
+    "groundTruth": {
+      "true_top1": "w62",
+      "true_top2": "w82",
+      "true_top3": "w192"
+    }
+  },
+  {
+    "customerId": "c275",
+    "skill": "GARDENER",
+    "latitude": 6.909700737311386,
+    "longitude": 79.85178984910837,
+    "budget": 204,
+    "tags": [
+      "flexible",
+      "expert"
+    ],
+    "groundTruth": {
+      "true_top1": "w88",
+      "true_top2": "w133",
+      "true_top3": "w222"
+    }
+  },
+  {
+    "customerId": "c276",
+    "skill": "GARDENER",
+    "latitude": 6.908294701646091,
+    "longitude": 79.87425212620028,
+    "budget": 297,
+    "tags": [
+      "reliable",
+      "affordable",
+      "polite"
+    ],
+    "groundTruth": {
+      "true_top1": "w293",
+      "true_top2": "w175",
+      "true_top3": "w235"
+    }
+  },
+  {
+    "customerId": "c277",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.932403069272977,
+    "longitude": 79.90617942386831,
+    "budget": 238,
+    "tags": [
+      "polite"
+    ],
+    "groundTruth": {
+      "true_top1": "w197",
+      "true_top2": "w123",
+      "true_top3": "w246"
+    }
+  },
+  {
+    "customerId": "c278",
+    "skill": "MASON",
+    "latitude": 6.929521124828533,
+    "longitude": 79.90121414609054,
+    "budget": 240,
+    "tags": [
+      "tidy",
+      "communicative"
+    ],
+    "groundTruth": {
+      "true_top1": "w144",
+      "true_top2": "w93",
+      "true_top3": "w260"
+    }
+  },
+  {
+    "customerId": "c279",
+    "skill": "CARPENTER",
+    "latitude": 6.896040329218107,
+    "longitude": 79.89633417352537,
+    "budget": 329,
+    "tags": [
+      "expert",
+      "punctual"
+    ],
+    "groundTruth": {
+      "true_top1": "w136",
+      "true_top2": "w248",
+      "true_top3": "w58"
+    }
+  },
+  {
+    "customerId": "c280",
+    "skill": "PLUMBER",
+    "latitude": 6.972100857338821,
+    "longitude": 79.83530622427983,
+    "budget": 168,
+    "tags": [
+      "communicative"
+    ],
+    "groundTruth": {
+      "true_top1": "w132",
+      "true_top2": "w104",
+      "true_top3": "w219"
+    }
+  },
+  {
+    "customerId": "c281",
+    "skill": "PLUMBER",
+    "latitude": 6.880982887517147,
+    "longitude": 79.84706891289437,
+    "budget": 254,
+    "tags": [
+      "friendly",
+      "tidy"
+    ],
+    "groundTruth": {
+      "true_top1": "w117",
+      "true_top2": "w74",
+      "true_top3": "w237"
+    }
+  },
+  {
+    "customerId": "c282",
+    "skill": "PLUMBER",
+    "latitude": 6.906737345679012,
+    "longitude": 79.88928427640603,
+    "budget": 400,
+    "tags": [
+      "reliable",
+      "punctual",
+      "friendly"
+    ],
+    "groundTruth": {
+      "true_top1": "w206",
+      "true_top2": "w194",
+      "true_top3": "w272"
+    }
+  },
+  {
+    "customerId": "c283",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.976405984224966,
+    "longitude": 79.87729139231824,
+    "budget": 368,
+    "tags": [
+      "flexible",
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w8",
+      "true_top2": "w182",
+      "true_top3": "w213"
+    }
+  },
+  {
+    "customerId": "c284",
+    "skill": "GARDENER",
+    "latitude": 6.954370233196159,
+    "longitude": 79.8227710733882,
+    "budget": 195,
+    "tags": [
+      "flexible",
+      "expert"
+    ],
+    "groundTruth": {
+      "true_top1": "w3",
+      "true_top2": "w129",
+      "true_top3": "w24"
+    }
+  },
+  {
+    "customerId": "c285",
+    "skill": "TECHNICIAN",
+    "latitude": 6.889831052812071,
+    "longitude": 79.84385432098765,
+    "budget": 389,
+    "tags": [
+      "proactive",
+      "affordable"
+    ],
+    "groundTruth": {
+      "true_top1": "w292",
+      "true_top2": "w239",
+      "true_top3": "w63"
+    }
+  },
+  {
+    "customerId": "c286",
+    "skill": "CARPENTER",
+    "latitude": 6.934023010973937,
+    "longitude": 79.87325718449931,
+    "budget": 134,
+    "tags": [
+      "tidy"
+    ],
+    "groundTruth": {
+      "true_top1": "w59",
+      "true_top2": "w83",
+      "true_top3": "w285"
+    }
+  },
+  {
+    "customerId": "c287",
+    "skill": "CLEANER",
+    "latitude": 6.973721227709191,
+    "longitude": 79.90637103909465,
+    "budget": 216,
+    "tags": [
+      "affordable"
+    ],
+    "groundTruth": {
+      "true_top1": "w275",
+      "true_top2": "w253",
+      "true_top3": "w38"
+    }
+  },
+  {
+    "customerId": "c288",
+    "skill": "MASON",
+    "latitude": 6.898492318244171,
+    "longitude": 79.90228410493827,
+    "budget": 112,
+    "tags": [
+      "polite",
+      "reliable",
+      "proactive"
+    ],
+    "groundTruth": {
+      "true_top1": "w163",
+      "true_top2": "w193",
+      "true_top3": "w287"
+    }
+  },
+  {
+    "customerId": "c289",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.917625120027435,
+    "longitude": 79.85647349108368,
+    "budget": 369,
+    "tags": [
+      "punctual"
+    ],
+    "groundTruth": {
+      "true_top1": "w264",
+      "true_top2": "w102",
+      "true_top3": "w34"
+    }
+  },
+  {
+    "customerId": "c290",
+    "skill": "PLUMBER",
+    "latitude": 6.943440877914952,
+    "longitude": 79.86883760288066,
+    "budget": 242,
+    "tags": [
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w50",
+      "true_top2": "w288",
+      "true_top3": "w74"
+    }
+  },
+  {
+    "customerId": "c291",
+    "skill": "MASON",
+    "latitude": 6.968372290809328,
+    "longitude": 79.8559089334705,
+    "budget": 153,
+    "tags": [
+      "friendly",
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w146",
+      "true_top2": "w67",
+      "true_top3": "w183"
+    }
+  },
+  {
+    "customerId": "c292",
+    "skill": "PLUMBER",
+    "latitude": 6.944301217421125,
+    "longitude": 79.87085534979424,
+    "budget": 113,
+    "tags": [
+      "punctual",
+      "expert",
+      "fast"
+    ],
+    "groundTruth": {
+      "true_top1": "w27",
+      "true_top2": "w137",
+      "true_top3": "w271"
+    }
+  },
+  {
+    "customerId": "c293",
+    "skill": "CLEANER",
+    "latitude": 6.8822054526748975,
+    "longitude": 79.81814744513031,
+    "budget": 190,
+    "tags": [
+      "flexible",
+      "punctual"
+    ],
+    "groundTruth": {
+      "true_top1": "w211",
+      "true_top2": "w280",
+      "true_top3": "w296"
+    }
+  },
+  {
+    "customerId": "c294",
+    "skill": "MASON",
+    "latitude": 6.914213768861455,
+    "longitude": 79.82749629629629,
+    "budget": 396,
+    "tags": [
+      "fast",
+      "expert",
+      "thorough"
+    ],
+    "groundTruth": {
+      "true_top1": "w183",
+      "true_top2": "w226",
+      "true_top3": "w120"
+    }
+  },
+  {
+    "customerId": "c295",
+    "skill": "GARDENER",
+    "latitude": 6.900244718792867,
+    "longitude": 79.90136160836762,
+    "budget": 265,
+    "tags": [
+      "reliable"
+    ],
+    "groundTruth": {
+      "true_top1": "w247",
+      "true_top2": "w175",
+      "true_top3": "w75"
+    }
+  },
+  {
+    "customerId": "c296",
+    "skill": "MASON",
+    "latitude": 6.919151611796982,
+    "longitude": 79.85437343964334,
+    "budget": 338,
+    "tags": [
+      "expert",
+      "experienced",
+      "affordable"
+    ],
+    "groundTruth": {
+      "true_top1": "w82",
+      "true_top2": "w238",
+      "true_top3": "w195"
+    }
+  },
+  {
+    "customerId": "c297",
+    "skill": "ELECTRICIAN",
+    "latitude": 6.976205795610426,
+    "longitude": 79.81533708847736,
+    "budget": 295,
+    "tags": [
+      "fast"
+    ],
+    "groundTruth": {
+      "true_top1": "w173",
+      "true_top2": "w139",
+      "true_top3": "w213"
+    }
+  },
+  {
+    "customerId": "c298",
+    "skill": "PAINTER",
+    "latitude": 6.939865775034294,
+    "longitude": 79.81680570987653,
+    "budget": 248,
+    "tags": [
+      "reliable",
+      "polite"
+    ],
+    "groundTruth": {
+      "true_top1": "w268",
+      "true_top2": "w20",
+      "true_top3": "w158"
+    }
+  },
+  {
+    "customerId": "c299",
+    "skill": "TECHNICIAN",
+    "latitude": 6.971300102880659,
+    "longitude": 79.88748900891632,
+    "budget": 239,
+    "tags": [
+      "fast",
+      "friendly",
+      "affordable"
+    ],
+    "groundTruth": {
+      "true_top1": "w200",
+      "true_top2": "w257",
+      "true_top3": "w73"
+    }
+  }
+]

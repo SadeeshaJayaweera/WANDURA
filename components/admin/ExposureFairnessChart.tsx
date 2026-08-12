@@ -13,15 +13,22 @@ import {
   ReferenceLine
 } from 'recharts'
 import { ExposureFairnessTier } from '@/lib/recommendation/analytics/exposureFairness'
+import { useSearchParams } from 'next/navigation'
 
 export default function ExposureFairnessChart() {
   const [data, setData] = useState<ExposureFairnessTier[]>([])
   const [loading, setLoading] = useState(true)
+  const searchParams = useSearchParams()
+  const days = parseInt(searchParams.get('days') || '30', 10)
 
   useEffect(() => {
     async function fetchData() {
+      setLoading(true)
       try {
-        const response = await fetch('/api/admin/recommendation-metrics')
+        const to = new Date()
+        const from = new Date(to.getTime() - days * 24 * 60 * 60 * 1000)
+        
+        const response = await fetch(`/api/admin/recommendation-metrics?from=${from.toISOString()}&to=${to.toISOString()}`)
         if (response.ok) {
           const result = await response.json()
           
@@ -42,7 +49,7 @@ export default function ExposureFairnessChart() {
       }
     }
     fetchData()
-  }, [])
+  }, [days])
 
   if (loading) {
     return <div className="h-[300px] flex items-center justify-center text-muted-foreground">Loading chart data...</div>

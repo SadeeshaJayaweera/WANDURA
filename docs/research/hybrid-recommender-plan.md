@@ -114,3 +114,21 @@ We successfully operationalized the model by surfacing it directly via the API l
 - **Legacy Integration (`GET /api/workers`)**: Added a seamless, backward-compatible `sort=recommended` proxy to allow existing frontend interfaces to hit the ML model without massive structural rewrites.
 - **Request Cache (`requestCache.ts`)**: Implemented a lightweight, robust LRU cache (hashed request bodies, 30s TTL, 500 items max) to short-circuit identical, rapid-fire API requests before hitting the DB or the ML orchestrator.
 - **Analytics Endpoint (`GET /api/admin/recommendation-metrics`)**: Added an `ADMIN` gated metrics endpoint matching the paper's **Section III-C**. It dynamically filters the `RecommendationLog` by an ISO date range, bucketing workers by `totalReviews` (New: 0-5, Mid: 6-20, Established: 21+), to track and analyze ML exposure distribution ratios.
+
+## Day 6 - UI Integration & Conversion Tracking Rollout
+
+We finalized the full-stack rollout of the recommendation engine by deeply integrating it into the core user journey:
+
+- **Graceful UI Adoption**: We deployed a seamless, local-state UI toggle (`Recommended for you` / `All results`) on the worker search page. This allows the new ML-driven ranking to be the default experience while preserving the legacy filter view, enabling live comparisons during the rollout.
+- **Qualitative Interpretability**: Built `MatchScoreBadge` to dynamically translate raw, unbounded ML hybrid scores into user-friendly percentiles (e.g. "Great match", "Good match"), hiding the statistical complexity from the end user.
+- **End-to-End Tracking**: We structurally tied the ML recommendations to actual business outcomes by modifying the `Booking` schema to store a nullable `recommendationLogId`. 
+- **Future Work Fulfillment**: By minting and passing strict UUIDs down from the `rankPool`, through the frontend `trackRecommendationClick` telemetry, and straight into the finalized Postgres Booking records, we have successfully operationalized the paper's **Future Work item (i)**. We are no longer limited to synthetic evaluations; we can now definitively measure real conversion outcomes—knowing exactly which ranked results actively drive confirmed bookings.
+
+## Day 7 - Live Observability & Analytical Reproducibility
+
+To ensure the production system behaves as intended and adheres to the academic outcomes documented in the original research, we built a suite of live observability tools inside the admin panel:
+
+- **Exposure Fairness Tracking (Section III-C)**: We implemented real-time monitoring of how the recommendation engine distributes traffic to cold vs. warm workers. We mirrored the exact ratio formula from the paper (`Exposure Share / Pool Share`), exposing this data visually via an `ExposureFairnessChart` (matching Figure 4). This allows us to track algorithmic bias as it happens.
+- **Cold-Start Reliability Tracking**: We built an analytics module that partitions recommendations by `isColdStart` and tracks the average booked-rank position. This provides a live proxy for the NDCG@5 metrics (Table II), actively tracking the performance penalty of cold-start recommendations vs. collaborative ones.
+- **Unit Testing Analytical Queries**: We hardened our `ExposureFairness` and `ColdStartBreakdown` queries using deterministic, fixture-based tests to eliminate off-by-one errors in our ratio denominators.
+- **Metrics Honesty Banner**: We explicitly implemented an 'Honesty Banner' on the dashboard. This design decision was made to strictly delineate between our *live behavioral proxies* (e.g. booked-rank position, exposure ratios) and the paper's *offline synthetic metrics* (Precision, Recall, NDCG). Because we do not have a human-graded ground truth in production, it is vital that future contributors do not conflate the live analytics with offline rigor. This banner ensures structural honesty is built directly into the UI.

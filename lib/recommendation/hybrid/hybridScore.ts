@@ -49,7 +49,7 @@ export function computeHybridScores(
 
   pool.forEach(worker => {
     // 1. Proximity Signal (Negated because a smaller distance is better)
-    if (worker.latitude !== null && worker.longitude !== null) {
+    if (request.lat != null && request.lng != null && worker.latitude !== null && worker.longitude !== null) {
       const distance = haversineDistanceKm(
         request.lat,
         request.lng,
@@ -58,12 +58,15 @@ export function computeHybridScores(
       );
       rawProximity.push(-distance);
     } else {
-      // Penalty for missing location data
-      rawProximity.push(-9999);
+      rawProximity.push(0);
     }
 
     // 2. Price Fit Signal (Negated because a smaller price gap is better)
-    rawPrice.push(-priceGap(worker.dailyRate, request.budget));
+    if (request.budget != null && request.budget > 0) {
+      rawPrice.push(-priceGap(worker.dailyRate, request.budget));
+    } else {
+      rawPrice.push(0);
+    }
 
     // 3. Rating Signal
     rawRating.push(worker.rating);
@@ -85,7 +88,26 @@ export function computeHybridScores(
   const zCollab = zScoreNormalize(collabResult.scores);
 
   // 6. Branch based on Collaborative result (Warm vs Cold start)
-  const activeWeights = collabResult.isWarm ? weights.warm : weights.cold;
+  const baseWeights = collabResult.isWarm ? weights.warm : weights.cold;
+  const activeWeights = { ...baseWeights };
+
+  // Handle graceful degradation
+  if (request.lat == null || request.lng == null) {
+    activeWeights.proximityWeight = 0;
+  }
+  if (request.budget == null || request.budget <= 0) {
+    activeWeights.priceWeight = 0;
+  }
+
+  // Renormalize active weights
+  const weightSum = activeWeights.proximityWeight + activeWeights.priceWeight + activeWeights.ratingWeight + activeWeights.tagWeight + activeWeights.collabWeight;
+  if (weightSum > 0) {
+    activeWeights.proximityWeight /= weightSum;
+    activeWeights.priceWeight /= weightSum;
+    activeWeights.ratingWeight /= weightSum;
+    activeWeights.tagWeight /= weightSum;
+    activeWeights.collabWeight /= weightSum;
+  }
 
   // 7. Combine weighted signals and preserve breakdown for explainability
   const finalScores: number[] = [];

@@ -32,7 +32,7 @@ export async function rankPool(
   prisma: PrismaClient,
   request: HybridRequest,
   topK = 5
-): Promise<{ results: RankedWorker[]; modelVariant: string; isColdStart: boolean }> {
+): Promise<{ results: RankedWorker[]; modelVariant: string; isColdStart: boolean; reason?: string }> {
   // 1. Fetch the qualified pool (matching skill + isAvailable=true)
   const pool = await prisma.workerProfile.findMany({
     where: {
@@ -55,7 +55,7 @@ export async function rankPool(
 
   const modelVariant = getActiveModelVariant();
 
-  if (pool.length === 0) return { results: [], modelVariant, isColdStart: true };
+  if (pool.length === 0) return { results: [], modelVariant, isColdStart: true, reason: 'no_available_workers' };
 
   // 2. Load cached collaborative factors
   const factors = await loadLatestModelCache(prisma);

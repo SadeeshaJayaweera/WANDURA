@@ -460,6 +460,8 @@ model RecommendationLog {
 
   @@index([customerId])
   @@index([requestId])
+  @@index([workerId])
+  @@index([modelVariant])
 }
 
 model RecommendationModelCache {

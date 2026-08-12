@@ -121,6 +121,7 @@ for (const req of requests) {
 }
 
 // 4. Output results
+const summary: Record<string, any> = {}
 console.log('--- Ablation Study (NDCG@5) ---')
 for (const [name, ndcgs] of Object.entries(results)) {
   const avgNdcg = ndcgs.reduce((a, b) => a + b, 0) / ndcgs.length
@@ -130,9 +131,18 @@ for (const [name, ndcgs] of Object.entries(results)) {
   const diff = avgNdcg - fullHybridAvg
   const diffStr = diff >= 0 ? `+${diff.toFixed(4)}` : diff.toFixed(4)
   
+  summary[name] = { avgNdcg, diff }
+  
   if (name === 'Full Hybrid') {
     console.log(`${name.padEnd(15)}: ${avgNdcg.toFixed(4)} (Baseline)`)
   } else {
     console.log(`${name.padEnd(15)}: ${avgNdcg.toFixed(4)} (Δ ${diffStr})`)
   }
 }
+
+const outDir = path.join(process.cwd(), 'eval-results')
+if (!fs.existsSync(outDir)) fs.mkdirSync(outDir)
+fs.writeFileSync(
+  path.join(outDir, 'ablation.json'), 
+  JSON.stringify({ summary, perRequest: results }, null, 2)
+)

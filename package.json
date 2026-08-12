@@ -14,7 +14,8 @@
     "prisma:seed": "tsx prisma/seed.ts",
     "prisma:studio": "prisma studio",
     "recompute-recs": "tsx scripts/recompute-collaborative-model.ts",
-    "test": "jest"
+    "test": "jest",
+    "eval:full": "tsx scripts/eval/generateSyntheticBenchmark.ts && tsx scripts/eval/runBaselines.ts && tsx scripts/eval/runAblation.ts && tsx scripts/eval/runSignificance.ts && tsx scripts/eval/generateSummary.ts"
   },
   "dependencies": {
     "@googlemaps/js-api-loader": "^1.16.6",

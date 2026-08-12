@@ -132,14 +132,24 @@ for (const req of requests) {
 }
 
 // 4. Output results
+const summary: Record<string, any> = {}
 console.log('--- Baseline Evaluation (K=5) ---')
 for (const [arm, metrics] of Object.entries(results)) {
   const avgNdcg = metrics.ndcg.reduce((a, b) => a + b, 0) / metrics.ndcg.length
   const avgPrec = metrics.precision.reduce((a, b) => a + b, 0) / metrics.precision.length
   const avgRecall = metrics.recall.reduce((a, b) => a + b, 0) / metrics.recall.length
   
+  summary[arm] = { ndcg: avgNdcg, precision: avgPrec, recall: avgRecall }
+  
   console.log(`${arm.toUpperCase()}:`)
   console.log(`  NDCG@5:      ${avgNdcg.toFixed(4)}`)
   console.log(`  Precision@5: ${avgPrec.toFixed(4)}`)
   console.log(`  Recall@5:    ${avgRecall.toFixed(4)}`)
 }
+
+const outDir = path.join(process.cwd(), 'eval-results')
+if (!fs.existsSync(outDir)) fs.mkdirSync(outDir)
+fs.writeFileSync(
+  path.join(outDir, 'baselines.json'), 
+  JSON.stringify({ summary, perRequest: results }, null, 2)
+)

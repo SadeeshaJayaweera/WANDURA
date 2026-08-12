@@ -1,0 +1,36 @@
+name: Recommendation Eval
+on:
+  pull_request:
+    paths:
+      - 'lib/recommendation/**'
+      - 'scripts/eval/**'
+      
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Run Full Eval Suite
+        run: npm run eval:full
+        
+      - name: Check Regression Threshold
+        run: |
+          CURRENT_NDCG=$(node -p "require('./eval-results/baselines.json').summary.hybrid.ndcg")
+          THRESHOLD=$(node -p "require('./eval-results/baseline-threshold.json').hybridNdcgAt5")
+          
+          echo "Current Hybrid NDCG@5: $CURRENT_NDCG"
+          echo "Threshold: $THRESHOLD"
+          
+          if (( $(echo "$CURRENT_NDCG < $THRESHOLD" | bc -l) )); then
+            echo "::error::Hybrid NDCG@5 ($CURRENT_NDCG) fell below threshold ($THRESHOLD)!"
+            exit 1
+          else
+            echo "Regression check passed."
+          fi

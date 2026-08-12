@@ -1,0 +1,19 @@
+{
+  "summary": {
+    "ruleBased": {
+      "w": 3868,
+      "pValue": 0,
+      "isSignificant": true
+    },
+    "contentBased": {
+      "w": 5331.5,
+      "pValue": 0,
+      "isSignificant": true
+    },
+    "collaborative": {
+      "w": 4896,
+      "pValue": 0,
+      "isSignificant": true
+    }
+  }
+}

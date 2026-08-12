@@ -96,3 +96,21 @@ We designed and implemented a batched offline-SVD calculation pipeline to power 
   - `collaborativeScore.ts`: Performs fast dot-product ranking for customers inside the training matrix (warm-start).
   - `popularityFallback.ts`: Computes a mean rating score across past booking interactions as a fallback mechanism for cold-start customers.
 - **Offline Batch Job (`scripts/recompute-collaborative-model.ts`) & Internal API (`app/api/internal/recompute-recommendations/route.ts`)**: Encapsulates the matrix extraction, SVD factorization, and caching logic, and outputs diagnostic sparsity statistics for model health monitoring.
+
+## Day 4 - Model Pipeline Orchestration & Experimentation
+
+We implemented the `rankPool` orchestrator which serves as the primary entry point for the recommendation engine. 
+
+- **Feature Flag Routing (`featureFlag.ts`)**: A new environment variable `RECOMMENDATION_MODEL` controls which algorithm is executed in production (`hybrid`, `rule_based`, `content_based`, or `collaborative`). 
+- **Graceful Degradation**: If `hybrid` is active, it seamlessly merges the baseline heuristics with the offline-trained Collaborative Filtering scores, safely falling back to popularity/cold-start methods for new users.
+- **Future Work Fulfillment**: This dynamic routing explicitly operationalizes the paper's **Future Work item (iv)**, allowing us to seamlessly A/B test or completely swap out the underlying models in production without touching the frontend codebase.
+- **Explainability Logs (`RecommendationLog`)**: Every recommendation response traces the exact Z-Score contribution breakdown (proximity, price, rating, tag, and collab) directly into the database for further ML analysis and tuning.
+
+## Day 5 - API Integration & ML Analytics
+
+We successfully operationalized the model by surfacing it directly via the API layer and implementing analytical observability:
+
+- **Primary API Route (`POST /api/recommendations`)**: We exposed the pipeline via a dedicated, type-safe API endpoint that integrates strictly with Zod validation (`recommendationRequestSchema`). It includes graceful fallback handling (`NO_QUALIFIED_WORKERS`) and 500 error obfuscation.
+- **Legacy Integration (`GET /api/workers`)**: Added a seamless, backward-compatible `sort=recommended` proxy to allow existing frontend interfaces to hit the ML model without massive structural rewrites.
+- **Request Cache (`requestCache.ts`)**: Implemented a lightweight, robust LRU cache (hashed request bodies, 30s TTL, 500 items max) to short-circuit identical, rapid-fire API requests before hitting the DB or the ML orchestrator.
+- **Analytics Endpoint (`GET /api/admin/recommendation-metrics`)**: Added an `ADMIN` gated metrics endpoint matching the paper's **Section III-C**. It dynamically filters the `RecommendationLog` by an ISO date range, bucketing workers by `totalReviews` (New: 0-5, Mid: 6-20, Established: 21+), to track and analyze ML exposure distribution ratios.

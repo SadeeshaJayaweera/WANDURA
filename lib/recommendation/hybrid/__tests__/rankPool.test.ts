@@ -2,6 +2,42 @@ import { PrismaClient, SkillType } from "@prisma/client";
 import { rankPool } from "../rankPool";
 import { HybridRequest } from "../hybridScore";
 
+jest.mock("@prisma/client", () => {
+  const mPrismaClient = {
+    workerProfile: {
+      findMany: jest.fn().mockResolvedValue([
+        {
+          id: "mock-worker-1",
+          skill: "PLUMBER",
+          isAvailable: true,
+          rating: 5,
+          totalReviews: 20,
+          dailyRate: 100,
+          latitude: 10,
+          longitude: 10,
+          skillTags: [],
+          user: { id: "user-1", name: "Mock Plumber" }
+        }
+      ])
+    },
+    recommendationModelCache: {
+      findFirst: jest.fn().mockResolvedValue(null)
+    },
+    recommendationWeightConfig: {
+      findFirst: jest.fn().mockResolvedValue(null)
+    },
+    recommendationLog: {
+      createMany: jest.fn().mockResolvedValue({ count: 1 })
+    },
+    $disconnect: jest.fn(),
+  };
+  return {
+    PrismaClient: jest.fn(() => mPrismaClient),
+    SkillType: { PLUMBER: "PLUMBER" },
+    RecommendationVariant: { WARM: "WARM", COLD: "COLD" }
+  };
+});
+
 const prisma = new PrismaClient();
 
 describe("rankPool (Integration)", () => {
@@ -18,10 +54,14 @@ describe("rankPool (Integration)", () => {
       customerId: "test-customer-id",
     };
 
-    const results = await rankPool(prisma, request, 3);
+    const response = await rankPool(prisma, request, 3);
+    
+    // We expect the new response object
+    expect(response).toHaveProperty("results");
+    expect(response).toHaveProperty("modelVariant");
+    expect(response).toHaveProperty("isColdStart");
 
-    // If the DB has PLUMBERs seeded, we should get some results. 
-    // If not, we just expect the function to return an empty array without crashing.
+    const results = response.results;
     expect(Array.isArray(results)).toBe(true);
     
     if (results.length > 0) {

@@ -432,10 +432,16 @@ After running the seed script:
 | GET | `/api/estimates` | Get saved estimates |
 | POST | `/api/estimates` | Save new estimate |
 
-### Analytics
+### Analytics & Admin
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | GET | `/api/analytics` | Get analytics data |
+| GET | `/api/admin/recommendation-metrics` | Get ML exposure distribution |
+
+### Recommendations
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/api/recommendations` | Get ML-ranked worker recommendations |
 
 ---
 

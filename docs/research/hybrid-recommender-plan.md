@@ -132,3 +132,14 @@ To ensure the production system behaves as intended and adheres to the academic 
 - **Cold-Start Reliability Tracking**: We built an analytics module that partitions recommendations by `isColdStart` and tracks the average booked-rank position. This provides a live proxy for the NDCG@5 metrics (Table II), actively tracking the performance penalty of cold-start recommendations vs. collaborative ones.
 - **Unit Testing Analytical Queries**: We hardened our `ExposureFairness` and `ColdStartBreakdown` queries using deterministic, fixture-based tests to eliminate off-by-one errors in our ratio denominators.
 - **Metrics Honesty Banner**: We explicitly implemented an 'Honesty Banner' on the dashboard. This design decision was made to strictly delineate between our *live behavioral proxies* (e.g. booked-rank position, exposure ratios) and the paper's *offline synthetic metrics* (Precision, Recall, NDCG). Because we do not have a human-graded ground truth in production, it is vital that future contributors do not conflate the live analytics with offline rigor. This banner ensures structural honesty is built directly into the UI.
+
+## Day 8 - Automated Reproducibility Harness
+
+In the final phase of this transition, we built a fully automated reproducibility harness that executes the paper's benchmarks directly against our production code, ensuring the shipped product remains mathematically faithful to the academic claims.
+
+- **Synthetic Benchmark**: We ported the paper's original benchmark generation into `scripts/eval/generateSyntheticBenchmark.ts`.
+- **Baseline Evaluations**: We ported the Precision, Recall, and NDCG metrics, and evaluated them using the *exact* scoring algorithms served to real users (`hybridScore.ts`).
+- **Ablation & Significance**: We successfully reproduced the ablation study (Table III) and authored a zero-dependency Wilcoxon signed-rank test (`scripts/eval/wilcoxon.ts`) to automate the statistical significance tests.
+- **Continuous Integration Guard**: We combined all of this into a single command (`npm run eval:full`) and bound it to a GitHub Actions CI workflow. This workflow fails if the Hybrid model's NDCG@5 drops below our checked-in threshold (0.4300), structurally guaranteeing that future pull requests will not silently degrade algorithmic quality.
+
+For exact steps on how to reproduce the academic tables and output files, see our [Reproducing Paper Results guide](reproducing-paper-results.md).

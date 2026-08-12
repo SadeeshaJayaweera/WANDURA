@@ -89,6 +89,7 @@ export const recommendationRequestSchema = z.object({
   lng: z.number().min(-180).max(180),
   budget: z.number().positive(),
   customerId: z.string().optional(),
+  topK: z.number().int().min(1).max(20).optional().default(5),
 })
 
 /**

@@ -3,6 +3,7 @@ import { prisma } from "@/lib/prisma";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 import { Role } from "@prisma/client";
+import { computeExposureFairness } from "@/lib/recommendation/analytics/exposureFairness";
 
 /**
  * GET /api/admin/recommendation-metrics
@@ -46,46 +47,14 @@ export async function GET(req: NextRequest) {
       return NextResponse.json({ error: "Invalid date format. Use ISO strings." }, { status: 400 });
     }
 
-    const logs = await prisma.recommendationLog.findMany({
-      where: {
-        createdAt: {
-          gte: fromDate,
-          lte: toDate
-        }
-      },
-      include: {
-        worker: {
-          select: { totalReviews: true }
-        }
-      }
+    const exposureFairness = await computeExposureFairness(prisma, { from: fromDate, to: toDate });
+    const totalRecommendations = await prisma.recommendationLog.count({
+      where: { createdAt: { gte: fromDate, lte: toDate } }
     });
 
-    const total = logs.length;
-    let newTier = 0; // 0 - 5 reviews
-    let midTier = 0; // 6 - 20 reviews
-    let estTier = 0; // 21+ reviews
-
-    for (const log of logs) {
-      const revs = log.worker?.totalReviews || 0;
-      if (revs <= 5) newTier++;
-      else if (revs <= 20) midTier++;
-      else estTier++;
-    }
-
-    const ratios = {
-      new: total ? newTier / total : 0,
-      mid: total ? midTier / total : 0,
-      established: total ? estTier / total : 0,
-    };
-
     return NextResponse.json({
-      totalRecommendations: total,
-      counts: {
-        new: newTier,
-        mid: midTier,
-        established: estTier,
-      },
-      ratios
+      totalRecommendations,
+      exposureFairness
     });
 
   } catch (error) {

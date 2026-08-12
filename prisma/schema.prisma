@@ -214,6 +214,9 @@ model Booking {
   totalAmount   Float
   commission    Float         @default(0)
   paymentStatus PaymentStatus @default(PENDING)
+  
+  recommendationLogId String?
+  recommendationLog   RecommendationLog? @relation(fields: [recommendationLogId], references: [id])
   paymentId     String?
   description   String?
   address       String
@@ -452,6 +455,8 @@ model RecommendationLog {
   isColdStart     Boolean
   scoreBreakdown  Json?
   createdAt       DateTime      @default(now())
+
+  bookings        Booking[]
 
   @@index([customerId])
   @@index([requestId])

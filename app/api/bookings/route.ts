@@ -60,6 +60,21 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Worker not found' }, { status: 404 })
     }
 
+    // Validate recommendationLog if provided to prevent attribution spoofing
+    if (body.recommendationLogId) {
+      const recLog = await prisma.recommendationLog.findUnique({
+        where: { id: body.recommendationLogId },
+        include: { worker: true } // joins WorkerProfile
+      })
+      
+      // RecommendationLog.workerId is WorkerProfile.id, but Booking.workerId is User.id
+      // We must match recLog.worker.userId === body.workerId
+      if (recLog && recLog.worker?.userId !== body.workerId) {
+        console.warn('Recommendation log worker mismatch detected')
+        return NextResponse.json({ error: 'Invalid recommendation log attribution' }, { status: 400 })
+      }
+    }
+
     // Calculate total amount
     const startDate = new Date(body.startDate)
     const endDate = new Date(body.endDate)
@@ -85,6 +100,7 @@ export async function POST(req: NextRequest) {
         city: body.city,
         state: body.state,
         zipCode: body.zipCode,
+        recommendationLogId: body.recommendationLogId || null,
       },
       include: {
         worker: { select: { name: true, email: true } },

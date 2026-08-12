@@ -1,4 +1,5 @@
 import { PrismaClient } from "@prisma/client";
+import crypto from "crypto";
 import { HybridRequest, computeHybridScores } from "./hybridScore";
 import { loadLatestModelCache } from "../collaborative/modelCache";
 import { scoreCollaborative } from "../collaborative/collaborativeScore";
@@ -78,7 +79,7 @@ export async function rankPool(
   // 7. Take top K and assign rank
   const topWorkers = scoredPool.slice(0, topK);
 
-  return topWorkers.map((item, index) => {
+  const rankedWorkers = topWorkers.map((item, index) => {
     return {
       ...item.worker,
       score: item.score,
@@ -87,4 +88,23 @@ export async function rankPool(
       user: item.worker.user,
     } as RankedWorker;
   });
+
+  // 8. Log the recommendations to the database
+  const requestId = request.requestId || crypto.randomUUID();
+  if (rankedWorkers.length > 0) {
+    await prisma.recommendationLog.createMany({
+      data: rankedWorkers.map((worker) => ({
+        requestId,
+        customerId: request.customerId,
+        workerId: worker.id,
+        rank: worker.rank,
+        score: worker.score,
+        modelVariant: "hybrid",
+        isColdStart: !collabResult.isWarm,
+        scoreBreakdown: worker.scoreBreakdown as any, // Cast to any to satisfy Prisma Json input
+      })),
+    });
+  }
+
+  return rankedWorkers;
 }

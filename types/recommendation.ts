@@ -23,6 +23,7 @@ export interface RankedWorker extends WorkerProfile {
 }
 
 export interface RecommendationRequest {
+  requestId?: string
   skill: SkillType
   lat: number
   lng: number

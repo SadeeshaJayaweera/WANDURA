@@ -12,6 +12,9 @@ import {
 import { formatCurrency, formatDate } from '@/lib/utils'
 import { toast } from '@/components/ui/use-toast'
 import { getSkillLabel } from '@/lib/srilanka'
+import { ThemeToggle } from '@/components/ui/ThemeToggle'
+import { LanguageToggle } from '@/components/ui/LanguageToggle'
+import { useLanguage } from '@/components/providers/LanguageProvider'
 
 const STATUS_STYLES: Record<string, { bg: string; dot: string; label: string }> = {
   PENDING:     { bg: 'bg-amber-50 text-amber-700 border-amber-200',   dot: 'bg-amber-500',  label: 'Pending' },
@@ -89,21 +92,28 @@ export default function BookingsPage() {
   )
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 dark:bg-[#070b14] text-gray-900 dark:text-gray-100 transition-colors">
       {/* Header */}
-      <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+      <header className="sticky top-0 z-40 bg-white/95 dark:bg-[#0c1222]/95 backdrop-blur-sm border-b border-gray-200 dark:border-slate-800">
         <div className="container mx-auto px-6 h-16 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-              <Hammer className="h-4 w-4 text-white" />
-            </div>
-            <span className="text-xl font-bold text-gray-900 tracking-tight">Wandura</span>
-          </Link>
-          <Button variant="outline" size="sm" asChild className="rounded-xl gap-2 border-gray-200">
-            <Link href="/dashboard">
-              <ArrowLeft className="h-4 w-4" /> Dashboard
+          <div className="flex items-center gap-3">
+            <Button variant="ghost" size="sm" asChild className="rounded-xl gap-2 text-gray-500 hover:text-gray-900 dark:hover:text-white">
+              <Link href="/dashboard">
+                <ArrowLeft className="h-4 w-4" /> <span className="hidden sm:inline">Dashboard</span>
+              </Link>
+            </Button>
+            <div className="h-4 w-px bg-gray-200 dark:bg-slate-800" />
+            <Link href="/" className="flex items-center gap-2">
+              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                <Hammer className="h-4 w-4 text-white" />
+              </div>
+              <span className="text-xl font-bold text-gray-900 dark:text-white tracking-tight">Wandura</span>
             </Link>
-          </Button>
+          </div>
+          <div className="flex items-center gap-2">
+            <LanguageToggle />
+            <ThemeToggle />
+          </div>
         </div>
       </header>
 

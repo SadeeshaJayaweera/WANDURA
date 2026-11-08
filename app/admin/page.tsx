@@ -1,3 +1,4 @@
+import { redirect } from 'next/navigation'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
 import { prisma } from '@/lib/prisma'
@@ -10,43 +11,56 @@ export default async function AdminPage() {
     redirect('/dashboard')
   }
 
-  const [users, bookings, projects, products, transactions] = await Promise.all([
+  const [users, bookings, projects, products, transactions, orders] = await Promise.all([
     prisma.user.findMany({
       include: {
         workerProfile: true,
         storeProfile: true,
       },
       orderBy: { createdAt: 'desc' },
-      take: 50,
+      take: 100,
     }),
     prisma.booking.findMany({
       include: {
-        customer: { select: { name: true, email: true } },
-        worker: { select: { name: true, email: true } },
+        customer: { select: { id: true, name: true, email: true, phone: true } },
+        worker: { select: { id: true, name: true, email: true, phone: true } },
       },
       orderBy: { createdAt: 'desc' },
-      take: 50,
+      take: 100,
     }),
     prisma.project.findMany({
       include: {
-        customer: { select: { name: true, email: true } },
+        customer: { select: { id: true, name: true, email: true } },
+        tasks: { select: { id: true, status: true } },
       },
       orderBy: { createdAt: 'desc' },
-      take: 50,
+      take: 100,
     }),
     prisma.product.findMany({
       include: {
-        store: { select: { storeName: true } },
+        store: { select: { id: true, storeName: true, city: true } },
       },
       orderBy: { createdAt: 'desc' },
-      take: 50,
+      take: 100,
     }),
     prisma.transaction.findMany({
       include: {
-        user: { select: { name: true, email: true } },
+        user: { select: { id: true, name: true, email: true } },
       },
       orderBy: { createdAt: 'desc' },
-      take: 50,
+      take: 100,
+    }),
+    prisma.order.findMany({
+      include: {
+        store: { select: { id: true, storeName: true, city: true } },
+        items: {
+          include: {
+            product: { select: { name: true, unit: true } },
+          },
+        },
+      },
+      orderBy: { createdAt: 'desc' },
+      take: 100,
     }),
   ])
 
@@ -56,11 +70,13 @@ export default async function AdminPage() {
     totalStores: await prisma.storeProfile.count(),
     totalBookings: await prisma.booking.count(),
     totalProjects: await prisma.project.count(),
+    totalOrders: await prisma.order.count(),
     totalRevenue: await prisma.transaction.aggregate({
       where: { type: 'COMMISSION', status: 'COMPLETED' },
       _sum: { amount: true },
     }),
     pendingBookings: await prisma.booking.count({ where: { status: 'PENDING' } }),
+    pendingOrders: await prisma.order.count({ where: { status: 'PENDING' } }),
   }
 
   return (
@@ -70,8 +86,8 @@ export default async function AdminPage() {
       projects={projects}
       products={products}
       transactions={transactions}
+      orders={orders}
       stats={stats}
     />
   )
 }
-import { redirect } from 'next/navigation'

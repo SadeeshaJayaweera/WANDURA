@@ -11,11 +11,16 @@ export default async function DashboardPage() {
     redirect('/auth/signin')
   }
 
+  // Redirect admin directly to Admin console
+  if (session.user.role === 'ADMIN') {
+    redirect('/admin')
+  }
+
   // Fetch dashboard data based on user role
   let dashboardData: any = {}
 
   if (session.user.role === 'CUSTOMER') {
-    const [bookings, projects] = await Promise.all([
+    const [bookings, projects, orders] = await Promise.all([
       prisma.booking.findMany({
         where: { customerId: session.user.id },
         include: {
@@ -29,6 +34,14 @@ export default async function DashboardPage() {
         orderBy: { createdAt: 'desc' },
         take: 5,
       }),
+      prisma.order.findMany({
+        where: { customerId: session.user.id },
+        include: {
+          store: { select: { storeName: true } },
+        },
+        orderBy: { createdAt: 'desc' },
+        take: 5,
+      }),
     ])
 
     dashboardData = {
@@ -36,14 +49,18 @@ export default async function DashboardPage() {
       stats: {
         totalBookings: await prisma.booking.count({ where: { customerId: session.user.id } }),
         activeProjects: await prisma.project.count({
-          where: { customerId: session.user.id, status: 'ACTIVE' }
+          where: { customerId: session.user.id, status: 'ACTIVE' },
         }),
         pendingBookings: await prisma.booking.count({
-          where: { customerId: session.user.id, status: 'PENDING' }
+          where: { customerId: session.user.id, status: 'PENDING' },
+        }),
+        totalOrders: await prisma.order.count({
+          where: { customerId: session.user.id },
         }),
       },
       recentBookings: bookings,
       recentProjects: projects,
+      recentOrders: orders,
     }
   } else if (session.user.role === 'WORKER') {
     const workerProfile = await prisma.workerProfile.findUnique({
@@ -68,7 +85,7 @@ export default async function DashboardPage() {
         averageRating: workerProfile?.rating || 0,
         walletBalance: workerProfile?.walletBalance || 0,
         pendingBookings: await prisma.booking.count({
-          where: { workerId: session.user.id, status: 'PENDING' }
+          where: { workerId: session.user.id, status: 'PENDING' },
         }),
       },
       recentBookings: bookings,
@@ -90,13 +107,13 @@ export default async function DashboardPage() {
       profile: storeProfile,
       stats: {
         totalProducts: await prisma.product.count({
-          where: { storeId: storeProfile?.id }
+          where: { storeId: storeProfile?.id },
         }),
         totalOrders: await prisma.order.count({
-          where: { storeId: storeProfile?.id }
+          where: { storeId: storeProfile?.id },
         }),
         pendingOrders: await prisma.order.count({
-          where: { storeId: storeProfile?.id, status: 'PENDING' }
+          where: { storeId: storeProfile?.id, status: 'PENDING' },
         }),
       },
       recentProducts: storeProfile?.products || [],

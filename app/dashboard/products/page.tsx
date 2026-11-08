@@ -25,6 +25,8 @@ import {
   Image as ImageIcon,
 } from 'lucide-react'
 import { formatCurrency } from '@/lib/utils'
+import { ThemeToggle } from '@/components/ui/ThemeToggle'
+import { LanguageToggle } from '@/components/ui/LanguageToggle'
 
 const PRESET_IMAGES: Record<string, string> = {
   'Cement & Concrete': 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&auto=format&fit=crop&q=80',
@@ -230,23 +232,25 @@ export default function StoreProductsDashboard() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col">
+    <div className="min-h-screen bg-gray-50 dark:bg-[#070b14] text-gray-900 dark:text-gray-100 flex flex-col transition-colors">
       {/* Header */}
-      <header className="sticky top-0 z-40 bg-white border-b border-gray-100 h-16 flex items-center px-6 justify-between">
+      <header className="sticky top-0 z-40 bg-white/95 dark:bg-[#0c1222]/95 backdrop-blur-sm border-b border-gray-200 dark:border-slate-800 h-16 flex items-center px-6 justify-between">
         <div className="flex items-center gap-3">
           <Link href="/" className="flex items-center gap-2 mr-4">
             <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
               <Hammer className="h-4 w-4 text-white" />
             </div>
-            <span className="text-xl font-bold text-gray-900 tracking-tight">Wandura</span>
+            <span className="text-xl font-bold text-gray-900 dark:text-white tracking-tight">Wandura</span>
           </Link>
-          <span className="text-xs bg-blue-50 text-blue-700 font-semibold px-2.5 py-1 rounded-full border border-blue-100">
+          <span className="text-xs bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-300 font-semibold px-2.5 py-1 rounded-full border border-blue-200 dark:border-blue-800">
             Store Seller Hub (හාඩ්වෙයාර් පාලක මැදිරිය)
           </span>
         </div>
 
         <div className="flex items-center gap-2">
-          <Button variant="outline" size="sm" asChild className="rounded-xl border-gray-200 text-xs">
+          <LanguageToggle />
+          <ThemeToggle />
+          <Button variant="outline" size="sm" asChild className="rounded-xl border-gray-200 dark:border-slate-700 text-xs">
             <Link href="/dashboard">
               <ArrowLeft className="h-3.5 w-3.5 mr-1" /> Dashboard
             </Link>

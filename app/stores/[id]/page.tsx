@@ -151,24 +151,51 @@ export default function StoreDetailPage() {
 
   const totalCartItems = cart.reduce((sum, item) => sum + item.quantity, 0)
 
-  const handleCheckout = () => {
+  const handleCheckout = async () => {
     // ENFORCE ACCOUNT REQUIREMENT FOR PURCHASES
     if (!session?.user) {
       setShowAuthModal(true)
       return
     }
 
-    // Authenticated user checkout
+    if (cart.length === 0) return
+
     setCheckoutSuccess(true)
-    setTimeout(() => {
-      setCart([])
-      setIsCartOpen(false)
-      setCheckoutSuccess(false)
+    try {
+      const res = await fetch('/api/orders', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          storeId: store?.id,
+          items: cart.map((item) => ({
+            id: item.id,
+            productId: item.id,
+            quantity: item.quantity,
+            price: item.price,
+            name: item.name,
+          })),
+          deliveryAddress: 'Site Delivery Address',
+          deliveryCity: store?.city || 'Colombo',
+        }),
+      })
+
+      const data = await res.json()
+      if (!res.ok) throw new Error(data.error || 'Failed to place order')
+
       toast({
         title: 'Order Placed Successfully! (ඇණවුම සාර්ථකයි)',
-        description: `Order confirmed with ${store?.storeName}. Invoice and delivery tracking sent to ${session.user.email}.`,
+        description: `Order #${data.order?.orderNumber || ''} confirmed with ${store?.storeName}. Track in your dashboard.`,
       })
-    }, 1500)
+      setCart([])
+      setIsCartOpen(false)
+    } catch (err: any) {
+      toast({
+        title: 'Checkout Error',
+        description: err.message,
+      })
+    } finally {
+      setCheckoutSuccess(false)
+    }
   }
 
   const filteredProducts = products.filter((product) => {

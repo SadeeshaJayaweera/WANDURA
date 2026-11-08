@@ -146,23 +146,50 @@ export default function StoresPage() {
 
   const totalCartItems = cart.reduce((sum, item) => sum + item.quantity, 0)
 
-  const handleCheckout = () => {
+  const handleCheckout = async () => {
     // ENFORCE ACCOUNT CREATION / AUTHENTICATION BEFORE PURCHASING
     if (!session?.user) {
       setShowAuthModal(true)
       return
     }
 
+    if (cart.length === 0) return
+
     setCheckoutSuccess(true)
-    setTimeout(() => {
+    try {
+      const res = await fetch('/api/orders', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          items: cart.map((item) => ({
+            id: item.id,
+            productId: item.id,
+            quantity: item.quantity,
+            price: item.price,
+            name: item.name,
+          })),
+          deliveryAddress: 'Site Delivery Location (Customer Site)',
+          deliveryCity: 'Colombo',
+        }),
+      })
+
+      const data = await res.json()
+      if (!res.ok) throw new Error(data.error || 'Failed to place order')
+
+      toast({
+        title: isSinhala ? 'ඇණවුම තහවුරු විය!' : 'Order Placed Successfully!',
+        description: `Order #${data.order?.orderNumber || ''} has been placed. Track in your Material Orders dashboard.`,
+      })
       setCart([])
       setIsCartOpen(false)
-      setCheckoutSuccess(false)
+    } catch (err: any) {
       toast({
-        title: isSinhala ? 'ඇණවුම තහවුරු විය!' : 'Order Confirmed!',
-        description: `Your order has been routed to the partner hardware store. Invoice sent to ${session.user.email}.`,
+        title: 'Checkout Error',
+        description: err.message,
       })
-    }, 1500)
+    } finally {
+      setCheckoutSuccess(false)
+    }
   }
 
   const handleAddListingClick = () => {

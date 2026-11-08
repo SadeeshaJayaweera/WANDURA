@@ -1,3 +1,4 @@
+import { NextRequest, NextResponse } from 'next/server'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
 import { prisma } from '@/lib/prisma'
@@ -148,4 +149,3 @@ async function getTopProducts(storeId: string, startDate: Date) {
     .sort((a: any, b: any) => b.revenue - a.revenue)
     .slice(0, 5)
 }
-import { NextRequest, NextResponse } from 'next/server'

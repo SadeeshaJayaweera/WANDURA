@@ -11,6 +11,7 @@ import {
 } from 'lucide-react'
 import { formatCurrency, formatDate } from '@/lib/utils'
 import { toast } from '@/components/ui/use-toast'
+import { getSkillLabel } from '@/lib/srilanka'
 
 const STATUS_STYLES: Record<string, { bg: string; dot: string; label: string }> = {
   PENDING:     { bg: 'bg-amber-50 text-amber-700 border-amber-200',   dot: 'bg-amber-500',  label: 'Pending' },
@@ -209,8 +210,8 @@ export default function BookingsPage() {
                     {/* Details row */}
                     <div className="grid grid-cols-3 gap-4 py-3 border-t border-b border-gray-100 mb-4">
                       <div>
-                        <p className="text-xs font-medium text-gray-400 mb-0.5">Skill</p>
-                        <p className="text-sm font-medium text-gray-700">{booking.skill?.replace(/_/g, ' ')}</p>
+                        <p className="text-xs font-medium text-gray-400 mb-0.5">Trade (ශ්‍රේණිය)</p>
+                        <p className="text-sm font-semibold text-blue-600">{getSkillLabel(booking.skill)}</p>
                       </div>
                       <div>
                         <p className="text-xs font-medium text-gray-400 mb-0.5">Start Date</p>

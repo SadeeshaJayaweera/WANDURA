@@ -197,13 +197,13 @@ export default function ProjectsPage() {
                   />
                 </div>
                 <div className="space-y-1.5">
-                  <Label htmlFor="budget" className="text-sm font-medium text-gray-700">Budget (USD)</Label>
+                  <Label htmlFor="budget" className="text-sm font-medium text-gray-700">Budget (LKR - රුපියල්)</Label>
                   <Input
                     id="budget"
                     type="number"
                     value={newProject.budget}
                     onChange={(e) => setNewProject({ ...newProject, budget: e.target.value })}
-                    placeholder="e.g. 50000"
+                    placeholder="e.g. 1500000"
                     className="h-10 rounded-xl border-gray-200 bg-gray-50"
                   />
                 </div>

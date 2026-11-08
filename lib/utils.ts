@@ -6,14 +6,14 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function formatCurrency(amount: number): string {
-  return new Intl.NumberFormat('en-US', {
-    style: 'currency',
-    currency: 'USD',
-  }).format(amount)
+  if (isNaN(amount) || amount === null || amount === undefined) return 'Rs. 0'
+  return `Rs. ${new Intl.NumberFormat('en-LK', {
+    maximumFractionDigits: 0,
+  }).format(Math.round(amount))}`
 }
 
 export function formatDate(date: Date | string): string {
-  return new Intl.DateTimeFormat('en-US', {
+  return new Intl.DateTimeFormat('en-LK', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
@@ -41,7 +41,7 @@ export function calculateDistance(
   lat2: number,
   lon2: number
 ): number {
-  const R = 3959 // Earth's radius in miles
+  const R = 6371 // Earth's radius in kilometers
   const dLat = ((lat2 - lat1) * Math.PI) / 180
   const dLon = ((lon2 - lon1) * Math.PI) / 180
   const a =

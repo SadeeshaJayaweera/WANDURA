@@ -7,6 +7,7 @@ import { RankedWorker } from '@/types/recommendation'
 import { MatchScoreBadge } from './MatchScoreBadge'
 import { useEffect } from 'react'
 import { trackRecommendationClick } from '@/lib/analytics/trackRecommendationClick'
+import { getSkillLabel } from '@/lib/srilanka'
 
 interface RankedWorkerCardProps {
   worker: RankedWorker;
@@ -18,14 +19,14 @@ export function RankedWorkerCard({ worker, totalResults }: RankedWorkerCardProps
   const getExplanation = () => {
     if (!worker.scoreBreakdown) return "Good overall match"
     
-    const { geoScore, priceScore, collabScore, ratingScore, tagScore } = worker.scoreBreakdown
+    const { proximity, price, collab, rating, tag } = worker.scoreBreakdown
     
-    if (collabScore > 1.5) return "Highly recommended based on similar customers"
-    if (geoScore > 1.0 && priceScore > 1.0) return "Close by and matches your budget"
-    if (ratingScore > 1.5) return "Exceptional community rating"
-    if (tagScore > 1.5) return "Has exactly the skills you need"
-    if (priceScore > 1.5) return "Excellent price fit"
-    if (geoScore > 1.5) return "Very close to your location"
+    if (collab > 1.5) return "Highly recommended based on similar customers in Sri Lanka"
+    if (proximity > 1.0 && price > 1.0) return "Close to your site and fits your budget"
+    if (rating > 1.5) return "Exceptional community rating"
+    if (tag > 1.5) return "Has exactly the skills you need"
+    if (price > 1.5) return "Excellent price fit"
+    if (proximity > 1.5) return "Very close to your location"
     
     return "Solid overall match"
   }
@@ -71,8 +72,8 @@ export function RankedWorkerCard({ worker, totalResults }: RankedWorkerCardProps
               {worker.isVerified && <BadgeCheck className="h-5 w-5 text-green-500" />}
               <MatchScoreBadge worker={worker} totalResults={totalResults} />
             </CardTitle>
-            <p className="text-sm text-muted-foreground mt-1 font-medium">
-              {worker.skill?.replace('_', ' ')}
+            <p className="text-sm text-blue-600 mt-1 font-semibold">
+              {getSkillLabel(worker.skill)}
             </p>
           </div>
         </div>
@@ -82,7 +83,7 @@ export function RankedWorkerCard({ worker, totalResults }: RankedWorkerCardProps
         <div className="space-y-3">
           <div className="flex items-center gap-2 text-sm">
             <MapPin className="h-4 w-4 text-muted-foreground" />
-            <span>{worker.city || 'Location unavailable'}</span>
+            <span>{worker.city || 'Sri Lanka'}, {worker.state || ''}</span>
           </div>
           
           <div className="flex items-center gap-2">
@@ -94,7 +95,7 @@ export function RankedWorkerCard({ worker, totalResults }: RankedWorkerCardProps
           </div>
           
           <div className="text-lg font-bold text-primary">
-            {formatCurrency(worker.dailyRate)}/day
+            {formatCurrency(worker.dailyRate)} <span className="text-xs font-normal text-muted-foreground">/ day (දිනකට)</span>
           </div>
           
           {/* Hover explanation tooltip area */}

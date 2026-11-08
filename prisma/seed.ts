@@ -10,7 +10,7 @@ export const TAG_VOCABULARY = [
 ]
 
 async function main() {
-  console.log('🌱 Starting seed...')
+  console.log('🌱 Starting Sri Lanka localized seed...')
 
   // Clear existing data
   await prisma.recommendationLog.deleteMany()
@@ -35,41 +35,44 @@ async function main() {
 
   const hashedPassword = await bcrypt.hash('password123', 10)
 
-  // Create Admin
+  // 1. Create Admin
   const admin = await prisma.user.create({
     data: {
       email: 'admin@wandura.com',
       password: hashedPassword,
-      name: 'Admin User',
+      name: 'Wandura Admin (ශ්‍රී ලංකා)',
       role: Role.ADMIN,
+      phone: '+94 77 123 4567',
       emailVerified: true,
       profile: {
         create: {
-          city: 'San Francisco',
-          state: 'CA',
-          country: 'USA',
+          city: 'Colombo',
+          state: 'Western Province',
+          country: 'Sri Lanka',
+          latitude: 6.9271,
+          longitude: 79.8612,
         },
       },
     },
   })
 
-  // Create Customers
+  // 2. Create Sri Lankan Customers
   const customer1 = await prisma.user.create({
     data: {
-      email: 'john.doe@example.com',
+      email: 'kasun.perera@example.com',
       password: hashedPassword,
-      name: 'John Doe',
+      name: 'Kasun Perera (කසුන් පෙරේරා)',
       role: Role.CUSTOMER,
-      phone: '+1-555-0101',
+      phone: '+94 71 234 5678',
       emailVerified: true,
       profile: {
         create: {
-          address: '123 Main St',
-          city: 'San Francisco',
-          state: 'CA',
-          zipCode: '94102',
-          latitude: 37.7749,
-          longitude: -122.4194,
+          address: 'No. 45, High Level Road',
+          city: 'Maharagama',
+          state: 'Western Province',
+          zipCode: '10280',
+          latitude: 6.8480,
+          longitude: 79.9265,
         },
       },
     },
@@ -77,53 +80,53 @@ async function main() {
 
   const customer2 = await prisma.user.create({
     data: {
-      email: 'jane.smith@example.com',
+      email: 'dilini.jayawardena@example.com',
       password: hashedPassword,
-      name: 'Jane Smith',
+      name: 'Dilini Jayawardena (දිලිනි ජයවර්ධන)',
       role: Role.CUSTOMER,
-      phone: '+1-555-0102',
+      phone: '+94 76 345 6789',
       emailVerified: true,
       profile: {
         create: {
-          address: '456 Oak Ave',
-          city: 'Los Angeles',
-          state: 'CA',
-          zipCode: '90001',
-          latitude: 34.0522,
-          longitude: -118.2437,
+          address: 'No. 12, Peradeniya Road',
+          city: 'Kandy',
+          state: 'Central Province',
+          zipCode: '20000',
+          latitude: 7.2906,
+          longitude: 80.6337,
         },
       },
     },
   })
 
-  // Create Workers
+  // 3. Create Sri Lankan Skilled Workers with Sinhala Names & Real Coordinates
   const worker1 = await prisma.user.create({
     data: {
-      email: 'mike.mason@example.com',
+      email: 'sunimal.mason@example.com',
       password: hashedPassword,
-      name: 'Mike Thompson',
+      name: 'Sunimal Wickramasinghe (සුනිමල් වික්‍රමසිංහ)',
       role: Role.WORKER,
-      phone: '+1-555-0201',
+      phone: '+94 77 987 6543',
       emailVerified: true,
       workerProfile: {
         create: {
           skill: SkillType.MASON,
-          dailyRate: 250,
-          hourlyRate: 35,
-          experience: 8,
-          bio: 'Expert mason with 8 years of experience in residential and commercial projects.',
+          dailyRate: 5500, // LKR
+          hourlyRate: 700,
+          experience: 12,
+          bio: 'වසර 12 ක පළපුරුද්දක් සහිත ප්‍රවීණ මේසන් බාස්. නිවාස ඉදිකිරීම්, කොන්ක්‍රීට් සහ ප්ලාස්ටර් වැඩ සඳහා විශ්වාසනීය සේවය.',
           isVerified: true,
           isAvailable: true,
-          city: 'San Francisco',
-          state: 'CA',
-          zipCode: '94103',
-          latitude: 37.7749,
-          longitude: -122.4194,
-          rating: 4.8,
-          totalReviews: 45,
-          totalJobs: 52,
-          totalEarnings: 13000,
-          walletBalance: 2500,
+          city: 'Colombo',
+          state: 'Western Province',
+          zipCode: '00500',
+          latitude: 6.9271,
+          longitude: 79.8612,
+          rating: 4.9,
+          totalReviews: 54,
+          totalJobs: 62,
+          totalEarnings: 341000,
+          walletBalance: 42000,
         },
       },
     },
@@ -131,31 +134,31 @@ async function main() {
 
   const worker2 = await prisma.user.create({
     data: {
-      email: 'sarah.welder@example.com',
+      email: 'kasun.welder@example.com',
       password: hashedPassword,
-      name: 'Sarah Johnson',
+      name: 'Kasun Sampath Fernando (කසුන් සම්පත්)',
       role: Role.WORKER,
-      phone: '+1-555-0202',
+      phone: '+94 72 876 5432',
       emailVerified: true,
       workerProfile: {
         create: {
           skill: SkillType.WELDER,
-          dailyRate: 300,
-          hourlyRate: 40,
-          experience: 6,
-          bio: 'Certified welder specializing in structural steel and custom metalwork.',
+          dailyRate: 6500, // LKR
+          hourlyRate: 850,
+          experience: 8,
+          bio: 'ග්‍රිල්, ගේට්ටු, යකඩ වහල පලංචි සහ රූෆින් ට්‍රස් සවි කිරීම පිළිබඳ විශේෂඥ වෙල්ඩින් කාර්මික.',
           isVerified: true,
           isAvailable: true,
-          city: 'San Francisco',
-          state: 'CA',
-          zipCode: '94104',
-          latitude: 37.7849,
-          longitude: -122.4094,
-          rating: 4.9,
-          totalReviews: 38,
-          totalJobs: 41,
-          totalEarnings: 12300,
-          walletBalance: 1800,
+          city: 'Negombo',
+          state: 'Western Province',
+          zipCode: '11500',
+          latitude: 7.2088,
+          longitude: 79.8358,
+          rating: 4.8,
+          totalReviews: 41,
+          totalJobs: 47,
+          totalEarnings: 305500,
+          walletBalance: 35000,
         },
       },
     },
@@ -163,31 +166,31 @@ async function main() {
 
   const worker3 = await prisma.user.create({
     data: {
-      email: 'tom.tiles@example.com',
+      email: 'priyantha.tiles@example.com',
       password: hashedPassword,
-      name: 'Tom Martinez',
+      name: 'Priyantha Kumara (ප්‍රියන්ත කුමාර)',
       role: Role.WORKER,
-      phone: '+1-555-0203',
+      phone: '+94 78 765 4321',
       emailVerified: true,
       workerProfile: {
         create: {
           skill: SkillType.TILE_LAYER,
-          dailyRate: 220,
-          hourlyRate: 30,
-          experience: 5,
-          bio: 'Professional tile layer with expertise in ceramic, porcelain, and natural stone.',
+          dailyRate: 5800, // LKR
+          hourlyRate: 750,
+          experience: 9,
+          bio: 'Rocell, Tiara ටයිල් ඇල්ලීම, නාන කාමර සහ පැන්ට්‍රි ටයිල් වැඩ නිවැරදි නිමාවකින් ඉටු කරනු ලැබේ.',
           isVerified: true,
           isAvailable: true,
-          city: 'Los Angeles',
-          state: 'CA',
-          zipCode: '90002',
-          latitude: 34.0622,
-          longitude: -118.2337,
-          rating: 4.7,
-          totalReviews: 29,
-          totalJobs: 34,
-          totalEarnings: 7480,
-          walletBalance: 920,
+          city: 'Maharagama',
+          state: 'Western Province',
+          zipCode: '10280',
+          latitude: 6.8480,
+          longitude: 79.9265,
+          rating: 4.9,
+          totalReviews: 48,
+          totalJobs: 53,
+          totalEarnings: 307400,
+          walletBalance: 28000,
         },
       },
     },
@@ -195,130 +198,194 @@ async function main() {
 
   const worker4 = await prisma.user.create({
     data: {
-      email: 'carlos.carpenter@example.com',
+      email: 'bandara.carpenter@example.com',
       password: hashedPassword,
-      name: 'Carlos Rodriguez',
+      name: 'Bandara Jayasinghe (බණ්ඩාර ජයසිංහ)',
       role: Role.WORKER,
-      phone: '+1-555-0204',
+      phone: '+94 75 654 3210',
       emailVerified: true,
       workerProfile: {
         create: {
           skill: SkillType.CARPENTER,
-          dailyRate: 280,
-          hourlyRate: 38,
-          experience: 10,
-          bio: 'Master carpenter with extensive experience in framing, finish work, and custom furniture.',
+          dailyRate: 5200, // LKR
+          hourlyRate: 650,
+          experience: 15,
+          bio: 'වහල ගැසීම, දොර ජනෙල් උළුවහු සවිකිරීම සහ සියලුම වඩු කාර්මික කටයුතු පිළිබඳ පළපුරුදු වඩු බාස්.',
           isVerified: true,
-          isAvailable: false,
-          city: 'San Francisco',
-          state: 'CA',
-          zipCode: '94105',
-          latitude: 37.7899,
-          longitude: -122.3944,
-          rating: 5.0,
-          totalReviews: 61,
-          totalJobs: 68,
-          totalEarnings: 19040,
-          walletBalance: 3200,
+          isAvailable: true,
+          city: 'Kandy',
+          state: 'Central Province',
+          zipCode: '20000',
+          latitude: 7.2906,
+          longitude: 80.6337,
+          rating: 4.8,
+          totalReviews: 67,
+          totalJobs: 74,
+          totalEarnings: 384800,
+          walletBalance: 45000,
         },
       },
     },
   })
 
-  // Create WorkerSkillTags
-  const workerProfile1 = await prisma.workerProfile.findUnique({ where: { userId: worker1.id } })
-  if (workerProfile1) {
+  const worker5 = await prisma.user.create({
+    data: {
+      email: 'nuwan.electric@example.com',
+      password: hashedPassword,
+      name: 'Nuwan Jayalath (නුවන් ජයලත්)',
+      role: Role.WORKER,
+      phone: '+94 77 543 2109',
+      emailVerified: true,
+      workerProfile: {
+        create: {
+          skill: SkillType.ELECTRICIAN,
+          dailyRate: 6000, // LKR
+          hourlyRate: 800,
+          experience: 7,
+          bio: 'නිවාස හා කාර්යාල වයරිං, ත්‍රි-ෆේස් ලයින්, සෝලාර් සහ ට්‍රිප් ස්විච් ගැටළු විසඳන සහතිකලත් විදුලි කාර්මික.',
+          isVerified: true,
+          isAvailable: true,
+          city: 'Galle',
+          state: 'Southern Province',
+          zipCode: '80000',
+          latitude: 6.0535,
+          longitude: 80.2210,
+          rating: 5.0,
+          totalReviews: 32,
+          totalJobs: 36,
+          totalEarnings: 216000,
+          walletBalance: 30000,
+        },
+      },
+    },
+  })
+
+  const worker6 = await prisma.user.create({
+    data: {
+      email: 'nimal.plumber@example.com',
+      password: hashedPassword,
+      name: 'Nimal Siriwardena (නිමල් සිරිවර්ධන)',
+      role: Role.WORKER,
+      phone: '+94 71 432 1098',
+      emailVerified: true,
+      workerProfile: {
+        create: {
+          skill: SkillType.PLUMBER,
+          dailyRate: 4800, // LKR
+          hourlyRate: 600,
+          experience: 11,
+          bio: 'ජල නල එළීම, බට පිපිරීම් අලුත්වැඩියාව, කොමඩ් හා සින්ක් සවිකිරීම් සහ වෝටර් මෝටර් සවි කිරීමේ ප්‍රවීණ නල කාර්මික.',
+          isVerified: true,
+          isAvailable: true,
+          city: 'Gampaha',
+          state: 'Western Province',
+          zipCode: '11000',
+          latitude: 7.0840,
+          longitude: 79.9943,
+          rating: 4.7,
+          totalReviews: 39,
+          totalJobs: 44,
+          totalEarnings: 211200,
+          walletBalance: 24000,
+        },
+      },
+    },
+  })
+
+  // 4. Create WorkerSkillTags
+  const wp1 = await prisma.workerProfile.findUnique({ where: { userId: worker1.id } })
+  if (wp1) {
     await prisma.workerSkillTag.createMany({
       data: [
-        { workerProfileId: workerProfile1.id, tag: 'structural', weight: 0.95 },
-        { workerProfileId: workerProfile1.id, tag: 'outdoor', weight: 0.85 },
-        { workerProfileId: workerProfile1.id, tag: 'heavy_equipment', weight: 0.70 },
+        { workerProfileId: wp1.id, tag: 'structural', weight: 0.95 },
+        { workerProfileId: wp1.id, tag: 'new_construction', weight: 0.90 },
+        { workerProfileId: wp1.id, tag: 'renovation', weight: 0.85 },
       ]
     })
   }
 
-  const workerProfile2 = await prisma.workerProfile.findUnique({ where: { userId: worker2.id } })
-  if (workerProfile2) {
+  const wp2 = await prisma.workerProfile.findUnique({ where: { userId: worker2.id } })
+  if (wp2) {
     await prisma.workerSkillTag.createMany({
       data: [
-        { workerProfileId: workerProfile2.id, tag: 'welding_metalwork', weight: 0.98 },
-        { workerProfileId: workerProfile2.id, tag: 'structural', weight: 0.90 },
-        { workerProfileId: workerProfile2.id, tag: 'safety_certified', weight: 0.85 },
+        { workerProfileId: wp2.id, tag: 'welding_metalwork', weight: 0.98 },
+        { workerProfileId: wp2.id, tag: 'structural', weight: 0.92 },
+        { workerProfileId: wp2.id, tag: 'safety_certified', weight: 0.88 },
       ]
     })
   }
 
-  const workerProfile3 = await prisma.workerProfile.findUnique({ where: { userId: worker3.id } })
-  if (workerProfile3) {
+  const wp3 = await prisma.workerProfile.findUnique({ where: { userId: worker3.id } })
+  if (wp3) {
     await prisma.workerSkillTag.createMany({
       data: [
-        { workerProfileId: workerProfile3.id, tag: 'tiling', weight: 0.96 },
-        { workerProfileId: workerProfile3.id, tag: 'interior_finishing', weight: 0.88 },
-        { workerProfileId: workerProfile3.id, tag: 'waterproofing', weight: 0.80 },
+        { workerProfileId: wp3.id, tag: 'tiling', weight: 0.97 },
+        { workerProfileId: wp3.id, tag: 'interior_finishing', weight: 0.92 },
+        { workerProfileId: wp3.id, tag: 'waterproofing', weight: 0.85 },
       ]
     })
   }
 
-  const workerProfile4 = await prisma.workerProfile.findUnique({ where: { userId: worker4.id } })
-  if (workerProfile4) {
+  const wp4 = await prisma.workerProfile.findUnique({ where: { userId: worker4.id } })
+  if (wp4) {
     await prisma.workerSkillTag.createMany({
       data: [
-        { workerProfileId: workerProfile4.id, tag: 'carpentry_joinery', weight: 0.99 },
-        { workerProfileId: workerProfile4.id, tag: 'interior_finishing', weight: 0.85 },
-        { workerProfileId: workerProfile4.id, tag: 'renovation', weight: 0.75 },
+        { workerProfileId: wp4.id, tag: 'carpentry_joinery', weight: 0.99 },
+        { workerProfileId: wp4.id, tag: 'interior_finishing', weight: 0.88 },
+        { workerProfileId: wp4.id, tag: 'outdoor', weight: 0.80 },
       ]
     })
   }
 
-  // Create RecommendationWeightConfigs
+  // 5. Create Recommendation Weight Configs
   await prisma.recommendationWeightConfig.createMany({
     data: [
       {
         variant: 'WARM',
-        proximityWeight: 0.209,
-        priceWeight: 0.125,
-        ratingWeight: 0.292,
-        tagWeight: 0.125,
-        collabWeight: 0.25,
+        proximityWeight: 0.25,
+        priceWeight: 0.15,
+        ratingWeight: 0.30,
+        tagWeight: 0.15,
+        collabWeight: 0.15,
         isActive: true,
-        createdBy: 'seed:paper-validated-weights'
+        createdBy: 'seed:sri-lanka-market'
       },
       {
         variant: 'COLD',
-        proximityWeight: 0.278,
-        priceWeight: 0.167,
-        ratingWeight: 0.389,
-        tagWeight: 0.167,
+        proximityWeight: 0.35,
+        priceWeight: 0.20,
+        ratingWeight: 0.30,
+        tagWeight: 0.15,
         collabWeight: 0.0,
         isActive: true,
-        createdBy: 'seed:paper-validated-weights'
+        createdBy: 'seed:sri-lanka-market'
       }
     ]
   })
 
-  // Create Hardware Stores
+  // 6. Create Sri Lankan Hardware Stores
   const store1 = await prisma.user.create({
     data: {
-      email: 'contact@buildersmart.com',
+      email: 'rathnayake.hardware@example.com',
       password: hashedPassword,
-      name: 'Builder Smart Store Manager',
+      name: 'Rathnayake Hardware (රත්නායක හාඩ්වෙයාර්)',
       role: Role.HARDWARE_STORE,
-      phone: '+1-555-0301',
+      phone: '+94 11 285 4321',
       emailVerified: true,
       storeProfile: {
         create: {
-          storeName: 'Builder Smart Hardware',
-          description: 'Your one-stop shop for all construction materials and tools.',
-          address: '789 Industrial Blvd',
-          city: 'San Francisco',
-          state: 'CA',
-          zipCode: '94110',
-          latitude: 37.7499,
-          longitude: -122.4144,
-          phone: '+1-555-0301',
+          storeName: 'Rathnayake Hardware & Building Supplies',
+          description: 'සිමෙන්ති, වැලි, ගල්, ගඩොල්, යකඩ කම්බි සහ සියලුම ගොඩනැගිලි ද්‍රව්‍ය තොග හා සිල්ලරට.',
+          address: 'No. 220, High Level Road',
+          city: 'Maharagama',
+          state: 'Western Province',
+          zipCode: '10280',
+          latitude: 6.8480,
+          longitude: 79.9265,
+          phone: '+94 11 285 4321',
           isVerified: true,
-          rating: 4.6,
-          totalReviews: 124,
+          rating: 4.8,
+          totalReviews: 142,
         },
       },
     },
@@ -326,138 +393,85 @@ async function main() {
 
   const store2 = await prisma.user.create({
     data: {
-      email: 'info@protrade.com',
+      email: 'lanka.buildmart@example.com',
       password: hashedPassword,
-      name: 'Pro Trade Supplies Manager',
+      name: 'Lanka BuildMart Kandy (ලංකා බිල්ඩ්මාර්ට්)',
       role: Role.HARDWARE_STORE,
-      phone: '+1-555-0302',
+      phone: '+94 81 223 3445',
       emailVerified: true,
       storeProfile: {
         create: {
-          storeName: 'Pro Trade Supplies',
-          description: 'Professional-grade materials for contractors and builders.',
-          address: '321 Commerce Dr',
-          city: 'Los Angeles',
-          state: 'CA',
-          zipCode: '90010',
-          latitude: 34.0622,
-          longitude: -118.2937,
-          phone: '+1-555-0302',
+          storeName: 'Lanka BuildMart & Timber Stores',
+          description: 'මහනුවර සහ ඒ අවට ප්‍රදේශ සඳහා විශ්වාසනීය දැව, ටයිල් සහ සියලුම හාඩ්වෙයාර් සැපයුම්.',
+          address: 'No. 85, Katugastota Road',
+          city: 'Kandy',
+          state: 'Central Province',
+          zipCode: '20000',
+          latitude: 7.2906,
+          longitude: 80.6337,
+          phone: '+94 81 223 3445',
           isVerified: true,
-          rating: 4.8,
-          totalReviews: 89,
+          rating: 4.7,
+          totalReviews: 98,
         },
       },
     },
   })
 
-  // Create Products for Store 1
-  const storeProfile1 = await prisma.storeProfile.findUnique({
-    where: { userId: store1.id },
-  })
+  // 7. Create Products with Sri Lankan LKR Pricing and Real Material Categories
+  const sp1 = await prisma.storeProfile.findUnique({ where: { userId: store1.id } })
+  const sp2 = await prisma.storeProfile.findUnique({ where: { userId: store2.id } })
 
-  if (storeProfile1) {
+  if (sp1) {
     await prisma.product.createMany({
       data: [
         {
-          storeId: storeProfile1.id,
-          name: 'Portland Cement',
-          description: 'High-quality Type I Portland Cement, 94 lb bag',
+          storeId: sp1.id,
+          name: 'Tokyo Super Portland Cement (ටෝකියෝ සිමෙන්ති 50kg)',
+          description: 'ශ්‍රී ලංකාවේ ප්‍රමුඛතම SLS සහතිකලත් කොන්ක්‍රීට් සිමෙන්ති කොට්ටය (50kg bag).',
           category: 'Cement & Concrete',
           unit: 'bag',
-          price: 12.99,
-          stock: 500,
+          price: 2450, // LKR
+          stock: 450,
           isAvailable: true,
         },
         {
-          storeId: storeProfile1.id,
-          name: 'River Sand',
-          description: 'Clean washed river sand for construction',
+          storeId: sp1.id,
+          name: 'Clean River Sand (නදී වැලි - කියුබ් 1)',
+          description: 'ප්ලාස්ටර් සහ කොන්ක්‍රීට් සඳහා පිරිසිදු ගංගා වැලි 1 Cube (කියුබ් 1 ටිපර් රථයකින් ලබාදීම).',
           category: 'Sand & Aggregate',
-          unit: 'ton',
-          price: 45.00,
-          stock: 100,
+          unit: 'cube',
+          price: 22000, // LKR
+          stock: 40,
           isAvailable: true,
         },
         {
-          storeId: storeProfile1.id,
-          name: 'Ceramic Floor Tiles',
-          description: '12x12 inch ceramic tiles, various colors',
-          category: 'Tiles',
-          unit: 'box',
-          price: 28.50,
-          stock: 250,
-          isAvailable: true,
-        },
-        {
-          storeId: storeProfile1.id,
-          name: 'Steel Rebar #4',
-          description: '1/2 inch diameter, Grade 60, 20 ft length',
-          category: 'Steel & Metal',
-          unit: 'piece',
-          price: 8.75,
-          stock: 800,
-          isAvailable: true,
-        },
-        {
-          storeId: storeProfile1.id,
-          name: 'Gravel (3/4 inch)',
-          description: 'Crushed stone aggregate',
+          storeId: sp1.id,
+          name: '3/4 inch Blue Metal (කළුගල් 3/4 - කියුබ් 1)',
+          description: 'ශක්තිමත් කොන්ක්‍රීට් මිශ්‍රණ සඳහා උසස් තත්වයේ තලාපු කළුගල් (Aggregate).',
           category: 'Sand & Aggregate',
-          unit: 'ton',
-          price: 38.00,
-          stock: 150,
+          unit: 'cube',
+          price: 16500, // LKR
+          stock: 35,
           isAvailable: true,
         },
-      ],
-    })
-  }
-
-  // Create Products for Store 2
-  const storeProfile2 = await prisma.storeProfile.findUnique({
-    where: { userId: store2.id },
-  })
-
-  if (storeProfile2) {
-    await prisma.product.createMany({
-      data: [
         {
-          storeId: storeProfile2.id,
-          name: 'Concrete Blocks',
-          description: 'Standard 8x8x16 inch concrete masonry unit',
+          storeId: sp1.id,
+          name: 'Traditional Wire-Cut Clay Bricks (රතු ගඩොල්)',
+          description: 'උසස් තත්ත්වයේ මැටි ගඩොල් (Wire-cut Red Clay Bricks). බිත්ති බැඳීමට සුදුසුයි.',
           category: 'Blocks & Bricks',
           unit: 'piece',
-          price: 2.25,
-          stock: 1000,
+          price: 34, // LKR
+          stock: 15000,
           isAvailable: true,
         },
         {
-          storeId: storeProfile2.id,
-          name: 'Tile Adhesive',
-          description: 'Premium polymer-modified thin-set mortar, 50 lb bag',
-          category: 'Adhesives & Mortar',
-          unit: 'bag',
-          price: 18.99,
-          stock: 200,
-          isAvailable: true,
-        },
-        {
-          storeId: storeProfile2.id,
-          name: 'Welding Electrodes',
-          description: 'E7018 welding rods, 1/8 inch diameter',
-          category: 'Welding Supplies',
-          unit: 'lb',
-          price: 15.50,
-          stock: 75,
-          isAvailable: true,
-        },
-        {
-          storeId: storeProfile2.id,
-          name: 'Lumber 2x4x8',
-          description: 'Premium kiln-dried construction lumber',
-          category: 'Lumber',
+          storeId: sp1.id,
+          name: 'Lanwa Sanstha Steel Rebar 10mm (ලංවා යකඩ කම්බි)',
+          description: 'SLS 375 ප්‍රමිතියෙන් යුත් කොන්ක්‍රීට් යකඩ කම්බි (අඩි 20 දිග තනි කම්බිය).',
+          category: 'Steel & Metal',
           unit: 'piece',
-          price: 6.85,
+          price: 1850, // LKR
           stock: 600,
           isAvailable: true,
         },
@@ -465,197 +479,137 @@ async function main() {
     })
   }
 
-  // Create Projects
+  if (sp2) {
+    await prisma.product.createMany({
+      data: [
+        {
+          storeId: sp2.id,
+          name: 'Holcim Sanstha Cement (හෝල්සිම් සංස්ථා සිමෙන්ති 50kg)',
+          description: 'නිවාස ඉදිකිරීම් සඳහා දිවයින පුරා ප්‍රචලිත සංස්ථා සිමෙන්ති (50kg bag).',
+          category: 'Cement & Concrete',
+          unit: 'bag',
+          price: 2500, // LKR
+          stock: 350,
+          isAvailable: true,
+        },
+        {
+          storeId: sp2.id,
+          name: 'Cement Solid Blocks 4x8x16 (සිමෙන්ති බ්ලොක් ගල්)',
+          description: 'ශක්තිමත් සිමෙන්ති කොන්ක්‍රීට් බ්ලොක් ගල් (Solid Masonry Blocks).',
+          category: 'Blocks & Bricks',
+          unit: 'piece',
+          price: 95, // LKR
+          stock: 2500,
+          isAvailable: true,
+        },
+        {
+          storeId: sp2.id,
+          name: 'Rocell Ceramic Floor Tiles 2x2 ft (රොසෙල් ටයිල් පෙට්ටිය)',
+          description: 'ප්‍රමුඛ පෙළේ රොසෙල් සෙරමික් ටයිල් (පෙට්ටියක වර්ග අඩි 16 ක් අඩංගුයි).',
+          category: 'Tiles',
+          unit: 'box',
+          price: 6800, // LKR
+          stock: 120,
+          isAvailable: true,
+        },
+        {
+          storeId: sp2.id,
+          name: 'Lanwa Tile Adhesive Mortar (ටයිල් මෝටාර් 25kg)',
+          description: 'ටයිල් ශක්තිමත්ව ඇල්ලීමට සකස් කළ පොලිමර් මෝටාර් මිශ්‍රණය.',
+          category: 'Adhesives & Mortar',
+          unit: 'bag',
+          price: 1650, // LKR
+          stock: 180,
+          isAvailable: true,
+        },
+        {
+          storeId: sp2.id,
+          name: 'Overcord Welding Electrodes 2.5mm (වෙල්ඩින් කූරු පැකට්ටුව)',
+          description: 'යකඩ සහ වානේ වෙල්ඩින් කිරීම සඳහා උසස් තත්ත්වයේ වෙල්ඩින් රොඩ්ස්.',
+          category: 'Welding Supplies',
+          unit: 'pack',
+          price: 3200, // LKR
+          stock: 65,
+          isAvailable: true,
+        },
+      ],
+    })
+  }
+
+  // 8. Create Sri Lankan Sample Project
   const project1 = await prisma.project.create({
     data: {
       customerId: customer1.id,
-      name: 'Kitchen Renovation',
-      description: 'Complete kitchen remodel with new tiles and cabinets',
-      address: '123 Main St',
-      city: 'San Francisco',
-      state: 'CA',
-      zipCode: '94102',
-      startDate: new Date('2026-02-01'),
-      endDate: new Date('2026-03-15'),
-      budget: 15000,
+      name: 'මහරගම දෙමහල් නිවාස ඉදිකිරීම (Two-Story House Maharagama)',
+      description: 'පළමු මහල මේසන් වැඩ, ප්ලාස්ටර් සහ ටයිල් ඇල්ලීම සඳහා කොන්ත්‍රාත්තුව.',
+      address: 'No. 88, Temple Road',
+      city: 'Maharagama',
+      state: 'Western Province',
+      zipCode: '10280',
+      startDate: new Date('2026-11-15'),
+      endDate: new Date('2027-02-28'),
+      budget: 1850000, // LKR
       status: 'ACTIVE',
       progress: 35,
+      tasks: {
+        create: [
+          { title: 'අත්තිවාරම සහ කොන්ක්‍රීට් කණු දැමීම (Foundation & Columns)', status: 'COMPLETED', priority: 'HIGH' },
+          { title: 'පළමු මහලේ ගඩොල් බිත්ති බැඳීම (Brick Masonry Walls)', status: 'IN_PROGRESS', priority: 'HIGH' },
+          { title: 'සැඟවුණු විදුලි නල එළීම (Concealed Electrical Piping)', status: 'TODO', priority: 'MEDIUM' },
+          { title: 'ප්ලාස්ටර් වැඩ අවසන් කිරීම (Plastering Work)', status: 'TODO', priority: 'MEDIUM' },
+        ],
+      },
+      materials: {
+        create: [
+          { name: 'Tokyo Super Cement', quantity: 150, unit: 'bag', unitPrice: 2450, totalPrice: 367500 },
+          { name: 'Clean River Sand', quantity: 4, unit: 'cube', unitPrice: 22000, totalPrice: 88000 },
+          { name: 'Clay Wire-Cut Bricks', quantity: 5000, unit: 'piece', unitPrice: 34, totalPrice: 170000 },
+          { name: 'Lanwa Steel Rebar 10mm', quantity: 60, unit: 'piece', unitPrice: 1850, totalPrice: 111000 },
+        ],
+      },
     },
   })
 
-  const project2 = await prisma.project.create({
+  // 9. Create Sample Booking in LKR
+  await prisma.booking.create({
     data: {
-      customerId: customer2.id,
-      name: 'Backyard Patio Construction',
-      description: 'Build new concrete patio with decorative stone work',
-      address: '456 Oak Ave',
-      city: 'Los Angeles',
-      state: 'CA',
-      zipCode: '90001',
-      startDate: new Date('2026-02-10'),
-      endDate: new Date('2026-03-20'),
-      budget: 8500,
-      status: 'ACTIVE',
-      progress: 20,
+      customerId: customer1.id,
+      workerId: worker1.id,
+      projectId: project1.id,
+      skill: SkillType.MASON,
+      status: 'ACCEPTED',
+      startDate: new Date('2026-11-10'),
+      endDate: new Date('2026-11-14'),
+      totalDays: 5,
+      ratePerDay: 5500,
+      totalAmount: 27500, // LKR
+      commission: 2750,
+      paymentStatus: 'PENDING',
+      address: 'No. 88, Temple Road',
+      city: 'Maharagama',
+      state: 'Western Province',
+      zipCode: '10280',
+      description: 'නිවසේ ප්‍රධාන බිත්ති 2 ක් ගඩොලින් බැඳීම සහ පලංචි ගැසීම.',
     },
   })
 
-  // Create Tasks
-  await prisma.task.createMany({
-    data: [
-      {
-        projectId: project1.id,
-        title: 'Remove old tiles',
-        status: 'COMPLETED',
-        priority: 'HIGH',
-      },
-      {
-        projectId: project1.id,
-        title: 'Install new floor tiles',
-        status: 'IN_PROGRESS',
-        priority: 'HIGH',
-      },
-      {
-        projectId: project1.id,
-        title: 'Paint walls',
-        status: 'TODO',
-        priority: 'MEDIUM',
-      },
-      {
-        projectId: project2.id,
-        title: 'Excavate patio area',
-        status: 'COMPLETED',
-        priority: 'HIGH',
-      },
-      {
-        projectId: project2.id,
-        title: 'Pour concrete foundation',
-        status: 'IN_PROGRESS',
-        priority: 'HIGH',
-      },
-    ],
+  // 10. Create Sample Review
+  await prisma.review.create({
+    data: {
+      authorId: customer1.id,
+      recipientId: worker1.id,
+      rating: 5,
+      comment: 'සුනිමල් මහතා ඉතාමත් කඩිසර හා නියම ප්‍රමිතියට වැඩ කරන දක්ෂ මේසන් බාස් කෙනෙක්. නිර්දේශ කරමි!',
+    },
   })
 
-  // Create Materials
-  await prisma.material.createMany({
-    data: [
-      {
-        projectId: project1.id,
-        name: 'Ceramic Floor Tiles',
-        quantity: 15,
-        unit: 'box',
-        unitPrice: 28.50,
-        totalPrice: 427.50,
-      },
-      {
-        projectId: project1.id,
-        name: 'Tile Adhesive',
-        quantity: 8,
-        unit: 'bag',
-        unitPrice: 18.99,
-        totalPrice: 151.92,
-      },
-      {
-        projectId: project2.id,
-        name: 'Portland Cement',
-        quantity: 40,
-        unit: 'bag',
-        unitPrice: 12.99,
-        totalPrice: 519.60,
-      },
-      {
-        projectId: project2.id,
-        name: 'River Sand',
-        quantity: 2,
-        unit: 'ton',
-        unitPrice: 45.00,
-        totalPrice: 90.00,
-      },
-    ],
-  })
-
-  // Create Bookings
-  await prisma.booking.createMany({
-    data: [
-      {
-        customerId: customer1.id,
-        workerId: worker3.id,
-        projectId: project1.id,
-        status: 'IN_PROGRESS',
-        skill: SkillType.TILE_LAYER,
-        startDate: new Date('2026-02-05'),
-        endDate: new Date('2026-02-10'),
-        totalDays: 5,
-        ratePerDay: 220,
-        totalAmount: 1100,
-        commission: 110,
-        paymentStatus: 'COMPLETED',
-        address: '123 Main St',
-        city: 'San Francisco',
-        state: 'CA',
-        zipCode: '94102',
-      },
-      {
-        customerId: customer2.id,
-        workerId: worker1.id,
-        projectId: project2.id,
-        status: 'ACCEPTED',
-        skill: SkillType.MASON,
-        startDate: new Date('2026-02-15'),
-        endDate: new Date('2026-02-20'),
-        totalDays: 5,
-        ratePerDay: 250,
-        totalAmount: 1250,
-        commission: 125,
-        paymentStatus: 'COMPLETED',
-        address: '456 Oak Ave',
-        city: 'Los Angeles',
-        state: 'CA',
-        zipCode: '90001',
-      },
-    ],
-  })
-
-  // Create Reviews
-  await prisma.review.createMany({
-    data: [
-      {
-        authorId: customer1.id,
-        recipientId: worker3.id,
-        rating: 5,
-        comment: 'Tom did an excellent job with the tile work. Very professional and detail-oriented!',
-      },
-      {
-        authorId: customer2.id,
-        recipientId: worker1.id,
-        rating: 5,
-        comment: 'Mike is a true professional. The patio looks amazing!',
-      },
-    ],
-  })
-
-  console.log('✅ Seed completed successfully!')
-  console.log('\n📊 Created:')
-  console.log('- 1 Admin')
-  console.log('- 2 Customers')
-  console.log('- 4 Workers')
-  console.log('- 2 Hardware Stores')
-  console.log('- 9 Products')
-  console.log('- 2 Projects')
-  console.log('- 5 Tasks')
-  console.log('- 4 Materials')
-  console.log('- 2 Bookings')
-  console.log('- 2 Reviews')
-  console.log('\n🔑 Login credentials:')
-  console.log('Admin: admin@wandura.com / password123')
-  console.log('Customer: john.doe@example.com / password123')
-  console.log('Worker: mike.mason@example.com / password123')
-  console.log('Store: contact@buildersmart.com / password123')
+  console.log('✅ Sri Lanka seed completed successfully!')
+  console.log('🇱🇰 Localized with LKR currency, Sinhala worker names, and real Sri Lankan coordinates.')
 }
 
 main()
   .catch((e) => {
-    console.error('❌ Seed failed:', e)
+    console.error(e)
     process.exit(1)
   })
   .finally(async () => {

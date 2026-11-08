@@ -191,15 +191,15 @@ export default function EstimatorPage() {
   }
 
   const commonMaterials = [
-    { name: 'Portland Cement', unit: 'bag', price: 12.99 },
-    { name: 'River Sand', unit: 'ton', price: 45.0 },
-    { name: 'Gravel (3/4 in)', unit: 'ton', price: 38.0 },
-    { name: 'Concrete Blocks', unit: 'piece', price: 2.25 },
-    { name: 'Ceramic Tiles', unit: 'box', price: 28.5 },
-    { name: 'Steel Rebar #4', unit: 'piece', price: 8.75 },
-    { name: 'Lumber 2x4x8', unit: 'piece', price: 6.85 },
-    { name: 'Tile Adhesive', unit: 'bag', price: 18.99 },
-    { name: 'Welding Electrodes', unit: 'lb', price: 15.5 },
+    { name: 'Tokyo Super Cement (ටෝකියෝ සිමෙන්ති 50kg)', unit: 'bag', price: 2450 },
+    { name: 'Clean River Sand (නදී වැලි - කියුබ් 1)', unit: 'cube', price: 22000 },
+    { name: '3/4 in Blue Metal (කළුගල් - කියුබ් 1)', unit: 'cube', price: 16500 },
+    { name: 'Clay Wire-Cut Bricks (රතු ගඩොල්)', unit: 'piece', price: 34 },
+    { name: 'Solid Cement Blocks (සිමෙන්ති බ්ලොක් ගල්)', unit: 'piece', price: 95 },
+    { name: 'Lanwa Steel Rebar 10mm (යකඩ කම්බි අඩි 20)', unit: 'piece', price: 1850 },
+    { name: 'Rocell Ceramic Tiles (රොසෙල් ටයිල් පෙට්ටිය)', unit: 'box', price: 6800 },
+    { name: 'Timber Rafters 2x4x10 (වහල දැව)', unit: 'piece', price: 2200 },
+    { name: 'Tile Adhesive 25kg (ටයිල් මෝටාර්)', unit: 'bag', price: 1650 },
   ]
 
   return (

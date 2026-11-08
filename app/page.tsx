@@ -310,11 +310,14 @@ export default function HomePage() {
                 <div className="bg-white dark:bg-[#0c1222] rounded-2xl border border-gray-100 dark:border-slate-800 shadow-sm p-6 mb-4 transition-all">
                   <div className="flex items-center gap-3.5 mb-4">
                     {/* Sunimal Real Profile Picture */}
-                    <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-white dark:border-slate-700 shadow-md flex-shrink-0 bg-blue-100">
+                    <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-white dark:border-slate-700 shadow-md flex-shrink-0 bg-blue-100 dark:bg-slate-800">
                       <img
-                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&auto=format&fit=crop&q=80"
+                        src="/images/workers/sunimal.jpg"
                         alt="Sunimal Wickramasinghe - Verified Mason"
                         className="w-full h-full object-cover"
+                        onError={(e) => {
+                          e.currentTarget.src = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&auto=format&fit=crop&q=80'
+                        }}
                       />
                       <span className="absolute bottom-0 right-0 w-3.5 h-3.5 bg-green-500 border-2 border-white dark:border-slate-900 rounded-full" />
                     </div>
@@ -324,7 +327,7 @@ export default function HomePage() {
                         <ShieldCheck className="h-4 w-4 text-blue-600 dark:text-blue-400" />
                       </div>
                       <p className="text-xs text-gray-400 dark:text-slate-400">
-                        {isSinhala ? 'මේසන් බාස්' : 'Mason'} &bull; 12 {t('common.yrsExp')} &bull; Colombo
+                        {isSinhala ? 'මේසන් බාස්' : 'Mason'} • 12 {t('common.yrsExp')} • Colombo
                       </p>
                     </div>
                     <span className="ml-auto text-xs bg-green-50 dark:bg-green-950/60 text-green-700 dark:text-green-300 border border-green-200 dark:border-green-800 px-2.5 py-0.5 rounded-full font-semibold">
@@ -348,9 +351,12 @@ export default function HomePage() {
                   <div className="mt-3.5 pt-3 border-t border-gray-100 dark:border-slate-800 flex items-center gap-3">
                     <div className="relative w-12 h-12 rounded-xl overflow-hidden bg-gray-100 dark:bg-slate-800 flex-shrink-0 border border-gray-200 dark:border-slate-700 shadow-sm">
                       <img
-                        src="https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?w=200&auto=format&fit=crop&q=80"
-                        alt="Completed Concrete & Brickwork"
+                        src="/images/portfolio/brickwork.jpg"
+                        alt="Completed Brickwork Project"
                         className="w-full h-full object-cover"
+                        onError={(e) => {
+                          e.currentTarget.src = 'https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?w=300&auto=format&fit=crop&q=80'
+                        }}
                       />
                     </div>
                     <div className="text-xs min-w-0">
@@ -358,7 +364,7 @@ export default function HomePage() {
                         {isSinhala ? 'නවතම වැඩබිම: ගඩොල් බිත්ති සහ කොන්ක්‍රීට්' : 'Recent Project: Concrete & Brickwork'}
                       </p>
                       <p className="text-[11px] text-gray-400 dark:text-slate-500 truncate">
-                        {isSinhala ? 'කොළඹ 05 &bull; සේවාදායක අනුමතයි' : 'Colombo 05 &bull; Verified Client Feedback'}
+                        {isSinhala ? 'කොළඹ 05 • සේවාදායක අනුමතයි' : 'Colombo 05 • Verified Client Feedback'}
                       </p>
                     </div>
                   </div>

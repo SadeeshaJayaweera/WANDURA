@@ -6,8 +6,6 @@ import { rankPool } from '@/lib/recommendation/hybrid/rankPool'
 import { HybridRequest } from '@/lib/recommendation/hybrid/hybridScore'
 import { SkillType } from '@prisma/client'
 
-import { SkillType } from '@prisma/client'
-
 /**
  * GET /api/workers
  * 

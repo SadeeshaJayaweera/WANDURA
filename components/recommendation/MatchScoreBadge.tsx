@@ -1,5 +1,5 @@
 import { Badge } from '@/components/ui/badge'
-import { RankedWorker } from '@/lib/recommendation/hybrid/rankPool'
+import { RankedWorker } from '@/types/recommendation'
 
 interface MatchScoreBadgeProps {
   worker: RankedWorker;

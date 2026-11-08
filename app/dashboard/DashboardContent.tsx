@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { signOut } from 'next-auth/react'
 import { Button } from '@/components/ui/button'
+import { LanguageToggle } from '@/components/ui/LanguageToggle'
 import {
   Hammer,
   LayoutDashboard,
@@ -74,6 +75,7 @@ export default function DashboardContent({ session, data }: any) {
         </div>
 
         <div className="flex items-center gap-3">
+          <LanguageToggle />
           <button className="relative w-9 h-9 rounded-xl bg-gray-100 flex items-center justify-center hover:bg-gray-200 transition-colors">
             <Bell className="h-4 w-4 text-gray-600" />
           </button>

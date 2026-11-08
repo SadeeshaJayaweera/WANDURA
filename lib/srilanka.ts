@@ -38,7 +38,7 @@ export const SKILL_LABELS: Record<string, { en: string; si: string; emoji: strin
   PAINTER: { en: 'Painter', si: 'තීන්ත ආලේපක', emoji: '🎨' },
 }
 
-export function getSkillLabel(skillKey: string, format: 'combo' | 'si' | 'en' = 'combo'): string {
+export function getSkillLabel(skillKey: string, format: 'combo' | 'si' | 'en' = 'en'): string {
   const item = SKILL_LABELS[skillKey]
   if (!item) return skillKey.replace(/_/g, ' ')
   if (format === 'si') return item.si

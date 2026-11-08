@@ -32,12 +32,15 @@ import {
 } from 'lucide-react'
 import { formatCurrency, formatDate } from '@/lib/utils'
 import { getSkillLabel } from '@/lib/srilanka'
+import { useLanguage } from '@/components/providers/LanguageProvider'
+import { LanguageToggle } from '@/components/ui/LanguageToggle'
 
 export default function WorkerProfilePage() {
   const params = useParams()
   const router = useRouter()
   const searchParams = useSearchParams()
   const { data: session } = useSession()
+  const { t, isSinhala } = useLanguage()
 
   const workerId = params?.id as string
   const recLogId = searchParams.get('recLogId')
@@ -221,7 +224,7 @@ export default function WorkerProfilePage() {
         .toUpperCase()
     : 'LK'
 
-  const skillLabel = getSkillLabel(worker.skill)
+  const skillLabel = getSkillLabel(worker.skill, isSinhala ? 'si' : 'en')
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
@@ -234,17 +237,19 @@ export default function WorkerProfilePage() {
             </div>
             <span className="text-xl font-bold text-gray-900 tracking-tight">Wandura</span>
             <span className="text-xs bg-blue-50 text-blue-700 px-2 py-0.5 rounded-full font-semibold border border-blue-100">
-              ශ්‍රී ලංකා 🇱🇰
+              {t('countryTag')}
             </span>
           </Link>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-3">
+            <LanguageToggle />
+
             <Button variant="outline" size="sm" asChild className="rounded-xl border-gray-200">
               <Link href="/workers" className="flex items-center gap-1.5 text-xs font-semibold">
-                <ArrowLeft className="h-3.5 w-3.5" /> All Workers
+                <ArrowLeft className="h-3.5 w-3.5" /> {t('nav.allWorkers')}
               </Link>
             </Button>
-            <Button size="sm" asChild className="bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs">
-              <Link href="/dashboard">Dashboard</Link>
+            <Button size="sm" asChild className="bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-semibold shadow-sm">
+              <Link href="/dashboard">{t('nav.dashboard')}</Link>
             </Button>
           </div>
         </div>
@@ -253,9 +258,9 @@ export default function WorkerProfilePage() {
       <main className="container mx-auto px-6 py-8 flex-1 max-w-6xl">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-sm text-gray-500 mb-6">
-          <Link href="/" className="hover:text-blue-600">Home</Link>
+          <Link href="/" className="hover:text-blue-600">{t('nav.home')}</Link>
           <ChevronRight className="h-3.5 w-3.5" />
-          <Link href="/workers" className="hover:text-blue-600">Workers</Link>
+          <Link href="/workers" className="hover:text-blue-600">{t('nav.workers')}</Link>
           <ChevronRight className="h-3.5 w-3.5" />
           <span className="text-gray-900 font-medium truncate">{worker.user?.name}</span>
         </div>
@@ -283,7 +288,7 @@ export default function WorkerProfilePage() {
                   </h1>
                   {worker.isVerified && (
                     <span className="flex items-center gap-1 text-xs font-semibold bg-green-50 text-green-700 border border-green-200 px-2.5 py-1 rounded-full">
-                      <ShieldCheck className="h-3.5 w-3.5" /> Verified Tradesperson (තහවුරු කළ)
+                      <ShieldCheck className="h-3.5 w-3.5" /> {t('common.verifiedTradesperson')}
                     </span>
                   )}
                 </div>
@@ -297,25 +302,35 @@ export default function WorkerProfilePage() {
                     <MapPin className="h-3.5 w-3.5 text-gray-400" />
                     {worker.city || 'Sri Lanka'}, {worker.state || ''}
                   </span>
+                  {worker.latitude && worker.longitude && (
+                    <a
+                      href={`https://www.google.com/maps/search/?api=1&query=${worker.latitude},${worker.longitude}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-blue-600 hover:text-blue-800 font-semibold bg-blue-50 px-2 py-0.5 rounded-md"
+                    >
+                      🗺️ {t('common.googleMaps')}
+                    </a>
+                  )}
                   <span className="flex items-center gap-1">
                     <Briefcase className="h-3.5 w-3.5 text-gray-400" />
-                    {worker.experience || 5}+ Years Experience
+                    {worker.experience || 5}+ {t('common.years')} {t('common.experience')}
                   </span>
                   <span className="flex items-center gap-1 text-amber-600 font-semibold">
                     <Star className="h-3.5 w-3.5 fill-amber-400 text-amber-400" />
-                    {worker.rating?.toFixed(1) || '5.0'} ({worker.totalReviews || 0} reviews)
+                    {worker.rating?.toFixed(1) || '5.0'} ({worker.totalReviews || 0} {t('common.reviews')})
                   </span>
                 </div>
               </div>
             </div>
 
             <div className="text-left md:text-right border-t md:border-t-0 pt-4 md:pt-0 border-gray-100 w-full md:w-auto">
-              <span className="text-xs text-gray-400 font-medium block">Daily Wage (දෛනික වැටුප)</span>
+              <span className="text-xs text-gray-400 font-medium block">{t('common.dailyWage')}</span>
               <span className="text-3xl font-extrabold text-blue-600">
                 {formatCurrency(worker.dailyRate)}
               </span>
               <span className="text-xs text-gray-400 block mt-0.5">
-                {worker.hourlyRate ? `or ${formatCurrency(worker.hourlyRate)} / hour` : 'per day (දිනකට)'}
+                {worker.hourlyRate ? `or ${formatCurrency(worker.hourlyRate)} / ${t('common.hour')}` : `/ ${t('common.day')}`}
               </span>
             </div>
           </div>
@@ -329,7 +344,7 @@ export default function WorkerProfilePage() {
             <div className="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm">
               <h2 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
                 <Briefcase className="h-5 w-5 text-blue-600" />
-                About & Experience (කාර්මික තොරතුරු)
+                {t('workerProfile.about')}
               </h2>
               <p className="text-sm text-gray-600 leading-relaxed whitespace-pre-line">
                 {worker.bio ||
@@ -340,15 +355,15 @@ export default function WorkerProfilePage() {
               <div className="grid grid-cols-3 gap-3 mt-6 pt-6 border-t border-gray-100 text-center">
                 <div className="bg-gray-50 rounded-xl p-3">
                   <p className="text-xl font-bold text-gray-900">{worker.totalJobs || worker.experience * 6 || 25}+</p>
-                  <p className="text-xs text-gray-400 mt-0.5">Jobs Completed</p>
+                  <p className="text-xs text-gray-400 mt-0.5">{t('workerProfile.jobsCompleted')}</p>
                 </div>
                 <div className="bg-gray-50 rounded-xl p-3">
                   <p className="text-xl font-bold text-green-600">100%</p>
-                  <p className="text-xs text-gray-400 mt-0.5">Satisfaction</p>
+                  <p className="text-xs text-gray-400 mt-0.5">{t('workerProfile.satisfaction')}</p>
                 </div>
                 <div className="bg-gray-50 rounded-xl p-3">
                   <p className="text-xl font-bold text-blue-600">{worker.experience || 8} yrs</p>
-                  <p className="text-xs text-gray-400 mt-0.5">Experience</p>
+                  <p className="text-xs text-gray-400 mt-0.5">{t('common.experience')}</p>
                 </div>
               </div>
             </div>
@@ -357,7 +372,7 @@ export default function WorkerProfilePage() {
             <div className="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm">
               <h3 className="text-sm font-bold text-gray-900 mb-3 flex items-center gap-2">
                 <Award className="h-4 w-4 text-blue-600" />
-                Specializations & Skill Badges
+                {t('workerProfile.specializations')}
               </h3>
               <div className="flex flex-wrap gap-2">
                 <span className="px-3 py-1 rounded-full text-xs font-semibold bg-blue-50 text-blue-700 border border-blue-100">
@@ -394,9 +409,9 @@ export default function WorkerProfilePage() {
                 <div className="flex items-center justify-between mb-3">
                   <h3 className="text-base font-bold text-gray-900 flex items-center gap-2">
                     <Briefcase className="h-5 w-5 text-blue-600" />
-                    Recent Project Portfolio (පසුගිය වැඩ ඡායාරූප)
+                    {t('workerProfile.portfolio')}
                   </h3>
-                  <span className="text-xs text-gray-400 font-medium">Verified Completed Jobs</span>
+                  <span className="text-xs text-gray-400 font-medium">{t('workerProfile.portfolioDesc')}</span>
                 </div>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                   {worker.portfolioImages.map((imgUrl: string, idx: number) => (
@@ -417,7 +432,7 @@ export default function WorkerProfilePage() {
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-lg font-bold text-gray-900 flex items-center gap-2">
                   <Star className="h-5 w-5 fill-amber-400 text-amber-400" />
-                  Client Reviews & Ratings ({reviews.length})
+                  {t('workerProfile.reviews')} ({reviews.length})
                 </h3>
                 <span className="text-sm font-bold text-gray-900 bg-amber-50 text-amber-800 border border-amber-200 px-2.5 py-0.5 rounded-full">
                   ★ {worker.rating?.toFixed(1) || '5.0'} / 5.0
@@ -468,12 +483,12 @@ export default function WorkerProfilePage() {
             <div className="bg-white rounded-3xl border border-gray-200 p-6 md:p-7 shadow-lg sticky top-24">
               <div className="flex items-center justify-between pb-4 border-b border-gray-100 mb-5">
                 <div>
-                  <h3 className="text-lg font-bold text-gray-900">Book Worker</h3>
-                  <p className="text-xs text-gray-400">දින වෙන්කරවා ගැනීම</p>
+                  <h3 className="text-lg font-bold text-gray-900">{t('common.bookWorker')}</h3>
+                  <p className="text-xs text-gray-400">{worker.user?.name}</p>
                 </div>
                 <div className="text-right">
                   <span className="text-xl font-bold text-blue-600">{formatCurrency(worker.dailyRate)}</span>
-                  <span className="text-xs text-gray-400 block">/ day</span>
+                  <span className="text-xs text-gray-400 block">/ {t('common.day')}</span>
                 </div>
               </div>
 
@@ -482,17 +497,17 @@ export default function WorkerProfilePage() {
                   <div className="bg-amber-50 border border-amber-200 rounded-2xl p-3.5 text-center">
                     <div className="flex items-center justify-center gap-1.5 text-amber-900 font-bold text-xs mb-1">
                       <Lock className="h-4 w-4 text-amber-600" />
-                      <span>Account Required to Book (ගිණුමක් අවශ්‍යයි)</span>
+                      <span>{t('authGate.bookingTitle')}</span>
                     </div>
                     <p className="text-[11px] text-amber-700 mb-2.5">
-                      Create a free account or sign in to verify booking and release payments securely via escrow.
+                      {t('authGate.bookingDesc')}
                     </p>
                     <div className="grid grid-cols-2 gap-2">
                       <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs h-8">
-                        <Link href={`/auth/signin?callbackUrl=/workers/${workerId}`}>Sign In</Link>
+                        <Link href={`/auth/signin?callbackUrl=/workers/${workerId}`}>{t('authGate.signIn')}</Link>
                       </Button>
                       <Button asChild size="sm" variant="outline" className="rounded-xl border-amber-300 text-amber-900 text-xs h-8 bg-white hover:bg-amber-100">
-                        <Link href={`/auth/signup?callbackUrl=/workers/${workerId}`}>Sign Up</Link>
+                        <Link href={`/auth/signup?callbackUrl=/workers/${workerId}`}>{t('authGate.createAccount')}</Link>
                       </Button>
                     </div>
                   </div>
@@ -500,7 +515,7 @@ export default function WorkerProfilePage() {
                 <div className="grid grid-cols-2 gap-3">
                   <div>
                     <Label htmlFor="b-start" className="text-xs font-semibold text-gray-700">
-                      Start Date *
+                      {t('workerProfile.startDate')} *
                     </Label>
                     <Input
                       id="b-start"
@@ -513,7 +528,7 @@ export default function WorkerProfilePage() {
                   </div>
                   <div>
                     <Label htmlFor="b-end" className="text-xs font-semibold text-gray-700">
-                      End Date *
+                      {t('workerProfile.endDate')} *
                     </Label>
                     <Input
                       id="b-end"
@@ -528,7 +543,7 @@ export default function WorkerProfilePage() {
 
                 <div>
                   <Label htmlFor="b-address" className="text-xs font-semibold text-gray-700">
-                    Job Site Address (ලිපිනය) *
+                    {t('workerProfile.jobAddress')} *
                   </Label>
                   <Input
                     id="b-address"
@@ -542,7 +557,7 @@ export default function WorkerProfilePage() {
 
                 <div>
                   <Label htmlFor="b-city" className="text-xs font-semibold text-gray-700">
-                    City / Town (නගරය)
+                    {t('workerProfile.jobCity')}
                   </Label>
                   <Input
                     id="b-city"
@@ -555,11 +570,11 @@ export default function WorkerProfilePage() {
 
                 <div>
                   <Label htmlFor="b-desc" className="text-xs font-semibold text-gray-700">
-                    Work Scope Description (වැඩ විස්තරය)
+                    {t('workerProfile.jobDesc')}
                   </Label>
                   <Textarea
                     id="b-desc"
-                    placeholder="Describe specific work needed (e.g. Bathroom tile laying, brick wall construction)..."
+                    placeholder={t('workerProfile.jobDescPlaceholder')}
                     value={jobDescription}
                     onChange={(e) => setJobDescription(e.target.value)}
                     rows={3}
@@ -580,7 +595,7 @@ export default function WorkerProfilePage() {
                     <span className="font-medium text-green-700">Included</span>
                   </div>
                   <div className="pt-2 border-t border-blue-200 flex justify-between text-sm font-bold text-gray-900">
-                    <span>Total Estimate (මුළු මුදල):</span>
+                    <span>{t('common.totalEstimate')}:</span>
                     <span className="text-blue-600 text-base">{formatCurrency(totalAmount)}</span>
                   </div>
                 </div>
@@ -593,15 +608,15 @@ export default function WorkerProfilePage() {
                   {bookingLoading ? (
                     <div className="flex items-center gap-2">
                       <Loader2 className="h-4 w-4 animate-spin" />
-                      <span>Processing Booking...</span>
+                      <span>{t('common.loading')}</span>
                     </div>
                   ) : (
-                    <span>Confirm & Book Worker (දින වෙන්කරන්න)</span>
+                    <span>{t('common.confirmBooking')}</span>
                   )}
                 </Button>
 
                 <p className="text-[11px] text-gray-400 text-center">
-                  Payment is held securely in escrow until you verify work completion.
+                  {t('workerProfile.escrowNote')}
                 </p>
               </form>
             </div>

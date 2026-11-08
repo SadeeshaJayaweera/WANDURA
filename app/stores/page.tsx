@@ -29,12 +29,16 @@ import {
   ArrowRight,
   PlusCircle,
   Building2,
+  ExternalLink,
 } from 'lucide-react'
 import { formatCurrency } from '@/lib/utils'
+import { useLanguage } from '@/components/providers/LanguageProvider'
+import { LanguageToggle } from '@/components/ui/LanguageToggle'
 
 export default function StoresPage() {
   const router = useRouter()
   const { data: session } = useSession()
+  const { t, isSinhala } = useLanguage()
 
   const [stores, setStores] = useState<any[]>([])
   const [products, setProducts] = useState<any[]>([])
@@ -47,17 +51,17 @@ export default function StoresPage() {
   const [showAuthModal, setShowAuthModal] = useState(false)
   const [checkoutSuccess, setCheckoutSuccess] = useState(false)
 
-  const categories = [
-    'ALL',
-    'Cement & Concrete',
-    'Sand & Aggregate',
-    'Blocks & Bricks',
-    'Steel & Metal',
-    'Tiles',
-    'Adhesives & Mortar',
-    'Welding Supplies',
-    'Plumbing & Pipes',
-    'Paint & Finishes',
+  const categoryOptions = [
+    { value: 'ALL', label: t('cat.all') },
+    { value: 'Cement & Concrete', label: t('cat.cement') },
+    { value: 'Sand & Aggregate', label: t('cat.sand') },
+    { value: 'Blocks & Bricks', label: t('cat.bricks') },
+    { value: 'Steel & Metal', label: t('cat.steel') },
+    { value: 'Tiles', label: t('cat.tiles') },
+    { value: 'Adhesives & Mortar', label: t('cat.adhesives') },
+    { value: 'Welding Supplies', label: t('cat.welding') },
+    { value: 'Plumbing & Pipes', label: t('cat.plumbing') },
+    { value: 'Paint & Finishes', label: t('cat.paint') },
   ]
 
   useEffect(() => {
@@ -68,14 +72,12 @@ export default function StoresPage() {
     setLoading(true)
     setError(null)
     try {
-      // 1. Fetch stores
       const storeRes = await fetch('/api/stores')
       if (storeRes.ok) {
         const storeData = await storeRes.json()
         setStores(Array.isArray(storeData) ? storeData : [])
       }
 
-      // 2. Fetch products
       const params = new URLSearchParams()
       if (selectedCategory !== 'ALL') {
         params.append('category', selectedCategory)
@@ -116,7 +118,7 @@ export default function StoresPage() {
       setCart([...cart, { ...product, quantity: 1 }])
     }
     toast({
-      title: 'Added to cart',
+      title: t('common.addedToCart'),
       description: `${product.name} added to your order.`,
     })
   }
@@ -156,7 +158,7 @@ export default function StoresPage() {
       setIsCartOpen(false)
       setCheckoutSuccess(false)
       toast({
-        title: 'Order Confirmed! (ඇණවුම සාර්ථකයි)',
+        title: isSinhala ? 'ඇණවුම තහවුරු විය!' : 'Order Confirmed!',
         description: `Your order has been routed to the partner hardware store. Invoice sent to ${session.user.email}.`,
       })
     }, 1500)
@@ -205,11 +207,14 @@ export default function StoresPage() {
             </div>
             <span className="text-xl font-bold text-gray-900 tracking-tight">Wandura</span>
             <span className="text-xs bg-blue-50 text-blue-700 px-2 py-0.5 rounded-full font-semibold border border-blue-100">
-              ශ්‍රී ලංකා 🇱🇰
+              {t('countryTag')}
             </span>
           </Link>
 
           <div className="flex items-center gap-3">
+            {/* Language Switcher */}
+            <LanguageToggle />
+
             <Button
               onClick={handleAddListingClick}
               variant="outline"
@@ -217,20 +222,20 @@ export default function StoresPage() {
               className="hidden sm:flex items-center gap-1.5 rounded-xl border-blue-200 text-blue-700 hover:bg-blue-50 text-xs font-semibold"
             >
               <PlusCircle className="h-3.5 w-3.5" />
-              <span>List Your Store / Materials</span>
+              <span>{t('stores.listMaterials')}</span>
             </Button>
 
             <Button variant="ghost" size="sm" asChild className="text-gray-600 text-xs font-semibold">
-              <Link href="/dashboard">Dashboard</Link>
+              <Link href="/dashboard">{t('nav.dashboard')}</Link>
             </Button>
 
             <Button
               onClick={() => setIsCartOpen(true)}
-              className="bg-blue-600 hover:bg-blue-700 text-white rounded-xl relative shadow-sm gap-2 text-xs"
+              className="bg-blue-600 hover:bg-blue-700 text-white rounded-xl relative shadow-sm gap-2 text-xs font-semibold"
               size="sm"
             >
               <ShoppingCart className="h-4 w-4" />
-              <span>Cart</span>
+              <span>{t('nav.cart')}</span>
               {totalCartItems > 0 && (
                 <span className="bg-white text-blue-700 text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
                   {totalCartItems}
@@ -245,18 +250,18 @@ export default function StoresPage() {
         {/* Breadcrumb & Title */}
         <div className="mb-8">
           <div className="flex items-center gap-2 text-sm text-gray-500 mb-2">
-            <Link href="/" className="hover:text-blue-600">Home</Link>
+            <Link href="/" className="hover:text-blue-600">{t('nav.home')}</Link>
             <ChevronRight className="h-3.5 w-3.5" />
-            <span className="text-gray-900">Hardware Stores & Materials</span>
+            <span className="text-gray-900">{t('nav.stores')}</span>
           </div>
 
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div>
-              <h1 className="text-3xl font-bold text-gray-900 tracking-tight">
-                Hardware Stores & Materials (හාඩ්වෙයාර් වෙළඳසැල්)
+              <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight">
+                {t('stores.title')}
               </h1>
-              <p className="text-gray-500 mt-1">
-                Browse verified Sri Lankan supply depots, compare prices in LKR, and order direct to your site.
+              <p className="text-gray-500 mt-1 text-sm">
+                {t('stores.subtitle')}
               </p>
             </div>
 
@@ -265,7 +270,7 @@ export default function StoresPage() {
               className="bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-semibold gap-2 self-start md:self-auto shadow-sm"
             >
               <Building2 className="h-4 w-4" />
-              <span>Are You a Store Owner? Sell on Wandura</span>
+              <span>{t('stores.sellCTA')}</span>
             </Button>
           </div>
         </div>
@@ -277,11 +282,11 @@ export default function StoresPage() {
               <div>
                 <h2 className="text-xl font-bold text-gray-900 flex items-center gap-2">
                   <StoreIcon className="h-5 w-5 text-blue-600" />
-                  Verified Hardware Stores (තහවුරු කළ වෙළඳසැල්)
+                  {t('stores.partnerStores')}
                 </h2>
-                <p className="text-xs text-gray-500 mt-0.5">Click any store to view its full catalog and exclusive discounts</p>
+                <p className="text-xs text-gray-500 mt-0.5">{t('stores.partnerStoresDesc')}</p>
               </div>
-              <span className="text-xs text-gray-400 font-semibold">{stores.length} Partner Stores</span>
+              <span className="text-xs text-gray-400 font-semibold">{stores.length} {t('nav.allStores')}</span>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
@@ -304,7 +309,7 @@ export default function StoresPage() {
                       />
                       <div className="absolute top-3 left-3">
                         <span className="flex items-center gap-1 text-[11px] font-semibold bg-green-600 text-white px-2.5 py-0.5 rounded-full shadow-sm">
-                          <ShieldCheck className="h-3 w-3" /> Verified Partner
+                          <ShieldCheck className="h-3 w-3" /> {t('common.verifiedPartner')}
                         </span>
                       </div>
                     </div>
@@ -335,7 +340,7 @@ export default function StoresPage() {
                         </div>
 
                         <span className="text-xs font-semibold text-blue-600 flex items-center gap-1 group-hover:translate-x-0.5 transition-transform">
-                          <span>View Inventory ({store._count?.products || 6}+ items)</span>
+                          <span>{t('common.viewInventory')} ({store._count?.products || 6}+ items)</span>
                           <ArrowRight className="h-3.5 w-3.5" />
                         </span>
                       </div>
@@ -352,7 +357,7 @@ export default function StoresPage() {
           <div className="relative flex-1 w-full">
             <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
             <Input
-              placeholder="Search materials (e.g. Portland Cement, River Sand, Tiles, Rebar)..."
+              placeholder={t('stores.searchPlaceholder')}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="pl-10 h-11 rounded-xl border-gray-200 bg-gray-50 focus:bg-white focus:border-blue-500 transition-colors"
@@ -370,12 +375,12 @@ export default function StoresPage() {
           <div className="w-full md:w-64 flex-shrink-0">
             <Select value={selectedCategory} onValueChange={setSelectedCategory}>
               <SelectTrigger className="h-11 rounded-xl border-gray-200 bg-gray-50 text-sm font-medium">
-                <SelectValue placeholder="Category" />
+                <SelectValue placeholder={t('cat.all')} />
               </SelectTrigger>
               <SelectContent>
-                {categories.map((cat) => (
-                  <SelectItem key={cat} value={cat}>
-                    {cat === 'ALL' ? 'All Categories (සියල්ල)' : cat}
+                {categoryOptions.map((cat) => (
+                  <SelectItem key={cat.value} value={cat.value}>
+                    {cat.label}
                   </SelectItem>
                 ))}
               </SelectContent>
@@ -388,11 +393,11 @@ export default function StoresPage() {
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-xl font-bold text-gray-900 flex items-center gap-2">
               <Package className="h-5 w-5 text-blue-600" />
-              Construction Materials Catalog (ද්‍රව්‍ය නාමාවලිය)
+              {t('stores.materialsCatalog')}
             </h2>
             {!loading && (
               <span className="text-xs text-gray-400 font-medium">
-                {filteredProducts.length} materials available
+                {filteredProducts.length} {t('stores.materialsFound')}
               </span>
             )}
           </div>
@@ -400,7 +405,7 @@ export default function StoresPage() {
           {loading ? (
             <div className="flex flex-col items-center justify-center py-20 text-gray-400">
               <Loader2 className="h-8 w-8 animate-spin mb-4 text-blue-600" />
-              <p className="text-sm">Loading materials...</p>
+              <p className="text-sm">{t('common.loading')}</p>
             </div>
           ) : error ? (
             <div className="bg-red-50 border border-red-200 rounded-2xl p-8 text-center max-w-lg mx-auto">
@@ -420,9 +425,9 @@ export default function StoresPage() {
               <div className="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <ShoppingCart className="h-8 w-8 text-gray-400" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-1">No Materials Found</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-1">{t('stores.noMaterials')}</h3>
               <p className="text-sm text-gray-500 mb-6">
-                Try selecting a different category or clearing your search term.
+                {t('stores.noMaterialsDesc')}
               </p>
               <Button
                 variant="outline"
@@ -432,7 +437,7 @@ export default function StoresPage() {
                 }}
                 className="rounded-xl"
               >
-                Reset Filters
+                {t('common.resetFilters')}
               </Button>
             </div>
           ) : (
@@ -469,7 +474,7 @@ export default function StoresPage() {
                                 : 'bg-red-600/90 text-white backdrop-blur-sm'
                             }`}
                           >
-                            {inStock ? `${product.stock} in stock` : 'Out of stock'}
+                            {inStock ? `${product.stock} ${t('common.inStock')}` : t('common.outOfStock')}
                           </span>
                         </div>
                       </div>
@@ -518,7 +523,7 @@ export default function StoresPage() {
                         }`}
                       >
                         <ShoppingCart className="h-3.5 w-3.5" />
-                        {inStock ? 'Add to Cart' : 'Unavailable'}
+                        {inStock ? t('common.addToCart') : t('common.unavailable')}
                       </Button>
                     </div>
                   </div>
@@ -546,8 +551,8 @@ export default function StoresPage() {
                     <ShoppingCart className="h-4 w-4" />
                   </div>
                   <div>
-                    <h2 className="text-lg font-bold text-gray-900">Order Cart</h2>
-                    <p className="text-xs text-gray-400">{totalCartItems} items selected</p>
+                    <h2 className="text-lg font-bold text-gray-900">{t('common.orderCart')}</h2>
+                    <p className="text-xs text-gray-400">{totalCartItems} {t('common.itemsSelected')}</p>
                   </div>
                 </div>
                 <button
@@ -565,9 +570,9 @@ export default function StoresPage() {
                     <div className="w-16 h-16 rounded-2xl bg-gray-50 flex items-center justify-center mb-3 text-gray-300">
                       <ShoppingCart className="h-8 w-8" />
                     </div>
-                    <p className="font-semibold text-gray-700">Your cart is empty</p>
+                    <p className="font-semibold text-gray-700">{t('common.cartEmpty')}</p>
                     <p className="text-xs text-gray-400 mt-1 max-w-xs">
-                      Browse available construction materials and add them to your order.
+                      {t('common.cartEmptyDesc')}
                     </p>
                   </div>
                 ) : (
@@ -620,7 +625,7 @@ export default function StoresPage() {
               {cart.length > 0 && (
                 <div className="p-6 border-t border-gray-100 bg-gray-50 space-y-4">
                   <div className="flex items-center justify-between text-base font-bold text-gray-900">
-                    <span>Estimated Total:</span>
+                    <span>{t('common.totalEstimate')}:</span>
                     <span className="text-2xl text-blue-600 font-bold">
                       {formatCurrency(getTotalCost())}
                     </span>
@@ -630,7 +635,7 @@ export default function StoresPage() {
                     <div className="bg-amber-50 border border-amber-200 rounded-xl p-3 flex items-start gap-2.5">
                       <Lock className="h-4 w-4 text-amber-600 flex-shrink-0 mt-0.5" />
                       <p className="text-xs text-amber-800">
-                        Account required to finalize purchase and schedule delivery to your site.
+                        {t('authGate.purchaseDesc')}
                       </p>
                     </div>
                   )}
@@ -643,11 +648,11 @@ export default function StoresPage() {
                     >
                       {checkoutSuccess ? (
                         <>
-                          <Loader2 className="h-4 w-4 animate-spin" /> Processing Order...
+                          <Loader2 className="h-4 w-4 animate-spin" /> {t('common.loading')}
                         </>
                       ) : (
                         <>
-                          <CheckCircle2 className="h-4 w-4" /> Proceed to Checkout
+                          <CheckCircle2 className="h-4 w-4" /> {t('common.proceedCheckout')}
                         </>
                       )}
                     </Button>
@@ -656,7 +661,7 @@ export default function StoresPage() {
                       onClick={() => setCart([])}
                       className="w-full rounded-xl text-gray-500"
                     >
-                      Clear Cart
+                      {t('common.clearCart')}
                     </Button>
                   </div>
                 </div>
@@ -682,10 +687,10 @@ export default function StoresPage() {
             </div>
 
             <h3 className="text-xl font-bold text-gray-900 mb-2">
-              Account Required to Purchase (ගිණුමක් අවශ්‍යයි)
+              {t('authGate.purchaseTitle')}
             </h3>
             <p className="text-sm text-gray-500 mb-6 leading-relaxed">
-              To place orders for construction materials, track site deliveries, and receive official receipts, please create an account or sign in.
+              {t('authGate.purchaseDesc')}
             </p>
 
             <div className="space-y-3">
@@ -694,7 +699,7 @@ export default function StoresPage() {
                 className="w-full h-11 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold shadow-sm"
               >
                 <Link href="/auth/signup?callbackUrl=/stores">
-                  Create Customer Account (ගිණුමක් සාදන්න)
+                  {t('authGate.createAccount')}
                 </Link>
               </Button>
               <Button
@@ -703,7 +708,7 @@ export default function StoresPage() {
                 className="w-full h-11 rounded-xl text-gray-700 font-medium border-gray-200"
               >
                 <Link href="/auth/signin?callbackUrl=/stores">
-                  Already have an account? Sign In
+                  {t('authGate.alreadyAccount')}
                 </Link>
               </Button>
             </div>

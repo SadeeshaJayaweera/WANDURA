@@ -33,6 +33,8 @@ import {
   Building2,
 } from 'lucide-react'
 import { formatCurrency } from '@/lib/utils'
+import { useLanguage } from '@/components/providers/LanguageProvider'
+import { LanguageToggle } from '@/components/ui/LanguageToggle'
 
 // Dynamic import of Leaflet Map for store location
 const WorkerMap = dynamic(() => import('@/components/map/WorkerMap'), {
@@ -49,6 +51,7 @@ export default function StoreDetailPage() {
   const params = useParams()
   const router = useRouter()
   const { data: session } = useSession()
+  const { t, isSinhala } = useLanguage()
 
   const storeId = params?.id as string
 
@@ -236,23 +239,25 @@ export default function StoreDetailPage() {
             </div>
             <span className="text-xl font-bold text-gray-900 tracking-tight">Wandura</span>
             <span className="text-xs bg-blue-50 text-blue-700 px-2 py-0.5 rounded-full font-semibold border border-blue-100">
-              ශ්‍රී ලංකා 🇱🇰
+              {t('countryTag')}
             </span>
           </Link>
 
           <div className="flex items-center gap-3">
+            <LanguageToggle />
+
             <Button variant="outline" size="sm" asChild className="rounded-xl border-gray-200">
               <Link href="/stores" className="flex items-center gap-1.5 text-xs font-semibold">
-                <ArrowLeft className="h-3.5 w-3.5" /> All Stores
+                <ArrowLeft className="h-3.5 w-3.5" /> {t('nav.allStores')}
               </Link>
             </Button>
             <Button
               onClick={() => setIsCartOpen(true)}
-              className="bg-blue-600 hover:bg-blue-700 text-white rounded-xl relative shadow-sm gap-2 text-xs"
+              className="bg-blue-600 hover:bg-blue-700 text-white rounded-xl relative shadow-sm gap-2 text-xs font-semibold"
               size="sm"
             >
               <ShoppingCart className="h-4 w-4" />
-              <span>Cart</span>
+              <span>{t('nav.cart')}</span>
               {totalCartItems > 0 && (
                 <span className="bg-white text-blue-700 text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
                   {totalCartItems}
@@ -266,9 +271,9 @@ export default function StoreDetailPage() {
       <main className="container mx-auto px-6 py-8 flex-1 max-w-7xl">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-sm text-gray-500 mb-6">
-          <Link href="/" className="hover:text-blue-600">Home</Link>
+          <Link href="/" className="hover:text-blue-600">{t('nav.home')}</Link>
           <ChevronRight className="h-3.5 w-3.5" />
-          <Link href="/stores" className="hover:text-blue-600">Hardware Stores</Link>
+          <Link href="/stores" className="hover:text-blue-600">{t('nav.stores')}</Link>
           <ChevronRight className="h-3.5 w-3.5" />
           <span className="text-gray-900 font-medium truncate">{store.storeName}</span>
         </div>
@@ -286,11 +291,21 @@ export default function StoreDetailPage() {
               <div className="max-w-2xl">
                 <div className="flex flex-wrap items-center gap-2.5 mb-2">
                   <span className="flex items-center gap-1 text-xs font-semibold bg-green-500/90 text-white px-2.5 py-1 rounded-full backdrop-blur-md">
-                    <ShieldCheck className="h-3.5 w-3.5" /> Verified Partner Store (තහවුරු කළ වෙළඳසැල)
+                    <ShieldCheck className="h-3.5 w-3.5" /> {t('common.verifiedPartner')}
                   </span>
                   <span className="flex items-center gap-1 text-xs font-semibold bg-white/20 text-white px-2.5 py-1 rounded-full backdrop-blur-md">
                     <MapPin className="h-3.5 w-3.5" /> {store.city}, {store.state}
                   </span>
+                  {store.latitude && store.longitude && (
+                    <a
+                      href={`https://www.google.com/maps/search/?api=1&query=${store.latitude},${store.longitude}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-xs font-semibold bg-white/20 hover:bg-white/30 text-white px-2.5 py-1 rounded-full backdrop-blur-md transition-colors"
+                    >
+                      🗺️ {t('common.googleMaps')}
+                    </a>
+                  )}
                 </div>
                 <h1 className="text-2xl md:text-4xl font-extrabold tracking-tight">
                   {store.storeName}
@@ -385,7 +400,7 @@ export default function StoreDetailPage() {
                     : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                 }`}
               >
-                {cat === 'ALL' ? 'All Materials' : cat}
+                {cat === 'ALL' ? t('cat.all') : cat}
               </button>
             ))}
           </div>
@@ -396,9 +411,9 @@ export default function StoreDetailPage() {
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-xl font-bold text-gray-900 flex items-center gap-2">
               <Package className="h-5 w-5 text-blue-600" />
-              Available Materials & Prices ({filteredProducts.length})
+              {t('storeDetail.inventory')} ({filteredProducts.length})
             </h2>
-            <span className="text-xs text-gray-400 font-medium">LKR Currency (ශ්‍රී ලංකා රුපියල්)</span>
+            <span className="text-xs text-gray-400 font-medium">LKR Currency (Rs.)</span>
           </div>
 
           {filteredProducts.length === 0 ? (
@@ -455,7 +470,7 @@ export default function StoreDetailPage() {
                                 : 'bg-red-600/90 text-white backdrop-blur-sm'
                             }`}
                           >
-                            {inStock ? `${product.stock} ${product.unit} in stock` : 'Out of stock'}
+                            {inStock ? `${product.stock} ${product.unit} ${t('common.inStock')}` : t('common.outOfStock')}
                           </span>
                         </div>
                       </div>
@@ -495,7 +510,7 @@ export default function StoreDetailPage() {
                         }`}
                       >
                         <ShoppingCart className="h-4 w-4" />
-                        {inStock ? 'Add to Cart' : 'Unavailable'}
+                        {inStock ? t('common.addToCart') : t('common.unavailable')}
                       </Button>
                     </div>
                   </div>
@@ -690,3 +705,4 @@ export default function StoreDetailPage() {
     </div>
   )
 }
+

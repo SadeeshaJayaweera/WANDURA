@@ -46,3 +46,4 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: 'Failed to fetch hardware stores' }, { status: 500 })
   }
 }
+

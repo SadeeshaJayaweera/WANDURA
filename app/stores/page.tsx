@@ -34,6 +34,7 @@ import {
 import { formatCurrency } from '@/lib/utils'
 import { useLanguage } from '@/components/providers/LanguageProvider'
 import { LanguageToggle } from '@/components/ui/LanguageToggle'
+import { ThemeToggle } from '@/components/ui/ThemeToggle'
 
 export default function StoresPage() {
   const router = useRouter()
@@ -211,9 +212,9 @@ export default function StoresPage() {
             </span>
           </Link>
 
-          <div className="flex items-center gap-3">
-            {/* Language Switcher */}
+          <div className="flex items-center gap-2.5">
             <LanguageToggle />
+            <ThemeToggle />
 
             <Button
               onClick={handleAddListingClick}

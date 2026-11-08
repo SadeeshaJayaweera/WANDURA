@@ -28,6 +28,7 @@ import { RankedWorkerCard } from '@/components/recommendation/RankedWorkerCard'
 import { SRI_LANKAN_CITIES, getSkillLabel } from '@/lib/srilanka'
 import { useLanguage } from '@/components/providers/LanguageProvider'
 import { LanguageToggle } from '@/components/ui/LanguageToggle'
+import { ThemeToggle } from '@/components/ui/ThemeToggle'
 
 // Dynamic import of Leaflet / Google Map to prevent SSR errors
 const WorkerMap = dynamic(() => import('@/components/map/WorkerMap'), {
@@ -163,9 +164,9 @@ export default function WorkersPage() {
             </span>
           </Link>
 
-          <div className="flex items-center gap-3">
-            {/* Top Language Toggle */}
+          <div className="flex items-center gap-2.5">
             <LanguageToggle />
+            <ThemeToggle />
 
             <Button variant="ghost" size="sm" asChild className="text-gray-600 text-xs font-semibold">
               <Link href="/">{t('nav.home')}</Link>

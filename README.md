@@ -25,12 +25,19 @@
 
 ## 📸 Application Preview
 
-### 🏠 Landing Page (Sri Lankan Labor & Construction Marketplace)
+### 🏠 Landing Page (Day Mode - Modern White Theme)
 <p align="center">
-  <img src="./docs/screenshots/homepage.png" alt="Landing Page" width="100%"/>
+  <img src="./docs/screenshots/homepage.png" alt="Landing Page - Day Mode" width="100%"/>
 </p>
 
 *Modern HCI white-theme landing page with default English, dynamic Sinhala translation toggle (`🌐 EN | සිංහල`), verified trades, and LKR daily rates.*
+
+### 🌙 Landing Page (Night Mode - Sleek Dark Slate & Electric Blue)
+<p align="center">
+  <img src="./docs/screenshots/homepage-night.png" alt="Landing Page - Night Mode" width="100%"/>
+</p>
+
+*Sleek blackish night theme with vibrant electric blue buttons and glowing accents, toggleable via the header button with localStorage persistence.*
 
 ### 👷 Worker Search, Proximity & Google Maps Integration
 <p align="center">
@@ -106,6 +113,10 @@ Wandura revolutionizes the construction labor marketplace by connecting:
 - ✅ **Real-Time GPS Proximity**: User location detection, live distance calculation (in kilometers), and closest worker/store discovery.
 - ✅ **Direct Navigation**: One-click "Open in Google Maps" link on all worker and hardware store profiles for instant turn-by-turn directions.
 - ✅ **Graceful Fallback**: Automatic failover to OpenStreetMap if API key is not configured or offline.
+
+### 🌓 Theme Switcher (Day & Night Mode)
+- ✅ **One-Click Theme Toggle**: Switch seamlessly between Light (pristine white theme) and Night Mode (sleek blackish `#070b14` slate with electric blue buttons and glowing accents) at the top of every page.
+- ✅ **Persistent Preference**: Stored in `localStorage` (`wandura_theme`) and query parameter-enabled (`?theme=dark`).
 
 ### 🔐 Authentication & Security
 - ✅ Multi-role registration (Customer, Worker, Hardware Store, Admin)

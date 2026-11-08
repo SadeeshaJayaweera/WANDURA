@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { LanguageToggle } from '@/components/ui/LanguageToggle'
+import { ThemeToggle } from '@/components/ui/ThemeToggle'
 import { useLanguage } from '@/components/providers/LanguageProvider'
 import { toast } from '@/components/ui/use-toast'
 import {
@@ -231,8 +232,9 @@ export default function EstimatorPage() {
               {t('countryTag')}
             </span>
           </Link>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2.5">
             <LanguageToggle />
+            <ThemeToggle />
             <Button variant="ghost" size="sm" asChild className="text-gray-600">
               <Link href="/dashboard">{t('nav.dashboard')}</Link>
             </Button>

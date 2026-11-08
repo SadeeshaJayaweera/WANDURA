@@ -316,7 +316,7 @@ export default function HomePage() {
                         alt="Sunimal Wickramasinghe - Verified Mason"
                         className="w-full h-full object-cover"
                         onError={(e) => {
-                          e.currentTarget.src = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&auto=format&fit=crop&q=80'
+                          e.currentTarget.src = 'https://images.unsplash.com/photo-1644331852140-fca65511e6d2?w=300&auto=format&fit=crop&q=80'
                         }}
                       />
                       <span className="absolute bottom-0 right-0 w-3.5 h-3.5 bg-green-500 border-2 border-white dark:border-slate-900 rounded-full" />

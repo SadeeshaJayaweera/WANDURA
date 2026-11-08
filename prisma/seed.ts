@@ -107,7 +107,7 @@ async function main() {
       name: 'Sunimal Wickramasinghe (සුනිමල් වික්‍රමසිංහ)',
       role: Role.WORKER,
       phone: '+94 77 987 6543',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80',
+      image: '/images/workers/sunimal.jpg',
       emailVerified: true,
       workerProfile: {
         create: {
@@ -117,9 +117,9 @@ async function main() {
           experience: 12,
           bio: 'වසර 12 ක පළපුරුද්දක් සහිත ප්‍රවීණ මේසන් බාස්. නිවාස ඉදිකිරීම්, කොන්ක්‍රීට් සහ ප්ලාස්ටර් වැඩ සඳහා විශ්වාසනීය සේවය.',
           portfolioImages: [
-            'https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?w=800&auto=format&fit=crop&q=80',
+            '/images/portfolio/masonry.jpg',
+            '/images/portfolio/brickwork.jpg',
             'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop&q=80',
-            'https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=800&auto=format&fit=crop&q=80',
           ],
           isVerified: true,
           isAvailable: true,
@@ -145,7 +145,7 @@ async function main() {
       name: 'Kasun Sampath Fernando (කසුන් සම්පත්)',
       role: Role.WORKER,
       phone: '+94 72 876 5432',
-      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=80',
+      image: '/images/workers/kasun.jpg',
       emailVerified: true,
       workerProfile: {
         create: {
@@ -155,8 +155,8 @@ async function main() {
           experience: 8,
           bio: 'ග්‍රිල්, ගේට්ටු, යකඩ වහල පලංචි සහ රූෆින් ට්‍රස් සවි කිරීම පිළිබඳ විශේෂඥ වෙල්ඩින් කාර්මික.',
           portfolioImages: [
+            '/images/portfolio/welding.jpg',
             'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&auto=format&fit=crop&q=80',
-            'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&auto=format&fit=crop&q=80',
           ],
           isVerified: true,
           isAvailable: true,
@@ -182,7 +182,7 @@ async function main() {
       name: 'Priyantha Kumara (ප්‍රියන්ත කුමාර)',
       role: Role.WORKER,
       phone: '+94 78 765 4321',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&auto=format&fit=crop&q=80',
+      image: '/images/workers/priyantha.jpg',
       emailVerified: true,
       workerProfile: {
         create: {
@@ -192,7 +192,7 @@ async function main() {
           experience: 9,
           bio: 'Rocell, Tiara ටයිල් ඇල්ලීම, නාන කාමර සහ පැන්ට්‍රි ටයිල් වැඩ නිවැරදි නිමාවකින් ඉටු කරනු ලැබේ.',
           portfolioImages: [
-            'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80',
+            '/images/portfolio/tiling.jpg',
             'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&auto=format&fit=crop&q=80',
           ],
           isVerified: true,
@@ -219,7 +219,7 @@ async function main() {
       name: 'Bandara Jayasinghe (බණ්ඩාර ජයසිංහ)',
       role: Role.WORKER,
       phone: '+94 75 654 3210',
-      image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&auto=format&fit=crop&q=80',
+      image: '/images/workers/bandara.jpg',
       emailVerified: true,
       workerProfile: {
         create: {
@@ -229,8 +229,8 @@ async function main() {
           experience: 15,
           bio: 'වහල ගැසීම, දොර ජනෙල් උළුවහු සවිකිරීම සහ සියලුම වඩු කාර්මික කටයුතු පිළිබඳ පළපුරුදු වඩු බාස්.',
           portfolioImages: [
+            '/images/portfolio/carpentry.jpg',
             'https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=800&auto=format&fit=crop&q=80',
-            'https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&auto=format&fit=crop&q=80',
           ],
           isVerified: true,
           isAvailable: true,
@@ -256,7 +256,7 @@ async function main() {
       name: 'Nuwan Jayalath (නුවන් ජයලත්)',
       role: Role.WORKER,
       phone: '+94 77 543 2109',
-      image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=400&auto=format&fit=crop&q=80',
+      image: '/images/workers/nuwan.jpg',
       emailVerified: true,
       workerProfile: {
         create: {
@@ -266,7 +266,7 @@ async function main() {
           experience: 7,
           bio: 'නිවාස හා කාර්යාල වයරිං, ත්‍රි-ෆේස් ලයින්, සෝලාර් සහ ට්‍රිප් ස්විච් ගැටළු විසඳන සහතිකලත් විදුලි කාර්මික.',
           portfolioImages: [
-            'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&auto=format&fit=crop&q=80',
+            '/images/portfolio/electrical.jpg',
             'https://images.unsplash.com/photo-1509391365360-2e959784a276?w=800&auto=format&fit=crop&q=80',
           ],
           isVerified: true,
@@ -293,7 +293,7 @@ async function main() {
       name: 'Nimal Siriwardena (නිමල් සිරිවර්ධන)',
       role: Role.WORKER,
       phone: '+94 71 432 1098',
-      image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&auto=format&fit=crop&q=80',
+      image: '/images/workers/nimal.jpg',
       emailVerified: true,
       workerProfile: {
         create: {
@@ -303,7 +303,7 @@ async function main() {
           experience: 11,
           bio: 'ජල නල එළීම, බට පිපිරීම් අලුත්වැඩියාව, කොමඩ් හා සින්ක් සවිකිරීම් සහ වෝටර් මෝටර් සවි කිරීමේ ප්‍රවීණ නල කාර්මික.',
           portfolioImages: [
-            'https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=800&auto=format&fit=crop&q=80',
+            '/images/portfolio/plumbing.jpg',
             'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80',
           ],
           isVerified: true,

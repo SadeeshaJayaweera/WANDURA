@@ -9,6 +9,8 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { toast } from '@/components/ui/use-toast'
 import { Hammer, Eye, EyeOff, ArrowRight, ShieldCheck, Star, Users } from 'lucide-react'
+import { LanguageToggle } from '@/components/ui/LanguageToggle'
+import { ThemeToggle } from '@/components/ui/ThemeToggle'
 
 export default function SignInPage() {
   const router = useRouter()
@@ -88,6 +90,12 @@ export default function SignInPage() {
       {/* Right panel – form */}
       <div className="flex-1 flex items-center justify-center px-6 py-12 lg:px-16">
         <div className="w-full max-w-md">
+          {/* Top Toggles */}
+          <div className="flex items-center justify-end gap-2 mb-6">
+            <LanguageToggle />
+            <ThemeToggle />
+          </div>
+
           {/* Mobile logo */}
           <Link href="/" className="flex items-center gap-2 mb-8 lg:hidden">
             <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">

@@ -9,6 +9,8 @@ import { Label } from '@/components/ui/label'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { toast } from '@/components/ui/use-toast'
 import { Hammer, Eye, EyeOff, ArrowRight, User, Briefcase, Store } from 'lucide-react'
+import { LanguageToggle } from '@/components/ui/LanguageToggle'
+import { ThemeToggle } from '@/components/ui/ThemeToggle'
 
 const ROLES = [
   { value: 'CUSTOMER', label: 'Customer', desc: 'I need to hire workers', icon: User },
@@ -105,6 +107,12 @@ export default function SignUpPage() {
       {/* Right panel – form */}
       <div className="flex-1 flex items-center justify-center px-6 py-12 lg:px-16 overflow-y-auto">
         <div className="w-full max-w-md">
+          {/* Top Toggles */}
+          <div className="flex items-center justify-end gap-2 mb-6">
+            <LanguageToggle />
+            <ThemeToggle />
+          </div>
+
           <Link href="/" className="flex items-center gap-2 mb-8 lg:hidden">
             <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
               <Hammer className="h-4 w-4 text-white" />

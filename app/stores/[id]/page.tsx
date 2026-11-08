@@ -35,6 +35,7 @@ import {
 import { formatCurrency } from '@/lib/utils'
 import { useLanguage } from '@/components/providers/LanguageProvider'
 import { LanguageToggle } from '@/components/ui/LanguageToggle'
+import { ThemeToggle } from '@/components/ui/ThemeToggle'
 
 // Dynamic import of Leaflet Map for store location
 const WorkerMap = dynamic(() => import('@/components/map/WorkerMap'), {
@@ -243,8 +244,9 @@ export default function StoreDetailPage() {
             </span>
           </Link>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2.5">
             <LanguageToggle />
+            <ThemeToggle />
 
             <Button variant="outline" size="sm" asChild className="rounded-xl border-gray-200">
               <Link href="/stores" className="flex items-center gap-1.5 text-xs font-semibold">

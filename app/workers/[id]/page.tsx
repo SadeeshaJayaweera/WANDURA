@@ -34,6 +34,7 @@ import { formatCurrency, formatDate } from '@/lib/utils'
 import { getSkillLabel } from '@/lib/srilanka'
 import { useLanguage } from '@/components/providers/LanguageProvider'
 import { LanguageToggle } from '@/components/ui/LanguageToggle'
+import { ThemeToggle } from '@/components/ui/ThemeToggle'
 
 export default function WorkerProfilePage() {
   const params = useParams()
@@ -240,8 +241,9 @@ export default function WorkerProfilePage() {
               {t('countryTag')}
             </span>
           </Link>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2.5">
             <LanguageToggle />
+            <ThemeToggle />
 
             <Button variant="outline" size="sm" asChild className="rounded-xl border-gray-200">
               <Link href="/workers" className="flex items-center gap-1.5 text-xs font-semibold">

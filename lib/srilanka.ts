@@ -62,3 +62,4 @@ export function findNearestCity(lat: number, lng: number): SriLankanCity {
 
   return nearest
 }
+

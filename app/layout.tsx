@@ -2,12 +2,13 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Toaster } from '@/components/ui/use-toast'
+import AuthProvider from '@/components/providers/AuthProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Wandura - Skilled Labor On-Demand',
-  description: 'Connect with skilled construction workers for your projects',
+  title: 'Wandura - Skilled Labor On-Demand (ශ්‍රී ලංකා)',
+  description: 'Connect with skilled construction workers across Sri Lanka',
 }
 
 export default function RootLayout({
@@ -18,8 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children}
-        <Toaster />
+        <AuthProvider>
+          {children}
+          <Toaster />
+        </AuthProvider>
       </body>
     </html>
   )

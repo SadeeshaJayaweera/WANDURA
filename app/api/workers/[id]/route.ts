@@ -6,8 +6,14 @@ export async function GET(
   { params }: { params: { id: string } }
 ) {
   try {
-    const worker = await prisma.workerProfile.findUnique({
-      where: { userId: params.id },
+    // Find by either userId or workerProfile id
+    const worker = await prisma.workerProfile.findFirst({
+      where: {
+        OR: [
+          { userId: params.id },
+          { id: params.id },
+        ],
+      },
       include: {
         user: {
           select: {
@@ -18,6 +24,7 @@ export async function GET(
             image: true,
           },
         },
+        skillTags: true,
       },
     })
 
@@ -28,9 +35,9 @@ export async function GET(
       )
     }
 
-    // Get reviews
+    // Get reviews using worker.userId
     const reviews = await prisma.review.findMany({
-      where: { recipientId: params.id },
+      where: { recipientId: worker.userId },
       include: {
         author: {
           select: {
@@ -40,7 +47,7 @@ export async function GET(
         },
       },
       orderBy: { createdAt: 'desc' },
-      take: 10,
+      take: 15,
     })
 
     return NextResponse.json({ worker, reviews })

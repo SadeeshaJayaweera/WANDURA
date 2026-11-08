@@ -8,8 +8,13 @@ import { LanguageProvider } from '@/components/providers/LanguageProvider'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Wandura - Skilled Labor On-Demand (ශ්‍රී ලංකා)',
-  description: 'Connect with skilled construction workers across Sri Lanka',
+  title: 'Wandura - Skilled Labor & Construction Marketplace (ශ්‍රී ලංකා)',
+  description: 'Connect with verified skilled construction workers and order certified materials across Sri Lanka',
+  icons: {
+    icon: '/icon.svg',
+    shortcut: '/icon.svg',
+    apple: '/icon.svg',
+  },
 }
 
 export default function RootLayout({

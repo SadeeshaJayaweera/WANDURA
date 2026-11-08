@@ -25,68 +25,54 @@
 
 ## 📸 Application Preview
 
-### 🏠 Landing Page
+### 🏠 Landing Page (Sri Lankan Labor & Construction Marketplace)
 <p align="center">
-  <img src="./docs/screenshots/homepage.svg" alt="Landing Page" width="100%"/>
+  <img src="./docs/screenshots/homepage.png" alt="Landing Page" width="100%"/>
 </p>
 
-*Modern, responsive landing page showcasing platform features and call-to-action*
+*Modern HCI white-theme landing page with default English, dynamic Sinhala translation toggle (`🌐 EN | සිංහල`), verified trades, and LKR daily rates.*
 
-### 👷 Worker Search & Discovery
+### 👷 Worker Search, Proximity & Google Maps Integration
 <p align="center">
-  <img src="./docs/screenshots/workers-search.svg" alt="Worker Search" width="100%"/>
+  <img src="./docs/screenshots/workers-search.png" alt="Worker Search" width="100%"/>
 </p>
 
-*Advanced search with skill-based filtering, location, price range, and availability*
+*Interactive Google Maps (`@googlemaps/js-api-loader`) with live GPS distance tracking, roadmap/satellite views, trade filters, and direct navigation links.*
 
-### 📊 Customer Dashboard
+### 👤 Worker Profile & Completed Work Portfolio
 <p align="center">
-  <img src="./docs/screenshots/dashboard-customer.svg" alt="Customer Dashboard" width="100%"/>
+  <img src="./docs/screenshots/worker-profile.png" alt="Worker Profile" width="100%"/>
 </p>
 
-*Comprehensive dashboard with booking management, projects, and quick actions*
+*Detailed verified tradesperson profiles showcasing experience, daily wage in LKR (`Rs.`), real photo portfolios, verified reviews, and secure booking escrow gates.*
 
-### 💼 Worker Dashboard
+### 🏪 Hardware Stores Across Sri Lanka
 <p align="center">
-  <img src="./docs/screenshots/dashboard-worker.svg" alt="Worker Dashboard" width="100%"/>
+  <img src="./docs/screenshots/stores.png" alt="Hardware Stores" width="100%"/>
 </p>
 
-*Earnings tracking, job management, and availability settings*
+*Locate verified building supply depots with city coverage, ratings, and instant access to material catalogs.*
 
-### 📅 Booking Management
+### 📦 Hardware Store Catalog & Real Material Listings
 <p align="center">
-  <img src="./docs/screenshots/bookings.svg" alt="Bookings Page" width="100%"/>
+  <img src="./docs/screenshots/store-detail.png" alt="Store Inventory" width="100%"/>
 </p>
 
-*Complete booking lifecycle management with status tracking*
+*High-resolution pictures of construction materials (cement, sand, metal, bricks, rebar, tiles), per-unit LKR pricing, and live cart checkout.*
 
-### 💰 Material Cost Estimator
+### 💰 Material Cost Estimator (LKR & PDF Export)
 <p align="center">
-  <img src="./docs/screenshots/estimator.svg" alt="Estimator" width="100%"/>
+  <img src="./docs/screenshots/estimator.png" alt="Cost Estimator" width="100%"/>
 </p>
 
-*Smart calculator with common materials library and PDF export*
+*Interactive project budget calculator with Sri Lankan market benchmarks (Tokyo Super Cement, Mahaweli River Sand, Lanwa Steel Rebar) and printable PDF quotes.*
 
-### 🏪 Hardware Stores
+### 🔐 Multi-Role Authentication & Access Control
 <p align="center">
-  <img src="./docs/screenshots/stores.svg" alt="Stores" width="100%"/>
+  <img src="./docs/screenshots/auth-signin.png" alt="Sign In" width="100%"/>
 </p>
 
-*Browse and order construction materials from verified hardware stores*
-
-### 📈 Analytics Dashboard
-<p align="center">
-  <img src="./docs/screenshots/analytics.svg" alt="Analytics" width="100%"/>
-</p>
-
-*Detailed insights and performance metrics for all user types*
-
-### 🔧 Admin Panel
-<p align="center">
-  <img src="./docs/screenshots/admin-panel.svg" alt="Admin Panel" width="100%"/>
-</p>
-
-*Complete platform management with user, booking, and transaction oversight*
+*Role-based access gating ensuring verified customers, workers, and store owners authenticate before booking, listing, or purchasing.*
 
 ---
 
@@ -108,6 +94,18 @@ Wandura revolutionizes the construction labor marketplace by connecting:
 ---
 
 ## 🚀 Features
+
+### 🇱🇰 Sri Lankan Market Localization & Bilingual Support
+- ✅ **Default English with Top Language Switcher**: Clean English interface by default, with a one-click persistent header toggle (`🌐 EN | සිංහල`) to switch all navigation, filters, labels, and forms into Sinhala.
+- ✅ **LKR Currency (`Rs.`)**: All daily worker wages, hourly rates, building material catalogs, order carts, and cost estimator benchmarks operate in Sri Lankan Rupees.
+- ✅ **Sri Lankan Trades & Categories**: Mason (මේසන් බාස්), Carpenter (වඩු බාස්), Welder (වෙල්ඩින් කාර්මික), Tile Layer (ටයිල් බාස්), Plumber (නල කාර්මික), Electrician (විදුලි කාර්මික), Steel Fixer (යකඩ බාස්), Painter (තීන්ත ආලේපක).
+- ✅ **Islandwide District Coverage**: Colombo, Gampaha, Kalutara, Kandy, Galle, Matara, Kurunegala, and all 25 districts.
+
+### 🗺️ Google Maps & Live Geolocation
+- ✅ **Google Maps API Loader**: Integrated `@googlemaps/js-api-loader` supporting Roadmap and Satellite/Hybrid views.
+- ✅ **Real-Time GPS Proximity**: User location detection, live distance calculation (in kilometers), and closest worker/store discovery.
+- ✅ **Direct Navigation**: One-click "Open in Google Maps" link on all worker and hardware store profiles for instant turn-by-turn directions.
+- ✅ **Graceful Fallback**: Automatic failover to OpenStreetMap if API key is not configured or offline.
 
 ### 🔐 Authentication & Security
 - ✅ Multi-role registration (Customer, Worker, Hardware Store, Admin)

@@ -374,15 +374,14 @@ export default function HomePage() {
             <Button
               size="lg"
               asChild
-              className="bg-white text-blue-600 hover:bg-blue-50 rounded-xl h-12 px-8 font-semibold"
+              className="bg-white text-blue-600 hover:bg-blue-50 rounded-xl h-12 px-8 font-semibold shadow-sm transition-all"
             >
               <Link href="/auth/signup">{t('home.ctaButton')}</Link>
             </Button>
             <Button
               size="lg"
-              variant="outline"
               asChild
-              className="border-white/30 text-white hover:bg-white/10 rounded-xl h-12 px-8"
+              className="bg-blue-700 hover:bg-blue-800 text-white border border-blue-400/50 rounded-xl h-12 px-8 font-semibold shadow-sm transition-all"
             >
               <Link href="/workers">{t('home.ctaMapButton')}</Link>
             </Button>

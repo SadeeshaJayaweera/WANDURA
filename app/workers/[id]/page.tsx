@@ -28,6 +28,7 @@ import {
   Share2,
   Heart,
   Award,
+  Lock,
 } from 'lucide-react'
 import { formatCurrency, formatDate } from '@/lib/utils'
 import { getSkillLabel } from '@/lib/srilanka'
@@ -387,6 +388,30 @@ export default function WorkerProfilePage() {
               </div>
             </div>
 
+            {/* Work Portfolio & Photos */}
+            {worker.portfolioImages && worker.portfolioImages.length > 0 && (
+              <div className="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm">
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="text-base font-bold text-gray-900 flex items-center gap-2">
+                    <Briefcase className="h-5 w-5 text-blue-600" />
+                    Recent Project Portfolio (පසුගිය වැඩ ඡායාරූප)
+                  </h3>
+                  <span className="text-xs text-gray-400 font-medium">Verified Completed Jobs</span>
+                </div>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                  {worker.portfolioImages.map((imgUrl: string, idx: number) => (
+                    <div key={idx} className="relative h-32 rounded-xl overflow-hidden bg-gray-100 group shadow-sm">
+                      <img
+                        src={imgUrl}
+                        alt={`Work sample ${idx + 1}`}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {/* Reviews Section */}
             <div className="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm">
               <div className="flex items-center justify-between mb-4">
@@ -453,6 +478,25 @@ export default function WorkerProfilePage() {
               </div>
 
               <form onSubmit={handleBookingSubmit} className="space-y-4">
+                {!session?.user && (
+                  <div className="bg-amber-50 border border-amber-200 rounded-2xl p-3.5 text-center">
+                    <div className="flex items-center justify-center gap-1.5 text-amber-900 font-bold text-xs mb-1">
+                      <Lock className="h-4 w-4 text-amber-600" />
+                      <span>Account Required to Book (ගිණුමක් අවශ්‍යයි)</span>
+                    </div>
+                    <p className="text-[11px] text-amber-700 mb-2.5">
+                      Create a free account or sign in to verify booking and release payments securely via escrow.
+                    </p>
+                    <div className="grid grid-cols-2 gap-2">
+                      <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs h-8">
+                        <Link href={`/auth/signin?callbackUrl=/workers/${workerId}`}>Sign In</Link>
+                      </Button>
+                      <Button asChild size="sm" variant="outline" className="rounded-xl border-amber-300 text-amber-900 text-xs h-8 bg-white hover:bg-amber-100">
+                        <Link href={`/auth/signup?callbackUrl=/workers/${workerId}`}>Sign Up</Link>
+                      </Button>
+                    </div>
+                  </div>
+                )}
                 <div className="grid grid-cols-2 gap-3">
                   <div>
                     <Label htmlFor="b-start" className="text-xs font-semibold text-gray-700">

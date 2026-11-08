@@ -65,5 +65,5 @@ export async function loadLatestModelCache(
     parsedFactors = JSON.parse(parsedFactors);
   }
 
-  return parsedFactors as CollaborativeFactors;
+  return parsedFactors as unknown as CollaborativeFactors;
 }

@@ -107,6 +107,7 @@ async function main() {
       name: 'Sunimal Wickramasinghe (සුනිමල් වික්‍රමසිංහ)',
       role: Role.WORKER,
       phone: '+94 77 987 6543',
+      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80',
       emailVerified: true,
       workerProfile: {
         create: {
@@ -115,6 +116,11 @@ async function main() {
           hourlyRate: 700,
           experience: 12,
           bio: 'වසර 12 ක පළපුරුද්දක් සහිත ප්‍රවීණ මේසන් බාස්. නිවාස ඉදිකිරීම්, කොන්ක්‍රීට් සහ ප්ලාස්ටර් වැඩ සඳහා විශ්වාසනීය සේවය.',
+          portfolioImages: [
+            'https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?w=800&auto=format&fit=crop&q=80',
+            'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop&q=80',
+            'https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=800&auto=format&fit=crop&q=80',
+          ],
           isVerified: true,
           isAvailable: true,
           city: 'Colombo',
@@ -139,6 +145,7 @@ async function main() {
       name: 'Kasun Sampath Fernando (කසුන් සම්පත්)',
       role: Role.WORKER,
       phone: '+94 72 876 5432',
+      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=80',
       emailVerified: true,
       workerProfile: {
         create: {
@@ -147,6 +154,10 @@ async function main() {
           hourlyRate: 850,
           experience: 8,
           bio: 'ග්‍රිල්, ගේට්ටු, යකඩ වහල පලංචි සහ රූෆින් ට්‍රස් සවි කිරීම පිළිබඳ විශේෂඥ වෙල්ඩින් කාර්මික.',
+          portfolioImages: [
+            'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&auto=format&fit=crop&q=80',
+            'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&auto=format&fit=crop&q=80',
+          ],
           isVerified: true,
           isAvailable: true,
           city: 'Negombo',
@@ -171,6 +182,7 @@ async function main() {
       name: 'Priyantha Kumara (ප්‍රියන්ත කුමාර)',
       role: Role.WORKER,
       phone: '+94 78 765 4321',
+      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&auto=format&fit=crop&q=80',
       emailVerified: true,
       workerProfile: {
         create: {
@@ -179,6 +191,10 @@ async function main() {
           hourlyRate: 750,
           experience: 9,
           bio: 'Rocell, Tiara ටයිල් ඇල්ලීම, නාන කාමර සහ පැන්ට්‍රි ටයිල් වැඩ නිවැරදි නිමාවකින් ඉටු කරනු ලැබේ.',
+          portfolioImages: [
+            'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80',
+            'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&auto=format&fit=crop&q=80',
+          ],
           isVerified: true,
           isAvailable: true,
           city: 'Maharagama',
@@ -203,6 +219,7 @@ async function main() {
       name: 'Bandara Jayasinghe (බණ්ඩාර ජයසිංහ)',
       role: Role.WORKER,
       phone: '+94 75 654 3210',
+      image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&auto=format&fit=crop&q=80',
       emailVerified: true,
       workerProfile: {
         create: {
@@ -211,6 +228,10 @@ async function main() {
           hourlyRate: 650,
           experience: 15,
           bio: 'වහල ගැසීම, දොර ජනෙල් උළුවහු සවිකිරීම සහ සියලුම වඩු කාර්මික කටයුතු පිළිබඳ පළපුරුදු වඩු බාස්.',
+          portfolioImages: [
+            'https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=800&auto=format&fit=crop&q=80',
+            'https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&auto=format&fit=crop&q=80',
+          ],
           isVerified: true,
           isAvailable: true,
           city: 'Kandy',
@@ -235,6 +256,7 @@ async function main() {
       name: 'Nuwan Jayalath (නුවන් ජයලත්)',
       role: Role.WORKER,
       phone: '+94 77 543 2109',
+      image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=400&auto=format&fit=crop&q=80',
       emailVerified: true,
       workerProfile: {
         create: {
@@ -243,6 +265,10 @@ async function main() {
           hourlyRate: 800,
           experience: 7,
           bio: 'නිවාස හා කාර්යාල වයරිං, ත්‍රි-ෆේස් ලයින්, සෝලාර් සහ ට්‍රිප් ස්විච් ගැටළු විසඳන සහතිකලත් විදුලි කාර්මික.',
+          portfolioImages: [
+            'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&auto=format&fit=crop&q=80',
+            'https://images.unsplash.com/photo-1509391365360-2e959784a276?w=800&auto=format&fit=crop&q=80',
+          ],
           isVerified: true,
           isAvailable: true,
           city: 'Galle',
@@ -267,6 +293,7 @@ async function main() {
       name: 'Nimal Siriwardena (නිමල් සිරිවර්ධන)',
       role: Role.WORKER,
       phone: '+94 71 432 1098',
+      image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&auto=format&fit=crop&q=80',
       emailVerified: true,
       workerProfile: {
         create: {
@@ -275,6 +302,10 @@ async function main() {
           hourlyRate: 600,
           experience: 11,
           bio: 'ජල නල එළීම, බට පිපිරීම් අලුත්වැඩියාව, කොමඩ් හා සින්ක් සවිකිරීම් සහ වෝටර් මෝටර් සවි කිරීමේ ප්‍රවීණ නල කාර්මික.',
+          portfolioImages: [
+            'https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=800&auto=format&fit=crop&q=80',
+            'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80',
+          ],
           isVerified: true,
           isAvailable: true,
           city: 'Gampaha',
@@ -371,6 +402,7 @@ async function main() {
       name: 'Rathnayake Hardware (රත්නායක හාඩ්වෙයාර්)',
       role: Role.HARDWARE_STORE,
       phone: '+94 11 285 4321',
+      image: 'https://images.unsplash.com/photo-1581783898377-1c85bf937427?w=800&auto=format&fit=crop&q=80',
       emailVerified: true,
       storeProfile: {
         create: {
@@ -398,6 +430,7 @@ async function main() {
       name: 'Lanka BuildMart Kandy (ලංකා බිල්ඩ්මාර්ට්)',
       role: Role.HARDWARE_STORE,
       phone: '+94 81 223 3445',
+      image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&auto=format&fit=crop&q=80',
       emailVerified: true,
       storeProfile: {
         create: {
@@ -433,6 +466,7 @@ async function main() {
           unit: 'bag',
           price: 2450, // LKR
           stock: 450,
+          images: ['https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&auto=format&fit=crop&q=80'],
           isAvailable: true,
         },
         {
@@ -443,6 +477,7 @@ async function main() {
           unit: 'cube',
           price: 22000, // LKR
           stock: 40,
+          images: ['https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?w=800&auto=format&fit=crop&q=80'],
           isAvailable: true,
         },
         {
@@ -453,6 +488,7 @@ async function main() {
           unit: 'cube',
           price: 16500, // LKR
           stock: 35,
+          images: ['https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800&auto=format&fit=crop&q=80'],
           isAvailable: true,
         },
         {
@@ -463,6 +499,7 @@ async function main() {
           unit: 'piece',
           price: 34, // LKR
           stock: 15000,
+          images: ['https://images.unsplash.com/photo-1584622781564-1d987f7333c1?w=800&auto=format&fit=crop&q=80'],
           isAvailable: true,
         },
         {
@@ -473,6 +510,18 @@ async function main() {
           unit: 'piece',
           price: 1850, // LKR
           stock: 600,
+          images: ['https://images.unsplash.com/photo-1535813547-99c456a41d4a?w=800&auto=format&fit=crop&q=80'],
+          isAvailable: true,
+        },
+        {
+          storeId: sp1.id,
+          name: 'S-Lon PVC Pressure Pipe 1-inch (පීවීසී බටය)',
+          description: 'ශ්‍රී ලංකාවේ ප්‍රමුඛතම SLS සහතිකලත් පානීය ජල නල පද්ධති සඳහා PVC බට (අඩි 13).',
+          category: 'Plumbing & Pipes',
+          unit: 'piece',
+          price: 920, // LKR
+          stock: 180,
+          images: ['https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=800&auto=format&fit=crop&q=80'],
           isAvailable: true,
         },
       ],
@@ -490,6 +539,7 @@ async function main() {
           unit: 'bag',
           price: 2500, // LKR
           stock: 350,
+          images: ['https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=800&auto=format&fit=crop&q=80'],
           isAvailable: true,
         },
         {
@@ -500,6 +550,7 @@ async function main() {
           unit: 'piece',
           price: 95, // LKR
           stock: 2500,
+          images: ['https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?w=800&auto=format&fit=crop&q=80'],
           isAvailable: true,
         },
         {
@@ -510,6 +561,7 @@ async function main() {
           unit: 'box',
           price: 6800, // LKR
           stock: 120,
+          images: ['https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80'],
           isAvailable: true,
         },
         {
@@ -520,6 +572,7 @@ async function main() {
           unit: 'bag',
           price: 1650, // LKR
           stock: 180,
+          images: ['https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&auto=format&fit=crop&q=80'],
           isAvailable: true,
         },
         {
@@ -530,6 +583,18 @@ async function main() {
           unit: 'pack',
           price: 3200, // LKR
           stock: 65,
+          images: ['https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&auto=format&fit=crop&q=80'],
+          isAvailable: true,
+        },
+        {
+          storeId: sp2.id,
+          name: 'Robbialac Brilliant White Emulsion 10L (සුදු තීන්ත)',
+          description: 'ඇතුළත බිත්ති සඳහා ඉහළ නිමාවක් ලබාදෙන රොබියැලැක් ප්‍රමුඛතම වයිට් ඉමල්ෂන්.',
+          category: 'Paint & Finishes',
+          unit: 'bucket',
+          price: 14500, // LKR
+          stock: 40,
+          images: ['https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&auto=format&fit=crop&q=80'],
           isAvailable: true,
         },
       ],

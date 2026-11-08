@@ -16,7 +16,7 @@ import { ExposureFairnessTier } from '@/lib/recommendation/analytics/exposureFai
 import { useSearchParams } from 'next/navigation'
 
 export default function ExposureFairnessChart() {
-  const [data, setData] = useState<ExposureFairnessTier[]>([])
+  const [data, setData] = useState<any[]>([])
   const [loading, setLoading] = useState(true)
   const searchParams = useSearchParams()
   const days = parseInt(searchParams.get('days') || '30', 10)
@@ -71,8 +71,8 @@ export default function ExposureFairnessChart() {
             <XAxis dataKey="name" />
             <YAxis />
             <Tooltip 
-              formatter={(value: number, name: string) => [
-                name.includes('Ratio') ? value.toFixed(2) : `${value}%`, 
+              formatter={(value: any, name: any) => [
+                typeof name === 'string' && name.includes('Ratio') ? Number(value).toFixed(2) : `${value}%`, 
                 name
               ]}
               contentStyle={{ borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
@@ -90,7 +90,7 @@ export default function ExposureFairnessChart() {
           <span className="text-xs font-normal text-muted-foreground">(Exposure Share ÷ Pool Share)</span>
         </h4>
         <div className="grid grid-cols-3 gap-4">
-          {data.map(tier => (
+          {data.map((tier: any) => (
             <div key={tier.name} className="space-y-1">
               <div className="text-xs text-muted-foreground">{tier.name}</div>
               <div className={`text-lg font-bold ${

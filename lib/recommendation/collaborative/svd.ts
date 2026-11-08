@@ -32,8 +32,8 @@ export function computeTruncatedSVD(matrix: number[][], nComponents = 12): { cus
     // Compute Full SVD (autoTranspose is handled by our manual transposition to ensure predictable U/V extraction)
     const svd = new SVD(mat, { autoTranspose: false });
     
-    let U = svd.U;
-    let V = svd.V;
+    let U = (svd as any).U;
+    let V = (svd as any).V;
     const s = svd.diagonal;
     
     if (transposed) {

@@ -23,7 +23,7 @@ export async function POST(req: NextRequest) {
     // Hash password
     const hashedPassword = await bcrypt.hash(validatedData.password, 10)
 
-    // Create user
+    // Create user with corresponding role profile
     const user = await prisma.user.create({
       data: {
         email: validatedData.email,
@@ -31,8 +31,41 @@ export async function POST(req: NextRequest) {
         password: hashedPassword,
         role: validatedData.role,
         profile: {
-          create: {},
+          create: {
+            city: 'Colombo',
+            state: 'Western Province',
+            country: 'Sri Lanka',
+          },
         },
+        ...(validatedData.role === 'HARDWARE_STORE' && {
+          storeProfile: {
+            create: {
+              storeName: validatedData.name,
+              description: 'Hardware store supplying construction materials in Sri Lanka.',
+              address: 'Main Street',
+              city: 'Colombo',
+              state: 'Western Province',
+              zipCode: '00100',
+              phone: '+94 11 200 0000',
+              isVerified: true,
+            },
+          },
+        }),
+        ...(validatedData.role === 'WORKER' && {
+          workerProfile: {
+            create: {
+              skill: 'MASON',
+              dailyRate: 5000,
+              experience: 3,
+              bio: 'Experienced skilled tradesperson in Sri Lanka.',
+              city: 'Colombo',
+              state: 'Western Province',
+              zipCode: '00100',
+              isVerified: true,
+              isAvailable: true,
+            },
+          },
+        }),
       },
       select: {
         id: true,

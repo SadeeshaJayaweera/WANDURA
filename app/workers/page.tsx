@@ -461,9 +461,17 @@ function SriLankanWorkerCard({
     <div className="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-200 p-5 flex flex-col justify-between">
       <div>
         <div className="flex items-start gap-3.5 mb-3">
-          <div className="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 font-bold text-sm flex items-center justify-center flex-shrink-0">
-            {initials}
-          </div>
+          {worker.user?.image ? (
+            <img
+              src={worker.user.image}
+              alt={worker.user.name || 'Worker'}
+              className="w-12 h-12 rounded-xl object-cover border border-blue-100 flex-shrink-0"
+            />
+          ) : (
+            <div className="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 font-bold text-sm flex items-center justify-center flex-shrink-0">
+              {initials}
+            </div>
+          )}
           <div className="flex-1 min-w-0">
             <div className="flex items-start justify-between gap-1">
               <h3 className="font-semibold text-gray-900 text-base leading-tight truncate">
